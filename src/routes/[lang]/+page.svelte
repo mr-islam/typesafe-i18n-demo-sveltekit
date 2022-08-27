@@ -22,6 +22,9 @@
 	const day = new Date('2021-11-20')
 </script>
 
+<svelte:head>
+	<title>{$LL.title}</title>
+</svelte:head>
 <h2>
 	{$LL.HI({ year: 2021 })}
 </h2>
