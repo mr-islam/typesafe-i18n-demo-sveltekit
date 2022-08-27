@@ -1,6 +1,7 @@
 import type { BaseTranslation } from '../i18n-types'
 
-const en: BaseTranslation = {
+const ar: BaseTranslation = {
+	title: 'مركز العلم والمعرفة',
 	HI: 'مرحبا بكم {year:number}',
 	spectators: '{0} live spectator{{s}}',
 	summit: {
@@ -8,4 +9,4 @@ const en: BaseTranslation = {
 	},
 }
 
-export default en
+export default ar
