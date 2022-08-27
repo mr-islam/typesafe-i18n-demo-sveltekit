@@ -69,7 +69,10 @@
 
 <style>
   :global(div.swiper-button-prev, div.swiper-button-next) {
-    color: rgb(65, 255, 65);
+    background-color: var(--accent-color);
+    color: white;
+    padding: 35px;
+    border-radius: 100px;
   }
   div.center {
     position: absolute;
