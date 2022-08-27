@@ -1,6 +1,6 @@
-import type { BaseTranslation } from '../i18n-types'
+import type { Translation } from '../i18n-types'
 
-const en: BaseTranslation = {
+const en: Translation = {
 	HI: 'Welcome to Svelte Fall Summit {year:number}',
 	spectators: '{0} live spectator{{s}}',
 	summit: {
