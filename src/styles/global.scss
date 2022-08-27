@@ -1,81 +1,3 @@
-* {
-	box-sizing: border-box;
-}
-
-body {
-	margin: 0;
-	padding: 0;
-	font-family: Arial, Helvetica, sans-serif;
-	background-color: #ff3e001a;
-	overscroll-behavior: none;
-}
-
-header {
-	background-color: white;
-	height: 100px;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	padding: 1rem 2rem;
-	font-family: monospace;
-
-	>a {
-		text-decoration: none;
-	}
-
-	ul {
-		list-style-type: none;
-		display: flex;
-		gap: 0.5rem;
-
-		li>button {
-			all: initial;
-			padding: 0.5rem;
-			color: #444;
-
-			&.active {
-				color: #ff3e00;
-				border-bottom: 1px solid;
-			}
-		}
-	}
-}
-
-h1 {
-	color: #ff3e00;
-}
-
-h2 {
-	margin: 5rem;
-	text-align: center;
-}
-
-h3 {
-	margin: 5rem;
-	text-align: center;
-}
-
-main {
-	padding: 1rem 2rem;
-	overflow: hidden;
-	color: #444;
-}
-
-nav {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	padding: 1rem;
-}
-
-.spectators {
-	text-align: center;
-}
-
 @font-face {
 	font-family: "adwa-assalaf";
 	src: url("subset-adwa-assalaf.woff") format("woff");
@@ -97,8 +19,8 @@ nav {
 		BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
 		"Open Sans", "Helvetica Neue", sans-serif;
 	--font-mono: "Fira Mono", monospace;
-	--pure-white: #fbfff9;
-	--primary-color: #ebffde;
+	--pure-white: #f8f9f7;
+	--primary-color: #defccc;
 	--secondary-color: #efffe4;
 	--tertiary-color: #edf0f8;
 	--accent-color: #2f4515de;
@@ -112,7 +34,6 @@ nav {
 body {
 	min-height: 100vh;
 	margin: 0;
-	background-color: white;
 	font-size: 17px;
 	user-select: none;
 	/* background: linear-gradient(
@@ -227,3 +148,46 @@ button:focus:not(:focus-visible) {
 /* 
    */
 /*  */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	background-color: var(--pure-white);
+}
+
+
+h2 {
+	margin: 5rem;
+	text-align: center;
+}
+
+h3 {
+	margin: 5rem;
+	text-align: center;
+}
+
+main {
+	padding: 1rem 2rem;
+	overflow: hidden;
+	color: #444;
+}
+
+nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	padding: 1rem;
+}
+
+.spectators {
+	text-align: center;
+}
+

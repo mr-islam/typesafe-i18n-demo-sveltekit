@@ -1,6 +1,6 @@
 <script>
   import { Swiper, SwiperSlide } from "swiper/svelte";
-  import { t, locale } from "svelte-intl-precompile";
+  import LL, { locale } from '$i18n/i18n-svelte'
   import { onMount, afterUpdate } from "svelte";
 
   import "swiper/css";
@@ -21,7 +21,7 @@
 
 
 <svelte:head>
- <title>{$t("title")}</title>
+ <title>{$LL.title()}</title>
 </svelte:head>
 
 {#key dir}
@@ -37,29 +37,29 @@
     >
       <SwiperSlide>
         <div class="center">
-          <h1>{$t("hero.header1")}</h1>
-          <p>{$t("hero.subheader1")}</p>
+          <h1>{$LL.hero.header1()}</h1>
+          <p>{$LL.hero.subheader1()}</p>
         </div>
         <img alt="pretty background for announcement background" src="/backgrounds/flowers.jpg" />
       </SwiperSlide>
       <SwiperSlide>
         <div class="center">
-          <h1>{$t("hero.header1")}</h1>
-          <p>{$t("hero.subheader1")}</p>
+          <h1>{$LL.hero.header1()}</h1>
+          <p>{$LL.hero.subheader1()}</p>
         </div>
         <img alt="pretty background for announcement background" src="/backgrounds/cloud.jpg" />
       </SwiperSlide>
       <SwiperSlide
         ><div class="center">
-          <h1>{$t("hero.header1")}</h1>
-          <p>{$t("hero.subheader1")}</p>
+          <h1>{$LL.hero.header1()}</h1>
+          <p>{$LL.hero.subheader1()}</p>
         </div>
         <img alt="pretty background for announcement background" src="/backgrounds/garden.jpg" /></SwiperSlide
       >
       <SwiperSlide
         ><div class="center">
-          <h1>{$t("hero.header1")}</h1>
-          <p>{$t("hero.subheader1")}</p>
+          <h1>{$LL.hero.header1()}</h1>
+          <p>{$LL.hero.subheader1()}</p>
         </div>
         <img alt="pretty background for announcement background" src="/backgrounds/flowers.jpg" /></SwiperSlide
       >
@@ -80,6 +80,9 @@
     text-align: "center";
     min-width: 70vw;
     /* user-select: none; */
+  }
+  :global(.mySwiper) {
+    border-radius: 12px;
   }
   p {
     font-size: 1.5rem;
