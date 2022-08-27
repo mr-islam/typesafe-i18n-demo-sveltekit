@@ -1,6 +1,7 @@
 <script lang="ts">
 	import LL from '$i18n/i18n-svelte'
 	import Gallery from "$lib/Gallery.svelte";
+	import IntroBullets from '$lib/IntroBullets.svelte';
 
 	let spectators = 0
 
@@ -12,3 +13,4 @@
 </svelte:head>
 
 <Gallery />
+<IntroBullets />

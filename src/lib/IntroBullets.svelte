@@ -1,38 +1,32 @@
 <script context="module">
-  import { t } from "svelte-intl-precompile";
+  import LL from '$i18n/i18n-svelte'
 </script>
 
 <div class="paras-about">
   <div>
     <div>
       <span>🔗</span>
-      <p>{$t("welcome.mission")}</p>
+      <p>{$LL.welcome.mission()}</p>
     </div>
     <div>
       <span>🪐</span>
 
       <p>
-        {$t(
-          "welcome.complete_curriculum"
-        )}
+        {$LL.welcome.complete_curriculum()}
       </p>
     </div>
     <div>
       <span>📜</span>
 
       <p>
-        {$t(
-          "welcome.articles"
-        )}
+        {$LL.welcome.articles()}
       </p>
     </div>
     <div>
       <span>🖥️</span>
 
       <p>
-        {$t(
-          "welcome.online"
-        )}
+        {$LL.welcome.online()}
       </p>
     </div>
   </div>
@@ -40,10 +34,10 @@
 
 <style>
   P {
-    color: var(--pure-white);
+    color: var(--accent-color);
   }
   div.paras-about {
-    background: var(--accent-color);
+    background: var(--);
     width: 100%;
     margin: 0 0 56px 0;
     /* max-height: 10vh; */
