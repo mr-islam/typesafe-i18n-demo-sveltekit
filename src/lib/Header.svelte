@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { locale } from '$i18n/i18n-svelte'
+	import LL, { locale } from '$i18n/i18n-svelte'
 	import LocaleSwitcher from './LocaleSwitcher.svelte'
 </script>
 
@@ -8,17 +8,24 @@
 		<img alt="Logo of Arabic calligraphy" id="logo" src="/logo-new.jpg" />
 	</a>
 
+	<div style="text-align: center;">
+		{#if $LL.center() !== ""}
+      <span>{$LL.center()}</span>
+    {/if}
+		<h1>{$LL.title()}</h1>
+		<span>{$LL.slogan()}</span>
+	  </div>
+
 	<LocaleSwitcher />
 </header>
 
 <style>
 	header {
-	  background-color: var(--pure-white);
+	  /* background-color: var(--primary-color); */
 	  display: flex;
 	  flex-direction: row;
 	  align-items: center;
 	  justify-content: space-between;
-	  border-bottom: 4px solid var(--primary-color);
 	  left: 30vw;
 	  padding: 10px 0;
 	  z-index: 5;
