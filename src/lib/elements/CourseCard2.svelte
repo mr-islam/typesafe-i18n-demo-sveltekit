@@ -1,5 +1,5 @@
 <script>
-	import LL, { locale } from '$i18n/i18n-svelte'
+	import LL from '$i18n/i18n-svelte'
 	import { crossfade, fade, fly, slide, blur } from 'svelte/transition'
 	import { quintOut } from 'svelte/easing'
 
