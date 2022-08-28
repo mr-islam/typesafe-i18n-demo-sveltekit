@@ -170,6 +170,18 @@ type RootTranslation = {
 		 */
 		title: string
 	}
+	wisdoms: {
+		/**
+		 * Supervisor's Wisdoms
+		 */
+		title: string
+		list: {
+			/**
+			 * The truly joyous don't strive for ijazats and certificates
+			 */
+			ijaza_1: string
+		}
+	}
 	articles: {
 		/**
 		 * Articles
@@ -2122,6 +2134,18 @@ export type TranslationFunctions = {
 		 * Reviving the religious sciences by
 		 */
 		title: () => LocalizedString
+	}
+	wisdoms: {
+		/**
+		 * Supervisor's Wisdoms
+		 */
+		title: () => LocalizedString
+		list: {
+			/**
+			 * The truly joyous don't strive for ijazats and certificates
+			 */
+			ijaza_1: () => LocalizedString
+		}
 	}
 	articles: {
 		/**
