@@ -1,6 +1,6 @@
 <script>
   import { Swiper, SwiperSlide } from "swiper/svelte";
-  import { locale } from "svelte-intl-precompile";
+  import { locale } from '$i18n/i18n-svelte'
   import { onMount, afterUpdate } from "svelte";
 
   // Import Swiper styles
