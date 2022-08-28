@@ -178,15 +178,15 @@ type RootTranslation = {
 		/**
 		 * The Mandatory Knowledge Every Muslim Must Learn
 		 */
-		'fard-ayn': string
+		fard_ayn: string
 		/**
 		 * Good Intentions – Advice for Students of Knowledge 1
 		 */
-		'knowledge-good-intentions': string
+		knowledge_good_intentions: string
 		/**
 		 * Curing Languor and Laziness in Seeking Knowledge
 		 */
-		'curing-laziness': string
+		knowledge_curing_laziness: string
 	}
 	tags: {
 		/**
@@ -2131,15 +2131,15 @@ export type TranslationFunctions = {
 		/**
 		 * The Mandatory Knowledge Every Muslim Must Learn
 		 */
-		'fard-ayn': () => LocalizedString
+		fard_ayn: () => LocalizedString
 		/**
 		 * Good Intentions – Advice for Students of Knowledge 1
 		 */
-		'knowledge-good-intentions': () => LocalizedString
+		knowledge_good_intentions: () => LocalizedString
 		/**
 		 * Curing Languor and Laziness in Seeking Knowledge
 		 */
-		'curing-laziness': () => LocalizedString
+		knowledge_curing_laziness: () => LocalizedString
 	}
 	tags: {
 		/**

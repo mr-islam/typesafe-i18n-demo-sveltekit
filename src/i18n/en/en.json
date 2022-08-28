@@ -49,9 +49,9 @@
     },
     "articles": {
       "title": "Articles",
-      "fard-ayn": "The Mandatory Knowledge Every Muslim Must Learn",
-      "knowledge-good-intentions": "Good Intentions – Advice for Students of Knowledge 1",
-      "curing-laziness": "Curing Languor and Laziness in Seeking Knowledge"
+      "fard_ayn": "The Mandatory Knowledge Every Muslim Must Learn",
+      "knowledge_good_intentions": "Good Intentions – Advice for Students of Knowledge 1",
+      "knowledge_curing_laziness": "Curing Languor and Laziness in Seeking Knowledge"
     },
     "tags": {
       "fard": "Obligatory Knowledge",

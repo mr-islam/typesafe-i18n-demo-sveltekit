@@ -1,9 +1,10 @@
 <script lang="ts">
 	import LL from '$i18n/i18n-svelte'
-	import Gallery from "$lib/Gallery.svelte";
-	import IntroBullets from '$lib/IntroBullets.svelte';
-	import Courses from '$lib/courses.svelte';
-	
+	import Gallery from '$lib/Gallery.svelte'
+	import IntroBullets from '$lib/IntroBullets.svelte'
+	import Courses from '$lib/courses.svelte'
+	import Articles from '$lib/articles.svelte'
+
 	console.log($LL.title)
 </script>
 
@@ -14,3 +15,4 @@
 <Gallery />
 <IntroBullets />
 <Courses />
+<Articles />

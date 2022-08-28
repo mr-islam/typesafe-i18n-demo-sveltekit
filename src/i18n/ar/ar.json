@@ -93,9 +93,9 @@
     },
     "articles": {
       "title": "المقالات",
-      "fard-ayn": "العلم الفرض العيني",
-      "knowledge-good-intentions": "النية الصالحة: وصايا لطلبة العلم 1",
-      "curing-laziness": "علاج الفتور والكسل في طلب العلم"
+      "fard_ayn": "العلم الفرض العيني",
+      "knowledge_good_intentions": "النية الصالحة: وصايا لطلبة العلم 1",
+      "knowledge_curing_laziness": "علاج الفتور والكسل في طلب العلم"
     },
     "courses": {
       "title": "المواد",

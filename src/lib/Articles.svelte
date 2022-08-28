@@ -1,17 +1,17 @@
 <script>
-  import { locale, t } from "svelte-intl-precompile";
+	import LL, { locale } from '$i18n/i18n-svelte'
 </script>
 
 <container>
   <h1>Articles</h1>
-  <a target="_blank" href="/articles/{$locale}/fard-ayn"
-    >{$t("articles.fard-ayn")}</a
+  <a target="_blank" href="/{$locale}/articles/fard-ayn"
+    >{$LL.articles.fard_ayn()}</a
   >
-  <a target="_blank" href="/articles/{$locale}/knowledge-good-intentions"
-    >{$t("articles.knowledge-good-intentions")}</a
+  <a target="_blank" href="/{$locale}/articles/knowledge-good-intentions"
+    >{$LL.articles.knowledge_good_intentions()}</a
   >
-  <a target="_blank" href="/articles/{$locale}/curing-laziness" id="about"
-    >{$t("articles.curing-laziness")}</a
+  <a target="_blank" href="/{$locale}/articles/knowledge-curing-laziness" id="about"
+    >{$LL.articles.curing_laziness()}</a
   >
 </container>
 
