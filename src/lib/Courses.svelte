@@ -1,9 +1,7 @@
 <script>
-  import CourseCard2 from "../components/CourseCard2.svelte";
+  import CourseCard2 from "$lib/elements/CourseCard2.svelte";
 
-  import { t, locales } from "svelte-intl-precompile";
-
-  console.log($locales);
+  import LL from '$i18n/i18n-svelte'
 
   function scrollToTitle() {
     document
@@ -92,8 +90,6 @@
     },
     {
       id: "hadith-riyad",
-      title: $t("Hadith: Text 3"),
-      desc: $t(""),
       tags: ["hadith-matn"],
       src: "/books/riyad.jpg",
       level: 3,
@@ -336,8 +332,6 @@
     },
     {
       id: "fiqh-sharhmanar",
-      title: $t("Fiqh: Rules 2"),
-      desc: $t("A poem and explanation on the rulings of giving rulings"),
       tags: ["usul"],
       src: "/books/sharhmanar.jpg",
       level: 2,
@@ -372,8 +366,6 @@
     },
     {
       id: "fiqh-manar",
-      title: $t(""),
-      desc: $t("A poem and explanation on the rulings of giving rulings"),
       tags: ["usul"],
       src: "/books/manar.jpg",
       level: 1,
@@ -552,8 +544,6 @@
     },
     {
       id: "tasawwuf-qawanin",
-      title: $t("Spirituality: Reaching 2"),
-      desc: $t("Insights and illuminations for all wayfarers"),
       tags: ["irfan"],
       src: "/books/qawanin.jpg",
       level: 2,
@@ -791,14 +781,14 @@
     });
 </script>
 
-<h1 id="courses">{$t("courses.title")}</h1>
+<h1 id="courses">{$LL.courses.title()}</h1>
 <div style="text-align: center; padding: 0 0 20px 0;">
   <a
     style="color: #dea300; text-decoration: underline dotted;"
     href="#"
     on:click={() => {
       scrollToContact();
-    }}>{$t("contact.courses")}</a
+    }}>{$LL.contact.courses()}</a
   >
 </div>
 
@@ -810,7 +800,7 @@
       searchTerm = "fard";
     }}
   >
-    {$t("tags.fard")}
+    {$LL.tags.fard()}
   </button>
   <button
     id="nazari"
@@ -820,7 +810,7 @@
       setTimeout(scrollToTitle(), 100);
     }}
   >
-    {$t("tags.tajwid")}
+    {$LL.tags.tajwid()}
   </button>
   <button
     id="zahir"
@@ -830,7 +820,7 @@
       setTimeout(scrollToTitle(), 100);
     }}
   >
-    {$t("tags.tafsir")}
+    {$LL.tags.tafsir()}
   </button>
   <button
     id="matn"
@@ -840,7 +830,7 @@
       setTimeout(scrollToTitle(), 100);
     }}
   >
-    {$t("tags.hadith")}
+    {$LL.tags.hadith()}
   </button>
   <button
     id="sirah"
@@ -850,7 +840,7 @@
       searchTerm = "sirah";
     }}
   >
-    {$t("tags.sirah")}
+    {$LL.tags.sirah()}
   </button>
   <button
     id="aqidah"
@@ -860,7 +850,7 @@
       setTimeout(scrollToTitle(), 100);
     }}
   >
-    {$t("tags.aqidah")}
+    {$LL.tags.aqidah()}
   </button>
   <button
     id="ahkam"
@@ -870,7 +860,7 @@
       setTimeout(scrollToTitle(), 100);
     }}
   >
-    {$t("tags.fiqh")}
+    {$LL.tags.fiqh()}
   </button>
   <button
     id="suluk"
@@ -880,7 +870,7 @@
       setTimeout(scrollToTitle(), 100);
     }}
   >
-    {$t("tags.tasawwuf")}
+    {$LL.tags.tasawwuf()}
   </button>
   <button
     id="natiq"
@@ -890,7 +880,7 @@
       setTimeout(scrollToTitle(), 100);
     }}
   >
-    {$t("tags.natiq")}
+    {$LL.tags.natiq()}
   </button>
   <button
     id="nahw"
@@ -900,7 +890,7 @@
       setTimeout(scrollToTitle(), 100);
     }}
   >
-    {$t("tags.arabi")}
+    {$LL.tags.arabi()}
   </button>
   <button
     id="public"
@@ -910,7 +900,7 @@
       setTimeout(scrollToTitle(), 100);
     }}
   >
-    {$t("tags.public")}
+    {$LL.tags.public()}
   </button>
   <button
     id="program"
@@ -920,7 +910,7 @@
       setTimeout(scrollToTitle(), 100);
     }}
   >
-    {$t("tags.program")}
+    {$LL.tags.program()}
   </button>
   <button
     id="other"
@@ -930,139 +920,139 @@
       setTimeout(scrollToTitle(), 100);
     }}
   >
-    {$t("tags.other")}
+    {$LL.tags.other()}
   </button>
 </div>
 
 {#if searchTerm == "tasawwuf" || searchTerm == "suluk" || searchTerm == "irfan"}
   <h3 id="section-title" style="margin-top: 5vh; text-align: center;">
-    {$t("tags.tasawwuf")}
+    {$LL.tags.tasawwuf()}
   </h3>
   <p id="section-explanation" style="text-align: center; margin">
-    {$t("tags.tasawwuf_explanation")}
+    {$LL.tags.tasawwuf_explanation()}
   </p>
   <p id="sub-container">
     <label
       ><input type="radio" bind:group={searchTerm} value="suluk" /><span
-        >{$t("tags.tasawwuf_suluk")}</span
+        >{$LL.tags.tasawwuf_suluk()}</span
       ></label
     >
     <label
       ><input type="radio" bind:group={searchTerm} value="irfan" /><span
-        >{$t("tags.tasawwuf_irfan")}</span
+        >{$LL.tags.tasawwuf_irfan()}</span
       ></label
     >
   </p>
 {:else if searchTerm == "tajwid" || searchTerm == "nazari" || searchTerm == "amali"}
   <h3 id="section-title" style="margin-top: 5vh; text-align: center;">
-    {$t("tags.tajwid")}
+    {$LL.tags.tajwid()}
   </h3>
   <p id="section-explanation" style="text-align: center; margin">
-    {$t("tags.tajwid_explanation")}
+    {$LL.tags.tajwid_explanation()}
   </p>
   <p id="sub-container">
     <label
       ><input type="radio" bind:group={searchTerm} value="nazari" /><span
-        >{$t("tags.tajwid_nazari")}</span
+        >{$LL.tags.tajwid_nazari()}</span
       ></label
     >
     <label
       ><input type="radio" bind:group={searchTerm} value="amali" /><span
-        >{$t("tags.tajwid_amali")}</span
+        >{$LL.tags.tajwid_amali()}</span
       ></label
     >
   </p>
 {:else if searchTerm == "tafsir" || searchTerm == "zahir" || searchTerm == "ishari" || searchTerm == "tajwid" || searchTerm == "nazari" || searchTerm == "amali"}
   <h3 id="section-title" style="margin-top: 5vh; text-align: center;">
-    {$t("tags.tafsir")}
+    {$LL.tags.tafsir()}
   </h3>
   <p id="section-explanation" style="text-align: center; margin">
-    {$t("tags.tafsir_explanation")}
+    {$LL.tags.tafsir_explanation()}
   </p>
   <p id="sub-container">
     <label
       ><input type="radio" bind:group={searchTerm} value="ulumQuran" /><span
-        >{$t("tags.ulum_quran")}</span
+        >{$LL.tags.ulum_quran()}</span
       ></label
     >
     <label
       ><input type="radio" bind:group={searchTerm} value="zahir" /><span
-        >{$t("tags.tafsir_zahir")}</span
+        >{$LL.tags.tafsir_zahir()}</span
       ></label
     >
     <label
       ><input type="radio" bind:group={searchTerm} value="ishari" /><span
-        >{$t("tags.tafsir_ishari")}</span
+        >{$LL.tags.tafsir_ishari()}</span
       ></label
     >
   </p>
 {:else if searchTerm == "hadith" || searchTerm == "matn" || searchTerm == "ulum"}
   <h3 id="section-title" style="margin-top: 5vh; text-align: center;">
-    {$t("tags.hadith")}
+    {$LL.tags.hadith()}
   </h3>
   <p id="section-explanation" style="text-align: center; margin">
-    {$t("tags.hadith_explanation")}
+    {$LL.tags.hadith_explanation()}
   </p>
   <p id="sub-container">
     <label
       ><input type="radio" bind:group={searchTerm} value="matn" /><span
-        >{$t("tags.hadith_texts")}</span
+        >{$LL.tags.hadith_texts()}</span
       ></label
     >
     <label
       ><input type="radio" bind:group={searchTerm} value="ulum" /><span
-        >{$t("tags.hadith_sciences")}</span
+        >{$LL.tags.hadith_sciences()}</span
       ></label
     >
   </p>
 {:else if searchTerm == "fiqh" || searchTerm == "ahkam" || searchTerm == "usul" || searchTerm == "qawaid" || searchTerm == "dalil"}
   <h3 id="section-title" style="margin-top: 5vh; text-align: center;">
-    {$t("tags.fiqh")}
+    {$LL.tags.fiqh()}
   </h3>
   <p id="section-explanation" style="text-align: center; margin">
-    {$t("tags.fiqh_explanation")}
+    {$LL.tags.fiqh_explanation()}
   </p>
   <p id="sub-container">
     <label
       ><input type="radio" bind:group={searchTerm} value="ahkam" /><span
-        >{$t("tags.fiqh_rulings")}</span
+        >{$LL.tags.fiqh_rulings()}</span
       ></label
     >
     <label
       ><input type="radio" bind:group={searchTerm} value="usul" /><span
-        >{$t("tags.fiqh_foundations")}</span
+        >{$LL.tags.fiqh_foundations()}</span
       ></label
     >
     <label
       ><input type="radio" bind:group={searchTerm} value="qawaid" /><span>
-        {$t("tags.fiqh_principles")}
+        {$LL.tags.fiqh_principles()}
       </span></label
     >
     <label
       ><input type="radio" bind:group={searchTerm} value="dalil" /><span>
-        {$t("tags.fiqh_evidences")}
+        {$LL.tags.fiqh_evidences()}
       </span></label
     >
   </p>
 {:else if searchTerm == "arabi" || searchTerm == "nahw" || searchTerm == "sarf" || searchTerm == "balaghah"}
-  <h3 id="section-title">{$t("tags.arabi")}</h3>
+  <h3 id="section-title">{$LL.tags.arabi()}</h3>
   <p id="section-explanation" style="text-align: center; margin">
-    {$t("tags.arabi_explanation")}
+    {$LL.tags.arabi_explanation()}
   </p>
   <p id="sub-container">
     <label
       ><input type="radio" bind:group={searchTerm} value="nahw" /><span
-        >{$t("tags.arabi_nahw")}</span
+        >{$LL.tags.arabi_nahw()}</span
       ></label
     >
     <label
       ><input type="radio" bind:group={searchTerm} value="sarf" /><span
-        >{$t("tags.arabi_sarf")}</span
+        >{$LL.tags.arabi_sarf()}</span
       ></label
     >
     <label
       ><input type="radio" bind:group={searchTerm} value="balaghah" /><span
-        >{$t("tags.arabi_balaghah")}</span
+        >{$LL.tags.arabi_balaghah()}</span
       ></label
     >
   </p>
@@ -1071,45 +1061,45 @@
 
 {#if searchTerm == "fard"}
   <h3 id="section-title" style="margin-top: 5vh; text-align: center;">
-    {$t("tags.fard")}
+    {$LL.tags.fard()}
   </h3>
   <p id="section-explanation" style="text-align: center; margin">
-    {$t("tags.fard_explanation")}
+    {$LL.tags.fard_explanation()}
   </p>
 {:else if searchTerm == "program"}
   <h3 id="section-title" style="margin-top: 5vh; text-align: center;">
-    {$t("tags.program")}
+    {$LL.tags.program()}
   </h3>
   <p id="section-explanation" style="text-align: center; margin">
-    {$t("tags.program_explanation")}
+    {$LL.tags.program_explanation()}
   </p>
 {:else if searchTerm == "aqidah"}
   <h3 id="section-title" style="margin-top: 5vh; text-align: center;">
-    {$t("tags.aqidah")}
+    {$LL.tags.aqidah()}
   </h3>
   <p id="section-explanation" style="text-align: center; margin">
-    {$t("tags.aqidah_explanation")}
+    {$LL.tags.aqidah_explanation()}
   </p>
 {:else if searchTerm == "sirah"}
   <h3 id="section-title" style="margin-top: 5vh; text-align: center;">
-    {$t("tags.sirah")}
+    {$LL.tags.sirah()}
   </h3>
   <p id="section-explanation" style="text-align: center; margin">
-    {$t("tags.sirah_explanation")}
+    {$LL.tags.sirah_explanation()}
   </p>
 {:else if searchTerm == "natiq"}
   <h3 id="section-title" style="margin-top: 5vh; text-align: center;">
-    {$t("tags.natiq")}
+    {$LL.tags.natiq()}
   </h3>
   <p id="section-explanation" style="text-align: center; margin">
-    {$t("tags.natiq_explanation")}
+    {$LL.tags.natiq_explanation()}
   </p>
 {:else if searchTerm == "other"}
   <h3 id="section-title" style="margin-top: 5vh; text-align: center;">
-    {$t("tags.other")}
+    {$LL.tags.other()}
   </h3>
   <p id="section-explanation" style="text-align: center; margin">
-    {$t("tags.other_explanation")}
+    {$LL.tags.other_explanation()}
   </p>
 {/if}
 

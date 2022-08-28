@@ -2,9 +2,8 @@
 	import LL from '$i18n/i18n-svelte'
 	import Gallery from "$lib/Gallery.svelte";
 	import IntroBullets from '$lib/IntroBullets.svelte';
-
-	let spectators = 0
-
+	import Courses from '$lib/courses.svelte';
+	
 	console.log($LL.title)
 </script>
 
@@ -14,3 +13,4 @@
 
 <Gallery />
 <IntroBullets />
+<Courses />
