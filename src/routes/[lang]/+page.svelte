@@ -9,7 +9,7 @@
 </script>
 
 <svelte:head>
-	<title>{$LL.title()}</title>
+	<title>{$LL.center() + ' ' + $LL.title()}</title>
 </svelte:head>
 
 <Gallery />

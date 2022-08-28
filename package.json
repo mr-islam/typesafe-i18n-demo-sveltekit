@@ -47,6 +47,7 @@
 		"vite": "^3.0.8"
 	},
 	"dependencies": {
+		"svelte-markdown": "^0.2.3",
 		"swiper": "^8.3.2",
 		"typesafe-i18n": "^5.12.0"
 	}
