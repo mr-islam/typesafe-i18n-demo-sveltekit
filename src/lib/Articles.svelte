@@ -10,9 +10,6 @@
   <a target="_blank" href="/{$locale}/articles/knowledge-good-intentions"
     >{$LL.articles.knowledge_good_intentions()}</a
   >
-  <a target="_blank" href="/{$locale}/articles/knowledge-curing-laziness" id="about"
-    >{$LL.articles.curing_laziness()}</a
-  >
 </container>
 
 <style>
