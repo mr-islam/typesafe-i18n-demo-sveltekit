@@ -1127,20 +1127,23 @@
     font-size: 1.25em;
   }
   div#grid > button {
-    height: 100px;
     text-align: center;
-    /* background: #f2ffe9; */
+    background: #fcfef9;
     border-radius: 4px;
     padding: 10px;
     font-weight: bold;
     justify-self: stretch;
     align-self: stretch;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    border: none;
   }
-  /* div#grid > button:nth-child(odd) {
-    background: #f9fff5;
-  } */
+  div#grid > button:nth-child(odd) {
+    background: #fbfff7;
+  }
   div#grid > button:hover {
-    background-color: #e7e7e72a;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    transform: translateY(-2px);
+    transition: all .1s ease-in-out;
     cursor: pointer;
   }
   div#grid {
@@ -1219,7 +1222,7 @@
   button {
     color: #2d2d2d;
   }
-  button#fard {
+  /* button#fard {
     background: #70dfdf;
   }
   button#program {
@@ -1257,5 +1260,5 @@
   }
   button#other {
     background: #e9e9e9;
-  }
+  } */
 </style>
