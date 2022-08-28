@@ -4,11 +4,10 @@
   import { onMount, afterUpdate } from "svelte";
 
   import "swiper/css";
-  import "swiper/css/navigation";
 
-  import SwiperCore, { Autoplay, Navigation } from "swiper";
+  import SwiperCore, { Autoplay } from "swiper";
 
-  SwiperCore.use([Navigation, Autoplay]);
+  SwiperCore.use([Autoplay]);
 
   let dir;
   onMount(() => {
@@ -28,7 +27,7 @@
   <div class="container">
     <Swiper
       {dir}
-      navigation={true}
+      navigation={false}
       autoplay={{
         delay: 6000,
         disableOnInteraction: false,
@@ -107,7 +106,7 @@
   div :global(.swiper) {
     width: 100%;
     height: 70vh;
-    background-color: #4a5d33;
+    background-color: #ffffff;
 
   }
 
