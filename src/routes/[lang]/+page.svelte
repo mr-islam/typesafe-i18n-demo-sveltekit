@@ -4,6 +4,7 @@
 	import IntroBullets from '$lib/IntroBullets.svelte'
 	import Courses from '$lib/courses.svelte'
 	import Articles from '$lib/articles.svelte'
+	import Goals from '$lib/goals.svelte'
 
 	console.log($LL.title)
 </script>
@@ -16,3 +17,4 @@
 <IntroBullets />
 <Courses />
 <Articles />
+<Goals />

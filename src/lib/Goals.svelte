@@ -1,40 +1,29 @@
 <script>
-  import { t } from "svelte-intl-precompile";
-  import { Modals, closeModal, openModal } from "svelte-modals";
-  import Modal from "../components/Modal.svelte";
-  import Books from "../elements/books.svelte";
+  import LL from '$i18n/i18n-svelte'
+  import Books from "$lib/elements/books.svelte";
 
   let simpleList = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 </script>
 
 <div class="container">
-  <Modals>
-    <div slot="backdrop" class="backdrop" on:click={closeModal} />
-  </Modals>
   <div class="flex-row">
     <div class="img-left">
-      <h1>{$t("shaykh.heading")}</h1>
+      <h1>{$LL.shaykh.heading()}</h1>
 
       <img alt="Shaykh Abd al-Rahman" class="profile" src="master.jpg" />
-      <p>{$t("shaykh.subheading")}</p>
-      <p>{$t("shaykh.short_bio")}</p>
-      <button
-        id="bio"
-        on:click={() => {
-          openModal(Modal);
-        }}>{$t("shaykh.button")}</button
-      >
+      <p>{$LL.shaykh.subheading()}</p>
+      <p>{$LL.shaykh.short_bio()}</p>
       <Books />
     </div>
     <div class="text-right">
       <div>
-        <h1>{$t("goals.goal")}</h1>
-        <h2>{$t("goals.title")}</h2>
+        <h1>{$LL.goals.goal()}</h1>
+        <h2>{$LL.goals.title()}</h2>
       </div>
       <div>
         <ol>
           {#each simpleList as item}
-            <li>&nbsp;&nbsp;{$t(`goals.${[item]}`)}</li>
+            <li>&nbsp;&nbsp;{$LL.goals[item]()}</li>
           {/each}
         </ol>
       </div>
@@ -43,11 +32,11 @@
   <div id="contact">
     <br />
     <p>***</p>
-    {$t("contact.contact_us")}<a href="mailto:markaz@ilm-marifah.com">
-      {$t("contact.email")}
+    {$LL.contact.contact_us()}<a href="mailto:markaz@ilm-marifah.com">
+      {$LL.contact.email()}
     </a>
-    {$t("contact.or")}
-    <a href="https://t.me/naved_islam">{$t("contact.telegram")}</a>
+    {$LL.contact.or()}
+    <a href="https://t.me/naved_islam">{$LL.contact.telegram()}</a>
   </div>
 </div>
 
