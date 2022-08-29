@@ -98,11 +98,6 @@
   img {
     filter: blur(1px) brightness(70%);
   }
-  div.container {
-    /* min-width: 100%; */
-    /* min-height: 700px; */
-    /* margin-top: 10vh; */
-  }
   div :global(.swiper) {
     width: 100%;
     height: 60vh;
