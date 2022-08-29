@@ -66,7 +66,7 @@
 		}
 		header {
 			position: relative;
-			flex-direction: column;
+			flex-direction: column-reverse;
 			left: 0;
 			min-width: 100%;
 			border-radius: 0px;
