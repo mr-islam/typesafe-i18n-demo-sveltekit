@@ -64,12 +64,11 @@
 
   @media only screen and (max-width: 600px) {
     div.paras-about {
-      background: var(--accent-color);
       min-width: 100%;
       margin: 0 0 56px 0;
     }
     div.paras-about > div {
-      padding: 5vh 5vw;
+      padding: 1vh 1vw;
       grid-template-columns: 1fr;
     }
   }

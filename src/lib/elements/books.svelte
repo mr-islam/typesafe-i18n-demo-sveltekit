@@ -91,8 +91,8 @@
   }
   @media only screen and (max-width: 600px) {
     div :global(.swiper) {
-      width: 144px;
-      height: 200px;
+      width: 158.1px;
+      height: 220px;
     }
   }
 </style>

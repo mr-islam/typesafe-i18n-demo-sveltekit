@@ -25,24 +25,26 @@
 	})
 </script>
 
-<div out:fade={{ duration: 0 }} in:slide>
-	<!-- href={`/courses/${id}`} -->
-	<div class="card-course">
-		<!-- <img id="currentPhoto" src="SomeImage.jpg" onerror="this.onerror=null; this.src='Default.jpg'" alt="" width="100" height="120"> -->
+{#key id}
+	<div out:fade={{ duration: 0 }} in:slide>
+		<!-- href={`/courses/${id}`} -->
+		<div class="card-course">
+			<!-- <img id="currentPhoto" src="SomeImage.jpg" onerror="this.onerror=null; this.src='Default.jpg'" alt="" width="100" height="120"> -->
 
-		<img
-			loading="lazy"
-			src={`/books/${id}.jpg`}
-			onerror="this.onerror=null; this.src='/books/fallback.jpg'"
-			alt={$LL.courses[id].book()}
-		/>
-		<div class="card-inner">
-			<h3>{$LL.courses[id].book()}</h3>
-			<subtitle>{$LL.courses[id].title()}</subtitle>
-			<p>{$LL.courses[id].desc()}</p>
+			<img
+				loading="lazy"
+				src={`/books/${id}.jpg`}
+				onerror="this.onerror=null; this.src='/books/fallback.jpg'"
+				alt={$LL.courses[id].book()}
+			/>
+			<div class="card-inner">
+				<h3>{$LL.courses[id].book()}</h3>
+				<subtitle>{$LL.courses[id].title()}</subtitle>
+				<p>{$LL.courses[id].desc()}</p>
+			</div>
 		</div>
 	</div>
-</div>
+{/key}
 
 <style>
 	subtitle {

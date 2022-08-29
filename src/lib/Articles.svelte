@@ -5,15 +5,16 @@
 <!-- convert wisdoms and articles to {#each} and run through the i18n dict -->
 <bigboy id="wisdoms">
 	<container>
+		<h1>{$LL.wisdoms.title()}</h1>
+		<div target="_blank">{$LL.wisdoms.list.ijaza_1()}</div>
+	</container>
+	<container>
 		<h1>{$LL.articles.title()}</h1>
 		<a target="_blank" href="/{$locale}/articles/knowledge_good_intentions">
 			{$LL.articles.knowledge_good_intentions.title()}
 		</a>
 	</container>
-	<container>
-		<h1>{$LL.wisdoms.title()}</h1>
-		<div target="_blank">{$LL.wisdoms.list.ijaza_1()}</div>
-	</container>
+
 </bigboy>
 
 <style>
@@ -24,6 +25,7 @@
 		justify-content: space-evenly;
 		background-color: var(--secondary-color);
 		color: var(--text-color);
+		padding: 5vh 0 15vh 0;
 	}
 	container {
 		display: flex;
@@ -31,7 +33,6 @@
 		align-items: center;
 		background-color: var(--secondary-color);
 		color: var(--text-color);
-		padding: 5vh 0 15vh 0;
 		gap: 2vh;
 		border-radius: 12px;
 	}
@@ -49,5 +50,11 @@
 	a:hover,
 	div:hover {
 		box-shadow: rgba(44, 105, 70, 0.2) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+	}
+	@media only screen and (max-width: 600px) {
+		bigboy {
+			flex-direction: column;
+			padding: 2vh 0 8vh 0;
+		}
 	}
 </style>
