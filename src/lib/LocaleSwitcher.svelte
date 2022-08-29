@@ -54,13 +54,6 @@
 	  padding: 10px 0;
 	  z-index: 5;
 	}
-	img#logo {
-	  border: 1px black solid;
-	  border-radius: 360px;
-	  max-width: 5vw;
-	  margin: 5px 12px 2px 5px;
-	  margin-left: 70px;
-	}
 	div > div > a {
 	  background-color: var(--accent-color);
 	  color: var(--primary-color);

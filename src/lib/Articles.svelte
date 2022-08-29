@@ -3,7 +3,7 @@
 </script>
 
 <!-- convert wisdoms and articles to {#each} and run through the i18n dict -->
-<bigboy>
+<bigboy id="wisdoms">
 	<container>
 		<h1>{$LL.articles.title()}</h1>
 		<a target="_blank" href="/{$locale}/articles/knowledge_good_intentions">

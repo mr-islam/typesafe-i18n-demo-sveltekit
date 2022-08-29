@@ -5,7 +5,7 @@
   let simpleList = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 </script>
 
-<div class="container">
+<div id="goals" class="container">
   <div class="flex-row">
     <div class="img-left">
       <h1>{$LL.shaykh.heading()}</h1>
