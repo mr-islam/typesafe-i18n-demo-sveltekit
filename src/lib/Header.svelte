@@ -12,27 +12,34 @@
 </script>
 
 <header>
-	<div class="navigation-buttons">
-		<a href="#courses" on:click|preventDefault={scrollIntoView}>{$LL.courses.title()}</a>
-		<a href="#wisdoms" on:click|preventDefault={scrollIntoView}>
-			{$LL.articles.title()}
-			<!--  + $LL.and() + $LL.wisdoms.title() -->
-		</a>
-		<a href="#goals" on:click|preventDefault={scrollIntoView}>{$LL.goals.goal()}</a>
-	</div>
-	<div style="text-align: center; flex: 1;">
+	<div style="flex: 1; display: flex; justify-content: start; gap: 10px;">
 		<a href="/{$locale}">
 			<img alt="Logo of Arabic calligraphy" id="logo" src="/logo-new.jpg" />
 		</a>
-		<br />
-		{#if $LL.center() !== ''}
-			<span>{$LL.center()}</span>
-		{/if}
-		<a href="/{$locale}">
-			<h1>{$LL.title()}</h1>
-		</a>
 
-		<span>{$LL.slogan()}</span>
+		<div style="flex: 1;">
+			{#if $LL.center() !== ''}
+				<span>{$LL.center()}</span>
+			{/if}
+			<a href="/{$locale}">
+				<h1>{$LL.title()}</h1>
+			</a>
+	
+			<span>{$LL.slogan()}</span>
+	
+			
+		</div>
+	</div>
+
+	
+	<div class="navigation-buttons">
+		<a href="#courses" on:click|preventDefault={scrollIntoView}>{$LL.courses.title()}</a> &middot;
+		<a href="#wisdoms" on:click|preventDefault={scrollIntoView}>
+			{$LL.articles.title()}
+			<!--  + $LL.and() + $LL.wisdoms.title() -->
+		</a> &middot;
+		<a href="#goals" on:click|preventDefault={scrollIntoView}>{$LL.goals.goal()}</a>
+		<br />
 	</div>
 
 	<div style="flex: 1; display: flex; justify-content: end;">
@@ -42,11 +49,6 @@
 
 <style>
 	div.navigation-buttons {
-		display: flex;
-		flex: 1;
-		flex-direction: row;
-		align-content: stretch;
-		gap: 10px;
 	}
 	a {
 		all: unset;
@@ -64,12 +66,12 @@
 		left: 30vw;
 		padding: 10px 20px;
 		z-index: 5;
+		margin-top: 10px;
 	}
 	img#logo {
 		border: 1px black solid;
 		border-radius: 360px;
-		max-width: 10vw;
-		margin: 5px 12px 2px 5px;
+		max-width: 6vw;
 	}
 	@media only screen and (max-width: 600px) {
 		img#logo {
