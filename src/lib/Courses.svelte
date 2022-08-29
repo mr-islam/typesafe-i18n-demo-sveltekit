@@ -8,9 +8,13 @@
       .getElementById("section-title")
       .scrollIntoView({ behavior: "smooth" });
   }
-  function scrollToContact() {
-    document.getElementById("contact").scrollIntoView({ behavior: "smooth" });
-  }
+  function scrollIntoView({ target }) {
+		const el = document.querySelector(target.getAttribute('href'))
+		if (!el) return
+		el.scrollIntoView({
+			behavior: 'smooth',
+		})
+	}
 
   let courses = [
     {
@@ -785,10 +789,8 @@
 <div style="text-align: center; padding: 0 0 20px 0;">
   <a
     style="color: #dea300; text-decoration: underline dotted;"
-    href="#"
-    on:click={() => {
-      scrollToContact();
-    }}>{$LL.contact.courses()}</a
+    href="#contact"
+    on:click|preventDefault={scrollIntoView}>{$LL.contact.courses()}</a
   >
 </div>
 
