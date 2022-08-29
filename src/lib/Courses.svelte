@@ -87,7 +87,7 @@
     {
       id: "hadith-adab",
       tags: ["hadith-matn"],
-      level: 2,
+      level: 3,
       action: "later",
       price: "",
       registration: "",
@@ -96,7 +96,7 @@
       id: "hadith-riyad",
       tags: ["hadith-matn"],
       src: "/books/riyad.jpg",
-      level: 3,
+      level: 2,
       book: "",
       action: "later",
       price: "",
@@ -1105,18 +1105,22 @@
   </p>
 {/if}
 
-{#key searchTerm}
   <div id="gallery">
     {#each filteredCourses as course, number}
       <CourseCard2 {number} id={course.id} />
     {/each}
     <br />
   </div>
+  {#key searchTerm}
+
 {/key}
 
 <div style="" id="articles" />
 
 <style>
+  h1 {
+    text-align: center;
+  }
   #section-title {
     padding-top: 10px;
     margin-top: 5vh;

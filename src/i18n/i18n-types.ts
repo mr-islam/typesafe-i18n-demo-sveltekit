@@ -1650,7 +1650,7 @@ type RootTranslation = {
 			 */
 			src: string
 			/**
-			 * Riyad al-Salihin
+			 * Mukktasar Riyad al-Salihin
 			 */
 			book: string
 			explanation: string
@@ -3619,7 +3619,7 @@ export type TranslationFunctions = {
 			 */
 			src: () => LocalizedString
 			/**
-			 * Riyad al-Salihin
+			 * Mukktasar Riyad al-Salihin
 			 */
 			book: () => LocalizedString
 			explanation: () => LocalizedString
