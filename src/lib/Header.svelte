@@ -14,10 +14,13 @@
 <header>
 	<div class="navigation-buttons">
 		<a href="#courses" on:click|preventDefault={scrollIntoView}>{$LL.courses.title()}</a>
+		<a href="#wisdoms" on:click|preventDefault={scrollIntoView}>
+			{$LL.articles.title()}
+			<!--  + $LL.and() + $LL.wisdoms.title() -->
+		</a>
 		<a href="#goals" on:click|preventDefault={scrollIntoView}>{$LL.goals.goal()}</a>
-		<a href="#wisdoms" on:click|preventDefault={scrollIntoView}>{$LL.articles.title() + $LL.and() + $LL.wisdoms.title()}</a>
 	</div>
-	<div style="text-align: center;">
+	<div style="text-align: center; flex: 1;">
 		<a href="/{$locale}">
 			<img alt="Logo of Arabic calligraphy" id="logo" src="/logo-new.jpg" />
 		</a>
@@ -32,18 +35,18 @@
 		<span>{$LL.slogan()}</span>
 	</div>
 
-	<LocaleSwitcher />
+	<div style="flex: 1; display: flex; justify-content: end;">
+		<LocaleSwitcher />
+	</div>
 </header>
 
 <style>
 	div.navigation-buttons {
 		display: flex;
+		flex: 1;
 		flex-direction: row;
-		max-width: 200px;
-		justify-content: center;
 		align-content: stretch;
 		gap: 10px;
-		flex-wrap: wrap;
 	}
 	a {
 		all: unset;
@@ -58,7 +61,6 @@
 		display: flex;
 		flex-direction: row;
 		align-items: center;
-		justify-content: space-between;
 		left: 30vw;
 		padding: 10px 20px;
 		z-index: 5;
@@ -66,7 +68,7 @@
 	img#logo {
 		border: 1px black solid;
 		border-radius: 360px;
-		max-width: 5vw;
+		max-width: 10vw;
 		margin: 5px 12px 2px 5px;
 	}
 	@media only screen and (max-width: 600px) {
