@@ -80,7 +80,7 @@ type RootTranslation = {
 		 */
 		subheading: string
 		/**
-		 * Shaykh Abd al-Rahman al-Sha’ar began seeking knowledge at a young age, being nurtured by scholars and those who love knowledge. He dedicated his life to the service of Islam and studied complete curriculums in all its areas, including: Quran, Hadith, Fiqh, Aqida, Tasawwuf, Arabic and its sciences, and more. He received all this divine knowledge at the hands of lordly scholars, attaining full license to teach all the inner and the outer religious sciences from many of the top scholars of the past century. Today, he dedicates himself to producing both books  and inheritors of the highest standard.
+		 * Shaykh Abd al-Rahman al-Sha’ar began seeking knowledge at a young age, being nurtured by scholars and those who love knowledge. He dedicated his life to the service of Islam and studied complete curriculums in all its areas, including: Quran, Hadith, Fiqh, Aqida, Tasawwuf, Arabic and its sciences, and more. He received all this divine knowledge at the hands of lordly scholars, attaining full license to teach all the inner and the outer religious sciences from many of the top scholars of the past century. Today, he dedicates himself to producing both books and scholars of the highest standard.
 		 */
 		short_bio: string
 		/**
@@ -146,7 +146,7 @@ type RootTranslation = {
 		 */
 		'5': string
 		/**
-		 * Explaining the detailed rulings of the Divine law of Allah (Shariʿa) in accordance with the Four Imams – Allah be pleased upon them. Thus, a Muslim can apply his religion correctly in accordance with the pure Sharia, and his actions can be built upon Fiqh and sound knowledge, allowing one to worship Allah Almighty based upon guidance and leave the prison of ignorance and the forbidden..
+		 * Explaining the detailed rulings of the Divine law of Allah (Shariʿa) in accordance with the Four Imams – Allah be pleased upon them. Thus, a Muslim can apply his religion correctly in accordance with the pure Sharia, and his actions can be built upon Fiqh and sound knowledge, allowing one to worship Allah Almighty based upon guidance and leave the prison of ignorance and the forbidden.
 		 */
 		'6': string
 		/**
@@ -166,7 +166,7 @@ type RootTranslation = {
 		 */
 		'10': string
 		/**
-		 * Our goal
+		 * Our Goal
 		 */
 		goal: string
 		/**
@@ -2049,7 +2049,7 @@ export type TranslationFunctions = {
 		 */
 		subheading: () => LocalizedString
 		/**
-		 * Shaykh Abd al-Rahman al-Sha’ar began seeking knowledge at a young age, being nurtured by scholars and those who love knowledge. He dedicated his life to the service of Islam and studied complete curriculums in all its areas, including: Quran, Hadith, Fiqh, Aqida, Tasawwuf, Arabic and its sciences, and more. He received all this divine knowledge at the hands of lordly scholars, attaining full license to teach all the inner and the outer religious sciences from many of the top scholars of the past century. Today, he dedicates himself to producing both books  and inheritors of the highest standard.
+		 * Shaykh Abd al-Rahman al-Sha’ar began seeking knowledge at a young age, being nurtured by scholars and those who love knowledge. He dedicated his life to the service of Islam and studied complete curriculums in all its areas, including: Quran, Hadith, Fiqh, Aqida, Tasawwuf, Arabic and its sciences, and more. He received all this divine knowledge at the hands of lordly scholars, attaining full license to teach all the inner and the outer religious sciences from many of the top scholars of the past century. Today, he dedicates himself to producing both books and scholars of the highest standard.
 		 */
 		short_bio: () => LocalizedString
 		/**
@@ -2115,7 +2115,7 @@ export type TranslationFunctions = {
 		 */
 		'5': () => LocalizedString
 		/**
-		 * Explaining the detailed rulings of the Divine law of Allah (Shariʿa) in accordance with the Four Imams – Allah be pleased upon them. Thus, a Muslim can apply his religion correctly in accordance with the pure Sharia, and his actions can be built upon Fiqh and sound knowledge, allowing one to worship Allah Almighty based upon guidance and leave the prison of ignorance and the forbidden..
+		 * Explaining the detailed rulings of the Divine law of Allah (Shariʿa) in accordance with the Four Imams – Allah be pleased upon them. Thus, a Muslim can apply his religion correctly in accordance with the pure Sharia, and his actions can be built upon Fiqh and sound knowledge, allowing one to worship Allah Almighty based upon guidance and leave the prison of ignorance and the forbidden.
 		 */
 		'6': () => LocalizedString
 		/**
@@ -2135,7 +2135,7 @@ export type TranslationFunctions = {
 		 */
 		'10': () => LocalizedString
 		/**
-		 * Our goal
+		 * Our Goal
 		 */
 		goal: () => LocalizedString
 		/**

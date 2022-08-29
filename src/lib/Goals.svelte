@@ -49,6 +49,7 @@
   }
   h1 {
     margin-bottom: 20px;
+    text-align: center;
   }
   div.container {
     background: #353640;
