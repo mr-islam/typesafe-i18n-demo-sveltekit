@@ -26,6 +26,10 @@ type RootTranslation = {
 	 * ltr
 	 */
 	direction: string
+	/**
+	 *  and 
+	 */
+	and: string
 	coursePage: {
 		/**
 		 * About this course
@@ -1991,6 +1995,10 @@ export type TranslationFunctions = {
 	 * ltr
 	 */
 	direction: () => LocalizedString
+	/**
+	 *  and 
+	 */
+	and: () => LocalizedString
 	coursePage: {
 		/**
 		 * About this course

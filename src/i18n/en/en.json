@@ -2,6 +2,7 @@
   "title": "Knowledge & Insight",
   "center": "The Center For",
   "direction": "ltr",
+  "and": " and ",
   "coursePage": {
     "about": "About this course"
   },

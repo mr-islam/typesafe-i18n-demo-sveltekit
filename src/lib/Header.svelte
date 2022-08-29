@@ -12,12 +12,10 @@
 </script>
 
 <header>
-	<div>
-		<a href="#courses" on:click|preventDefault={scrollIntoView}>المواد</a>
-		&middot;
-		<a href="#wisdoms" on:click|preventDefault={scrollIntoView}>الحكم والمقالات</a>
-		&middot;
-		<a href="#goals" on:click|preventDefault={scrollIntoView}>الأهداف</a>
+	<div class="navigation-buttons">
+		<a href="#courses" on:click|preventDefault={scrollIntoView}>{$LL.courses.title()}</a>
+		<a href="#goals" on:click|preventDefault={scrollIntoView}>{$LL.goals.goal()}</a>
+		<a href="#wisdoms" on:click|preventDefault={scrollIntoView}>{$LL.articles.title() + $LL.and() + $LL.wisdoms.title()}</a>
 	</div>
 	<div style="text-align: center;">
 		<a href="/{$locale}">
@@ -27,7 +25,10 @@
 		{#if $LL.center() !== ''}
 			<span>{$LL.center()}</span>
 		{/if}
-		<h1>{$LL.title()}</h1>
+		<a href="/{$locale}">
+			<h1>{$LL.title()}</h1>
+		</a>
+
 		<span>{$LL.slogan()}</span>
 	</div>
 
@@ -35,6 +36,15 @@
 </header>
 
 <style>
+	div.navigation-buttons {
+		display: flex;
+		flex-direction: row;
+		max-width: 200px;
+		justify-content: center;
+		align-content: stretch;
+		gap: 10px;
+		flex-wrap: wrap;
+	}
 	a {
 		all: unset;
 		color: #4a5d33;
