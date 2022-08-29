@@ -67,6 +67,7 @@
 		padding: 10px 20px;
 		z-index: 5;
 		margin-top: 10px;
+		padding: 1rem 2rem;
 	}
 	img#logo {
 		border: 1px black solid;
