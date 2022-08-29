@@ -38,8 +38,8 @@
 <svelte:window on:popstate={handlePopStateEvent} />
 
 <select id="select-lang" on:change={() => switchLocale(document.getElementById("select-lang").selectedOptions[0].value)}>
-	<option value={"ar"} class:active={$locale == "ar"}>العربية</option>
-	<option value={"en"} class:active={$locale == "ar"}>English</option>
+	<option value={"ar"} selected={$locale == "ar"}>العربية</option>
+	<option value={"en"} selected={$locale == "en"}>English</option>
 </select>
 
 <style>
