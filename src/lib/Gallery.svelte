@@ -105,7 +105,7 @@
   }
   div :global(.swiper) {
     width: 100%;
-    height: 70vh;
+    height: 60vh;
     background-color: #ffffff;
 
   }
