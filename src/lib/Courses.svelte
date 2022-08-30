@@ -1009,7 +1009,7 @@ import Contact from "$lib/elements/Contact.svelte";
       ></label
     >
   </p>
-{:else if searchTerm == "hadith" || searchTerm == "matn" || searchTerm == "ulum"}
+{:else if searchTerm == "hadith" || searchTerm == "matn" || searchTerm == "hadith-ulum"}
   <h3 id="section-title" style="margin-top: 5vh; text-align: center;">
     {$LL.tags.hadith()}
   </h3>
@@ -1023,7 +1023,7 @@ import Contact from "$lib/elements/Contact.svelte";
       ></label
     >
     <label
-      ><input type="radio" bind:group={searchTerm} value="ulum" /><span
+      ><input type="radio" bind:group={searchTerm} value="hadith-ulum" /><span
         >{$LL.tags.hadith_sciences()}</span
       ></label
     >
