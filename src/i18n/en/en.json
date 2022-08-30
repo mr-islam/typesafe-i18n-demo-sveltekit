@@ -764,7 +764,11 @@
     "contact_us": "Get in touch with us through ",
     "email": "Email",
     "or": " or ",
-    "telegram": "Telegram"
+    "telegram": "Telegram",
+    "books": {
+      "text": "To obtain these books, please contact Ustadh Nael Hajjar: ",
+      "number": "+9613040478"
+    }
   },
   "payment": {
     "successful_alert": "Payment successful!",

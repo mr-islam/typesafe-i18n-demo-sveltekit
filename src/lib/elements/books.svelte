@@ -1,6 +1,6 @@
 <script>
   import { Swiper, SwiperSlide } from "swiper/svelte";
-  import { locale } from '$i18n/i18n-svelte'
+  import LL, { locale } from '$i18n/i18n-svelte'
   import { onMount, afterUpdate } from "svelte";
 
   // Import Swiper styles
@@ -65,10 +65,22 @@
         <img loading="lazy" src="/books/suyuti.jpg" alt="suyuti" />
       </SwiperSlide>
     </Swiper>
+
+    <p> {$LL.contact.books.text()} <a href="tel:+9613040478">{$LL.contact.books.number()}</a></p>
   </div>
 {/key}
 
 <style>
+  p {
+    color: white;
+    border: 1px solid gold;
+    padding: 6px;
+    border-radius: 12px;
+  }
+  a {
+    font-weight: bold;
+    color: var(--secondary-color);
+  }
   img {
     max-width: 100%;
   }

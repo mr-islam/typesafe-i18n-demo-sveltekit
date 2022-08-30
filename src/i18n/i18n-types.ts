@@ -1961,6 +1961,16 @@ type RootTranslation = {
 		 * Telegram
 		 */
 		telegram: string
+		books: {
+			/**
+			 * To obtain these books, please contact Ustadh Nael Hajjar: 
+			 */
+			text: string
+			/**
+			 * +9613040478
+			 */
+			number: string
+		}
 	}
 	payment: {
 		/**
@@ -3930,6 +3940,16 @@ export type TranslationFunctions = {
 		 * Telegram
 		 */
 		telegram: () => LocalizedString
+		books: {
+			/**
+			 * To obtain these books, please contact Ustadh Nael Hajjar: 
+			 */
+			text: () => LocalizedString
+			/**
+			 * +9613040478
+			 */
+			number: () => LocalizedString
+		}
 	}
 	payment: {
 		/**
