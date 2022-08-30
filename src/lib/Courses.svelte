@@ -1147,9 +1147,19 @@ import Contact from "$lib/elements/Contact.svelte";
     margin-top: 5vh;
     text-align: center;
     font-size: 1.5em;
+    max-width: 300px;
+    /* background-color: #fbfff7; */
+    background-color: rgb(240, 201, 150);
+    border-radius: 4px;
+    padding: 10px;
+    font-weight: bold;
+    justify-self: stretch;
+    align-self: stretch;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    border: none;    margin: 0 auto;
   }
   #section-explanation {
-    margin: 2px 15vw;
+    margin: 10px 15vw;
     text-align: center;
     font-size: 1.25em;
   }
