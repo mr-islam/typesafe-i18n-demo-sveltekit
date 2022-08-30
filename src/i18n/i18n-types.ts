@@ -379,10 +379,6 @@ type RootTranslation = {
 		title: string
 		'tajwid-qaida': {
 			/**
-			 * /books/tajwid-qaida.jpg
-			 */
-			src: string
-			/**
 			 * Tajwid: Level 1
 			 */
 			title: string
@@ -403,10 +399,6 @@ type RootTranslation = {
 			title: string
 			desc: string
 			/**
-			 * /books/tajwid-hidayatrahman.jpg
-			 */
-			src: string
-			/**
 			 * Hidayat al-Rahman
 			 */
 			book: string
@@ -421,10 +413,6 @@ type RootTranslation = {
 			 */
 			desc: string
 			/**
-			 * /books/tajwid-thani.jpg
-			 */
-			src: string
-			/**
 			 * Al-Mustawa al-Thani
 			 */
 			book: string
@@ -435,10 +423,6 @@ type RootTranslation = {
 			 */
 			title: string
 			desc: string
-			/**
-			 * /books/tajwid-jazari.jpg
-			 */
-			src: string
 			/**
 			 * Sharh al-Jazariyyah
 			 */
@@ -454,10 +438,6 @@ type RootTranslation = {
 			 */
 			desc: string
 			/**
-			 * /books/mushaf.jpg
-			 */
-			src: string
-			/**
 			 * Quran Juz 30: ʿAmma
 			 */
 			book: string
@@ -468,10 +448,6 @@ type RootTranslation = {
 			 */
 			title: string
 			desc: string
-			/**
-			 * /books/mushaf.jpg
-			 */
-			src: string
 			/**
 			 * The Entire Quran
 			 */
@@ -487,10 +463,6 @@ type RootTranslation = {
 			 */
 			desc: string
 			/**
-			 * /books/mushaf.jpg
-			 */
-			src: string
-			/**
 			 * The Entire Quran for Ijaza
 			 */
 			book: string
@@ -504,10 +476,6 @@ type RootTranslation = {
 			 * Essential rules for a Muslim's worship and all things related to that
 			 */
 			desc: string
-			/**
-			 * /books/fiqh-nur.jpg
-			 */
-			src: string
 			/**
 			 * Nur al-Idah
 			 */
@@ -524,10 +492,6 @@ type RootTranslation = {
 			 */
 			desc: string
 			/**
-			 * /books/fiqh-quduri.jpg
-			 */
-			src: string
-			/**
 			 * Mukhtasar al-Quduri
 			 */
 			book: string
@@ -542,10 +506,6 @@ type RootTranslation = {
 			 * The obligatory beliefs for every Muslim in a brief and simple text
 			 */
 			desc: string
-			/**
-			 * /books/aqidah-ahl-sunnah.jpg
-			 */
-			src: string
 			/**
 			 * Aqida Ahl al-Sunnah
 			 */
@@ -562,10 +522,6 @@ type RootTranslation = {
 			 */
 			desc: string
 			/**
-			 * /books/tasawwuf-rawdah.jpg
-			 */
-			src: string
-			/**
 			 * Radwat al-Ushaq
 			 */
 			book: string
@@ -580,10 +536,6 @@ type RootTranslation = {
 			 * Rectifying worship, regular actions, and repairing the bad traits of the heart
 			 */
 			desc: string
-			/**
-			 * /books/tasawwuf-tuhfah.jpg
-			 */
-			src: string
 			/**
 			 * Tuhfat al-Salikin
 			 */
@@ -600,10 +552,6 @@ type RootTranslation = {
 			 */
 			desc: string
 			/**
-			 * /books/tasawwuf-fuyud.jpg
-			 */
-			src: string
-			/**
 			 * Al-Fuyud al-Ahmadiyyah
 			 */
 			book: string
@@ -618,7 +566,6 @@ type RootTranslation = {
 			 * This is placeholder of some text, we need to write later
 			 */
 			desc: string
-			src: string
 			/**
 			 * Youth Program
 			 */
@@ -634,7 +581,6 @@ type RootTranslation = {
 			 * This is placeholder of some text, we need to write later
 			 */
 			desc: string
-			src: string
 			/**
 			 * Women's Program
 			 */
@@ -651,10 +597,6 @@ type RootTranslation = {
 			 */
 			desc: string
 			/**
-			 * /books/natiq-um1.jpg
-			 */
-			src: string
-			/**
 			 * Silsilah al-Lisan: 1
 			 */
 			book: string
@@ -669,10 +611,6 @@ type RootTranslation = {
 			 * Students begin learning a foundation in Arabic grammar and sentence construction.
 			 */
 			desc: string
-			/**
-			 * /books/natiq-um2.jpg
-			 */
-			src: string
 			/**
 			 * Silsilah al-Lisan: 2
 			 */
@@ -689,10 +627,6 @@ type RootTranslation = {
 			 */
 			desc: string
 			/**
-			 * /books/natiq-um3.jpg
-			 */
-			src: string
-			/**
 			 * Silsilah al-Lisan: 3
 			 */
 			book: string
@@ -708,10 +642,6 @@ type RootTranslation = {
 			 */
 			desc: string
 			/**
-			 * /books/natiq-um4.jpg
-			 */
-			src: string
-			/**
 			 * Silsilah al-Lisan: 4
 			 */
 			book: string
@@ -723,7 +653,6 @@ type RootTranslation = {
 			 */
 			title: string
 			desc: string
-			src: string
 			/**
 			 * Mabadiʾ Durus al-Arabiyyah
 			 */
@@ -736,7 +665,6 @@ type RootTranslation = {
 			 */
 			title: string
 			desc: string
-			src: string
 			/**
 			 * Al-Tawdih: Sharh al-Ajurumiyyah
 			 */
@@ -749,7 +677,6 @@ type RootTranslation = {
 			 */
 			title: string
 			desc: string
-			src: string
 			/**
 			 * Al-Tashil: Sharh al-Ajurumiyyah
 			 */
@@ -762,7 +689,6 @@ type RootTranslation = {
 			 */
 			title: string
 			desc: string
-			src: string
 			/**
 			 * Durus Nahwiyya
 			 */
@@ -775,7 +701,6 @@ type RootTranslation = {
 			 */
 			title: string
 			desc: string
-			src: string
 			/**
 			 * Sharh Qatr al-Nada
 			 */
@@ -788,7 +713,6 @@ type RootTranslation = {
 			 */
 			title: string
 			desc: string
-			src: string
 			/**
 			 * Al-Alfiyyah
 			 */
@@ -801,7 +725,6 @@ type RootTranslation = {
 			 */
 			title: string
 			desc: string
-			src: string
 			/**
 			 * Sharh ibn Aqīl
 			 */
@@ -814,7 +737,6 @@ type RootTranslation = {
 			 */
 			title: string
 			desc: string
-			src: string
 			/**
 			 * Al-Amthilah
 			 */
@@ -827,7 +749,6 @@ type RootTranslation = {
 			 */
 			title: string
 			desc: string
-			src: string
 			/**
 			 * Sharh Bina al-Afʿāl
 			 */
@@ -840,7 +761,6 @@ type RootTranslation = {
 			 */
 			title: string
 			desc: string
-			src: string
 			/**
 			 * Shadha al-ʿArf
 			 */
@@ -853,7 +773,6 @@ type RootTranslation = {
 			 */
 			title: string
 			desc: string
-			src: string
 			/**
 			 * Durus al-balagha
 			 */
@@ -866,7 +785,6 @@ type RootTranslation = {
 			 */
 			title: string
 			desc: string
-			src: string
 			/**
 			 * Tuhfat al-Ikhwan
 			 */
@@ -879,7 +797,6 @@ type RootTranslation = {
 			 */
 			title: string
 			desc: string
-			src: string
 			/**
 			 * Mukhtasar al-Maʿāni
 			 */
@@ -892,7 +809,6 @@ type RootTranslation = {
 			 */
 			title: string
 			desc: string
-			src: string
 			/**
 			 * Al-Balaghah al-Arabiyyah
 			 */
@@ -905,7 +821,6 @@ type RootTranslation = {
 			 */
 			title: string
 			desc: string
-			src: string
 			/**
 			 * Al-Burdah: Explanation, Grammar & Balaghah
 			 */
@@ -922,10 +837,6 @@ type RootTranslation = {
 			 */
 			desc: string
 			/**
-			 * /books/aqidah-sharh-nazm.jpg
-			 */
-			src: string
-			/**
 			 * Nazm Aqida Ahl al-Sunnah
 			 */
 			book: string
@@ -940,10 +851,6 @@ type RootTranslation = {
 			 * An expert explanation for this major text. This level is sufficient for students not specialzing in beliefs
 			 */
 			desc: string
-			/**
-			 * /books/aqidah-tali.jpg
-			 */
-			src: string
 			/**
 			 * Taliʿ al-Bushra
 			 */
@@ -960,10 +867,6 @@ type RootTranslation = {
 			 */
 			desc: string
 			/**
-			 * /books/aqidah-miftah.jpg
-			 */
-			src: string
-			/**
 			 * Miftah al-Jannah
 			 */
 			book: string
@@ -978,10 +881,6 @@ type RootTranslation = {
 			 * A didactic poem containing most topics of belief, decorated with glimpses of higher truths
 			 */
 			desc: string
-			/**
-			 * /books/aqidah-jawharah.jpg
-			 */
-			src: string
 			/**
 			 * Jawharat al-Tawhid
 			 */
@@ -998,10 +897,6 @@ type RootTranslation = {
 			 */
 			desc: string
 			/**
-			 * /books/aqidah-taftazani.jpg
-			 */
-			src: string
-			/**
 			 * Sharh al-Nasafiyyah
 			 */
 			book: string
@@ -1016,10 +911,6 @@ type RootTranslation = {
 			 * A deep dive and joruney through the range of views
 			 */
 			desc: string
-			/**
-			 * /books/aqidah-tahrir.jpg
-			 */
-			src: string
 			/**
 			 * Tahrir al-Matalib
 			 */
@@ -1036,10 +927,6 @@ type RootTranslation = {
 			 */
 			desc: string
 			/**
-			 * /books/fiqh-maslak.jpg
-			 */
-			src: string
-			/**
 			 * Maslak al-Najah
 			 */
 			book: string
@@ -1054,10 +941,6 @@ type RootTranslation = {
 			 * A later work that gathers what came before it to explain the most important Hanafi book
 			 */
 			desc: string
-			/**
-			 * /books/fiqh-lubab.jpg
-			 */
-			src: string
 			/**
 			 * Al-Lubab
 			 */
@@ -1074,10 +957,6 @@ type RootTranslation = {
 			 */
 			desc: string
 			/**
-			 * /books/fiqh-hidayah.jpg
-			 */
-			src: string
-			/**
 			 * Al-Hidayah
 			 */
 			book: string
@@ -1092,10 +971,6 @@ type RootTranslation = {
 			 * The book relied upon for issuing rulings in the Hanafi madhhab
 			 */
 			desc: string
-			/**
-			 * /books/fiqh-rad.jpg
-			 */
-			src: string
 			/**
 			 * Radd al-Muhtar
 			 */
@@ -1112,10 +987,6 @@ type RootTranslation = {
 			 */
 			desc: string
 			/**
-			 * /books/fiqh-manar.jpg
-			 */
-			src: string
-			/**
 			 * Sharh Mukhtasar al-Manar
 			 */
 			book: string
@@ -1127,10 +998,6 @@ type RootTranslation = {
 			 */
 			title: string
 			desc: string
-			/**
-			 * /books/fiqh-sharhmanar.jpg
-			 */
-			src: string
 			/**
 			 * Sharh al-Manar
 			 */
@@ -1144,10 +1011,6 @@ type RootTranslation = {
 			title: string
 			desc: string
 			/**
-			 * /books/fiqh-zad.jpg
-			 */
-			src: string
-			/**
 			 * Zad al-Muktafi
 			 */
 			book: string
@@ -1159,7 +1022,6 @@ type RootTranslation = {
 			 */
 			title: string
 			desc: string
-			src: string
 			/**
 			 * Al-Talwih maʿa al-Tawdih
 			 */
@@ -1172,10 +1034,6 @@ type RootTranslation = {
 			 */
 			title: string
 			desc: string
-			/**
-			 * /books/fiqh-zaydan.jpg
-			 */
-			src: string
 			/**
 			 * Al-Wajiz Fi al-Qawaid
 			 */
@@ -1192,10 +1050,6 @@ type RootTranslation = {
 			 */
 			desc: string
 			/**
-			 * /books/fiqh-isad.jpg
-			 */
-			src: string
-			/**
 			 * Sharh Uqud Rasm al-Mufti
 			 */
 			book: string
@@ -1207,10 +1061,6 @@ type RootTranslation = {
 			 */
 			title: string
 			desc: string
-			/**
-			 * /books/fiqh-ghamz.jpg
-			 */
-			src: string
 			/**
 			 * Ghamz al-Basair
 			 */
@@ -1224,10 +1074,6 @@ type RootTranslation = {
 			title: string
 			desc: string
 			/**
-			 * /books/fiqh-maram.jpg
-			 */
-			src: string
-			/**
 			 * Sharh Bulugh al-Maram
 			 */
 			book: string
@@ -1239,10 +1085,6 @@ type RootTranslation = {
 			 */
 			title: string
 			desc: string
-			/**
-			 * /books/fiqh-ila.jpg
-			 */
-			src: string
 			/**
 			 * Ila al-Sunan
 			 */
@@ -1259,10 +1101,6 @@ type RootTranslation = {
 			 */
 			desc: string
 			/**
-			 * /books/tasawwuf-bidayah.jpg
-			 */
-			src: string
-			/**
 			 * Bidayat al-Hidayah
 			 */
 			book: string
@@ -1275,10 +1113,6 @@ type RootTranslation = {
 			title: string
 			desc: string
 			/**
-			 * /books/tasawwuf-taj.jpg
-			 */
-			src: string
-			/**
 			 * Taj al-Arus
 			 */
 			book: string
@@ -1290,10 +1124,6 @@ type RootTranslation = {
 			 */
 			title: string
 			desc: string
-			/**
-			 * /books/tasawwuf-uyub.jpg
-			 */
-			src: string
 			/**
 			 * Uyub al-Nafs wa Adwiyatuha
 			 */
@@ -1310,10 +1140,6 @@ type RootTranslation = {
 			 */
 			desc: string
 			/**
-			 * /books/tasawwuf-qasd.jpg
-			 */
-			src: string
-			/**
 			 * Sharh al-Muntaqa min al-Qawaid
 			 */
 			book: string
@@ -1325,10 +1151,6 @@ type RootTranslation = {
 			 */
 			title: string
 			desc: string
-			/**
-			 * /books/tasawwuf-mabahith.jpg
-			 */
-			src: string
 			/**
 			 * Sharh al-Mabahith al-Asliyyah
 			 */
@@ -1342,10 +1164,6 @@ type RootTranslation = {
 			title: string
 			desc: string
 			/**
-			 * /books/tasawwuf-manazil.jpg
-			 */
-			src: string
-			/**
 			 * Manazil al-Saʾirin
 			 */
 			book: string
@@ -1358,10 +1176,6 @@ type RootTranslation = {
 			title: string
 			desc: string
 			/**
-			 * /books/tasawwuf-himam.jpg
-			 */
-			src: string
-			/**
 			 * Iqaz al-Himam
 			 */
 			book: string
@@ -1373,10 +1187,6 @@ type RootTranslation = {
 			 */
 			title: string
 			desc: string
-			/**
-			 * /books/tasawwuf-wasaya.jpg
-			 */
-			src: string
 			/**
 			 * Al-Wasaya
 			 */
@@ -1393,10 +1203,6 @@ type RootTranslation = {
 			 */
 			desc: string
 			/**
-			 * /books/tasawwuf-qawanin.jpg
-			 */
-			src: string
-			/**
 			 * Qawanin Hikam al-Ishraq
 			 */
 			book: string
@@ -1408,10 +1214,6 @@ type RootTranslation = {
 			 */
 			title: string
 			desc: string
-			/**
-			 * /books/tasawwuf-naqsh.jpg
-			 */
-			src: string
 			/**
 			 * Naqsh al-Fusus
 			 */
@@ -1425,10 +1227,6 @@ type RootTranslation = {
 			title: string
 			desc: string
 			/**
-			 * /books/tasawwuf-insankamil.jpg
-			 */
-			src: string
-			/**
 			 * Al-Insan al-Kamil
 			 */
 			book: string
@@ -1440,10 +1238,6 @@ type RootTranslation = {
 			 */
 			title: string
 			desc: string
-			/**
-			 * /books/tasawwuf-fusus.jpg
-			 */
-			src: string
 			/**
 			 * Fusus al-Hikam
 			 */
@@ -1490,10 +1284,6 @@ type RootTranslation = {
 			 */
 			desc: string
 			/**
-			 * /books/tafsir-durrah.jpg
-			 */
-			src: string
-			/**
 			 * Durrah al-Tafasir
 			 */
 			book: string
@@ -1509,10 +1299,6 @@ type RootTranslation = {
 			 */
 			desc: string
 			/**
-			 * /books/tafsir-nasafi.jpg
-			 */
-			src: string
-			/**
 			 * Tafsir al-Nasafi
 			 */
 			book: string
@@ -1524,10 +1310,6 @@ type RootTranslation = {
 			 */
 			title: string
 			desc: string
-			/**
-			 * /books/tafsir-baydawi.jpg
-			 */
-			src: string
 			/**
 			 * Tafsir al-Baydawi
 			 */
@@ -1541,10 +1323,6 @@ type RootTranslation = {
 			title: string
 			desc: string
 			/**
-			 * /books/tafsir-qurtubi.jpg
-			 */
-			src: string
-			/**
 			 * Tafsir al-Qurtubi
 			 */
 			book: string
@@ -1556,10 +1334,6 @@ type RootTranslation = {
 			 */
 			title: string
 			desc: string
-			/**
-			 * /books/tafsir-bahr.jpg
-			 */
-			src: string
 			/**
 			 * Mukhtasar al-Bahr al-Madid
 			 */
@@ -1573,10 +1347,6 @@ type RootTranslation = {
 			title: string
 			desc: string
 			/**
-			 * /books/tafsir-waridat.jpg
-			 */
-			src: string
-			/**
 			 * Al-Waridat al-Ilahiyyah
 			 */
 			book: string
@@ -1588,10 +1358,6 @@ type RootTranslation = {
 			 */
 			title: string
 			desc: string
-			/**
-			 * /books/tafsir-mawaqif.jpg
-			 */
-			src: string
 			/**
 			 * Al-Mawaqif al-Ruhaniyyah
 			 */
@@ -1608,10 +1374,6 @@ type RootTranslation = {
 			 */
 			desc: string
 			/**
-			 * /books/hadith-nawawi.jpg
-			 */
-			src: string
-			/**
 			 * The 40 Nawawi Hadith
 			 */
 			book: string
@@ -1626,10 +1388,6 @@ type RootTranslation = {
 			 * A book of Prophetic, educational ettiquette that inspire the Ummah to folow and be adorned by them
 			 */
 			desc: string
-			/**
-			 * /books/hadith-adab.jpg
-			 */
-			src: string
 			/**
 			 * Al-Adab al-Mufrad
 			 */
@@ -1646,10 +1404,6 @@ type RootTranslation = {
 			 */
 			desc: string
 			/**
-			 * /books/hadith-riyad.jpg
-			 */
-			src: string
-			/**
 			 * Mukktasar Riyad al-Salihin
 			 */
 			book: string
@@ -1661,10 +1415,6 @@ type RootTranslation = {
 			 */
 			title: string
 			desc: string
-			/**
-			 * /books/hadith-bukhari.jpg
-			 */
-			src: string
 			/**
 			 * Sahih al-Bukhari
 			 */
@@ -1678,10 +1428,6 @@ type RootTranslation = {
 			title: string
 			desc: string
 			/**
-			 * /books/hadith-muslim.jpg
-			 */
-			src: string
-			/**
 			 * Sahih Muslim
 			 */
 			book: string
@@ -1693,10 +1439,6 @@ type RootTranslation = {
 			 */
 			title: string
 			desc: string
-			/**
-			 * /books/hadith-tirmidhi.jpg
-			 */
-			src: string
 			/**
 			 * Sunan al-Tirmidhi
 			 */
@@ -1710,10 +1452,6 @@ type RootTranslation = {
 			title: string
 			desc: string
 			/**
-			 * /books/hadith-abudawud.jpg
-			 */
-			src: string
-			/**
 			 * Sunan Abu Dawud
 			 */
 			book: string
@@ -1725,10 +1463,6 @@ type RootTranslation = {
 			 */
 			title: string
 			desc: string
-			/**
-			 * /books/hadith-ibnmajah.jpg
-			 */
-			src: string
 			/**
 			 * Sunan ibn Majah
 			 */
@@ -1742,10 +1476,6 @@ type RootTranslation = {
 			title: string
 			desc: string
 			/**
-			 * /books/hadith-nasai.jpg
-			 */
-			src: string
-			/**
 			 * Sunan al-Nasai
 			 */
 			book: string
@@ -1757,10 +1487,6 @@ type RootTranslation = {
 			 */
 			title: string
 			desc: string
-			/**
-			 * /books/hadith-musnad.jpg
-			 */
-			src: string
 			/**
 			 * Musnad Ahmad
 			 */
@@ -1774,10 +1500,6 @@ type RootTranslation = {
 			title: string
 			desc: string
 			/**
-			 * /books/hadith-darimi.jpg
-			 */
-			src: string
-			/**
 			 * Sunan al-Darimi
 			 */
 			book: string
@@ -1789,10 +1511,6 @@ type RootTranslation = {
 			 */
 			title: string
 			desc: string
-			/**
-			 * /books/hadith-muwatta.jpg
-			 */
-			src: string
 			/**
 			 * Al-Muwatta
 			 */
@@ -1806,10 +1524,6 @@ type RootTranslation = {
 			title: string
 			desc: string
 			/**
-			 * /books/hadith-umdah.jpg
-			 */
-			src: string
-			/**
 			 * Umdah al-Ahkam
 			 */
 			book: string
@@ -1822,10 +1536,6 @@ type RootTranslation = {
 			title: string
 			desc: string
 			/**
-			 * /books/hadith-bulugh.jpg
-			 */
-			src: string
-			/**
 			 * Bulugh al-Maram
 			 */
 			book: string
@@ -1837,10 +1547,6 @@ type RootTranslation = {
 			 */
 			title: string
 			desc: string
-			/**
-			 * /books/hadith-jami-suyuti.jpg
-			 */
-			src: string
 			/**
 			 * Al-Jami al-Saghir
 			 */
@@ -1860,10 +1566,6 @@ type RootTranslation = {
 			 */
 			desc: string
 			/**
-			 * /books/hadith-bayquni.jpg
-			 */
-			src: string
-			/**
 			 * Sharh al-Bayquniyyah
 			 */
 			book: string
@@ -1875,10 +1577,6 @@ type RootTranslation = {
 			 */
 			title: string
 			desc: string
-			/**
-			 * /books/hadith-nuzhah.jpg
-			 */
-			src: string
 			/**
 			 * Nuzhah al-Nazar
 			 */
@@ -1892,10 +1590,6 @@ type RootTranslation = {
 			title: string
 			desc: string
 			/**
-			 * /books/hadith-salah.jpg
-			 */
-			src: string
-			/**
 			 * Muqaddimah Ibn al-Salah
 			 */
 			book: string
@@ -1907,10 +1601,6 @@ type RootTranslation = {
 			 */
 			title: string
 			desc: string
-			/**
-			 * /books/hadith-tadrib.jpg
-			 */
-			src: string
 			/**
 			 * Tadrib al-Rawi
 			 */
@@ -1927,10 +1617,6 @@ type RootTranslation = {
 			 */
 			desc: string
 			/**
-			 * /books/sirah-halabi.jpg
-			 */
-			src: string
-			/**
 			 * Tahdhib al-Seerah al-Halabiyyah
 			 */
 			book: string
@@ -1945,10 +1631,6 @@ type RootTranslation = {
 			 * A brief book that gathers the traits of the Prophet, blessings and peace upon him, with explanations
 			 */
 			desc: string
-			/**
-			 * /books/sirah-wasail.jpg
-			 */
-			src: string
 			/**
 			 * Wasail al-Wusul
 			 */
@@ -1965,10 +1647,6 @@ type RootTranslation = {
 			 */
 			desc: string
 			/**
-			 * /books/other-isa.jpg
-			 */
-			src: string
-			/**
 			 * Mughni al-Tullab
 			 */
 			book: string
@@ -1980,10 +1658,6 @@ type RootTranslation = {
 			 */
 			title: string
 			desc: string
-			/**
-			 * /books/other-diwankurdi.jpg
-			 */
-			src: string
 			/**
 			 * Diwan al-Shaykh al-Kurdi
 			 */
@@ -2409,10 +2083,6 @@ export type TranslationFunctions = {
 		title: () => LocalizedString
 		'tajwid-qaida': {
 			/**
-			 * /books/tajwid-qaida.jpg
-			 */
-			src: () => LocalizedString
-			/**
 			 * Tajwid: Level 1
 			 */
 			title: () => LocalizedString
@@ -2433,10 +2103,6 @@ export type TranslationFunctions = {
 			title: () => LocalizedString
 			desc: () => LocalizedString
 			/**
-			 * /books/tajwid-hidayatrahman.jpg
-			 */
-			src: () => LocalizedString
-			/**
 			 * Hidayat al-Rahman
 			 */
 			book: () => LocalizedString
@@ -2451,10 +2117,6 @@ export type TranslationFunctions = {
 			 */
 			desc: () => LocalizedString
 			/**
-			 * /books/tajwid-thani.jpg
-			 */
-			src: () => LocalizedString
-			/**
 			 * Al-Mustawa al-Thani
 			 */
 			book: () => LocalizedString
@@ -2465,10 +2127,6 @@ export type TranslationFunctions = {
 			 */
 			title: () => LocalizedString
 			desc: () => LocalizedString
-			/**
-			 * /books/tajwid-jazari.jpg
-			 */
-			src: () => LocalizedString
 			/**
 			 * Sharh al-Jazariyyah
 			 */
@@ -2484,10 +2142,6 @@ export type TranslationFunctions = {
 			 */
 			desc: () => LocalizedString
 			/**
-			 * /books/mushaf.jpg
-			 */
-			src: () => LocalizedString
-			/**
 			 * Quran Juz 30: ʿAmma
 			 */
 			book: () => LocalizedString
@@ -2498,10 +2152,6 @@ export type TranslationFunctions = {
 			 */
 			title: () => LocalizedString
 			desc: () => LocalizedString
-			/**
-			 * /books/mushaf.jpg
-			 */
-			src: () => LocalizedString
 			/**
 			 * The Entire Quran
 			 */
@@ -2517,10 +2167,6 @@ export type TranslationFunctions = {
 			 */
 			desc: () => LocalizedString
 			/**
-			 * /books/mushaf.jpg
-			 */
-			src: () => LocalizedString
-			/**
 			 * The Entire Quran for Ijaza
 			 */
 			book: () => LocalizedString
@@ -2534,10 +2180,6 @@ export type TranslationFunctions = {
 			 * Essential rules for a Muslim's worship and all things related to that
 			 */
 			desc: () => LocalizedString
-			/**
-			 * /books/fiqh-nur.jpg
-			 */
-			src: () => LocalizedString
 			/**
 			 * Nur al-Idah
 			 */
@@ -2554,10 +2196,6 @@ export type TranslationFunctions = {
 			 */
 			desc: () => LocalizedString
 			/**
-			 * /books/fiqh-quduri.jpg
-			 */
-			src: () => LocalizedString
-			/**
 			 * Mukhtasar al-Quduri
 			 */
 			book: () => LocalizedString
@@ -2572,10 +2210,6 @@ export type TranslationFunctions = {
 			 * The obligatory beliefs for every Muslim in a brief and simple text
 			 */
 			desc: () => LocalizedString
-			/**
-			 * /books/aqidah-ahl-sunnah.jpg
-			 */
-			src: () => LocalizedString
 			/**
 			 * Aqida Ahl al-Sunnah
 			 */
@@ -2592,10 +2226,6 @@ export type TranslationFunctions = {
 			 */
 			desc: () => LocalizedString
 			/**
-			 * /books/tasawwuf-rawdah.jpg
-			 */
-			src: () => LocalizedString
-			/**
 			 * Radwat al-Ushaq
 			 */
 			book: () => LocalizedString
@@ -2610,10 +2240,6 @@ export type TranslationFunctions = {
 			 * Rectifying worship, regular actions, and repairing the bad traits of the heart
 			 */
 			desc: () => LocalizedString
-			/**
-			 * /books/tasawwuf-tuhfah.jpg
-			 */
-			src: () => LocalizedString
 			/**
 			 * Tuhfat al-Salikin
 			 */
@@ -2630,10 +2256,6 @@ export type TranslationFunctions = {
 			 */
 			desc: () => LocalizedString
 			/**
-			 * /books/tasawwuf-fuyud.jpg
-			 */
-			src: () => LocalizedString
-			/**
 			 * Al-Fuyud al-Ahmadiyyah
 			 */
 			book: () => LocalizedString
@@ -2648,7 +2270,6 @@ export type TranslationFunctions = {
 			 * This is placeholder of some text, we need to write later
 			 */
 			desc: () => LocalizedString
-			src: () => LocalizedString
 			/**
 			 * Youth Program
 			 */
@@ -2664,7 +2285,6 @@ export type TranslationFunctions = {
 			 * This is placeholder of some text, we need to write later
 			 */
 			desc: () => LocalizedString
-			src: () => LocalizedString
 			/**
 			 * Women's Program
 			 */
@@ -2681,10 +2301,6 @@ export type TranslationFunctions = {
 			 */
 			desc: () => LocalizedString
 			/**
-			 * /books/natiq-um1.jpg
-			 */
-			src: () => LocalizedString
-			/**
 			 * Silsilah al-Lisan: 1
 			 */
 			book: () => LocalizedString
@@ -2699,10 +2315,6 @@ export type TranslationFunctions = {
 			 * Students begin learning a foundation in Arabic grammar and sentence construction.
 			 */
 			desc: () => LocalizedString
-			/**
-			 * /books/natiq-um2.jpg
-			 */
-			src: () => LocalizedString
 			/**
 			 * Silsilah al-Lisan: 2
 			 */
@@ -2719,10 +2331,6 @@ export type TranslationFunctions = {
 			 */
 			desc: () => LocalizedString
 			/**
-			 * /books/natiq-um3.jpg
-			 */
-			src: () => LocalizedString
-			/**
 			 * Silsilah al-Lisan: 3
 			 */
 			book: () => LocalizedString
@@ -2738,10 +2346,6 @@ export type TranslationFunctions = {
 			 */
 			desc: () => LocalizedString
 			/**
-			 * /books/natiq-um4.jpg
-			 */
-			src: () => LocalizedString
-			/**
 			 * Silsilah al-Lisan: 4
 			 */
 			book: () => LocalizedString
@@ -2753,7 +2357,6 @@ export type TranslationFunctions = {
 			 */
 			title: () => LocalizedString
 			desc: () => LocalizedString
-			src: () => LocalizedString
 			/**
 			 * Mabadiʾ Durus al-Arabiyyah
 			 */
@@ -2766,7 +2369,6 @@ export type TranslationFunctions = {
 			 */
 			title: () => LocalizedString
 			desc: () => LocalizedString
-			src: () => LocalizedString
 			/**
 			 * Al-Tawdih: Sharh al-Ajurumiyyah
 			 */
@@ -2779,7 +2381,6 @@ export type TranslationFunctions = {
 			 */
 			title: () => LocalizedString
 			desc: () => LocalizedString
-			src: () => LocalizedString
 			/**
 			 * Al-Tashil: Sharh al-Ajurumiyyah
 			 */
@@ -2792,7 +2393,6 @@ export type TranslationFunctions = {
 			 */
 			title: () => LocalizedString
 			desc: () => LocalizedString
-			src: () => LocalizedString
 			/**
 			 * Durus Nahwiyya
 			 */
@@ -2805,7 +2405,6 @@ export type TranslationFunctions = {
 			 */
 			title: () => LocalizedString
 			desc: () => LocalizedString
-			src: () => LocalizedString
 			/**
 			 * Sharh Qatr al-Nada
 			 */
@@ -2818,7 +2417,6 @@ export type TranslationFunctions = {
 			 */
 			title: () => LocalizedString
 			desc: () => LocalizedString
-			src: () => LocalizedString
 			/**
 			 * Al-Alfiyyah
 			 */
@@ -2831,7 +2429,6 @@ export type TranslationFunctions = {
 			 */
 			title: () => LocalizedString
 			desc: () => LocalizedString
-			src: () => LocalizedString
 			/**
 			 * Sharh ibn Aqīl
 			 */
@@ -2844,7 +2441,6 @@ export type TranslationFunctions = {
 			 */
 			title: () => LocalizedString
 			desc: () => LocalizedString
-			src: () => LocalizedString
 			/**
 			 * Al-Amthilah
 			 */
@@ -2857,7 +2453,6 @@ export type TranslationFunctions = {
 			 */
 			title: () => LocalizedString
 			desc: () => LocalizedString
-			src: () => LocalizedString
 			/**
 			 * Sharh Bina al-Afʿāl
 			 */
@@ -2870,7 +2465,6 @@ export type TranslationFunctions = {
 			 */
 			title: () => LocalizedString
 			desc: () => LocalizedString
-			src: () => LocalizedString
 			/**
 			 * Shadha al-ʿArf
 			 */
@@ -2883,7 +2477,6 @@ export type TranslationFunctions = {
 			 */
 			title: () => LocalizedString
 			desc: () => LocalizedString
-			src: () => LocalizedString
 			/**
 			 * Durus al-balagha
 			 */
@@ -2896,7 +2489,6 @@ export type TranslationFunctions = {
 			 */
 			title: () => LocalizedString
 			desc: () => LocalizedString
-			src: () => LocalizedString
 			/**
 			 * Tuhfat al-Ikhwan
 			 */
@@ -2909,7 +2501,6 @@ export type TranslationFunctions = {
 			 */
 			title: () => LocalizedString
 			desc: () => LocalizedString
-			src: () => LocalizedString
 			/**
 			 * Mukhtasar al-Maʿāni
 			 */
@@ -2922,7 +2513,6 @@ export type TranslationFunctions = {
 			 */
 			title: () => LocalizedString
 			desc: () => LocalizedString
-			src: () => LocalizedString
 			/**
 			 * Al-Balaghah al-Arabiyyah
 			 */
@@ -2935,7 +2525,6 @@ export type TranslationFunctions = {
 			 */
 			title: () => LocalizedString
 			desc: () => LocalizedString
-			src: () => LocalizedString
 			/**
 			 * Al-Burdah: Explanation, Grammar & Balaghah
 			 */
@@ -2952,10 +2541,6 @@ export type TranslationFunctions = {
 			 */
 			desc: () => LocalizedString
 			/**
-			 * /books/aqidah-sharh-nazm.jpg
-			 */
-			src: () => LocalizedString
-			/**
 			 * Nazm Aqida Ahl al-Sunnah
 			 */
 			book: () => LocalizedString
@@ -2970,10 +2555,6 @@ export type TranslationFunctions = {
 			 * An expert explanation for this major text. This level is sufficient for students not specialzing in beliefs
 			 */
 			desc: () => LocalizedString
-			/**
-			 * /books/aqidah-tali.jpg
-			 */
-			src: () => LocalizedString
 			/**
 			 * Taliʿ al-Bushra
 			 */
@@ -2990,10 +2571,6 @@ export type TranslationFunctions = {
 			 */
 			desc: () => LocalizedString
 			/**
-			 * /books/aqidah-miftah.jpg
-			 */
-			src: () => LocalizedString
-			/**
 			 * Miftah al-Jannah
 			 */
 			book: () => LocalizedString
@@ -3008,10 +2585,6 @@ export type TranslationFunctions = {
 			 * A didactic poem containing most topics of belief, decorated with glimpses of higher truths
 			 */
 			desc: () => LocalizedString
-			/**
-			 * /books/aqidah-jawharah.jpg
-			 */
-			src: () => LocalizedString
 			/**
 			 * Jawharat al-Tawhid
 			 */
@@ -3028,10 +2601,6 @@ export type TranslationFunctions = {
 			 */
 			desc: () => LocalizedString
 			/**
-			 * /books/aqidah-taftazani.jpg
-			 */
-			src: () => LocalizedString
-			/**
 			 * Sharh al-Nasafiyyah
 			 */
 			book: () => LocalizedString
@@ -3046,10 +2615,6 @@ export type TranslationFunctions = {
 			 * A deep dive and joruney through the range of views
 			 */
 			desc: () => LocalizedString
-			/**
-			 * /books/aqidah-tahrir.jpg
-			 */
-			src: () => LocalizedString
 			/**
 			 * Tahrir al-Matalib
 			 */
@@ -3066,10 +2631,6 @@ export type TranslationFunctions = {
 			 */
 			desc: () => LocalizedString
 			/**
-			 * /books/fiqh-maslak.jpg
-			 */
-			src: () => LocalizedString
-			/**
 			 * Maslak al-Najah
 			 */
 			book: () => LocalizedString
@@ -3084,10 +2645,6 @@ export type TranslationFunctions = {
 			 * A later work that gathers what came before it to explain the most important Hanafi book
 			 */
 			desc: () => LocalizedString
-			/**
-			 * /books/fiqh-lubab.jpg
-			 */
-			src: () => LocalizedString
 			/**
 			 * Al-Lubab
 			 */
@@ -3104,10 +2661,6 @@ export type TranslationFunctions = {
 			 */
 			desc: () => LocalizedString
 			/**
-			 * /books/fiqh-hidayah.jpg
-			 */
-			src: () => LocalizedString
-			/**
 			 * Al-Hidayah
 			 */
 			book: () => LocalizedString
@@ -3122,10 +2675,6 @@ export type TranslationFunctions = {
 			 * The book relied upon for issuing rulings in the Hanafi madhhab
 			 */
 			desc: () => LocalizedString
-			/**
-			 * /books/fiqh-rad.jpg
-			 */
-			src: () => LocalizedString
 			/**
 			 * Radd al-Muhtar
 			 */
@@ -3142,10 +2691,6 @@ export type TranslationFunctions = {
 			 */
 			desc: () => LocalizedString
 			/**
-			 * /books/fiqh-manar.jpg
-			 */
-			src: () => LocalizedString
-			/**
 			 * Sharh Mukhtasar al-Manar
 			 */
 			book: () => LocalizedString
@@ -3157,10 +2702,6 @@ export type TranslationFunctions = {
 			 */
 			title: () => LocalizedString
 			desc: () => LocalizedString
-			/**
-			 * /books/fiqh-sharhmanar.jpg
-			 */
-			src: () => LocalizedString
 			/**
 			 * Sharh al-Manar
 			 */
@@ -3174,10 +2715,6 @@ export type TranslationFunctions = {
 			title: () => LocalizedString
 			desc: () => LocalizedString
 			/**
-			 * /books/fiqh-zad.jpg
-			 */
-			src: () => LocalizedString
-			/**
 			 * Zad al-Muktafi
 			 */
 			book: () => LocalizedString
@@ -3189,7 +2726,6 @@ export type TranslationFunctions = {
 			 */
 			title: () => LocalizedString
 			desc: () => LocalizedString
-			src: () => LocalizedString
 			/**
 			 * Al-Talwih maʿa al-Tawdih
 			 */
@@ -3202,10 +2738,6 @@ export type TranslationFunctions = {
 			 */
 			title: () => LocalizedString
 			desc: () => LocalizedString
-			/**
-			 * /books/fiqh-zaydan.jpg
-			 */
-			src: () => LocalizedString
 			/**
 			 * Al-Wajiz Fi al-Qawaid
 			 */
@@ -3222,10 +2754,6 @@ export type TranslationFunctions = {
 			 */
 			desc: () => LocalizedString
 			/**
-			 * /books/fiqh-isad.jpg
-			 */
-			src: () => LocalizedString
-			/**
 			 * Sharh Uqud Rasm al-Mufti
 			 */
 			book: () => LocalizedString
@@ -3237,10 +2765,6 @@ export type TranslationFunctions = {
 			 */
 			title: () => LocalizedString
 			desc: () => LocalizedString
-			/**
-			 * /books/fiqh-ghamz.jpg
-			 */
-			src: () => LocalizedString
 			/**
 			 * Ghamz al-Basair
 			 */
@@ -3254,10 +2778,6 @@ export type TranslationFunctions = {
 			title: () => LocalizedString
 			desc: () => LocalizedString
 			/**
-			 * /books/fiqh-maram.jpg
-			 */
-			src: () => LocalizedString
-			/**
 			 * Sharh Bulugh al-Maram
 			 */
 			book: () => LocalizedString
@@ -3269,10 +2789,6 @@ export type TranslationFunctions = {
 			 */
 			title: () => LocalizedString
 			desc: () => LocalizedString
-			/**
-			 * /books/fiqh-ila.jpg
-			 */
-			src: () => LocalizedString
 			/**
 			 * Ila al-Sunan
 			 */
@@ -3289,10 +2805,6 @@ export type TranslationFunctions = {
 			 */
 			desc: () => LocalizedString
 			/**
-			 * /books/tasawwuf-bidayah.jpg
-			 */
-			src: () => LocalizedString
-			/**
 			 * Bidayat al-Hidayah
 			 */
 			book: () => LocalizedString
@@ -3305,10 +2817,6 @@ export type TranslationFunctions = {
 			title: () => LocalizedString
 			desc: () => LocalizedString
 			/**
-			 * /books/tasawwuf-taj.jpg
-			 */
-			src: () => LocalizedString
-			/**
 			 * Taj al-Arus
 			 */
 			book: () => LocalizedString
@@ -3320,10 +2828,6 @@ export type TranslationFunctions = {
 			 */
 			title: () => LocalizedString
 			desc: () => LocalizedString
-			/**
-			 * /books/tasawwuf-uyub.jpg
-			 */
-			src: () => LocalizedString
 			/**
 			 * Uyub al-Nafs wa Adwiyatuha
 			 */
@@ -3340,10 +2844,6 @@ export type TranslationFunctions = {
 			 */
 			desc: () => LocalizedString
 			/**
-			 * /books/tasawwuf-qasd.jpg
-			 */
-			src: () => LocalizedString
-			/**
 			 * Sharh al-Muntaqa min al-Qawaid
 			 */
 			book: () => LocalizedString
@@ -3355,10 +2855,6 @@ export type TranslationFunctions = {
 			 */
 			title: () => LocalizedString
 			desc: () => LocalizedString
-			/**
-			 * /books/tasawwuf-mabahith.jpg
-			 */
-			src: () => LocalizedString
 			/**
 			 * Sharh al-Mabahith al-Asliyyah
 			 */
@@ -3372,10 +2868,6 @@ export type TranslationFunctions = {
 			title: () => LocalizedString
 			desc: () => LocalizedString
 			/**
-			 * /books/tasawwuf-manazil.jpg
-			 */
-			src: () => LocalizedString
-			/**
 			 * Manazil al-Saʾirin
 			 */
 			book: () => LocalizedString
@@ -3388,10 +2880,6 @@ export type TranslationFunctions = {
 			title: () => LocalizedString
 			desc: () => LocalizedString
 			/**
-			 * /books/tasawwuf-himam.jpg
-			 */
-			src: () => LocalizedString
-			/**
 			 * Iqaz al-Himam
 			 */
 			book: () => LocalizedString
@@ -3403,10 +2891,6 @@ export type TranslationFunctions = {
 			 */
 			title: () => LocalizedString
 			desc: () => LocalizedString
-			/**
-			 * /books/tasawwuf-wasaya.jpg
-			 */
-			src: () => LocalizedString
 			/**
 			 * Al-Wasaya
 			 */
@@ -3423,10 +2907,6 @@ export type TranslationFunctions = {
 			 */
 			desc: () => LocalizedString
 			/**
-			 * /books/tasawwuf-qawanin.jpg
-			 */
-			src: () => LocalizedString
-			/**
 			 * Qawanin Hikam al-Ishraq
 			 */
 			book: () => LocalizedString
@@ -3438,10 +2918,6 @@ export type TranslationFunctions = {
 			 */
 			title: () => LocalizedString
 			desc: () => LocalizedString
-			/**
-			 * /books/tasawwuf-naqsh.jpg
-			 */
-			src: () => LocalizedString
 			/**
 			 * Naqsh al-Fusus
 			 */
@@ -3455,10 +2931,6 @@ export type TranslationFunctions = {
 			title: () => LocalizedString
 			desc: () => LocalizedString
 			/**
-			 * /books/tasawwuf-insankamil.jpg
-			 */
-			src: () => LocalizedString
-			/**
 			 * Al-Insan al-Kamil
 			 */
 			book: () => LocalizedString
@@ -3470,10 +2942,6 @@ export type TranslationFunctions = {
 			 */
 			title: () => LocalizedString
 			desc: () => LocalizedString
-			/**
-			 * /books/tasawwuf-fusus.jpg
-			 */
-			src: () => LocalizedString
 			/**
 			 * Fusus al-Hikam
 			 */
@@ -3520,10 +2988,6 @@ export type TranslationFunctions = {
 			 */
 			desc: () => LocalizedString
 			/**
-			 * /books/tafsir-durrah.jpg
-			 */
-			src: () => LocalizedString
-			/**
 			 * Durrah al-Tafasir
 			 */
 			book: () => LocalizedString
@@ -3539,10 +3003,6 @@ export type TranslationFunctions = {
 			 */
 			desc: () => LocalizedString
 			/**
-			 * /books/tafsir-nasafi.jpg
-			 */
-			src: () => LocalizedString
-			/**
 			 * Tafsir al-Nasafi
 			 */
 			book: () => LocalizedString
@@ -3554,10 +3014,6 @@ export type TranslationFunctions = {
 			 */
 			title: () => LocalizedString
 			desc: () => LocalizedString
-			/**
-			 * /books/tafsir-baydawi.jpg
-			 */
-			src: () => LocalizedString
 			/**
 			 * Tafsir al-Baydawi
 			 */
@@ -3571,10 +3027,6 @@ export type TranslationFunctions = {
 			title: () => LocalizedString
 			desc: () => LocalizedString
 			/**
-			 * /books/tafsir-qurtubi.jpg
-			 */
-			src: () => LocalizedString
-			/**
 			 * Tafsir al-Qurtubi
 			 */
 			book: () => LocalizedString
@@ -3586,10 +3038,6 @@ export type TranslationFunctions = {
 			 */
 			title: () => LocalizedString
 			desc: () => LocalizedString
-			/**
-			 * /books/tafsir-bahr.jpg
-			 */
-			src: () => LocalizedString
 			/**
 			 * Mukhtasar al-Bahr al-Madid
 			 */
@@ -3603,10 +3051,6 @@ export type TranslationFunctions = {
 			title: () => LocalizedString
 			desc: () => LocalizedString
 			/**
-			 * /books/tafsir-waridat.jpg
-			 */
-			src: () => LocalizedString
-			/**
 			 * Al-Waridat al-Ilahiyyah
 			 */
 			book: () => LocalizedString
@@ -3618,10 +3062,6 @@ export type TranslationFunctions = {
 			 */
 			title: () => LocalizedString
 			desc: () => LocalizedString
-			/**
-			 * /books/tafsir-mawaqif.jpg
-			 */
-			src: () => LocalizedString
 			/**
 			 * Al-Mawaqif al-Ruhaniyyah
 			 */
@@ -3638,10 +3078,6 @@ export type TranslationFunctions = {
 			 */
 			desc: () => LocalizedString
 			/**
-			 * /books/hadith-nawawi.jpg
-			 */
-			src: () => LocalizedString
-			/**
 			 * The 40 Nawawi Hadith
 			 */
 			book: () => LocalizedString
@@ -3656,10 +3092,6 @@ export type TranslationFunctions = {
 			 * A book of Prophetic, educational ettiquette that inspire the Ummah to folow and be adorned by them
 			 */
 			desc: () => LocalizedString
-			/**
-			 * /books/hadith-adab.jpg
-			 */
-			src: () => LocalizedString
 			/**
 			 * Al-Adab al-Mufrad
 			 */
@@ -3676,10 +3108,6 @@ export type TranslationFunctions = {
 			 */
 			desc: () => LocalizedString
 			/**
-			 * /books/hadith-riyad.jpg
-			 */
-			src: () => LocalizedString
-			/**
 			 * Mukktasar Riyad al-Salihin
 			 */
 			book: () => LocalizedString
@@ -3691,10 +3119,6 @@ export type TranslationFunctions = {
 			 */
 			title: () => LocalizedString
 			desc: () => LocalizedString
-			/**
-			 * /books/hadith-bukhari.jpg
-			 */
-			src: () => LocalizedString
 			/**
 			 * Sahih al-Bukhari
 			 */
@@ -3708,10 +3132,6 @@ export type TranslationFunctions = {
 			title: () => LocalizedString
 			desc: () => LocalizedString
 			/**
-			 * /books/hadith-muslim.jpg
-			 */
-			src: () => LocalizedString
-			/**
 			 * Sahih Muslim
 			 */
 			book: () => LocalizedString
@@ -3723,10 +3143,6 @@ export type TranslationFunctions = {
 			 */
 			title: () => LocalizedString
 			desc: () => LocalizedString
-			/**
-			 * /books/hadith-tirmidhi.jpg
-			 */
-			src: () => LocalizedString
 			/**
 			 * Sunan al-Tirmidhi
 			 */
@@ -3740,10 +3156,6 @@ export type TranslationFunctions = {
 			title: () => LocalizedString
 			desc: () => LocalizedString
 			/**
-			 * /books/hadith-abudawud.jpg
-			 */
-			src: () => LocalizedString
-			/**
 			 * Sunan Abu Dawud
 			 */
 			book: () => LocalizedString
@@ -3755,10 +3167,6 @@ export type TranslationFunctions = {
 			 */
 			title: () => LocalizedString
 			desc: () => LocalizedString
-			/**
-			 * /books/hadith-ibnmajah.jpg
-			 */
-			src: () => LocalizedString
 			/**
 			 * Sunan ibn Majah
 			 */
@@ -3772,10 +3180,6 @@ export type TranslationFunctions = {
 			title: () => LocalizedString
 			desc: () => LocalizedString
 			/**
-			 * /books/hadith-nasai.jpg
-			 */
-			src: () => LocalizedString
-			/**
 			 * Sunan al-Nasai
 			 */
 			book: () => LocalizedString
@@ -3787,10 +3191,6 @@ export type TranslationFunctions = {
 			 */
 			title: () => LocalizedString
 			desc: () => LocalizedString
-			/**
-			 * /books/hadith-musnad.jpg
-			 */
-			src: () => LocalizedString
 			/**
 			 * Musnad Ahmad
 			 */
@@ -3804,10 +3204,6 @@ export type TranslationFunctions = {
 			title: () => LocalizedString
 			desc: () => LocalizedString
 			/**
-			 * /books/hadith-darimi.jpg
-			 */
-			src: () => LocalizedString
-			/**
 			 * Sunan al-Darimi
 			 */
 			book: () => LocalizedString
@@ -3819,10 +3215,6 @@ export type TranslationFunctions = {
 			 */
 			title: () => LocalizedString
 			desc: () => LocalizedString
-			/**
-			 * /books/hadith-muwatta.jpg
-			 */
-			src: () => LocalizedString
 			/**
 			 * Al-Muwatta
 			 */
@@ -3836,10 +3228,6 @@ export type TranslationFunctions = {
 			title: () => LocalizedString
 			desc: () => LocalizedString
 			/**
-			 * /books/hadith-umdah.jpg
-			 */
-			src: () => LocalizedString
-			/**
 			 * Umdah al-Ahkam
 			 */
 			book: () => LocalizedString
@@ -3852,10 +3240,6 @@ export type TranslationFunctions = {
 			title: () => LocalizedString
 			desc: () => LocalizedString
 			/**
-			 * /books/hadith-bulugh.jpg
-			 */
-			src: () => LocalizedString
-			/**
 			 * Bulugh al-Maram
 			 */
 			book: () => LocalizedString
@@ -3867,10 +3251,6 @@ export type TranslationFunctions = {
 			 */
 			title: () => LocalizedString
 			desc: () => LocalizedString
-			/**
-			 * /books/hadith-jami-suyuti.jpg
-			 */
-			src: () => LocalizedString
 			/**
 			 * Al-Jami al-Saghir
 			 */
@@ -3890,10 +3270,6 @@ export type TranslationFunctions = {
 			 */
 			desc: () => LocalizedString
 			/**
-			 * /books/hadith-bayquni.jpg
-			 */
-			src: () => LocalizedString
-			/**
 			 * Sharh al-Bayquniyyah
 			 */
 			book: () => LocalizedString
@@ -3905,10 +3281,6 @@ export type TranslationFunctions = {
 			 */
 			title: () => LocalizedString
 			desc: () => LocalizedString
-			/**
-			 * /books/hadith-nuzhah.jpg
-			 */
-			src: () => LocalizedString
 			/**
 			 * Nuzhah al-Nazar
 			 */
@@ -3922,10 +3294,6 @@ export type TranslationFunctions = {
 			title: () => LocalizedString
 			desc: () => LocalizedString
 			/**
-			 * /books/hadith-salah.jpg
-			 */
-			src: () => LocalizedString
-			/**
 			 * Muqaddimah Ibn al-Salah
 			 */
 			book: () => LocalizedString
@@ -3937,10 +3305,6 @@ export type TranslationFunctions = {
 			 */
 			title: () => LocalizedString
 			desc: () => LocalizedString
-			/**
-			 * /books/hadith-tadrib.jpg
-			 */
-			src: () => LocalizedString
 			/**
 			 * Tadrib al-Rawi
 			 */
@@ -3957,10 +3321,6 @@ export type TranslationFunctions = {
 			 */
 			desc: () => LocalizedString
 			/**
-			 * /books/sirah-halabi.jpg
-			 */
-			src: () => LocalizedString
-			/**
 			 * Tahdhib al-Seerah al-Halabiyyah
 			 */
 			book: () => LocalizedString
@@ -3975,10 +3335,6 @@ export type TranslationFunctions = {
 			 * A brief book that gathers the traits of the Prophet, blessings and peace upon him, with explanations
 			 */
 			desc: () => LocalizedString
-			/**
-			 * /books/sirah-wasail.jpg
-			 */
-			src: () => LocalizedString
 			/**
 			 * Wasail al-Wusul
 			 */
@@ -3995,10 +3351,6 @@ export type TranslationFunctions = {
 			 */
 			desc: () => LocalizedString
 			/**
-			 * /books/other-isa.jpg
-			 */
-			src: () => LocalizedString
-			/**
 			 * Mughni al-Tullab
 			 */
 			book: () => LocalizedString
@@ -4010,10 +3362,6 @@ export type TranslationFunctions = {
 			 */
 			title: () => LocalizedString
 			desc: () => LocalizedString
-			/**
-			 * /books/other-diwankurdi.jpg
-			 */
-			src: () => LocalizedString
 			/**
 			 * Diwan al-Shaykh al-Kurdi
 			 */
