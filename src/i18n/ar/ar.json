@@ -523,105 +523,105 @@
       "explanation": ""
     },
     "hadith-nawawi": {
-      "title": "كتاب حديث",
+      "title": "متن حديث",
       "desc": "أحاديث مشهورة مشتملة على أصول الدين وقواعد الشريعة",
       "src": "/books/hadith-nawawi.jpg",
       "book": "الأربعون النووية",
       "explanation": ""
     },
     "hadith-adab": {
-      "title": "كتاب حديث",
+      "title": "متن حديث",
       "desc": "كتاب في الآداب النبوية التربوية التي تحث الأمة على الاتصاف والتحلي بها",
       "src": "/books/hadith-adab.jpg",
       "book": "الأدب المفرد",
       "explanation": ""
     },
     "hadith-riyad": {
-      "title": "كتاب حديث",
+      "title": "متن حديث",
       "desc": "مختصر من الأحاديث الصحيحة، يشتمل على الآداب الظاهرة والباطنة، والطريق إلى الآخرة",
       "src": "/books/hadith-riyad.jpg",
       "book": "مختصر رياض الصالحين",
       "explanation": ""
     },
     "hadith-bukhari": {
-      "title": "كتاب حديث",
+      "title": "متن حديث",
       "desc": "",
       "src": "/books/hadith-bukhari.jpg",
       "book": "صحيح البخاري",
       "explanation": ""
     },
     "hadith-muslim": {
-      "title": "كتاب حديث",
+      "title": "متن حديث",
       "desc": "",
       "src": "/books/hadith-muslim.jpg",
       "book": "صحيح مسلم",
       "explanation": ""
     },
     "hadith-tirmidhi": {
-      "title": "كتاب حديث",
+      "title": "متن حديث",
       "desc": "",
       "src": "/books/hadith-tirmidhi.jpg",
       "book": "سنن الترمذي",
       "explanation": ""
     },
     "hadith-abudawud": {
-      "title": "كتاب حديث",
+      "title": "متن حديث",
       "desc": "",
       "src": "/books/hadith-abudawud.jpg",
       "book": "سنن أبو داود",
       "explanation": ""
     },
     "hadith-ibnmajah": {
-      "title": "كتاب حديث",
+      "title": "متن حديث",
       "desc": "",
       "src": "/books/hadith-ibnmajah.jpg",
       "book": "سنن ابن ماجه",
       "explanation": ""
     },
     "hadith-nasai": {
-      "title": "كتاب حديث",
+      "title": "متن حديث",
       "desc": "",
       "src": "/books/hadith-nasai.jpg",
       "book": "سنن النسائي",
       "explanation": ""
     },
     "hadith-musnad": {
-      "title": "كتاب حديث",
+      "title": "متن حديث",
       "desc": "",
       "src": "/books/hadith-musnad.jpg",
       "book": "مسند أحمد",
       "explanation": ""
     },
     "hadith-darimi": {
-      "title": "كتاب حديث",
+      "title": "متن حديث",
       "desc": "",
       "src": "/books/hadith-darimi.jpg",
       "book": "سنن الدارمي",
       "explanation": ""
     },
     "hadith-muwatta": {
-      "title": "كتاب حديث",
+      "title": "متن حديث",
       "desc": "",
       "src": "/books/hadith-muwatta.jpg",
       "book": "الموطأ",
       "explanation": ""
     },
     "hadith-umdah": {
-      "title": "كتاب حديث",
+      "title": "متن حديث",
       "desc": "",
       "src": "/books/hadith-umdah.jpg",
       "book": "عمدة الأحكام",
       "explanation": ""
     },
     "hadith-bulugh": {
-      "title": "كتاب حديث",
+      "title": "متن حديث",
       "desc": "",
       "src": "/books/hadith-bulugh.jpg",
       "book": "بلوغ المرام",
       "explanation": ""
     },
     "hadith-jami-suyuti": {
-      "title": "كتاب حديث",
+      "title": "متن حديث",
       "desc": "",
       "src": "/books/hadith-jami-suyuti.jpg",
       "book": "الجامع الصغير",
