@@ -702,6 +702,28 @@
       "book": "Al-Muwatta",
       "explanation": ""
     },
+    
+    "hadith-umdah": {
+      "title": "Hadith: Text",
+      "desc": "",
+      "src": "/books/hadith-umdah.jpg",
+      "book": "Umdah al-Ahkam",
+      "explanation": ""
+    },
+    "hadith-bulugh": {
+      "title": "Hadith: Text",
+      "desc": "",
+      "src": "/books/hadith-bulugh.jpg",
+      "book": "Bulugh al-Maram",
+      "explanation": ""
+    },
+    "hadith-jami-suyuti": {
+      "title": "Hadith: Text",
+      "desc": "",
+      "src": "/books/hadith-jami-suyuti.jpg",
+      "book": "Al-Jami al-Saghir",
+      "explanation": "By Imam al-Suyuti"
+    },
     "hadith-bayquni": {
       "title": "Hadith: Terminology 1",
       "desc": "Introducing the most famous Hadith sciences and the needed explanations and terminology",

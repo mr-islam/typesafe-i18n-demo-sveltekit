@@ -606,6 +606,27 @@
       "book": "الموطأ",
       "explanation": ""
     },
+    "hadith-umdah": {
+      "title": "كتاب حديث",
+      "desc": "",
+      "src": "/books/hadith-umdah.jpg",
+      "book": "عمدة الأحكام",
+      "explanation": ""
+    },
+    "hadith-bulugh": {
+      "title": "كتاب حديث",
+      "desc": "",
+      "src": "/books/hadith-bulugh.jpg",
+      "book": "بلوغ المرام",
+      "explanation": ""
+    },
+    "hadith-jami-suyuti": {
+      "title": "كتاب حديث",
+      "desc": "",
+      "src": "/books/hadith-jami-suyuti.jpg",
+      "book": "الجامع الصغير",
+      "explanation": "للإمام السيوطي"
+    },
     "hadith-bayquni": {
       "title": "الحديث: مصطلحات 1",
       "desc": "كتاب ما اشتهر من العلوم الحديثية وما يحتاج إليه من المباحث والقواعد والصطلاحية",

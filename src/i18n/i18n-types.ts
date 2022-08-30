@@ -1799,6 +1799,57 @@ type RootTranslation = {
 			book: string
 			explanation: string
 		}
+		'hadith-umdah': {
+			/**
+			 * Hadith: Text
+			 */
+			title: string
+			desc: string
+			/**
+			 * /books/hadith-umdah.jpg
+			 */
+			src: string
+			/**
+			 * Umdah al-Ahkam
+			 */
+			book: string
+			explanation: string
+		}
+		'hadith-bulugh': {
+			/**
+			 * Hadith: Text
+			 */
+			title: string
+			desc: string
+			/**
+			 * /books/hadith-bulugh.jpg
+			 */
+			src: string
+			/**
+			 * Bulugh al-Maram
+			 */
+			book: string
+			explanation: string
+		}
+		'hadith-jami-suyuti': {
+			/**
+			 * Hadith: Text
+			 */
+			title: string
+			desc: string
+			/**
+			 * /books/hadith-jami-suyuti.jpg
+			 */
+			src: string
+			/**
+			 * Al-Jami al-Saghir
+			 */
+			book: string
+			/**
+			 * By Imam al-Suyuti
+			 */
+			explanation: string
+		}
 		'hadith-bayquni': {
 			/**
 			 * Hadith: Terminology 1
@@ -3776,6 +3827,57 @@ export type TranslationFunctions = {
 			 * Al-Muwatta
 			 */
 			book: () => LocalizedString
+			explanation: () => LocalizedString
+		}
+		'hadith-umdah': {
+			/**
+			 * Hadith: Text
+			 */
+			title: () => LocalizedString
+			desc: () => LocalizedString
+			/**
+			 * /books/hadith-umdah.jpg
+			 */
+			src: () => LocalizedString
+			/**
+			 * Umdah al-Ahkam
+			 */
+			book: () => LocalizedString
+			explanation: () => LocalizedString
+		}
+		'hadith-bulugh': {
+			/**
+			 * Hadith: Text
+			 */
+			title: () => LocalizedString
+			desc: () => LocalizedString
+			/**
+			 * /books/hadith-bulugh.jpg
+			 */
+			src: () => LocalizedString
+			/**
+			 * Bulugh al-Maram
+			 */
+			book: () => LocalizedString
+			explanation: () => LocalizedString
+		}
+		'hadith-jami-suyuti': {
+			/**
+			 * Hadith: Text
+			 */
+			title: () => LocalizedString
+			desc: () => LocalizedString
+			/**
+			 * /books/hadith-jami-suyuti.jpg
+			 */
+			src: () => LocalizedString
+			/**
+			 * Al-Jami al-Saghir
+			 */
+			book: () => LocalizedString
+			/**
+			 * By Imam al-Suyuti
+			 */
 			explanation: () => LocalizedString
 		}
 		'hadith-bayquni': {
