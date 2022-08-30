@@ -96,6 +96,7 @@
 	}
 	img {
 		filter: blur(1px) brightness(70%);
+		border-radius: 12px;
 	}
 	div :global(.swiper) {
 		width: 100%;
