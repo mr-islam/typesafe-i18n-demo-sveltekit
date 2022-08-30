@@ -5,6 +5,7 @@
 	import Courses from '$lib/Courses.svelte'
 	import Articles from '$lib/Articles.svelte'
 	import Goals from '$lib/Goals.svelte'
+	import Contact from '$lib/elements/Contact.svelte'
 
 	console.log($LL.title)
 </script>
@@ -18,3 +19,4 @@
 <Courses />
 <Articles />
 <Goals />
+<Contact />

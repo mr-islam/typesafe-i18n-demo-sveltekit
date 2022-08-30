@@ -29,25 +29,14 @@
 			</div>
 		</div>
 	</div>
-	<div id="contact">
-		<br />
-		<p>***</p>
-		<p>
-			{$LL.contact.contact_us()}
-			<a href="mailto:markaz@ilm-marifah.com">
-				{$LL.contact.email()}
-			</a>
-			{$LL.contact.or()}
-			<a href="https://t.me/naved_islam">{$LL.contact.telegram()}</a>
-		</p>
-	</div>
+
+	<br />
 </div>
 
 <style>
 	h1,
 	h2,
-	p,
-	a {
+	p {
 		color: white;
 	}
 	h1 {
@@ -81,24 +70,6 @@
 	}
 	h2,
 	.img-left > p,
-	#contact {
-		text-align: center;
-	}
-	a,
-	button#bio {
-		background-color: burlywood;
-		padding: 2px 10px;
-		border-radius: 8px;
-		color: black;
-		font-weight: bold;
-		cursor: pointer;
-	}
-	a:hover,
-	button#bio:hover,
-	a:focus,
-	button#bio:focus {
-		background-color: rgb(240, 201, 150);
-	}
 	ol {
 		display: grid;
 		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -148,14 +119,5 @@
 		ol {
 			padding: 0;
 		}
-	}
-
-	.backdrop {
-		position: fixed;
-		top: 0;
-		bottom: 0;
-		right: 0;
-		left: 0;
-		background: rgba(0, 0, 0, 0.5);
 	}
 </style>

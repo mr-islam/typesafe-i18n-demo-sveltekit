@@ -2,6 +2,7 @@
   import CourseCard2 from "$lib/elements/CourseCard2.svelte";
 
   import LL from '$i18n/i18n-svelte'
+import Contact from "$lib/elements/Contact.svelte";
 
   function scrollToTitle() {
     document
@@ -787,11 +788,7 @@
 
 <h1 id="courses">{$LL.courses.title()}</h1>
 <div style="text-align: center; padding: 0 0 20px 0;">
-  <a
-    style="color: #dea300; text-decoration: underline dotted;"
-    href="#contact"
-    on:click|preventDefault={scrollIntoView}>{$LL.contact.courses()}</a
-  >
+  <Contact />
 </div>
 
 <div id="grid">
