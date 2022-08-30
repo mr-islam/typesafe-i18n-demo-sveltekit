@@ -76,9 +76,13 @@ type RootTranslation = {
 		 */
 		heading: string
 		/**
-		 * Honorable Shaykh Abd al-Rahman al-Sha'ar
+		 * Honorable Shaykh
 		 */
-		subheading: string
+		title: string
+		/**
+		 * Abd al-Rahman al-Sha'ar
+		 */
+		name: string
 		/**
 		 * Shaykh Abd al-Rahman al-Sha’ar began seeking knowledge at a young age, being nurtured by scholars and those who love knowledge. He dedicated his life to the service of Islam and studied complete curriculums in all its areas, including: Quran, Hadith, Fiqh, Aqida, Tasawwuf, Arabic and its sciences, and more. He received all this divine knowledge at the hands of lordly scholars, attaining full license to teach all the inner and the outer religious sciences from many of the top scholars of the past century. Today, he dedicates himself to producing both books and scholars of the highest standard.
 		 */
@@ -1780,9 +1784,13 @@ export type TranslationFunctions = {
 		 */
 		heading: () => LocalizedString
 		/**
-		 * Honorable Shaykh Abd al-Rahman al-Sha'ar
+		 * Honorable Shaykh
 		 */
-		subheading: () => LocalizedString
+		title: () => LocalizedString
+		/**
+		 * Abd al-Rahman al-Sha'ar
+		 */
+		name: () => LocalizedString
 		/**
 		 * Shaykh Abd al-Rahman al-Sha’ar began seeking knowledge at a young age, being nurtured by scholars and those who love knowledge. He dedicated his life to the service of Islam and studied complete curriculums in all its areas, including: Quran, Hadith, Fiqh, Aqida, Tasawwuf, Arabic and its sciences, and more. He received all this divine knowledge at the hands of lordly scholars, attaining full license to teach all the inner and the outer religious sciences from many of the top scholars of the past century. Today, he dedicates himself to producing both books and scholars of the highest standard.
 		 */

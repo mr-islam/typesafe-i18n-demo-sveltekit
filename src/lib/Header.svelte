@@ -10,19 +10,8 @@
 </script>
 
 <header>
-	<div class="navigation-buttons">
-		<a href="#courses" on:click|preventDefault={scrollIntoView}>{$LL.courses.title()}</a>
-		&middot;
-		<a href="#wisdoms" on:click|preventDefault={scrollIntoView}>
-			{$LL.articles.title()}
-			<!--  + $LL.and() + $LL.wisdoms.title() -->
-		</a>
-		&middot;
-		<a href="#goals" on:click|preventDefault={scrollIntoView}>{$LL.goals.goal()}</a>
-		<br />
-	</div>
-
-	<div style="flex: 1; display: flex;  gap: 10px;">
+	<div id="heading">
+		<div />
 		<a href="/{$locale}">
 			<img alt="Logo of Arabic calligraphy" id="logo" src="/logo-new.jpg" />
 		</a>
@@ -39,14 +28,38 @@
 		</div>
 	</div>
 
-	<div style="flex: 1; display: flex; justify-content: end;">
+	<div class="navigation-buttons">
+		<a href="#courses" on:click|preventDefault={scrollIntoView}>{$LL.courses.title()}</a>
+		&middot;
+		<a href="#wisdoms" on:click|preventDefault={scrollIntoView}>
+			{$LL.articles.title()}
+			<!--  + $LL.and() + $LL.wisdoms.title() -->
+		</a>
+		&middot;
+		<a href="#goals" on:click|preventDefault={scrollIntoView}>{$LL.goals.goal()}</a>
+		<br />
+	</div>
+
+	<div id="lang-switcher">
 		<LocaleSwitcher />
 	</div>
 </header>
 
 <style>
+	div#lang-switcher {
+		flex: 1;
+		display: flex;
+		justify-content: end;
+	}
+	div#heading {
+		flex: 1;
+		display: flex;
+		gap: 10px;
+		align-items: center;
+	}
 	div.navigation-buttons {
-		flex: 1; 
+		flex: 1;
+		text-align: center;
 	}
 	div.navigation-buttons > a {
 		background-color: burlywood;
@@ -78,20 +91,22 @@
 		z-index: 5;
 		margin-top: 10px;
 		padding: 1rem 2rem;
+		gap: 10px;
 	}
 	img#logo {
 		border: 1px black solid;
 		border-radius: 360px;
 		max-width: 6vw;
 	}
-	@media only screen and (max-width: 600px) {
+	@media only screen and (max-width: 900px) {
 		img#logo {
-			max-width: 8vw;
-			margin: 10px;
+			min-width: 12vw;
+			max-width: 12vw;
+			margin: 5px;
 		}
 		header {
 			position: relative;
-			flex-direction: column-reverse;
+			flex-direction: column;
 			left: 0;
 			min-width: 100%;
 			border-radius: 0px;

@@ -11,7 +11,7 @@
 			<h1>{$LL.shaykh.heading()}</h1>
 
 			<img alt="Shaykh Abd al-Rahman" class="profile" src="master.jpg" />
-			<p>{$LL.shaykh.subheading()}</p>
+			<p style="text-align: center">{$LL.shaykh.title()}<br>{$LL.shaykh.name()}</p>
 			<p>{$LL.shaykh.short_bio()}</p>
 			<Books />
 		</div>

@@ -73,9 +73,10 @@
 <style>
   p {
     color: white;
-    border: 1px solid gold;
+    border: 1px solid burlywood;
     padding: 6px;
     border-radius: 12px;
+    text-align: center;
   }
   a {
     font-weight: bold;
