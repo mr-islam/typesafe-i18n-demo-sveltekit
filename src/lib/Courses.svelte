@@ -1150,7 +1150,7 @@ import Contact from "$lib/elements/Contact.svelte";
     max-width: 300px;
     /* background-color: #fbfff7; */
     background-color: rgb(240, 201, 150);
-    border-radius: 4px;
+    border-radius: 8px;
     padding: 10px;
     font-weight: bold;
     justify-self: stretch;
