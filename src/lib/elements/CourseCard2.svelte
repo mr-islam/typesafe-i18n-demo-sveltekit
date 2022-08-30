@@ -59,19 +59,20 @@
 		flex-direction: row;
 		align-items: center;
 		border-radius: 8px;
-		box-shadow: rgba(44, 105, 70, 0.2) 0px 2px 8px 0px;
 		background-color: var(--pure-white);
 		/* min-width: 200px; */
 		/* flex: 2 1 calc(25% - 1em); */
-		padding: 14px 7px;
+		padding: 10px 0px;
 		margin: 10px;
 		max-width: 350px;
 		min-width: 300px;
 		transition: top ease 200ms;
 		transition: box-shadow ease 200ms;
 	}
-	div.card-course:hover {
-		box-shadow: rgba(44, 105, 70, 0.2) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+	div.card-course:hover > img {
+		box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+		transform: translateY(-2px);
+		transition: all 0.1s ease-in-out;
 		top: -10px;
 	}
 	div.card-inner {
