@@ -60,6 +60,7 @@
 	div.navigation-buttons {
 		flex: 1;
 		text-align: center;
+		line-break: strict;
 	}
 	div.navigation-buttons > a {
 		background-color: burlywood;
@@ -98,9 +99,9 @@
 		border-radius: 360px;
 		max-width: 6vw;
 	}
+	
 	@media only screen and (max-width: 900px) {
 		img#logo {
-			min-width: 12vw;
 			max-width: 12vw;
 			margin: 5px;
 		}
@@ -116,6 +117,16 @@
 		}
 		h1 {
 			font-size: 0.8rem;
+		}
+	}
+	@media only screen and (max-width: 400px) {
+		div#heading {
+			flex-direction: column;
+			text-align: center;
+		}
+		img#logo {
+			max-width: 20vw;
+			margin: 5px;
 		}
 	}
 	h1 {

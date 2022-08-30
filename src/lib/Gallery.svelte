@@ -131,6 +131,7 @@
 	div.container {
 		padding: 1rem 2rem;
 	}
+	
 	@media only screen and (max-width: 600px) {
 		div.center {
 			min-width: 90vw;
@@ -156,6 +157,13 @@
 			font-size: 2rem;
 			font-weight: bold;
 			color: var(--pure-white);
+		}
+	}
+	@media only screen and (max-width: 400px) {
+		div :global(.swiper) {
+			width: 100%;
+			height: 35vh;
+			top: 0;
 		}
 	}
 </style>
