@@ -14,12 +14,10 @@
 </div>
 
 <style>
-
 	#contact {
 		text-align: center;
 	}
-	a,
-	button#bio {
+	a {
 		background-color: burlywood;
 		padding: 2px 10px;
 		border-radius: 8px;
@@ -28,9 +26,7 @@
 		cursor: pointer;
 	}
 	a:hover,
-	button#bio:hover,
-	a:focus,
-	button#bio:focus {
+	a:focus {
 		background-color: rgb(240, 201, 150);
 	}
 </style>

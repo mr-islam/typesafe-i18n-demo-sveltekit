@@ -27,10 +27,7 @@
 
 {#key id}
 	<div out:fade={{ duration: 0 }} in:slide>
-		<!-- href={`/courses/${id}`} -->
 		<div class="card-course">
-			<!-- <img id="currentPhoto" src="SomeImage.jpg" onerror="this.onerror=null; this.src='Default.jpg'" alt="" width="100" height="120"> -->
-
 			<img
 				loading="lazy"
 				src={`/books/${id}.jpg`}

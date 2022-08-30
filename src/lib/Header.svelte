@@ -48,6 +48,18 @@
 	div.navigation-buttons {
 		flex: 1; 
 	}
+	div.navigation-buttons > a {
+		background-color: burlywood;
+		padding: 2px 10px;
+		border-radius: 8px;
+		color: black;
+		font-weight: bold;
+		cursor: pointer;
+	}
+	div.navigation-buttons > a:hover,
+	div.navigation-buttons > a:focus {
+		background-color: rgb(240, 201, 150);
+	}
 	a {
 		all: unset;
 		color: #4a5d33;
