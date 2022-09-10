@@ -3,7 +3,7 @@
 	import SvelteMarkdown from 'svelte-markdown'
 	import { page } from '$app/stores'
 
-	const source = $LL.articles[$page.params.slug].content().replace(/\\n/g, '<br />')
+	$: source = $LL.articles[$page.params.slug].content().replace(/\\n/g, '<br />')
 </script>
 
 <div>
