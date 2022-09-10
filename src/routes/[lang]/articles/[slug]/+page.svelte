@@ -13,6 +13,7 @@
 <style lang="scss">
 	div {
 		width: 50vw;
+		margin: 0 auto;
 	}
 	@media only screen and (max-width: 600px) {
 		div {
