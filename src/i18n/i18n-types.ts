@@ -1415,7 +1415,7 @@ type RootTranslation = {
 		}
 		'hadith-bukhari': {
 			/**
-			 * Hadith: Text 4
+			 * Hadith: Text
 			 */
 			title: string
 			desc: string
@@ -1427,7 +1427,7 @@ type RootTranslation = {
 		}
 		'hadith-muslim': {
 			/**
-			 * Hadith: Text 5
+			 * Hadith: Text
 			 */
 			title: string
 			desc: string
@@ -1439,7 +1439,7 @@ type RootTranslation = {
 		}
 		'hadith-tirmidhi': {
 			/**
-			 * Hadith: Text 6
+			 * Hadith: Text
 			 */
 			title: string
 			desc: string
@@ -1451,7 +1451,7 @@ type RootTranslation = {
 		}
 		'hadith-abudawud': {
 			/**
-			 * Hadith: Text 7
+			 * Hadith: Text
 			 */
 			title: string
 			desc: string
@@ -1463,7 +1463,7 @@ type RootTranslation = {
 		}
 		'hadith-ibnmajah': {
 			/**
-			 * Hadith: Text 8
+			 * Hadith: Text
 			 */
 			title: string
 			desc: string
@@ -1475,7 +1475,7 @@ type RootTranslation = {
 		}
 		'hadith-nasai': {
 			/**
-			 * Hadith: Text 9
+			 * Hadith: Text
 			 */
 			title: string
 			desc: string
@@ -1487,7 +1487,7 @@ type RootTranslation = {
 		}
 		'hadith-musnad': {
 			/**
-			 * Hadith: Text 10
+			 * Hadith: Text
 			 */
 			title: string
 			desc: string
@@ -1499,7 +1499,7 @@ type RootTranslation = {
 		}
 		'hadith-darimi': {
 			/**
-			 * Hadith: Text 11
+			 * Hadith: Text
 			 */
 			title: string
 			desc: string
@@ -1511,7 +1511,7 @@ type RootTranslation = {
 		}
 		'hadith-muwatta': {
 			/**
-			 * Hadith: Text 12
+			 * Hadith: Text
 			 */
 			title: string
 			desc: string
@@ -3123,7 +3123,7 @@ export type TranslationFunctions = {
 		}
 		'hadith-bukhari': {
 			/**
-			 * Hadith: Text 4
+			 * Hadith: Text
 			 */
 			title: () => LocalizedString
 			desc: () => LocalizedString
@@ -3135,7 +3135,7 @@ export type TranslationFunctions = {
 		}
 		'hadith-muslim': {
 			/**
-			 * Hadith: Text 5
+			 * Hadith: Text
 			 */
 			title: () => LocalizedString
 			desc: () => LocalizedString
@@ -3147,7 +3147,7 @@ export type TranslationFunctions = {
 		}
 		'hadith-tirmidhi': {
 			/**
-			 * Hadith: Text 6
+			 * Hadith: Text
 			 */
 			title: () => LocalizedString
 			desc: () => LocalizedString
@@ -3159,7 +3159,7 @@ export type TranslationFunctions = {
 		}
 		'hadith-abudawud': {
 			/**
-			 * Hadith: Text 7
+			 * Hadith: Text
 			 */
 			title: () => LocalizedString
 			desc: () => LocalizedString
@@ -3171,7 +3171,7 @@ export type TranslationFunctions = {
 		}
 		'hadith-ibnmajah': {
 			/**
-			 * Hadith: Text 8
+			 * Hadith: Text
 			 */
 			title: () => LocalizedString
 			desc: () => LocalizedString
@@ -3183,7 +3183,7 @@ export type TranslationFunctions = {
 		}
 		'hadith-nasai': {
 			/**
-			 * Hadith: Text 9
+			 * Hadith: Text
 			 */
 			title: () => LocalizedString
 			desc: () => LocalizedString
@@ -3195,7 +3195,7 @@ export type TranslationFunctions = {
 		}
 		'hadith-musnad': {
 			/**
-			 * Hadith: Text 10
+			 * Hadith: Text
 			 */
 			title: () => LocalizedString
 			desc: () => LocalizedString
@@ -3207,7 +3207,7 @@ export type TranslationFunctions = {
 		}
 		'hadith-darimi': {
 			/**
-			 * Hadith: Text 11
+			 * Hadith: Text
 			 */
 			title: () => LocalizedString
 			desc: () => LocalizedString
@@ -3219,7 +3219,7 @@ export type TranslationFunctions = {
 		}
 		'hadith-muwatta': {
 			/**
-			 * Hadith: Text 12
+			 * Hadith: Text
 			 */
 			title: () => LocalizedString
 			desc: () => LocalizedString
