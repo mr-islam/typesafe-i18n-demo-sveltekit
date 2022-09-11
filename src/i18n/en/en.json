@@ -110,23 +110,23 @@
   "courses": {
     "title": "Courses",
     "tajwid-qaida": {
-      "title": "Tajwid: Level 1",
+      "title": "Tajwid: 1",
       "desc": "A practical first text to reciting the Noble Quran correctly with tajwid",
       "book": "Al-Qaida al-Nuraniyyah",
       "explanation": ""
     },
     "tajwid-hidayatrahman": {
-      "title": "Tajwid: Level 2",
+      "title": "Tajwid: 2",
       "desc": "",
       "book": "Hidayat al-Rahman"
     },
     "tajwid-thani": {
-      "title": "Tajwid: Level 3",
+      "title": "Tajwid: 3",
       "desc": "Written by the expert scholar Yahya al-Ghawthani",
       "book": "Al-Mustawa al-Thani"
     },
     "tajwid-jazari": {
-      "title": "Tajwid: Level 4",
+      "title": "Tajwid: 4",
       "desc": "",
       "book": "Sharh al-Jazariyyah"
     },
@@ -308,61 +308,61 @@
       "explanation": ""
     },
     "aqidah-sharh-nazm": {
-      "title": "Beliefs: Level 1",
+      "title": "Beliefs: 1",
       "desc": "A masterful educational poem that's approachable yet vast, with an explanation and commentary",
       "book": "Nazm Aqida Ahl al-Sunnah",
       "explanation": ""
     },
     "aqidah-tali": {
-      "title": "Beliefs: Level 2",
+      "title": "Beliefs: 2",
       "desc": "An expert explanation for this major text. This level is sufficient for students not specialzing in beliefs",
       "book": "Taliʿ al-Bushra",
       "explanation": ""
     },
     "aqidah-miftah": {
-      "title": "Beliefs: Level 3",
+      "title": "Beliefs: 3",
       "desc": "A summary of over 50 works in Creed, this book opens the doors of advanced topics to come",
       "book": "Miftah al-Jannah",
       "explanation": ""
     },
     "aqidah-jawharah": {
-      "title": "Beliefs: Level 4",
+      "title": "Beliefs: 4",
       "desc": "A didactic poem containing most topics of belief, decorated with glimpses of higher truths",
       "book": "Jawharat al-Tawhid",
       "explanation": ""
     },
     "aqidah-taftazani": {
-      "title": "Beliefs: Level 5",
+      "title": "Beliefs: 5",
       "desc": "An explanation of a brief yet comprehensive book containing the Sunni beliefs of those who lean to intellectual investigation",
       "book": "Sharh al-Nasafiyyah",
       "explanation": ""
     },
     "aqidah-tahrir": {
-      "title": "Beliefs: Level 6",
+      "title": "Beliefs: 6",
       "desc": "A deep dive and joruney through the range of views",
       "book": "Tahrir al-Matalib",
       "explanation": ""
     },
     "fiqh-maslak": {
-      "title": "Fiqh: Level 2",
+      "title": "Fiqh: 2",
       "desc": "A complete study of the rulings related to acts of worship: purification, prayer, fasting, zakah & hajj",
       "book": "Maslak al-Najah",
       "explanation": ""
     },
     "fiqh-lubab": {
-      "title": "Fiqh: Level 3",
+      "title": "Fiqh: 3",
       "desc": "A later work that gathers what came before it to explain the most important Hanafi book",
       "book": "Al-Lubab",
       "explanation": ""
     },
     "fiqh-hidayah": {
-      "title": "Fiqh: Level 4",
+      "title": "Fiqh: 4",
       "desc": "The source and key for every book in the Madhhab that came after it",
       "book": "Al-Hidayah",
       "explanation": ""
     },
     "fiqh-rad": {
-      "title": "Fiqh: Level 5",
+      "title": "Fiqh: 5",
       "desc": "The book relied upon for issuing rulings in the Hanafi madhhab",
       "book": "Radd al-Muhtar",
       "explanation": ""

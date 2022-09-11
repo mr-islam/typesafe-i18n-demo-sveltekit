@@ -383,7 +383,7 @@ type RootTranslation = {
 		title: string
 		'tajwid-qaida': {
 			/**
-			 * Tajwid: Level 1
+			 * Tajwid: 1
 			 */
 			title: string
 			/**
@@ -398,7 +398,7 @@ type RootTranslation = {
 		}
 		'tajwid-hidayatrahman': {
 			/**
-			 * Tajwid: Level 2
+			 * Tajwid: 2
 			 */
 			title: string
 			desc: string
@@ -409,7 +409,7 @@ type RootTranslation = {
 		}
 		'tajwid-thani': {
 			/**
-			 * Tajwid: Level 3
+			 * Tajwid: 3
 			 */
 			title: string
 			/**
@@ -423,7 +423,7 @@ type RootTranslation = {
 		}
 		'tajwid-jazari': {
 			/**
-			 * Tajwid: Level 4
+			 * Tajwid: 4
 			 */
 			title: string
 			desc: string
@@ -833,7 +833,7 @@ type RootTranslation = {
 		}
 		'aqidah-sharh-nazm': {
 			/**
-			 * Beliefs: Level 1
+			 * Beliefs: 1
 			 */
 			title: string
 			/**
@@ -848,7 +848,7 @@ type RootTranslation = {
 		}
 		'aqidah-tali': {
 			/**
-			 * Beliefs: Level 2
+			 * Beliefs: 2
 			 */
 			title: string
 			/**
@@ -863,7 +863,7 @@ type RootTranslation = {
 		}
 		'aqidah-miftah': {
 			/**
-			 * Beliefs: Level 3
+			 * Beliefs: 3
 			 */
 			title: string
 			/**
@@ -878,7 +878,7 @@ type RootTranslation = {
 		}
 		'aqidah-jawharah': {
 			/**
-			 * Beliefs: Level 4
+			 * Beliefs: 4
 			 */
 			title: string
 			/**
@@ -893,7 +893,7 @@ type RootTranslation = {
 		}
 		'aqidah-taftazani': {
 			/**
-			 * Beliefs: Level 5
+			 * Beliefs: 5
 			 */
 			title: string
 			/**
@@ -908,7 +908,7 @@ type RootTranslation = {
 		}
 		'aqidah-tahrir': {
 			/**
-			 * Beliefs: Level 6
+			 * Beliefs: 6
 			 */
 			title: string
 			/**
@@ -923,7 +923,7 @@ type RootTranslation = {
 		}
 		'fiqh-maslak': {
 			/**
-			 * Fiqh: Level 2
+			 * Fiqh: 2
 			 */
 			title: string
 			/**
@@ -938,7 +938,7 @@ type RootTranslation = {
 		}
 		'fiqh-lubab': {
 			/**
-			 * Fiqh: Level 3
+			 * Fiqh: 3
 			 */
 			title: string
 			/**
@@ -953,7 +953,7 @@ type RootTranslation = {
 		}
 		'fiqh-hidayah': {
 			/**
-			 * Fiqh: Level 4
+			 * Fiqh: 4
 			 */
 			title: string
 			/**
@@ -968,7 +968,7 @@ type RootTranslation = {
 		}
 		'fiqh-rad': {
 			/**
-			 * Fiqh: Level 5
+			 * Fiqh: 5
 			 */
 			title: string
 			/**
@@ -2091,7 +2091,7 @@ export type TranslationFunctions = {
 		title: () => LocalizedString
 		'tajwid-qaida': {
 			/**
-			 * Tajwid: Level 1
+			 * Tajwid: 1
 			 */
 			title: () => LocalizedString
 			/**
@@ -2106,7 +2106,7 @@ export type TranslationFunctions = {
 		}
 		'tajwid-hidayatrahman': {
 			/**
-			 * Tajwid: Level 2
+			 * Tajwid: 2
 			 */
 			title: () => LocalizedString
 			desc: () => LocalizedString
@@ -2117,7 +2117,7 @@ export type TranslationFunctions = {
 		}
 		'tajwid-thani': {
 			/**
-			 * Tajwid: Level 3
+			 * Tajwid: 3
 			 */
 			title: () => LocalizedString
 			/**
@@ -2131,7 +2131,7 @@ export type TranslationFunctions = {
 		}
 		'tajwid-jazari': {
 			/**
-			 * Tajwid: Level 4
+			 * Tajwid: 4
 			 */
 			title: () => LocalizedString
 			desc: () => LocalizedString
@@ -2541,7 +2541,7 @@ export type TranslationFunctions = {
 		}
 		'aqidah-sharh-nazm': {
 			/**
-			 * Beliefs: Level 1
+			 * Beliefs: 1
 			 */
 			title: () => LocalizedString
 			/**
@@ -2556,7 +2556,7 @@ export type TranslationFunctions = {
 		}
 		'aqidah-tali': {
 			/**
-			 * Beliefs: Level 2
+			 * Beliefs: 2
 			 */
 			title: () => LocalizedString
 			/**
@@ -2571,7 +2571,7 @@ export type TranslationFunctions = {
 		}
 		'aqidah-miftah': {
 			/**
-			 * Beliefs: Level 3
+			 * Beliefs: 3
 			 */
 			title: () => LocalizedString
 			/**
@@ -2586,7 +2586,7 @@ export type TranslationFunctions = {
 		}
 		'aqidah-jawharah': {
 			/**
-			 * Beliefs: Level 4
+			 * Beliefs: 4
 			 */
 			title: () => LocalizedString
 			/**
@@ -2601,7 +2601,7 @@ export type TranslationFunctions = {
 		}
 		'aqidah-taftazani': {
 			/**
-			 * Beliefs: Level 5
+			 * Beliefs: 5
 			 */
 			title: () => LocalizedString
 			/**
@@ -2616,7 +2616,7 @@ export type TranslationFunctions = {
 		}
 		'aqidah-tahrir': {
 			/**
-			 * Beliefs: Level 6
+			 * Beliefs: 6
 			 */
 			title: () => LocalizedString
 			/**
@@ -2631,7 +2631,7 @@ export type TranslationFunctions = {
 		}
 		'fiqh-maslak': {
 			/**
-			 * Fiqh: Level 2
+			 * Fiqh: 2
 			 */
 			title: () => LocalizedString
 			/**
@@ -2646,7 +2646,7 @@ export type TranslationFunctions = {
 		}
 		'fiqh-lubab': {
 			/**
-			 * Fiqh: Level 3
+			 * Fiqh: 3
 			 */
 			title: () => LocalizedString
 			/**
@@ -2661,7 +2661,7 @@ export type TranslationFunctions = {
 		}
 		'fiqh-hidayah': {
 			/**
-			 * Fiqh: Level 4
+			 * Fiqh: 4
 			 */
 			title: () => LocalizedString
 			/**
@@ -2676,7 +2676,7 @@ export type TranslationFunctions = {
 		}
 		'fiqh-rad': {
 			/**
-			 * Fiqh: Level 5
+			 * Fiqh: 5
 			 */
 			title: () => LocalizedString
 			/**
