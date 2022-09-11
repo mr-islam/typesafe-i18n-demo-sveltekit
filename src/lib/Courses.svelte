@@ -86,6 +86,16 @@ import Contact from "$lib/elements/Contact.svelte";
       registration: "",
     },
     {
+      id: "hadith-riyad",
+      tags: ["hadith-matn"],
+      src: "/books/riyad.jpg",
+      level: 2,
+      book: "",
+      action: "later",
+      price: "",
+      registration: "",
+    },
+    {
       id: "hadith-adab",
       tags: ["hadith-matn"],
       level: 3,
@@ -93,11 +103,11 @@ import Contact from "$lib/elements/Contact.svelte";
       price: "",
       registration: "",
     },
+    
     {
-      id: "hadith-riyad",
+      id: "hadith-athar",
       tags: ["hadith-matn"],
-      src: "/books/riyad.jpg",
-      level: 2,
+      level: 3.5,
       book: "",
       action: "later",
       price: "",

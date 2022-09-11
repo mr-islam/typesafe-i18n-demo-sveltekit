@@ -553,16 +553,22 @@
       "book": "The 40 Nawawi Hadith",
       "explanation": ""
     },
-    "hadith-adab": {
+    "hadith-riyad": {
       "title": "Hadith: Text 2",
+      "desc": "A short collection of strong hadith, with rectification for our hearts and actions, making clear the way to the afterlife",
+      "book": "Mukktasar Riyad al-Salihin",
+      "explanation": ""
+    },
+    "hadith-adab": {
+      "title": "Hadith: Text 3",
       "desc": "A book of Prophetic, educational ettiquette that inspire the Ummah to folow and be adorned by them",
       "book": "Al-Adab al-Mufrad",
       "explanation": ""
     },
-    "hadith-riyad": {
-      "title": "Hadith: Text 3",
-      "desc": "A short collection of strong hadith, with rectification for our hearts and actions, making clear the way to the afterlife",
-      "book": "Mukktasar Riyad al-Salihin",
+    "hadith-athar": {
+      "title": "Hadith: Text 4",
+      "desc": "",
+      "book": "Al-Athar by Imam Muhammad",
       "explanation": ""
     },
     "hadith-bukhari": {

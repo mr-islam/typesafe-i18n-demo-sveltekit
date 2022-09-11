@@ -1383,9 +1383,24 @@ type RootTranslation = {
 			book: string
 			explanation: string
 		}
-		'hadith-adab': {
+		'hadith-riyad': {
 			/**
 			 * Hadith: Text 2
+			 */
+			title: string
+			/**
+			 * A short collection of strong hadith, with rectification for our hearts and actions, making clear the way to the afterlife
+			 */
+			desc: string
+			/**
+			 * Mukktasar Riyad al-Salihin
+			 */
+			book: string
+			explanation: string
+		}
+		'hadith-adab': {
+			/**
+			 * Hadith: Text 3
 			 */
 			title: string
 			/**
@@ -1398,17 +1413,14 @@ type RootTranslation = {
 			book: string
 			explanation: string
 		}
-		'hadith-riyad': {
+		'hadith-athar': {
 			/**
-			 * Hadith: Text 3
+			 * Hadith: Text 4
 			 */
 			title: string
-			/**
-			 * A short collection of strong hadith, with rectification for our hearts and actions, making clear the way to the afterlife
-			 */
 			desc: string
 			/**
-			 * Mukktasar Riyad al-Salihin
+			 * Al-Athar by Imam Muhammad
 			 */
 			book: string
 			explanation: string
@@ -3091,9 +3103,24 @@ export type TranslationFunctions = {
 			book: () => LocalizedString
 			explanation: () => LocalizedString
 		}
-		'hadith-adab': {
+		'hadith-riyad': {
 			/**
 			 * Hadith: Text 2
+			 */
+			title: () => LocalizedString
+			/**
+			 * A short collection of strong hadith, with rectification for our hearts and actions, making clear the way to the afterlife
+			 */
+			desc: () => LocalizedString
+			/**
+			 * Mukktasar Riyad al-Salihin
+			 */
+			book: () => LocalizedString
+			explanation: () => LocalizedString
+		}
+		'hadith-adab': {
+			/**
+			 * Hadith: Text 3
 			 */
 			title: () => LocalizedString
 			/**
@@ -3106,17 +3133,14 @@ export type TranslationFunctions = {
 			book: () => LocalizedString
 			explanation: () => LocalizedString
 		}
-		'hadith-riyad': {
+		'hadith-athar': {
 			/**
-			 * Hadith: Text 3
+			 * Hadith: Text 4
 			 */
 			title: () => LocalizedString
-			/**
-			 * A short collection of strong hadith, with rectification for our hearts and actions, making clear the way to the afterlife
-			 */
 			desc: () => LocalizedString
 			/**
-			 * Mukktasar Riyad al-Salihin
+			 * Al-Athar by Imam Muhammad
 			 */
 			book: () => LocalizedString
 			explanation: () => LocalizedString
