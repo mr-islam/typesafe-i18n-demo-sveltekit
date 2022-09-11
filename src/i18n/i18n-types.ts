@@ -323,7 +323,7 @@ type RootTranslation = {
 		 */
 		tasawwuf_suluk: string
 		/**
-		 * Higher Realities
+		 * Deeper Reflection
 		 */
 		tasawwuf_irfan: string
 		/**
@@ -1187,7 +1187,7 @@ type RootTranslation = {
 		}
 		'tasawwuf-wasaya': {
 			/**
-			 * Spirituality: Reaching 1
+			 * Spirituality: 1
 			 */
 			title: string
 			desc: string
@@ -1199,7 +1199,7 @@ type RootTranslation = {
 		}
 		'tasawwuf-qawanin': {
 			/**
-			 * Spirituality: Reaching 2
+			 * Spirituality: 2
 			 */
 			title: string
 			/**
@@ -1214,7 +1214,7 @@ type RootTranslation = {
 		}
 		'tasawwuf-naqsh': {
 			/**
-			 * Spirituality: Reaching 3
+			 * Spirituality: 3
 			 */
 			title: string
 			desc: string
@@ -1226,7 +1226,7 @@ type RootTranslation = {
 		}
 		'tasawwuf-insankamil': {
 			/**
-			 * Spirituality: Reaching 4
+			 * Spirituality: 4
 			 */
 			title: string
 			desc: string
@@ -1238,7 +1238,7 @@ type RootTranslation = {
 		}
 		'tasawwuf-fusus': {
 			/**
-			 * Spirituality: Reaching 5
+			 * Spirituality: 5
 			 */
 			title: string
 			desc: string
@@ -2031,7 +2031,7 @@ export type TranslationFunctions = {
 		 */
 		tasawwuf_suluk: () => LocalizedString
 		/**
-		 * Higher Realities
+		 * Deeper Reflection
 		 */
 		tasawwuf_irfan: () => LocalizedString
 		/**
@@ -2895,7 +2895,7 @@ export type TranslationFunctions = {
 		}
 		'tasawwuf-wasaya': {
 			/**
-			 * Spirituality: Reaching 1
+			 * Spirituality: 1
 			 */
 			title: () => LocalizedString
 			desc: () => LocalizedString
@@ -2907,7 +2907,7 @@ export type TranslationFunctions = {
 		}
 		'tasawwuf-qawanin': {
 			/**
-			 * Spirituality: Reaching 2
+			 * Spirituality: 2
 			 */
 			title: () => LocalizedString
 			/**
@@ -2922,7 +2922,7 @@ export type TranslationFunctions = {
 		}
 		'tasawwuf-naqsh': {
 			/**
-			 * Spirituality: Reaching 3
+			 * Spirituality: 3
 			 */
 			title: () => LocalizedString
 			desc: () => LocalizedString
@@ -2934,7 +2934,7 @@ export type TranslationFunctions = {
 		}
 		'tasawwuf-insankamil': {
 			/**
-			 * Spirituality: Reaching 4
+			 * Spirituality: 4
 			 */
 			title: () => LocalizedString
 			desc: () => LocalizedString
@@ -2946,7 +2946,7 @@ export type TranslationFunctions = {
 		}
 		'tasawwuf-fusus': {
 			/**
-			 * Spirituality: Reaching 5
+			 * Spirituality: 5
 			 */
 			title: () => LocalizedString
 			desc: () => LocalizedString
