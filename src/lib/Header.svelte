@@ -13,7 +13,7 @@
 	<div id="heading">
 		<div />
 		<a href="/{$locale}">
-			<img alt="Logo of Arabic calligraphy" id="logo" src="/logo-new.jpg" />
+			<img alt="Logo of Arabic calligraphy" id="logo" src="/logo-new.png" />
 		</a>
 
 		<div style="flex: 1;">
