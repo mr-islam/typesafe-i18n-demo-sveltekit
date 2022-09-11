@@ -18,9 +18,6 @@
 	})
 </script>
 
-<svelte:head>
-	<title>{$LL.title()}</title>
-</svelte:head>
 
 {#key dir}
 	<div class="container">
