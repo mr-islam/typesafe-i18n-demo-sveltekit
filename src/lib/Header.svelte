@@ -10,8 +10,8 @@
 </script>
 
 <header>
+	<div style="flex: 1;"></div>
 	<div id="heading">
-		<div />
 		<a href="/{$locale}">
 			<img alt="Logo of Arabic calligraphy" id="logo" src="/logo-new.png" />
 		</a>
@@ -28,24 +28,17 @@
 		</div>
 	</div>
 
-	<div class="navigation-buttons">
-		<a href="#courses" on:click|preventDefault={scrollIntoView}>{$LL.courses.title()}</a>
-		&middot;
-		<a href="#wisdoms" on:click|preventDefault={scrollIntoView}>
-			{$LL.articles.title()}
-			<!--  + $LL.and() + $LL.wisdoms.title() -->
-		</a>
-		&middot;
-		<a href="#goals" on:click|preventDefault={scrollIntoView}>{$LL.goals.goal()}</a>
-		<br />
-	</div>
-
 	<div id="lang-switcher">
 		<LocaleSwitcher />
 	</div>
 </header>
 
 <style>
+	div#heading {
+		flex-direction: column;
+		text-align: center;
+		flex: 1;
+	}
 	div#lang-switcher {
 		flex: 1;
 		display: flex;
@@ -56,23 +49,6 @@
 		display: flex;
 		gap: 10px;
 		align-items: center;
-	}
-	div.navigation-buttons {
-		flex: 1;
-		text-align: center;
-		line-break: strict;
-	}
-	div.navigation-buttons > a {
-		background-color: burlywood;
-		padding: 2px 10px;
-		border-radius: 8px;
-		color: black;
-		font-weight: bold;
-		cursor: pointer;
-	}
-	div.navigation-buttons > a:hover,
-	div.navigation-buttons > a:focus {
-		background-color: rgb(240, 201, 150);
 	}
 	a {
 		all: unset;
@@ -99,7 +75,7 @@
 		border-radius: 360px;
 		max-width: 6vw;
 	}
-	
+
 	@media only screen and (max-width: 900px) {
 		img#logo {
 			max-width: 12vw;
@@ -120,10 +96,6 @@
 		}
 	}
 	@media only screen and (max-width: 400px) {
-		div#heading {
-			flex-direction: column;
-			text-align: center;
-		}
 		img#logo {
 			max-width: 20vw;
 			margin: 5px;
