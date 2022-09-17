@@ -18,4 +18,3 @@
 <IntroBullets />
 <Courses />
 <Articles />
-<Goals />
