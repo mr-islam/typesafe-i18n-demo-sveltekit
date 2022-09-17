@@ -821,9 +821,6 @@ import Contact from "$lib/elements/Contact.svelte";
 </script>
 
 <h1 id="courses">{$LL.courses.title()}</h1>
-<div style="text-align: center; padding: 0 0 20px 0;">
-  <Contact />
-</div>
 
 <div id="grid">
   <button

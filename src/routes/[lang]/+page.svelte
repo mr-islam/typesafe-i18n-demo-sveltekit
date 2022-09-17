@@ -19,4 +19,3 @@
 <Courses />
 <Articles />
 <Goals />
-<Contact />
