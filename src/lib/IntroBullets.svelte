@@ -10,13 +10,7 @@
 			</p>
 		</div>
 	</a>
-	<a href="/{$locale}/curriculum">
-		<div class="box" id="box-2">
-			<p>
-				{$LL.welcome.complete_curriculum()}
-			</p>
-		</div>
-	</a>
+	
 	<a href="/{$locale}/articles">
 		<div class="box" id="box-4">
 			<p>
@@ -26,9 +20,18 @@
 	</a>
 	<a href="/{$locale}/contact">
 		<div class="box" id="box-3">
-			<p>للاستفادة، تواصلوا:</p>
+			<p>{$LL.welcome.contact()}:</p>
 		</div>
 	</a>
+
+  <!-- NOT READY YET 
+    <a href="/{$locale}/curriculum">
+		<div class="box" id="box-2">
+			<p>
+				{$LL.welcome.complete_curriculum()}
+			</p>
+		</div>
+	</a> -->
 </div>
 
 <style>

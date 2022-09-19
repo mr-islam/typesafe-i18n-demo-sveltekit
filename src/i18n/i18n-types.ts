@@ -58,17 +58,17 @@ type RootTranslation = {
 		 */
 		complete_curriculum: string
 		/**
-		 * Our mission is to link students to true scholars, who connect them to the Noble Prophet (ﷺ).
+		 * Our goal is to produce Lordly Scholars and Righteous Leaders, and reviving the Religious Sciencess
 		 */
 		mission: string
 		/**
-		 * Access your lessons and recordings wherever you are—learning always goes on.
+		 * Our Libary contains writtent articles and audio recordings
 		 */
 		online: string
 		/**
-		 * Benefit now from the library of articles and videos that will continue tog row inshaAllah
+		 * Find out more about studying through this website and benefitting from it
 		 */
-		articles: string
+		contact: string
 	}
 	shaykh: {
 		/**
@@ -1778,17 +1778,17 @@ export type TranslationFunctions = {
 		 */
 		complete_curriculum: () => LocalizedString
 		/**
-		 * Our mission is to link students to true scholars, who connect them to the Noble Prophet (ﷺ).
+		 * Our goal is to produce Lordly Scholars and Righteous Leaders, and reviving the Religious Sciencess
 		 */
 		mission: () => LocalizedString
 		/**
-		 * Access your lessons and recordings wherever you are—learning always goes on.
+		 * Our Libary contains writtent articles and audio recordings
 		 */
 		online: () => LocalizedString
 		/**
-		 * Benefit now from the library of articles and videos that will continue tog row inshaAllah
+		 * Find out more about studying through this website and benefitting from it
 		 */
-		articles: () => LocalizedString
+		contact: () => LocalizedString
 	}
 	shaykh: {
 		/**
