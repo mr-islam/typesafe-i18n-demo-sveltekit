@@ -2,6 +2,7 @@
 	import { Swiper, SwiperSlide } from 'swiper/svelte'
 	import LL, { locale } from '$i18n/i18n-svelte'
 	import { onMount, afterUpdate } from 'svelte'
+	import IntroBullets from '$lib/IntroBullets.svelte'
 
 	import 'swiper/css'
 
@@ -18,51 +19,68 @@
 	})
 </script>
 
-
 {#key dir}
-	<div class="container">
-		<Swiper
-			{dir}
-			navigation={false}
-			autoplay={{
-				delay: 6000,
-				disableOnInteraction: false,
-			}}
-			class="mySwiper"
-		>
-			<SwiperSlide>
-				<div class="center">
-					<h1>{$LL.hero.header1()}</h1>
-					<p>{$LL.hero.subheader1()}</p>
-				</div>
-				<img alt="pretty background for announcement background" src="/backgrounds/flowers.jpg" />
-			</SwiperSlide>
-			<SwiperSlide>
-				<div class="center">
-					<h1>{$LL.hero.header1()}</h1>
-					<p>{$LL.hero.subheader1()}</p>
-				</div>
-				<img alt="pretty background for announcement background" src="/backgrounds/cloud.jpg" />
-			</SwiperSlide>
-			<SwiperSlide>
-				<div class="center">
-					<h1>{$LL.hero.header1()}</h1>
-					<p>{$LL.hero.subheader1()}</p>
-				</div>
-				<img alt="pretty background for announcement background" src="/backgrounds/garden.jpg" />
-			</SwiperSlide>
-			<SwiperSlide>
-				<div class="center">
-					<h1>{$LL.hero.header1()}</h1>
-					<p>{$LL.hero.subheader1()}</p>
-				</div>
-				<img alt="pretty background for announcement background" src="/backgrounds/flowers.jpg" />
-			</SwiperSlide>
-		</Swiper>
+	<div id="flex">
+		<div id="intro">
+			<IntroBullets />
+		</div>
+
+		<div class="container">
+			<Swiper
+				{dir}
+				navigation={false}
+				autoplay={{
+					delay: 4000,
+					disableOnInteraction: false,
+				}}
+				class="mySwiper"
+			>
+				<SwiperSlide>
+					<div class="center">
+						<h1>{$LL.hero.header1()}</h1>
+						<p>{$LL.hero.subheader1()}</p>
+					</div>
+					<img alt="pretty background for announcement background" src="/backgrounds/flowers.jpg" />
+				</SwiperSlide>
+				<SwiperSlide>
+					<div class="center">
+						<h1>{$LL.hero.header1()}</h1>
+						<p>{$LL.hero.subheader1()}</p>
+					</div>
+					<img alt="pretty background for announcement background" src="/backgrounds/cloud.jpg" />
+				</SwiperSlide>
+				<SwiperSlide>
+					<div class="center">
+						<h1>{$LL.hero.header1()}</h1>
+						<p>{$LL.hero.subheader1()}</p>
+					</div>
+					<img alt="pretty background for announcement background" src="/backgrounds/garden.jpg" />
+				</SwiperSlide>
+				<SwiperSlide>
+					<div class="center">
+						<h1>{$LL.hero.header1()}</h1>
+						<p>{$LL.hero.subheader1()}</p>
+					</div>
+					<img alt="pretty background for announcement background" src="/backgrounds/flowers.jpg" />
+				</SwiperSlide>
+			</Swiper>
+		</div>
 	</div>
 {/key}
 
 <style>
+	div#flex {
+		display: flex;
+		flex-direction: row;
+	}
+	div#intro {
+		min-width: 25vw;
+		margin: 10px;
+	}
+	div.container {
+		padding: 1rem 2rem;
+		width: 100%;
+	}
 	:global(div.swiper-button-prev, div.swiper-button-next) {
 		background-color: var(--accent-color);
 		color: white;
@@ -96,9 +114,10 @@
 		border-radius: 12px;
 	}
 	div :global(.swiper) {
-		width: 100%;
+		width: 70%;
 		height: 60vh;
 		background-color: #ffffff;
+		margin: 0;
 	}
 
 	div :global(.swiper-slide) {
@@ -126,10 +145,6 @@
 		height: 100%;
 		object-fit: cover;
 	}
-	div.container {
-		padding: 1rem 2rem;
-	}
-	
 	@media only screen and (max-width: 600px) {
 		div.center {
 			min-width: 90vw;

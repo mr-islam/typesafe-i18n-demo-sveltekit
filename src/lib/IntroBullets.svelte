@@ -1,75 +1,62 @@
 <script context="module">
-  import LL from '$i18n/i18n-svelte'
+	import LL from '$i18n/i18n-svelte'
 </script>
 
-<div class="paras-about">
-  <div>
-    <div>
-      <span>🔗</span>
-      <p>{$LL.welcome.mission()}</p>
-    </div>
-    <div>
-      <span>🪐</span>
-
-      <p>
-        {$LL.welcome.complete_curriculum()}
-      </p>
-    </div>
-    <div>
-      <span>📜</span>
-
-      <p>
-        {$LL.welcome.articles()}
-      </p>
-    </div>
-    <div>
-      <span>🖥️</span>
-
-      <p>
-        {$LL.welcome.online()}
-      </p>
-    </div>
-  </div>
+<div id="flex">
+	<div class="box" id="box-1">
+		<p>
+			{$LL.welcome.mission()}
+		</p>
+	</div>
+	<div class="box" id="box-2">
+		<p>
+			{$LL.welcome.complete_curriculum()}
+		</p>
+	</div>
+	<div class="box" id="box-3">
+		<p>
+			{$LL.welcome.articles()}
+		</p>
+	</div>
+	<div class="box" id="box-4">
+		<p>
+			{$LL.welcome.online()}
+		</p>
+	</div>
 </div>
 
 <style>
-  P {
-    color: var(--accent-color);
-  }
-  div.paras-about {
-    background: var(--);
-    width: 100%;
-    margin: 0 0 56px 0;
-    /* max-height: 10vh; */
-  }
-  div.paras-about > div {
-    padding: 5vh 5vw;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 10vw;
-    place-content: center;
-    /* place-items: center; */
-  }
-  div.paras-about > div > div {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-  }
-  span {
-    padding: 10px 10px 10px 10px;
-    margin: 0 10px;
-    background: var(--primary-color);
-    border-radius: 360px;
-  }
+	div#flex {
+		display: flex;
+		flex-direction: column;
+		gap: 5px;
+		flex: 1 1 auto;
+	}
 
-  @media only screen and (max-width: 600px) {
-    div.paras-about {
-      min-width: 100%;
-      margin: 0 0 56px 0;
-    }
-    div.paras-about > div {
-      padding: 1vh 1vw;
-      grid-template-columns: 1fr;
-    }
-  }
+	P {
+		color: var(--accent-color);
+    margin: 15px 10px;
+	}
+
+	div.box {
+		margin: 5px;
+		border-radius: 12px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+	}
+
+	div#box-1 {
+		background-color: rgb(174, 255, 255);
+	}
+	div#box-2 {
+		background-color: rgb(255, 255, 195);
+	}
+	div#box-3 {
+		background-color: rgb(196, 255, 196);
+	}
+	div#box-4 {
+		background-color: rgb(255, 209, 255);
+	}
+
+	@media only screen and (max-width: 600px) {
+	}
 </style>
