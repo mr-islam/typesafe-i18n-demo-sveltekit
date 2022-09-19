@@ -1,28 +1,34 @@
 <script context="module">
-	import LL from '$i18n/i18n-svelte'
+	import LL, { locale } from '$i18n/i18n-svelte'
 </script>
 
 <div id="flex">
-	<div class="box" id="box-1">
-		<p>
-			{$LL.welcome.mission()}
-		</p>
-	</div>
-	<div class="box" id="box-2">
-		<p>
-			{$LL.welcome.complete_curriculum()}
-		</p>
-	</div>
-	<div class="box" id="box-3">
-		<p>
-			{$LL.welcome.articles()}
-		</p>
-	</div>
-	<div class="box" id="box-4">
-		<p>
-			{$LL.welcome.online()}
-		</p>
-	</div>
+	<a href="/{$locale}/goals">
+		<div class="box" id="box-1">
+			<p>
+				{$LL.welcome.mission()}
+			</p>
+		</div>
+	</a>
+	<a href="/{$locale}/curriculum">
+		<div class="box" id="box-2">
+			<p>
+				{$LL.welcome.complete_curriculum()}
+			</p>
+		</div>
+	</a>
+	<a href="/{$locale}/articles">
+		<div class="box" id="box-4">
+			<p>
+				{$LL.welcome.online()}
+			</p>
+		</div>
+	</a>
+	<a href="/{$locale}/contact">
+		<div class="box" id="box-3">
+			<p>للاستفادة، تواصلوا:</p>
+		</div>
+	</a>
 </div>
 
 <style>
@@ -35,13 +41,14 @@
 
 	P {
 		color: var(--accent-color);
-    margin: 15px 10px;
+		padding: 15px 10px;
+		margin: 0;
 	}
 
 	div.box {
 		margin: 5px;
 		border-radius: 12px;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+		box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 	}
 
 	div#box-1 {
