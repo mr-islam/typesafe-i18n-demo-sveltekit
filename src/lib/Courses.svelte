@@ -2,20 +2,12 @@
   import CourseCard2 from "$lib/elements/CourseCard2.svelte";
 
   import LL from '$i18n/i18n-svelte'
-import Contact from "$lib/elements/Contact.svelte";
 
   function scrollToTitle() {
     document
       .getElementById("section-title")
       .scrollIntoView({ behavior: "smooth" });
   }
-  function scrollIntoView({ target }) {
-		const el = document.querySelector(target.getAttribute('href'))
-		if (!el) return
-		el.scrollIntoView({
-			behavior: 'smooth',
-		})
-	}
 
   let courses = [
     {
