@@ -16,9 +16,9 @@
 			data: { label: 'الفرض العيني' },
 			width: 125,
 			height: 40,
-			bgColor: 'skyblue',
+			bgColor: 'white',
 			sourcePosition: 'left',
-			borderColor: 'skyblue'
+			borderColor: 'black'
 		},
 		{
 			id: 2,
@@ -26,10 +26,10 @@
 			data: { label: 'علم التوحيد' },
 			width: 80,
 			height: 40,
-			bgColor: 'skyblue',
+			bgColor: '#61FFA3',
 			sourcePosition: 'left',
 			targetPosition: 'right',
-			borderColor: 'skyblue'
+			borderColor: '#61FFA3'
 		},
 		{
 			id: 3,
@@ -39,7 +39,8 @@
 			},
 			width: 175,
 			height: 100,
-			bgColor: 'white',
+			bgColor: '#61FFA3',
+			borderColor: "#61FFA3",
 			targetPosition: 'right',
 		},
 		{
@@ -48,10 +49,10 @@
 			data: { label: 'علم التجويد' },
 			width: 80,
 			height: 40,
-			bgColor: 'skyblue',
+			bgColor: '#A2FDFF',
 			sourcePosition: 'left',
 			targetPosition: 'right',
-			borderColor: 'skyblue'
+			borderColor: '#A2FDFF'
 		},
 		{
 			id: 5,
@@ -61,7 +62,8 @@
 			},
 			width: 125,
 			height: 40,
-			bgColor: 'white',
+			bgColor: '#A2FDFF',
+			borderColor: '#A2FDFF',
 			targetPosition: 'right',
 		},
 		{
@@ -70,10 +72,10 @@
 			data: { label: 'علم العبادات' },
 			width: 80,
 			height: 40,
-			bgColor: 'skyblue',
+			bgColor: '#A7B7FF',
 			sourcePosition: 'left',
 			targetPosition: 'right',
-			borderColor: 'skyblue'
+			borderColor: '#A7B7FF'
 		},
 		{
 			id: 7,
@@ -83,7 +85,8 @@
 			},
 			width: 175,
 			height: 50,
-			bgColor: 'white',
+			bgColor: '#A7B7FF',
+			borderColor: '#A7B7FF',
 			targetPosition: 'right',
 		},
 		{
@@ -92,10 +95,10 @@
 			data: { label: 'علم المعاملات' },
 			width: 80,
 			height: 40,
-			bgColor: 'skyblue',
+			bgColor: '#FFC5A7',
 			sourcePosition: 'left',
 			targetPosition: 'right',
-			borderColor: 'skyblue'
+			borderColor: '#FFC5A7'
 		},
 		{
 			id: 9,
@@ -105,8 +108,9 @@
 			},
 			width: 175,
 			height: 70,
-			bgColor: 'white',
+			bgColor: '#FFC5A7',
 			targetPosition: 'right',
+			borderColor: '#FFC5A7',
 		},
 		{
 			id: 10,
@@ -114,10 +118,10 @@
 			data: { label: 'علم التصوف' },
 			width: 80,
 			height: 40,
-			bgColor: 'skyblue',
+			bgColor: '#EEFFB2',
 			sourcePosition: 'left',
 			targetPosition: 'right',
-			borderColor: 'skyblue'
+			borderColor: '#EEFFB2'
 		},
 		{
 			id: 11,
@@ -127,8 +131,9 @@
 			},
 			width: 175,
 			height: 70,
-			bgColor: 'white',
+			bgColor: '#EEFFB2',
 			targetPosition: 'right',
+			borderColor: '#EEFFB2',
 		}		
 	]
 
