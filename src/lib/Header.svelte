@@ -10,7 +10,7 @@
 </script>
 
 <header>
-	<div style="flex: 1;"></div>
+	<div style="flex: 1;" />
 	<div id="heading">
 		<a href="/{$locale}">
 			<img alt="Logo of Arabic calligraphy" id="logo" src="/logo-new.png" />
@@ -24,7 +24,7 @@
 				<h1>{$LL.title()}</h1>
 			</a>
 
-			<span>{$LL.slogan()}</span>
+			<h2>{$LL.slogan()}</h2>
 		</div>
 	</div>
 
@@ -73,7 +73,7 @@
 	img#logo {
 		border: 1px black solid;
 		border-radius: 360px;
-		max-width: 6vw;
+		max-width: 10vw;
 	}
 
 	@media only screen and (max-width: 900px) {
@@ -102,7 +102,11 @@
 		}
 	}
 	h1 {
-		font-size: 1.5rem;
+		font-size: 2rem;
 		margin: 0;
+	}
+	h2 {
+		margin-top: -5px;
+		font-size: 1.25rem;
 	}
 </style>
