@@ -8,11 +8,12 @@
 <div id="goals" class="container">
 	<div class="flex-row">
 		<div class="img-left">
-			<h1>{$LL.shaykh.heading()}</h1>
+			<!-- <h1>{$LL.shaykh.heading()}</h1>
 
 			<img alt="Shaykh Abd al-Rahman" class="profile" src="master.jpg" />
 			<p style="text-align: center">{$LL.shaykh.title()}<br>{$LL.shaykh.name()}</p>
-			<p>{$LL.shaykh.short_bio()}</p>
+			<p>{$LL.shaykh.short_bio()}</p> -->
+			<h1>الكتب</h1>
 			<Books />
 		</div>
 		<div class="text-right">
