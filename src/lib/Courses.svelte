@@ -12,7 +12,7 @@
 	const initialNodes = [
 		{
 			id: 1,
-			position: { x: 350, y: 280 },
+			position: { x: 350, y: 210 },
 			data: { label: 'الفرض العيني' },
 			width: 125,
 			height: 40,
@@ -22,7 +22,7 @@
 		},
 		{
 			id: 2,
-			position: { x: 250, y: 100 },
+			position: { x: 250, y: 65 },
 			data: { label: 'علم التوحيد' },
 			width: 80,
 			height: 40,
@@ -33,7 +33,7 @@
 		},
 		{
 			id: 3,
-			position: { x: 50, y: 75 },
+			position: { x: 50, y: 35 },
 			data: {
 				label: 'معرفة العقائد الواجبة والمتسحيلة والجائزة في حق اللع تعالى ورسله عليهم الصلاة والسلام والإيمان بالسمعيات',
 			},
@@ -45,7 +45,7 @@
 		},
 		{
 			id: 4,
-			position: { x: 250, y: 200 },
+			position: { x: 250, y: 150 },
 			data: { label: 'علم التجويد' },
 			width: 80,
 			height: 40,
@@ -56,7 +56,7 @@
 		},
 		{
 			id: 5,
-			position: { x: 100, y: 200 },
+			position: { x: 100, y: 150 },
 			data: {
 				label: 'إتقان تلاوة القرآن وترتيله',
 			},
@@ -68,7 +68,7 @@
 		},
 		{
 			id: 6,
-			position: { x: 250, y: 275 },
+			position: { x: 250, y: 210 },
 			data: { label: 'علم العبادات' },
 			width: 80,
 			height: 40,
@@ -79,7 +79,7 @@
 		},
 		{
 			id: 7,
-			position: { x: 50, y: 275 },
+			position: { x: 50, y: 205 },
 			data: {
 				label: 'الإتيان بالعبادات على الوجه الشرعي الصحيح',
 			},
@@ -91,7 +91,7 @@
 		},
 		{
 			id: 8,
-			position: { x: 250, y: 350 },
+			position: { x: 250, y: 285 },
 			data: { label: 'علم المعاملات' },
 			width: 80,
 			height: 40,
@@ -102,7 +102,7 @@
 		},
 		{
 			id: 9,
-			position: { x: 50, y: 350 },
+			position: { x: 50, y: 270 },
 			data: {
 				label: 'إجراء المعاملات الشاملة للبيوع، وأحكام الأسرة على الوجه الذي شرعه الله تعالى',
 			},
@@ -114,7 +114,7 @@
 		},
 		{
 			id: 10,
-			position: { x: 250, y: 450 },
+			position: { x: 250, y: 370 },
 			data: { label: 'علم التصوف' },
 			width: 80,
 			height: 40,
@@ -125,7 +125,7 @@
 		},
 		{
 			id: 11,
-			position: { x: 50, y: 450 },
+			position: { x: 50, y: 355 },
 			data: {
 				label: 'إصلاح القلب وتهذيب النفس',
 			},
@@ -138,7 +138,7 @@
 		// END FARD, START QURAN
 		{
 			id: 12,
-			position: { x: 350, y: 625 },
+			position: { x: 350, y: 580 },
 			data: { label: 'القرآن الكريم وعلومه' },
 			width: 125,
 			height: 40,
@@ -148,7 +148,7 @@
 		},
 		{
 			id: 13,
-			position: { x: 250, y: 575 },
+			position: { x: 250, y: 500 },
 			data: { label: 'علم التجويد' },
 			width: 80,
 			height: 40,
@@ -159,7 +159,7 @@
 		},
 		{
 			id: 14,
-			position: { x: 50, y: 550 },
+			position: { x: 50, y: 485 },
 			data: {
 				label: 'إتقان تلاوة القرآن وترتيله من خلال تدريب عملي ودراسة نظرية',
 			},
@@ -171,7 +171,7 @@
 		},
 		{
 			id: 15,
-			position: { x: 250, y: 625 },
+			position: { x: 250, y: 580 },
 			data: { label: 'علم التفسير' },
 			width: 80,
 			height: 40,
@@ -182,7 +182,7 @@
 		},
 		{
 			id: 16,
-			position: { x: 50, y: 625 },
+			position: { x: 50, y: 565 },
 			data: {
 				label: 'شرح وتدبر بعض معاني كتاب الله العزيز بالنظر إلى الظاهر والباطن والحد والمطلع',
 			},
@@ -194,7 +194,7 @@
 		},
 		{
 			id: 17,
-			position: { x: 250, y: 675 },
+			position: { x: 250, y: 660 },
 			data: { label: 'علوم القرآن' },
 			width: 80,
 			height: 40,
@@ -205,7 +205,7 @@
 		},
 		{
 			id: 18,
-			position: { x: 50, y: 675 },
+			position: { x: 50, y: 645 },
 			data: {
 				label: 'إتمام المعرفة حول كتاب الله تعالى وأساليب العلماء في تفسيره',
 			},
@@ -215,10 +215,10 @@
 			targetPosition: 'right',
 			borderColor: '#97BFFF',
 		},
-		//
+		// HADITH
 		{
 			id: 19,
-			position: { x: 350, y: 850 },
+			position: { x: 350, y: 870 },
 			data: { label: 'الحديث وعلومه' },
 			width: 125,
 			height: 40,
@@ -228,7 +228,7 @@
 		},
 		{
 			id: 20,
-			position: { x: 250, y: 860 },
+			position: { x: 250, y: 870 },
 			data: { label: 'متون الحديث' },
 			width: 80,
 			height: 40,
@@ -239,7 +239,7 @@
 		},
 		{
 			id: 21,
-			position: { x: 50, y: 860 },
+			position: { x: 50, y: 855 },
 			data: {
 				label: 'التعمق رواية ودراية في كلام سيّد الكونين ﷺ',
 			},
@@ -262,7 +262,7 @@
 		},
 		{
 			id: 23,
-			position: { x: 50, y: 950 },
+			position: { x: 50, y: 935 },
 			data: {
 				label: 'نننننننننننننننننننننننننن',
 			},
@@ -286,7 +286,7 @@
 		},
 		{
 			id: 25,
-			position: { x: 50, y: 780 },
+			position: { x: 50, y: 775 },
 			data: {
 				label: 'نننننننننننننننننننننننننن',
 			},
@@ -299,7 +299,7 @@
 		// AQIDA
 		{
 			id: 26,
-			position: { x: 350, y: 1100 },
+			position: { x: 350, y: 1085 },
 			data: { label: 'العقيدة' },
 			width: 125,
 			height: 40,
@@ -309,7 +309,7 @@
 		},
 		{
 			id: 27,
-			position: { x: 50, y: 1100 },
+			position: { x: 50, y: 1070 },
 			data: {
 				label: 'ننننننننننننن',
 			},
@@ -322,7 +322,7 @@
 		// FIQH
 		{
 			id: 28,
-			position: { x: 350, y: 1400 },
+			position: { x: 350, y: 1360 },
 			data: { label: 'الفقه وأصوله' },
 			width: 125,
 			height: 40,
@@ -332,7 +332,7 @@
 		},
 		{
 			id: 29,
-			position: { x: 250, y: 1250 },
+			position: { x: 250, y: 1230 },
 			data: { label: 'الفروع' },
 			width: 80,
 			height: 40,
@@ -343,7 +343,7 @@
 		},
 		{
 			id: 30,
-			position: { x: 50, y: 1250 },
+			position: { x: 50, y: 1215 },
 			data: {
 				label: 'نننننننننننننن',
 			},
@@ -355,7 +355,7 @@
 		},
 		{
 			id: 31,
-			position: { x: 250, y: 1350 },
+			position: { x: 250, y: 1315 },
 			data: { label: 'الأصول' },
 			width: 80,
 			height: 40,
@@ -366,7 +366,7 @@
 		},
 		{
 			id: 32,
-			position: { x: 50, y: 1350 },
+			position: { x: 50, y: 1300 },
 			data: {
 				label: 'نننننننننننننن',
 			},
@@ -378,7 +378,7 @@
 		},
 		{
 			id: 33,
-			position: { x: 250, y: 1450 },
+			position: { x: 250, y: 1400 },
 			data: { label: 'القواعد' },
 			width: 80,
 			height: 40,
@@ -389,7 +389,7 @@
 		},
 		{
 			id: 34,
-			position: { x: 50, y: 1450 },
+			position: { x: 50, y: 1385 },
 			data: {
 				label: 'نننننننننننننن',
 			},
@@ -401,7 +401,7 @@
 		},
 		{
 			id: 35,
-			position: { x: 250, y: 1550 },
+			position: { x: 250, y: 1485 },
 			data: { label: 'الأدلة' },
 			width: 80,
 			height: 40,
@@ -412,7 +412,7 @@
 		},
 		{
 			id: 36,
-			position: { x: 50, y: 1550 },
+			position: { x: 50, y: 1470 },
 			data: {
 				label: 'نننننننننننننن',
 			},
@@ -425,7 +425,7 @@
 		// TASAWWUF
 		{
 			id: 37,
-			position: { x: 350, y: 1750 },
+			position: { x: 350, y: 1675 },
 			data: { label: 'التصوف' },
 			width: 125,
 			height: 40,
@@ -435,7 +435,7 @@
 		},
 		{
 			id: 38,
-			position: { x: 250, y: 1700 },
+			position: { x: 250, y: 1635 },
 			data: { label: 'السلوك' },
 			width: 80,
 			height: 40,
@@ -446,7 +446,7 @@
 		},
 		{
 			id: 39,
-			position: { x: 50, y: 1700 },
+			position: { x: 50, y: 1620 },
 			data: {
 				label: 'نننننننننننننن',
 			},
@@ -458,7 +458,7 @@
 		},
 		{
 			id: 40,
-			position: { x: 250, y: 1800 },
+			position: { x: 250, y: 1725 },
 			data: { label: 'العرفان' },
 			width: 80,
 			height: 40,
@@ -469,7 +469,7 @@
 		},
 		{
 			id: 41,
-			position: { x: 50, y: 1800 },
+			position: { x: 50, y: 1710 },
 			data: {
 				label: 'نننننننننننننن',
 			},
@@ -482,7 +482,7 @@
 		// ARABIYAH
 		{
 			id: 42,
-			position: { x: 350, y: 2070 },
+			position: { x: 350, y: 2000 },
 			data: { label: 'اللغة العربية' },
 			width: 125,
 			height: 40,
@@ -492,7 +492,7 @@
 		},
 		{
 			id: 43,
-			position: { x: 250, y: 1925 },
+			position: { x: 250, y: 1865 },
 			data: { label: 'النحو' },
 			width: 80,
 			height: 40,
@@ -503,7 +503,7 @@
 		},
 		{
 			id: 44,
-			position: { x: 50, y: 1925 },
+			position: { x: 50, y: 1850 },
 			data: {
 				label: 'نننننننننننننن',
 			},
@@ -515,7 +515,7 @@
 		},
 		{
 			id: 45,
-			position: { x: 250, y: 2025 },
+			position: { x: 250, y: 1950 },
 			data: { label: 'الصرف' },
 			width: 80,
 			height: 40,
@@ -526,7 +526,7 @@
 		},
 		{
 			id: 46,
-			position: { x: 50, y: 2025 },
+			position: { x: 50, y: 1935 },
 			data: {
 				label: 'نننننننننننننن',
 			},
@@ -538,7 +538,7 @@
 		},
 		{
 			id: 47,
-			position: { x: 250, y: 2125 },
+			position: { x: 250, y: 2040 },
 			data: { label: 'البلاغة' },
 			width: 80,
 			height: 40,
@@ -549,7 +549,7 @@
 		},
 		{
 			id: 48,
-			position: { x: 50, y: 2125 },
+			position: { x: 50, y: 2025 },
 			data: {
 				label: 'نننننننننننننن',
 			},
@@ -561,7 +561,7 @@
 		},
 		{
 			id: 49,
-			position: { x: 250, y: 2225 },
+			position: { x: 250, y: 2125 },
 			data: { label: 'للناطقين بغيرها' },
 			width: 80,
 			height: 40,
@@ -572,7 +572,7 @@
 		},
 		{
 			id: 50,
-			position: { x: 50, y: 2225 },
+			position: { x: 50, y: 2110 },
 			data: {
 				label: 'نننننننننننننن',
 			},
@@ -585,7 +585,7 @@
 		// VARIOUS
 		{
 			id: 51,
-			position: { x: 350, y: 2500 },
+			position: { x: 350, y: 2400 },
 			data: { label: 'البرامج المختلفة' },
 			width: 125,
 			height: 40,
@@ -595,7 +595,7 @@
 		},
 		{
 			id: 52,
-			position: { x: 250, y: 2350 },
+			position: { x: 250, y: 2265 },
 			data: { label: 'الدعوة والخطابة' },
 			width: 80,
 			height: 40,
@@ -606,7 +606,7 @@
 		},
 		{
 			id: 53,
-			position: { x: 50, y: 2350 },
+			position: { x: 50, y: 2250 },
 			data: {
 				label: 'نننننننننننننن',
 			},
@@ -618,7 +618,7 @@
 		},
 		{
 			id: 54,
-			position: { x: 250, y: 2450 },
+			position: { x: 250, y: 2355 },
 			data: { label: 'دورة النساء' },
 			width: 80,
 			height: 40,
@@ -629,7 +629,7 @@
 		},
 		{
 			id: 55,
-			position: { x: 50, y: 2450 },
+			position: { x: 50, y: 2340 },
 			data: {
 				label: 'نننننننننننننن',
 			},
@@ -641,7 +641,7 @@
 		},
 		{
 			id: 56,
-			position: { x: 250, y: 2550 },
+			position: { x: 250, y: 2445 },
 			data: { label: 'دورة الصغار' },
 			width: 80,
 			height: 40,
@@ -652,7 +652,7 @@
 		},
 		{
 			id: 57,
-			position: { x: 50, y: 2550 },
+			position: { x: 50, y: 2430 },
 			data: {
 				label: 'نننننننننننننن',
 			},
@@ -664,7 +664,7 @@
 		},
 		{
 			id: 58,
-			position: { x: 250, y: 2650 },
+			position: { x: 250, y: 2535 },
 			data: { label: 'المنطق' },
 			width: 80,
 			height: 40,
@@ -675,7 +675,7 @@
 		},
 		{
 			id: 59,
-			position: { x: 50, y: 2650 },
+			position: { x: 50, y: 2520 },
 			data: {
 				label: 'نننننننننننننن',
 			},
@@ -1112,7 +1112,7 @@
 
 <h1>علوم الشريعة والحقيقة</h1>
 <div>
-	<Svelvet width={500} height={2800} nodes={initialNodes} edges={initialEdges} movement={true} />
+	<Svelvet width={500} height={2650} nodes={initialNodes} edges={initialEdges} movement={true} />
 </div>
 
 <style>
