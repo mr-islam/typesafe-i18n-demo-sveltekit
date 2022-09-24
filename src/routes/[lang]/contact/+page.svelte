@@ -2,6 +2,8 @@
 	import LL from '$i18n/i18n-svelte'
 </script>
 
+<h1>الاستفسار</h1>
+
 <div id="contact">
 	<p>
 		{$LL.contact.contact_us()}
@@ -14,6 +16,9 @@
 </div>
 
 <style>
+	h1 {
+		text-align: center;
+	}
 	#contact {
 		text-align: center;
 	}
