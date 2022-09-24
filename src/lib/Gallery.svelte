@@ -72,14 +72,14 @@
 	div#flex {
 		display: flex;
 		flex-direction: row;
+		gap: 15px;
+		margin: 0 15px;
 	}
 	div#intro {
-		min-width: 25vw;
-		margin: 10px;
+		min-width: 40vw;
 	}
 	div.container {
-		padding: 1rem 2rem;
-		width: 100%;
+		width: 82%;
 	}
 	:global(div.swiper-button-prev, div.swiper-button-next) {
 		background-color: var(--accent-color);

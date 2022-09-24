@@ -3,28 +3,28 @@
 </script>
 
 <div id="flex">
-	<a href="/{$locale}/goals">
-		<div class="box" id="box-1">
+	<a class="box" id="box-1" href="/{$locale}/goals">
+		<div>
 			<p>
 				{$LL.welcome.mission()}
 			</p>
 		</div>
 	</a>
-	
-	<a href="/{$locale}/articles">
-		<div class="box" id="box-4">
+
+	<a class="box" id="box-4" href="/{$locale}/articles">
+		<div>
 			<p>
 				{$LL.welcome.online()}
 			</p>
 		</div>
 	</a>
-	<a href="/{$locale}/contact">
-		<div class="box" id="box-3">
+	<a class="box" id="box-3" href="/{$locale}/contact">
+		<div>
 			<p>{$LL.welcome.contact()}:</p>
 		</div>
 	</a>
 
-  <!-- NOT READY YET 
+	<!-- NOT READY YET 
     <a href="/{$locale}/curriculum">
 		<div class="box" id="box-2">
 			<p>
@@ -38,33 +38,50 @@
 	div#flex {
 		display: flex;
 		flex-direction: column;
-		gap: 5px;
-		flex: 1 1 auto;
+		gap: 25px;
+		height: 100%;
 	}
 
 	P {
 		color: var(--accent-color);
 		padding: 15px 10px;
-		margin: 0;
+		margin: 10px;
 	}
 
-	div.box {
-		margin: 5px;
+	a.box {
+		/* margin: 5px; */
 		border-radius: 12px;
 		box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+		font-size: 1.5rem;
 	}
 
-	div#box-1 {
+	a#box-1 {
 		background-color: rgb(174, 255, 255);
+		display: block;
+		flex: 1 1 auto;
+		display: flex;
+		align-items: center;
 	}
-	div#box-2 {
+	a#box-2 {
 		background-color: rgb(255, 255, 195);
+		display: block;
+		flex: 1 1 auto;
+		display: flex;
+		align-items: center;
 	}
-	div#box-3 {
+	a#box-3 {
 		background-color: rgb(196, 255, 196);
+		display: block;
+		flex: 1 1 auto;
+		display: flex;
+		align-items: center;
 	}
-	div#box-4 {
+	a#box-4 {
 		background-color: rgb(255, 209, 255);
+		display: block;
+		flex: 1 1 auto;
+		display: flex;
+		align-items: center;
 	}
 
 	@media only screen and (max-width: 600px) {
