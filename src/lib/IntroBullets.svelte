@@ -25,6 +25,7 @@
 		</div>
 	</a>
 
+
 	<a class="box" id="box-4" href="/{$locale}/articles">
 		<div>
 			<p class="intro-bullet">
@@ -32,6 +33,8 @@
 			</p>
 		</div>
 	</a>
+
+
 	<a class="box" id="box-3" href="/{$locale}/contact">
 		<div>
 			<p class="intro-bullet">
@@ -54,7 +57,7 @@
 	div#flex {
 		display: flex;
 		flex-direction: column;
-		gap: 25px;
+		gap: 50px;
 		height: 100%;
 	}
 
@@ -76,35 +79,24 @@
 		/* margin: 5px; */
 		border-radius: 12px;
 		box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+		
+		display: block;
+		flex: 1 1 auto;
+		display: flex;
+		align-items: center;
 	}
 
 	a#box-1 {
 		background-color: rgb(174, 255, 255);
-		display: block;
-		flex: 1 1 auto;
-		display: flex;
-		align-items: center;
 	}
 	a#box-2 {
 		background-color: rgb(255, 255, 195);
-		display: block;
-		flex: 1 1 auto;
-		display: flex;
-		align-items: center;
 	}
 	a#box-3 {
 		background-color: rgb(196, 255, 196);
-		display: block;
-		flex: 1 1 auto;
-		display: flex;
-		align-items: center;
 	}
 	a#box-4 {
 		background-color: rgb(255, 209, 255);
-		display: block;
-		flex: 1 1 auto;
-		display: flex;
-		align-items: center;
 	}
 
 	@media only screen and (max-width: 600px) {
