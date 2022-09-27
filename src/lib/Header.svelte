@@ -85,12 +85,15 @@
 	img#logo {
 		border: 1px black solid;
 		border-radius: 360px;
-		max-width: 10vw;
+		max-width: 15vw;
+	}
+	h2 {
+		margin-bottom: 0;
 	}
 
 	@media only screen and (max-width: 900px) {
 		img#logo {
-			max-width: 12vw;
+			max-width: 22vw;
 			margin: 5px;
 		}
 		header {
@@ -109,7 +112,7 @@
 	}
 	@media only screen and (max-width: 400px) {
 		img#logo {
-			max-width: 20vw;
+			max-width: 40vw;
 			margin: 5px;
 		}
 	}
