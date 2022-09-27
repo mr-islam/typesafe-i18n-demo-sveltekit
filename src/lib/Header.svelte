@@ -104,7 +104,7 @@
 			padding-top: 10px;
 		}
 		h1 {
-			font-size: 0.8rem;
+			font-size: 2rem;
 		}
 	}
 	@media only screen and (max-width: 400px) {
