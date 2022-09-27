@@ -4,12 +4,12 @@
 
 	let pageHeight
 	let pageWidth
-	// onMount(() => {
-	// 	pageHeight = document.window.innerHeight
-	// 	pageWidth = document.window.innerWidth
-	// })
+	onMount(() => {
+		pageHeight = window.innerHeight
+		pageWidth = window.innerWidth
+	})
 
-	const initialNodes = [
+	const initialNodesMobile = [
 		{
 			id: 1,
 			position: { x: 300, y: 210 },
@@ -687,7 +687,7 @@
 		},
 	]
 
-	const initialEdges = [
+	const initialEdgesMobile = [
 		{
 			id: 'e1-2',
 			source: 1,
@@ -1112,7 +1112,11 @@
 
 <h1>علوم الشريعة والحقيقة</h1>
 <div>
-	<Svelvet width={430} height={2650} nodes={initialNodes} edges={initialEdges} movement={false} />
+	{#if pageWidth < 1000}
+		<Svelvet width={430} height={2650} nodes={initialNodesMobile} edges={initialEdgesMobile} movement={false} />
+	{:else}
+		<Svelvet width={900} height={2650} nodes={initialNodesMobile} edges={initialEdgesMobile} movement={false} />
+	{/if}
 </div>
 
 <style>
