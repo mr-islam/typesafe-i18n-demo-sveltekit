@@ -8,6 +8,7 @@
 		pageHeight = window.innerHeight
 		pageWidth = window.innerWidth
 	})
+	// TODO: this is not dynamic... but onChange would detect viewport??
 
 	const initialNodesMobile = [
 		{
@@ -16,7 +17,7 @@
 			data: { label: 'الفرض العيني' },
 			width: 125,
 			height: 40,
-			bgColor: 'white',
+			bgColor: '#61FFA3',
 			sourcePosition: 'left',
 			borderColor: 'black',
 		},
@@ -26,10 +27,10 @@
 			data: { label: 'علم التوحيد' },
 			width: 80,
 			height: 40,
-			bgColor: '#61FFA3',
+			bgColor: '#EBBAB9',
 			sourcePosition: 'left',
 			targetPosition: 'right',
-			borderColor: '#61FFA3',
+			borderColor: '#EBBAB9',
 		},
 		{
 			id: 3,
@@ -39,8 +40,8 @@
 			},
 			width: 175,
 			height: 100,
-			bgColor: '#61FFA3',
-			borderColor: '#61FFA3',
+			bgColor: '#EBBAB9',
+			borderColor: '#EBBAB9',
 			targetPosition: 'right',
 		},
 		{
