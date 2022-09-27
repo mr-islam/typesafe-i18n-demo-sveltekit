@@ -115,14 +115,14 @@
 		color: #ecffff;
 	}
 	a#box-3 {
-		border-color: rgb(27, 133, 27);
-		background-color: rgb(237, 254, 237);
-		color: rgb(27, 133, 27);
+		border-color: rgb(118, 118, 0);
+		background-color: rgb(255, 255, 227);
+		color: rgb(118, 118, 0);
 	}
 	a#box-3 > div.main-title {
-		border-color: rgb(27, 133, 27);
-		background-color: rgb(27, 133, 27);
-		color: rgb(237, 254, 237);
+		border-color: rgb(118, 118, 0);
+		background-color: rgb(118, 118, 0);
+		color: rgb(255, 255, 227);
 	}
 	a#box-4 {
 		border-color: rgb(173, 0, 173);
