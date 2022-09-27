@@ -1112,7 +1112,7 @@
 
 <h1>علوم الشريعة والحقيقة</h1>
 <div>
-	<Svelvet width={430} height={2650} nodes={initialNodes} edges={initialEdges} movement={true} />
+	<Svelvet width={430} height={2650} nodes={initialNodes} edges={initialEdges} movement={false} />
 </div>
 
 <style>
