@@ -145,6 +145,20 @@
 		height: 100%;
 		object-fit: cover;
 	}
+
+	@media only screen and (max-width: 800px) {
+		div#flex {
+			flex-direction: column-reverse;
+		}
+		div :global(.swiper) {
+			width: 100%;
+			height: 40vh;
+			top: 0;
+		}
+		div.container {
+			width: 100%;
+		}
+	}
 	@media only screen and (max-width: 600px) {
 		div.center {
 			min-width: 90vw;
@@ -156,11 +170,7 @@
 			margin-top: 0vh;
 			padding: 1rem 0.5rem;
 		}
-		div :global(.swiper) {
-			width: 100%;
-			height: 40vh;
-			top: 0;
-		}
+
 		p {
 			font-size: 1.5rem;
 			color: var(--pure-white);
