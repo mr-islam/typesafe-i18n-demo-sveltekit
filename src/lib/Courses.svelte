@@ -2517,8 +2517,8 @@
 		border-radius: 12px;
 	}
 	div#desktop {
-		width: 500px;
-		margin: 0 15vw;
+		width: 1000px;
+		margin: 0 18vw 0 0;
 		/* border: 2px solid rgb(182, 255, 142); */
 		border-radius: 12px;
 	}
