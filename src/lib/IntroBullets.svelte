@@ -57,21 +57,23 @@
 	div#flex {
 		display: flex;
 		flex-direction: column;
-		gap: 50px;
+		gap: 20px;
 		height: 100%;
+	}
+
+	p {
+		
+		padding: 5px 2.5px;
+		margin: 5px 15px;
 	}
 
 	:global(p.rtl) {
 		color: var(--accent-color);
-		padding: 15px 10px;
-		margin: 10px 30px;
 		font-weight: bold;
-		font-size: 1.5rem;
+		font-size: 1.4rem;
 	}
 	:global(p.ltr) {
 		color: var(--accent-color);
-		padding: 15px 10px;
-		margin: 10px 30px;
 		font-size: 1.2rem;
 	}
 
