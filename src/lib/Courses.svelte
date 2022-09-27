@@ -196,7 +196,7 @@
 			id: 14,
 			position: { x: 1, y: 485 },
 			data: {
-				label: 'إتقان تلاوة القرآن وترتيله من خلال تدريب عملي ودراسة نظرية',
+				label: 'إتقان تلاوة القرآن وترتيله نظريا وعمليا',
 			},
 			width: 175,
 			height: 70,
@@ -219,7 +219,7 @@
 			id: 16,
 			position: { x: 1, y: 565 },
 			data: {
-				label: 'شرح وتدبر بعض معاني كتاب الله العزيز بالنظر إلى الظاهر والباطن والحد والمطلع',
+				label: 'تفسير كتاب الله تعالى ومعرفة معانيه الظاهرة والباطنة',
 			},
 			width: 175,
 			height: 70,
@@ -242,7 +242,7 @@
 			id: 18,
 			position: { x: 1, y: 645 },
 			data: {
-				label: 'إتمام المعرفة حول كتاب الله تعالى وأساليب العلماء في تفسيره',
+				label: 'معرفة ما يتعلق بالقرآن الكريم كأسباب النزول ومعرفة الناسخ والمنسوخ وغيره',
 			},
 			width: 175,
 			height: 70,
@@ -263,10 +263,11 @@
 		},
 		{
 			id: 20,
-			position: { x: 200, y: 870 },
-			data: { label: 'متون الحديث' },
+			position: { x: 200, y: 867 },
+			data: { label: 'مصطلح الحديث' },
+
 			width: 80,
-			height: 40,
+			height: 45,
 			bgColor: '#00DF65',
 			sourcePosition: 'left',
 			targetPosition: 'right',
@@ -276,7 +277,8 @@
 			id: 21,
 			position: { x: 1, y: 855 },
 			data: {
-				label: 'التعمق رواية ودراية في كلام سيّد الكونين ﷺ',
+				label: 'معرفة طرق الأحاديث والأسانيد ومصادر السنة',
+
 			},
 			width: 175,
 			height: 70,
@@ -286,50 +288,53 @@
 		},
 		{
 			id: 22,
-			position: { x: 200, y: 950 },
-			data: { label: 'علوم الحديث' },
+			position: { x: 200, y: 787 },
+			data: { label: 'علم الحديث وراية ودراية' },
+
 			width: 80,
-			height: 40,
-			bgColor: '#00DF89',
+			height: 45,
 			sourcePosition: 'left',
 			targetPosition: 'right',
-			borderColor: '#00DF89',
+			bgColor: '#00DF35',			borderColor: '#00DF35',
 		},
 		{
 			id: 23,
-			position: { x: 1, y: 935 },
+			position: { x: 1, y: 775 },
+
 			data: {
-				label: 'معرفة مصطلح الحديث وعلم الإسناد والرواة',
+				label: 'قراءة الكتب التسعة بالسند المتصل وقراءة شروحها',
+
 			},
 			width: 175,
 			height: 70,
-			bgColor: '#00DF89',
 			targetPosition: 'right',
-			borderColor: '#00DF89',
+			bgColor: '#00DF35',			borderColor: '#00DF35',
+
 		},
 		//
 		{
 			id: 24,
-			position: { x: 200, y: 790 },
+			position: { x: 200, y: 950 },
 			data: { label: 'السيرة والشمائل' },
 			width: 80,
-			height: 40,
-			bgColor: '#00DF35',
+			height: 45,
+
 			sourcePosition: 'left',
-			targetPosition: 'right',
-			borderColor: '#00DF35',
+			targetPosition: 'right',			borderColor: '#00DF89',
+			bgColor: '#00DF89',
+
 		},
 		{
 			id: 25,
-			position: { x: 1, y: 775 },
+			position: { x: 1, y: 935 },
 			data: {
-				label: 'التعرف بحياة وصفات خير الخلق ﷺ',
+				label: 'معرفة النبي ﷺ من حيث الشمائل والأخلاق وأحداث السيرة',
 			},
 			width: 175,
 			height: 70,
-			bgColor: '#00DF35',
+			borderColor: '#00DF89',
+			bgColor: '#00DF89',
 			targetPosition: 'right',
-			borderColor: '#00DF35',
 		},
 		// AQIDA
 		{
@@ -346,7 +351,7 @@
 			id: 27,
 			position: { x: 1, y: 1070 },
 			data: {
-				label: 'فهم تفاصيل علم التوحيد في مدارس أهل السنة والجماعة',
+				label: 'دراسة العقيدة الإسلامية على مذهب أهل السنة والجماعة من الأشاعرة والماتريدية',
 			},
 			width: 175,
 			height: 70,
@@ -380,7 +385,7 @@
 			id: 30,
 			position: { x: 1, y: 1215 },
 			data: {
-				label: 'تعلّم الأحكام في أبواب الفقه لتكون العبادات والعادات على مراد الله تعالى',
+				label: 'دراسة الأحكام التفصيرية الشاملة لجيمع أبواب الفقه',
 			},
 			width: 175,
 			height: 70,
@@ -403,7 +408,7 @@
 			id: 32,
 			position: { x: 1, y: 1300 },
 			data: {
-				label: 'معرفة كيفية استدلال الحكم من الكتاب والسنة عند المجتهدين ',
+				label: 'معرفة طرق الاستدلال ومناهج الأصوليين ',
 			},
 			width: 175,
 			height: 70,
@@ -426,7 +431,7 @@
 			id: 34,
 			position: { x: 1, y: 1385 },
 			data: {
-				label: 'دراسة الفواعد والضوابط الكلية المرشدة لكثير من الأحكام',
+				label: 'دراسة القواعد الفقهية',
 			},
 			width: 175,
 			height: 70,
@@ -449,7 +454,7 @@
 			id: 36,
 			position: { x: 1, y: 1470 },
 			data: {
-				label: 'بيان الأدلة القوية العظيمة وراء كل جزء من الأحكام الفقهية',
+				label: 'معرفة الأدلة القرآنية والنبوية التي استند إليها المجتهدد',
 			},
 			width: 175,
 			height: 70,
@@ -481,12 +486,12 @@
 		},
 		{
 			id: 39,
-			position: { x: 1, y: 1620 },
+			position: { x: 1, y: 1615 },
 			data: {
-				label: 'التخلية بإصلاح القلب وتهذيب النفس والتحلية بالخير من الصفات',
+				label: 'التخلية النفس من الرذائل وتحليتها بالفضائل وبيان السير على الهدي المحمدي ظاهرا وباطنا',
 			},
 			width: 175,
-			height: 70,
+			height: 80,
 			bgColor: '#EEFFB2',
 			targetPosition: 'right',
 			borderColor: '#EEFFB2',
@@ -506,7 +511,7 @@
 			id: 41,
 			position: { x: 1, y: 1710 },
 			data: {
-				label: 'عبادة الله تعالى وشهوده كما يرضى، بعد التخلية والتحلية',
+				label: 'معرفة الله تعالى وذوق حقائق التوحيد',
 			},
 			width: 175,
 			height: 70,
@@ -540,7 +545,7 @@
 			id: 44,
 			position: { x: 1, y: 1850 },
 			data: {
-				label: 'معرفة إعراب أواخر الكلم وتركيب الكلام الصحيح',
+				label: 'إتقان مباحث النحو بشكل نظري وعملي',
 			},
 			width: 175,
 			height: 70,
@@ -563,7 +568,7 @@
 			id: 46,
 			position: { x: 1, y: 1935 },
 			data: {
-				label: 'فهم اشتقاق الأسماء والأفعال من الجذور وموازين الكلمات ',
+				label: 'معرفة بينة الكلمة واشتقاقها ',
 			},
 			width: 175,
 			height: 70,
@@ -586,7 +591,7 @@
 			id: 48,
 			position: { x: 1, y: 2025 },
 			data: {
-				label: 'إتقان أساليب البيان لأداء المعاني على شكل بديع',
+				label: 'إتقان مباحث البلاغة من البيان والمعاني والبديع',
 			},
 			width: 175,
 			height: 70,
@@ -596,10 +601,10 @@
 		},
 		{
 			id: 49,
-			position: { x: 200, y: 2125 },
-			data: { label: 'للناطقين بغيرها' },
-			width: 80,
-			height: 40,
+			position: { x: 200, y: 2110 },
+			data: { label: 'دراسة اللعربية للناطقين بغيرها' },
+			width: 85,
+			height: 70,
 			bgColor: '#C6B2FF',
 			sourcePosition: 'left',
 			targetPosition: 'right',
@@ -609,7 +614,7 @@
 			id: 50,
 			position: { x: 1, y: 2110 },
 			data: {
-				label: 'ترقية الطالب من تعلّم الحروف إلى التمكن اللغوي',
+				label: 'العناية بالطالب لإتقان اللغة العربية قراءة والكتابة وإنشاء',
 			},
 			width: 175,
 			height: 70,
@@ -620,8 +625,8 @@
 		// VARIOUS
 		{
 			id: 51,
-			position: { x: 300, y: 2400 },
-			data: { label: 'البرامج المختلفة' },
+			position: { x: 300, y: 2490 },
+			data: { label: 'البرامج المتنوعة' },
 			width: 125,
 			height: 40,
 			bgColor: '#FFB2CE',
@@ -643,7 +648,7 @@
 			id: 53,
 			position: { x: 1, y: 2250 },
 			data: {
-				label: 'تدريب في كيفية إفادة الخلق',
+				label: 'إتقان مهارة الخطابة والدعوة لإفادة الناس على الوجه الأمثل',
 			},
 			width: 175,
 			height: 70,
@@ -653,10 +658,10 @@
 		},
 		{
 			id: 54,
-			position: { x: 200, y: 2355 },
-			data: { label: 'دورة النساء' },
+			position: { x: 200, y: 2345 },
+			data: { label: 'دورات تعليمية للنساء' },
 			width: 80,
-			height: 40,
+			height: 60,
 			bgColor: '#FFB2DA',
 			sourcePosition: 'left',
 			targetPosition: 'right',
@@ -666,7 +671,7 @@
 			id: 55,
 			position: { x: 1, y: 2340 },
 			data: {
-				label: 'مشتملة على جميع ما تحتاجه المسلمة في حياتها',
+				label: 'تعليم ما تحتاجها المرأة المسلمة في حياتها',
 			},
 			width: 175,
 			height: 70,
@@ -676,10 +681,10 @@
 		},
 		{
 			id: 56,
-			position: { x: 200, y: 2445 },
-			data: { label: 'دورة الصغار' },
+			position: { x: 200, y: 2435 },
+			data: { label: 'دورات تعليمية للأطفال' },
 			width: 80,
-			height: 40,
+			height: 60,
 			bgColor: '#FFB2CE',
 			sourcePosition: 'left',
 			targetPosition: 'right',
@@ -689,7 +694,7 @@
 			id: 57,
 			position: { x: 1, y: 2430 },
 			data: {
-				label: 'مهيئة للصغار لبناء شخصية إسلامية طاهرة وراسخة',
+				label: 'تعليم الأطفال والعناية بتربيتهم وتوجيههم',
 			},
 			width: 175,
 			height: 70,
@@ -699,10 +704,10 @@
 		},
 		{
 			id: 58,
-			position: { x: 200, y: 2535 },
-			data: { label: 'المنطق' },
+			position: { x: 200, y: 2525 },
+			data: { label: 'دورات تأهليلية للحياة الزوجية' },
 			width: 80,
-			height: 40,
+			height: 60,
 			bgColor: '#FFB2C3',
 			sourcePosition: 'left',
 			targetPosition: 'right',
@@ -712,7 +717,53 @@
 			id: 59,
 			position: { x: 1, y: 2520 },
 			data: {
-				label: 'تلقي أساليب العقلاء في الفهم والتفكير والتعبير',
+				label: 'توضوح مفاهيم الزواج وأحكام الأسرة وبيان طرق الحكمة في تعامل الزوجين مع بعضهما',
+			},
+			width: 175,
+			height: 70,
+			bgColor: '#FFB2C3',
+			targetPosition: 'right',
+			borderColor: '#FFB2C3',
+		},
+		{
+			id: 60,
+			position: { x: 200, y: 2615 },
+			data: { label: 'تربية الأطفال' },
+			width: 80,
+			height: 60,
+			bgColor: '#FFB2C3',
+			sourcePosition: 'left',
+			targetPosition: 'right',
+			borderColor: '#FFB2C3',
+		},
+		{
+			id: 61,
+			position: { x: 1, y: 2610 },
+			data: {
+				label: '',
+			},
+			width: 175,
+			height: 70,
+			bgColor: '#FFB2C3',
+			targetPosition: 'right',
+			borderColor: '#FFB2C3',
+		},
+		{
+			id: 62,
+			position: { x: 200, y: 2705 },
+			data: { label: 'الأصوات والمقامات' },
+			width: 80,
+			height: 60,
+			bgColor: '#FFB2C3',
+			sourcePosition: 'left',
+			targetPosition: 'right',
+			borderColor: '#FFB2C3',
+		},
+		{
+			id: 63,
+			position: { x: 1, y: 2700 },
+			data: {
+				label: 'تعليم المقامات والإنشاد الديني',
 			},
 			width: 175,
 			height: 70,
@@ -1133,6 +1184,22 @@
 			arrow: false,
 			edgeColor: 'black',
 		},
+		{
+			id: 'e51-60',
+			source: 51,
+			target: 60,
+			noHandle: true,
+			arrow: false,
+			edgeColor: 'black',
+		},
+		{
+			id: 'e51-62',
+			source: 51,
+			target: 62,
+			noHandle: true,
+			arrow: false,
+			edgeColor: 'black',
+		},
 		//
 		{
 			id: 'e52-53',
@@ -1166,15 +1233,31 @@
 			arrow: true,
 			edgeColor: 'black',
 		},
+		{
+			id: 'e60-61',
+			source: 60,
+			target: 61,
+			noHandle: true,
+			arrow: true,
+			edgeColor: 'black',
+		},
+		{
+			id: 'e62-63',
+			source: 62,
+			target: 63,
+			noHandle: true,
+			arrow: true,
+			edgeColor: 'black',
+		},
 	]
 </script>
 
 <h1>علوم الشريعة والحقيقة</h1>
 <div>
 	{#if pageWidth < 1000}
-		<Svelvet width={430} height={2650} nodes={initialNodesMobile} edges={initialEdgesMobile} movement={false} />
+		<Svelvet width={430} height={2800} nodes={initialNodesMobile} edges={initialEdgesMobile} movement={false} />
 	{:else}
-		<Svelvet width={900} height={2650} nodes={initialNodesMobile} edges={initialEdgesMobile} movement={false} />
+		<Svelvet width={900} height={2800} nodes={initialNodesMobile} edges={initialEdgesMobile} movement={false} />
 	{/if}
 </div>
 
