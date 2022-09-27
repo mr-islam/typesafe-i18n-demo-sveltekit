@@ -2512,9 +2512,7 @@
 	}
 	div#mobile {
 		width: 500px;
-		margin: 0 auto;
-		/* border: 2px solid rgb(182, 255, 142); */
-		border-radius: 12px;
+		margin: 5px auto;
 	}
 	div#desktop {
 		width: 1000px;
@@ -2524,5 +2522,15 @@
 	}
 	h1 {
 		text-align: center;
+	}
+	
+	@media only screen and (max-width: 500px) {
+		div#mobile {
+			width: 92vw;
+
+		border: 2px solid rgb(194, 194, 194);
+		overflow: scroll;
+		border-radius: 12px;
+		}
 	}
 </style>
