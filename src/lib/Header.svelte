@@ -85,7 +85,7 @@
 	img#logo {
 		border: 1px black solid;
 		border-radius: 360px;
-		max-width: 15vw;
+		max-width: 14vw;
 	}
 	h2 {
 		margin-bottom: 0;
