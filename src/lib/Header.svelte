@@ -16,7 +16,7 @@
 			<img alt="Logo of Arabic calligraphy" id="logo" src="/logo-new.png" />
 		</a>
 
-		<div style="flex: 1;">
+		<div id="title-container">
 			{#if $LL.center() !== ''}
 				<span>{$LL.center()}</span>
 			{/if}
@@ -34,6 +34,18 @@
 </header>
 
 <style>
+	div#title-container {
+		flex: 1;
+	}
+	h1 {
+		font-size: 2.2rem;
+		margin: 0;
+		
+	}
+	h2 {
+		margin-top: -5px;
+		font-size: 1.25rem;
+	}
 	div#heading {
 		flex-direction: column;
 		text-align: center;
@@ -100,13 +112,5 @@
 			max-width: 20vw;
 			margin: 5px;
 		}
-	}
-	h1 {
-		font-size: 2rem;
-		margin: 0;
-	}
-	h2 {
-		margin-top: -5px;
-		font-size: 1.25rem;
 	}
 </style>
