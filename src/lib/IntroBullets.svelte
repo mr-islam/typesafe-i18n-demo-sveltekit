@@ -18,6 +18,7 @@
 
 <div id="flex">
 	<a class="box" id="box-1" href="/{$locale}/goals">
+		<div class="main-title">هدفنا</div>
 		<div>
 			<p class="intro-bullet">
 				{$LL.welcome.mission()}
@@ -25,8 +26,8 @@
 		</div>
 	</a>
 
-
 	<a class="box" id="box-4" href="/{$locale}/articles">
+		<div class="main-title">المكتبة</div>
 		<div>
 			<p class="intro-bullet">
 				{$LL.welcome.online()}
@@ -34,8 +35,8 @@
 		</div>
 	</a>
 
-
 	<a class="box" id="box-3" href="/{$locale}/contact">
+		<div class="main-title">للاستفسار</div>
 		<div>
 			<p class="intro-bullet">
 				{$LL.welcome.contact()}:
@@ -62,9 +63,9 @@
 	}
 
 	p {
-		
-		padding: 5px 2.5px;
-		margin: 5px 15px;
+		padding: 0 2.5px;
+		margin: 5px 5px;
+		color: inherit;
 	}
 
 	:global(p.rtl) {
@@ -81,24 +82,57 @@
 		/* margin: 5px; */
 		border-radius: 12px;
 		box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-		
 		display: block;
 		flex: 1 1 auto;
 		display: flex;
 		align-items: center;
+		border-width: 5px;
+		border-style: solid;
 	}
-
+	a > div.main-title {
+		border-width: 1px;
+		border-style: solid;
+		margin: 0 10px;
+		padding: 10px;
+		border-radius: 12px;
+	}
 	a#box-1 {
-		background-color: rgb(174, 255, 255);
+		border-color: #017878;
+		background-color: #ecffff;
+		color: #017878;
+	}
+	a#box-1 > div.main-title {
+		border-color: #017878;
+		background-color: #017878;
+		color: #ecffff;
 	}
 	a#box-2 {
-		background-color: rgb(255, 255, 195);
+		border: 10px solid rgb(255, 255, 195);
+	}
+	a#box-2 > div.main-title {
+		border-color: #017878;
+		background-color: #017878;
+		color: #ecffff;
 	}
 	a#box-3 {
-		background-color: rgb(196, 255, 196);
+		border-color: rgb(27, 133, 27);
+		background-color: rgb(237, 254, 237);
+		color: rgb(27, 133, 27);
+	}
+	a#box-3 > div.main-title {
+		border-color: rgb(27, 133, 27);
+		background-color: rgb(27, 133, 27);
+		color: rgb(237, 254, 237);
 	}
 	a#box-4 {
-		background-color: rgb(255, 209, 255);
+		border-color: rgb(173, 0, 173);
+		background-color: rgb(255, 245, 255);
+		color: rgb(173, 0, 173);
+	}
+	a#box-4 > div.main-title {
+		border-color: rgb(173, 0, 173);
+		background-color: rgb(173, 0, 173);
+		color: rgb(255, 245, 255);
 	}
 
 	@media only screen and (max-width: 600px) {
