@@ -1,8 +1,8 @@
 diff --git a/node_modules/svelvet/Containers/GraphView/index.svelte b/node_modules/svelvet/Containers/GraphView/index.svelte
-index 328a419..2433bad 100644
+index 328a419..1e0bdb2 100644
 --- a/node_modules/svelvet/Containers/GraphView/index.svelte
 +++ b/node_modules/svelvet/Containers/GraphView/index.svelte
-@@ -22,7 +22,7 @@ export let derivedEdges;
+@@ -22,45 +22,11 @@ export let derivedEdges;
  export let key;
  // here we lookup the store using the unique key
  const svelvetStore = findOrCreateStore(key);
@@ -11,15 +11,45 @@ index 328a419..2433bad 100644
  // declaring the grid and dot size for d3's transformations and zoom
  const gridSize = 15;
  const dotSize = 10;
-@@ -38,6 +38,8 @@ let d3Zoom = d3
-     .on('zoom', handleZoom);
- // function to handle zoom events - arguments: d3ZoomEvent
- function handleZoom(e) {
-+  if (!$movementStore) return
-+  
-     //add a store that contains the current value of the d3-zoom's scale to be used in onMouseMove function
-     d3Scale.set(e.transform.k);
-     // should not run d3.select below if backgroundStore is false
+-onMount(() => {
+-    d3.select(`.Edges-${key}`).call(d3Zoom);
+-    d3.select(`.Nodes-${key}`).call(d3Zoom);
+-});
+-// TODO: Update d3Zoom type (refer to d3Zoom docs)
+-let d3Zoom = d3
+-    .zoom()
+-    .filter(() => !$nodeSelected)
+-    .scaleExtent([0.4, 2])
+-    .on('zoom', handleZoom);
+-// function to handle zoom events - arguments: d3ZoomEvent
+-function handleZoom(e) {
+-    //add a store that contains the current value of the d3-zoom's scale to be used in onMouseMove function
+-    d3Scale.set(e.transform.k);
+-    // should not run d3.select below if backgroundStore is false
+-    if ($backgroundStore) {
+-        d3.select(`#background-${key}`)
+-            .attr('x', e.transform.x)
+-            .attr('y', e.transform.y)
+-            .attr('width', gridSize * e.transform.k)
+-            .attr('height', gridSize * e.transform.k)
+-            .selectAll('#dot')
+-            .attr('x', (gridSize * e.transform.k) / 2 - dotSize / 2)
+-            .attr('y', (gridSize * e.transform.k) / 2 - dotSize / 2)
+-            .attr('opacity', Math.min(e.transform.k, 1));
+-    }
+-    // transform 'g' SVG elements (edge, edge text, edge anchor)
+-    d3.select(`.Edges-${key} g`).attr('transform', e.transform);
+-    // transform div elements (nodes)
+-    let transform = d3.zoomTransform(this);
+-    // selects and transforms all node divs from class 'Node' and performs transformation
+-    d3.select(`.Node-${key}`)
+-        .style('transform', 'translate(' + transform.x + 'px,' + transform.y + 'px) scale(' + transform.k + ')')
+-        .style('transform-origin', '0 0');
+-}
++
+ </script>
+ 
+ <!-- This is the container that holds GraphView and we have disabled right click functionality to prevent a sticking behavior -->
 diff --git a/node_modules/svelvet/Containers/Svelvet/index.svelte b/node_modules/svelvet/Containers/Svelvet/index.svelte
 index a6e029e..aa01459 100644
 --- a/node_modules/svelvet/Containers/Svelvet/index.svelte
@@ -61,7 +91,7 @@ index 5e01ad9..6e8e8f0 100644
      events: {
          [evt: string]: CustomEvent<any>;
 diff --git a/node_modules/svelvet/Nodes/index.svelte b/node_modules/svelvet/Nodes/index.svelte
-index 0bc4156..78c8b9d 100644
+index 0bc4156..70709d3 100644
 --- a/node_modules/svelvet/Nodes/index.svelte
 +++ b/node_modules/svelvet/Nodes/index.svelte
 @@ -1,7 +1,16 @@
@@ -100,6 +130,15 @@ index 0bc4156..78c8b9d 100644
        onTouchMove(e, node.id);
      }
    }}
+@@ -76,7 +85,7 @@ let moved = false;
+     position: absolute;
+     display: grid;
+     user-select: none;
+-    cursor: move;
++    cursor: default;
+     justify-content: center;
+     overscroll-behavior: auto;
+     align-items: center;
 diff --git a/node_modules/svelvet/stores/store.d.ts b/node_modules/svelvet/stores/store.d.ts
 index bd76794..0bcbf50 100644
 --- a/node_modules/svelvet/stores/store.d.ts
