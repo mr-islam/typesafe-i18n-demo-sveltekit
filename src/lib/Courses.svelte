@@ -2516,7 +2516,7 @@
 	}
 	div#desktop {
 		width: 1000px;
-		margin: 0 18vw 0 0;
+		margin: 0 auto;
 		/* border: 2px solid rgb(182, 255, 142); */
 		border-radius: 12px;
 	}
