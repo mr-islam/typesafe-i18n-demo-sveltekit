@@ -91,7 +91,7 @@ index 5e01ad9..6e8e8f0 100644
      events: {
          [evt: string]: CustomEvent<any>;
 diff --git a/node_modules/svelvet/Nodes/index.svelte b/node_modules/svelvet/Nodes/index.svelte
-index 0bc4156..70709d3 100644
+index 0bc4156..6a30de1 100644
 --- a/node_modules/svelvet/Nodes/index.svelte
 +++ b/node_modules/svelvet/Nodes/index.svelte
 @@ -1,7 +1,16 @@
@@ -121,16 +121,42 @@ index 0bc4156..70709d3 100644
        onMouseMove(e, node.id);
        moved = true;
      }
-@@ -20,7 +29,7 @@ let moved = false;
+@@ -19,34 +28,6 @@ let moved = false;
+ />
  
  <div
-   on:touchmove={(e) => {
+-  on:touchmove={(e) => {
 -    if (moving) {
-+    if (shouldMove) {
-       onTouchMove(e, node.id);
-     }
-   }}
-@@ -76,7 +85,7 @@ let moved = false;
+-      onTouchMove(e, node.id);
+-    }
+-  }}
+-  on:touchstart={(e) => {
+-    e.preventDefault();
+-    moving = true;
+-    $nodeSelected = true;
+-  }}
+-  on:touchend={(e) => {
+-    moving = false;
+-    $nodeSelected = false;
+-  }}
+-  on:mousedown={(e) => {
+-    e.preventDefault();
+-    moving = true;
+-    $nodeIdSelected = node.id;
+-    $nodeSelected = true;
+-  }}
+-  on:mouseup={(e) => {
+-    moving = false;
+-    $nodeSelected = false;
+-    if (!moved && node.id == $nodeIdSelected) {
+-      onNodeClick(e, node.id);
+-    }
+-    moved = false;
+-  }}
+   class="Node"
+   style="left: {node.position.x}px; 
+     top: {node.position.y}px; 
+@@ -76,7 +57,7 @@ let moved = false;
      position: absolute;
      display: grid;
      user-select: none;
