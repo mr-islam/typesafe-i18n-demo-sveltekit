@@ -135,6 +135,24 @@
 		color: rgb(255, 245, 255);
 	}
 
-	@media only screen and (max-width: 600px) {
+	@media only screen and (max-width: 450px) {
+		a.box {
+			/* margin: 5px; */
+			border-radius: 12px;
+			box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+			display: block;
+			flex: 1 1 auto;
+			display: flex;
+			align-items: center;
+			border-width: 2px;
+			border-style: solid;
+		}
+		:global(p.rtl) {
+			font-weight: normal;
+			font-size: 1.3rem;
+		}
+		:global(p.ltr) {
+			font-size: 1.1rem;
+		}
 	}
 </style>

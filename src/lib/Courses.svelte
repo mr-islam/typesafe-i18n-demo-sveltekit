@@ -3752,13 +3752,7 @@
 {/if}
 
 <style>
-	:global(div#desktop > div > div > div > .Node) {
-		font-size: 22px !important; /* this should be a param in svelvet..... */
-	}
-	/* and mobile size gets the default, which is 14px in the library styles (file: Node/index.svelte) */
-	:global(div#tiny > div > div > div > .Node) {
-		font-size: 13px !important; /* this should be a param in svelvet..... */
-	}
+
 	div#tiny {
 		width: 320px;
 		margin: 1px auto;
@@ -3776,11 +3770,16 @@
 	h1 {
 		text-align: center;
 	}
-
+	:global(div#desktop > div > div > div > .Node) {
+		font-size: 22px !important; /* this should be a param in svelvet..... */
+	}
+	/* and mobile size gets the default, which is 14px in the library styles (file: Node/index.svelte) */
+	:global(div#tiny > div > div > div > .Node) {
+		font-size: 13px !important; /* this should be a param in svelvet..... */
+	}
 	@media only screen and (max-width: 500px) {
 		div#mobile {
 			width: 98vw;
-
 			overflow: visible;
 			border-radius: 12px;
 		}

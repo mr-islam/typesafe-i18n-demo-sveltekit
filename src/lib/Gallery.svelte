@@ -99,7 +99,8 @@
 	}
 	:global(.mySwiper) {
 		border-radius: 12px;
-		box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;	}
+		box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+	}
 	p {
 		font-size: 1.5rem;
 		color: var(--pure-white);
@@ -182,11 +183,15 @@
 			color: var(--pure-white);
 		}
 	}
-	@media only screen and (max-width: 400px) {
+	@media only screen and (max-width: 450px) {
 		div :global(.swiper) {
 			width: 100%;
-			height: 35vh;
+			height: 25vh;
 			top: 0;
+		}
+
+		div.container {
+			/* max-height: 82%; */
 		}
 	}
 </style>
