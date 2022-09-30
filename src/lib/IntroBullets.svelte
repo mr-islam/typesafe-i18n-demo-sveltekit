@@ -39,7 +39,7 @@
 		<div class="main-title">للاستفسار</div>
 		<div>
 			<p class="intro-bullet">
-				{$LL.welcome.contact()}:
+				{$LL.welcome.contact()}
 			</p>
 		</div>
 	</a>
