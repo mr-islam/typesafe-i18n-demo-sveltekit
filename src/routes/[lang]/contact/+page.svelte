@@ -2,17 +2,21 @@
 	import LL from '$i18n/i18n-svelte'
 </script>
 
-<h1>الاستفسار</h1>
+<h1>للاستفسار</h1>
 
 <div id="contact">
-	<p>
-		{$LL.contact.contact_us()}
-		<a href="mailto:markaz@ilm-marifah.com">
-			{$LL.contact.email()}
-		</a>
-		{$LL.contact.or()}
-		<a href="https://t.me/naved_islam">{$LL.contact.telegram()}</a>
-	</p>
+	<p><strong>تواصل معنا عبر:</strong></p>
+	<ul>
+		<li>
+			البريد الاكتروني: <br />
+			<a href="mailto:markaz@ilm-marifah.com">markaz@ilm-marifah.com</a>
+		</li>
+		<br />
+		<li>
+			تليغرام: <br />
+			<a href="https://t.me/naved_islam">https://t.me/naved_islam</a>
+		</li>
+	</ul>
 </div>
 
 <style>
@@ -20,7 +24,10 @@
 		text-align: center;
 	}
 	#contact {
-		text-align: center;
+		user-select: text;
+		margin: 0 auto;
+		width: 400px;
+		font-size: larger;
 	}
 	a {
 		background-color: burlywood;
