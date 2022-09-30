@@ -90,11 +90,60 @@ index 5e01ad9..6e8e8f0 100644
      };
      events: {
          [evt: string]: CustomEvent<any>;
+diff --git a/node_modules/svelvet/Nodes/ImageNode.svelte b/node_modules/svelvet/Nodes/ImageNode.svelte
+index c3821b7..b26d1f9 100644
+--- a/node_modules/svelvet/Nodes/ImageNode.svelte
++++ b/node_modules/svelvet/Nodes/ImageNode.svelte
+@@ -1,7 +1,7 @@
+ <script>import { findOrCreateStore } from '../stores/store';
+ export let node;
+ export let key;
+-const { onMouseMove, onNodeClick, onTouchMove, nodeSelected, nodeIdSelected } = findOrCreateStore(key);
++const { onMouseMove, onNodeClick, nodeSelected, nodeIdSelected } = findOrCreateStore(key);
+ // $nodeSelected is a store boolean that lets GraphView component know if ANY node is selected
+ // moving local boolean specific to node selected, to change position of individual node once selected
+ let moving = false;
+@@ -20,34 +20,7 @@ let moved = false;
+ />
+ 
+ <img
+-  on:touchmove={(e) => {
+-    if (moving) {
+-      onTouchMove(e, node.id);
+-    }
+-  }}
+-  on:touchstart={(e) => {
+-    e.preventDefault();
+-    moving = true;
+-    $nodeSelected = true;
+-  }}
+-  on:touchend={(e) => {
+-    moving = false;
+-    $nodeSelected = false;
+-  }}
+-  on:mousedown={(e) => {
+-    e.preventDefault();
+-    moving = true;
+-    $nodeIdSelected = node.id;
+-    $nodeSelected = true;
+-  }}
+-  on:mouseup={(e) => {
+-    moving = false;
+-    $nodeSelected = false;
+-    if (!moved && node.id == $nodeIdSelected) {
+-      onNodeClick(e, node.id);
+-    }
+-    moved = false;
+-  }}
++  
+   class="Node"
+   style="left: {node.position.x}px; 
+       top: {node.position.y}px; 
 diff --git a/node_modules/svelvet/Nodes/index.svelte b/node_modules/svelvet/Nodes/index.svelte
-index 0bc4156..6a30de1 100644
+index 0bc4156..46949d5 100644
 --- a/node_modules/svelvet/Nodes/index.svelte
 +++ b/node_modules/svelvet/Nodes/index.svelte
-@@ -1,7 +1,16 @@
+@@ -1,7 +1,15 @@
  <script>import { findOrCreateStore } from '../stores/store';
  export let node;
  export let key;
@@ -102,7 +151,6 @@ index 0bc4156..6a30de1 100644
 +const {
 +    onMouseMove,
 +    onNodeClick,
-+    onTouchMove,
 +    nodeSelected,
 +    nodeIdSelected,
 +    movementStore
@@ -112,7 +160,7 @@ index 0bc4156..6a30de1 100644
  // $nodeSelected is a store boolean that lets GraphView component know if ANY node is selected
  // moving local boolean specific to node selected, to change position of individual node once selected
  let moving = false;
-@@ -11,7 +20,7 @@ let moved = false;
+@@ -11,7 +19,7 @@ let moved = false;
  <svelte:window
    on:mousemove={(e) => {
      e.preventDefault();
@@ -121,7 +169,7 @@ index 0bc4156..6a30de1 100644
        onMouseMove(e, node.id);
        moved = true;
      }
-@@ -19,34 +28,6 @@ let moved = false;
+@@ -19,34 +27,6 @@ let moved = false;
  />
  
  <div
@@ -156,7 +204,7 @@ index 0bc4156..6a30de1 100644
    class="Node"
    style="left: {node.position.x}px; 
      top: {node.position.y}px; 
-@@ -76,7 +57,7 @@ let moved = false;
+@@ -76,7 +56,7 @@ let moved = false;
      position: absolute;
      display: grid;
      user-select: none;
@@ -166,7 +214,7 @@ index 0bc4156..6a30de1 100644
      overscroll-behavior: auto;
      align-items: center;
 diff --git a/node_modules/svelvet/stores/store.d.ts b/node_modules/svelvet/stores/store.d.ts
-index bd76794..0bcbf50 100644
+index bd76794..7df3cad 100644
 --- a/node_modules/svelvet/stores/store.d.ts
 +++ b/node_modules/svelvet/stores/store.d.ts
 @@ -6,6 +6,7 @@ interface CoreSvelvetStore {
@@ -177,8 +225,16 @@ index bd76794..0bcbf50 100644
      nodeIdSelected: Writable<number>;
      nodeSelected: Writable<boolean>;
      d3Scale: Writable<number>;
+@@ -13,7 +14,6 @@ interface CoreSvelvetStore {
+ interface SvelvetStore extends CoreSvelvetStore {
+     onMouseMove: (e: any, nodeID: number) => void;
+     onNodeClick: (e: any, nodeID: number) => void;
+-    onTouchMove: (e: any, nodeID: number) => void;
+     derivedEdges: Readable<Edge[]>;
+ }
+ export declare function findOrCreateStore(key: string): SvelvetStore;
 diff --git a/node_modules/svelvet/stores/store.js b/node_modules/svelvet/stores/store.js
-index 54c2ca7..e3f9ec4 100644
+index 54c2ca7..c90b2da 100644
 --- a/node_modules/svelvet/stores/store.js
 +++ b/node_modules/svelvet/stores/store.js
 @@ -14,6 +14,7 @@ export function findOrCreateStore(key) {
@@ -189,3 +245,35 @@ index 54c2ca7..e3f9ec4 100644
          nodeSelected: writable(false),
          nodeIdSelected: writable(-1),
          d3Scale: writable(1)
+@@ -34,22 +35,7 @@ export function findOrCreateStore(key) {
+         });
+     };
+     // This is the function handler for the touch event on mobile to select a node.
+-    const onTouchMove = (e, nodeID) => {
+-        coreSvelvetStore.nodesStore.update((n) => {
+-            n.forEach((node) => {
+-                if (node.id === nodeID) {
+-                    //calculates the location of the selected node
+-                    const { x, y, width, height } = e.target.getBoundingClientRect();
+-                    const offsetX = ((e.touches[0].clientX - x) / width) * e.target.offsetWidth;
+-                    const offsetY = ((e.touches[0].clientY - y) / height) * e.target.offsetHeight;
+-                    // centers the node consistently under the user's touch
+-                    node.position.x += offsetX - node.width / 2;
+-                    node.position.y += offsetY - node.height / 2;
+-                }
+-            });
+-            return [...n];
+-        });
+-    };
++
+     const nodeIdSelected = coreSvelvetStore.nodeIdSelected;
+     // if the user clicks a node without moving it, this function fires allowing a user to invoke the callback function
+     const onNodeClick = (e, nodeID) => {
+@@ -163,7 +149,6 @@ export function findOrCreateStore(key) {
+     //Puts everything together as the svelvet store and use the key so that it can be used.
+     const svelvetStore = {
+         ...coreSvelvetStore,
+-        onTouchMove,
+         onMouseMove,
+         onNodeClick,
+         derivedEdges
