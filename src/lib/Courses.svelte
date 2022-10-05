@@ -1,5 +1,6 @@
 <script>
 	import { onMount } from 'svelte'
+	import LL from '$i18n/i18n-svelte'
 	import Svelvet from 'svelvet'
 
 	let pageHeight //dont need it for breakpoints
@@ -14,7 +15,7 @@
 		{
 			id: 1,
 			position: { x: 269, y: 210 },
-			data: { label: 'الفرض العيني' },
+			data: { label:  $LL.fields.fard.title() },
 			width: 50,
 			height: 45,
 			bgColor: '#61FFA3',
@@ -24,7 +25,7 @@
 		{
 			id: 2,
 			position: { x: 170, y: 60 },
-			data: { label: 'علم التوحيد' },
+			data: { label: $LL.fields.fard.tawhid_title() },
 			width: 60,
 			height: 55,
 			bgColor: '#EBBAB9',
@@ -36,7 +37,7 @@
 			id: 3.1,
 			position: { x: 1, y: 25 },
 			data: {
-				label: 'الإلهيات',
+				label: $LL.fields.fard.tawhid_content1(),
 			},
 
 			width: 135,
@@ -49,7 +50,7 @@
 			id: 3.2,
 			position: { x: 1, y: 65 },
 			data: {
-				label: 'النبويات',
+				label: $LL.fields.fard.tawhid_content2(),
 			},
 			width: 135,
 			height: 55,
@@ -61,7 +62,7 @@
 			id: 3.3,
 			position: { x: 1, y: 105 },
 			data: {
-				label: 'السمعيات',
+				label: $LL.fields.fard.tawhid_content3(),
 			},
 			width: 135,
 			height: 55,
@@ -72,7 +73,7 @@
 		{
 			id: 4,
 			position: { x: 170, y: 145 },
-			data: { label: 'علم التجويد' },
+			data: { label: $LL.fields.fard.tajwid_title() },
 			width: 60,
 			height: 55,
 			bgColor: '#A2FDFF',
@@ -84,7 +85,7 @@
 			id: 5,
 			position: { x: 1, y: 145 },
 			data: {
-				label: 'إتقان تلاوة القرآن وترتيله',
+				label: $LL.fields.fard.tajwid_content(),
 			},
 			width: 135,
 			height: 55,
@@ -95,7 +96,7 @@
 		{
 			id: 6,
 			position: { x: 170, y: 212 },
-			data: { label: 'علم العبادات' },
+			data: { label: $LL.fields.fard.ibadat_title() },
 			width: 60,
 			height: 55,
 			bgColor: '#A7B7FF',
@@ -107,7 +108,7 @@
 			id: 7,
 			position: { x: 1, y: 197 },
 			data: {
-				label: 'الإتيان بالعبادات من طهارة وصلاة وصوم وزكاة وحج على الوجه الشرعي الصحيح',
+				label: $LL.fields.fard.ibadat_content(),
 			},
 			width: 135,
 			height: 70,
@@ -118,7 +119,7 @@
 		{
 			id: 8,
 			position: { x: 170, y: 290 },
-			data: { label: 'علم المعاملات' },
+			data: { label: $LL.fields.fard.muamalat_title() },
 			width: 60,
 			height: 55,
 			bgColor: '#FFC5A7',
@@ -130,7 +131,7 @@
 			id: 9.1,
 			position: { x: 1, y: 275 },
 			data: {
-				label: 'أحكام البيوع',
+				label: $LL.fields.fard.muamalat_content1(),
 			},
 			width: 135,
 			height: 55,
@@ -142,7 +143,7 @@
 			id: 9.2,
 			position: { x: 1, y: 315 },
 			data: {
-				label: 'أحكام الأسرة',
+				label: $LL.fields.fard.muamalat_content2(),
 			},
 			width: 135,
 			height: 55,
@@ -153,7 +154,7 @@
 		{
 			id: 10,
 			position: { x: 170, y: 370 },
-			data: { label: 'علم التصوف' },
+			data: { label: $LL.fields.fard.tasawwuf_title() },
 			width: 60,
 			height: 55,
 			bgColor: '#EEFFB2',
@@ -165,7 +166,7 @@
 			id: 11,
 			position: { x: 1, y: 365 },
 			data: {
-				label: 'إصلاح القلب وتهذيب النفس',
+				label: $LL.fields.fard.tasawwuf_content(),
 			},
 			width: 135,
 			height: 50,
@@ -177,7 +178,7 @@
 		{
 			id: 12,
 			position: { x: 269, y: 565 },
-			data: { label: 'القرآن الكريم وعلومه' },
+			data: { label: $LL.fields.quran.title() },
 			width: 50,
 			height: 70,
 			bgColor: '#97D9FF',
@@ -187,7 +188,7 @@
 		{
 			id: 13,
 			position: { x: 170, y: 500 },
-			data: { label: 'علم التجويد' },
+			data: { label: $LL.fields.fard.tajwid_title() },
 			width: 60,
 			height: 55,
 			bgColor: '#A2FDFF',
@@ -199,7 +200,7 @@
 			id: 14,
 			position: { x: 1, y: 485 },
 			data: {
-				label: 'إتقان تلاوة القرآن وترتيله نظريا وعمليا',
+				label:  $LL.fields.quran.tajwid_content(),
 			},
 			width: 135,
 			height: 70,
@@ -210,7 +211,7 @@
 		{
 			id: 15,
 			position: { x: 170, y: 580 },
-			data: { label: 'علم التفسير' },
+			data: { label:  $LL.fields.quran.tafsir_title() },
 			width: 60,
 			height: 55,
 			bgColor: '#97D9FF',
@@ -222,7 +223,7 @@
 			id: 16,
 			position: { x: 1, y: 565 },
 			data: {
-				label: 'تفسير كتاب الله تعالى ومعرفة معانيه الظاهرة والباطنة',
+				label:  $LL.fields.quran.tafsir_content(),
 			},
 			width: 135,
 			height: 70,
@@ -233,7 +234,7 @@
 		{
 			id: 17,
 			position: { x: 170, y: 662 },
-			data: { label: 'علوم القرآن' },
+			data: { label:  $LL.fields.quran.ulum_title() },
 			width: 60,
 			height: 55,
 			bgColor: '#97BFFF',
@@ -245,7 +246,7 @@
 			id: 18,
 			position: { x: 1, y: 645 },
 			data: {
-				label: 'معرفة ما يتعلق بالقرآن الكريم كأسباب النزول ومعرفة الناسخ والمنسوخ وغيره',
+				label:  $LL.fields.quran.ulum_content(),
 			},
 			width: 135,
 			height: 75,
@@ -257,7 +258,7 @@
 		{
 			id: 19,
 			position: { x: 269, y: 870 },
-			data: { label: 'الحديث وعلومه' },
+			data: { label:  $LL.fields.hadith.title() },
 			width: 50,
 			height: 55,
 			bgColor: '#00DF65',
@@ -267,7 +268,7 @@
 		{
 			id: 20,
 			position: { x: 170, y: 867 },
-			data: { label: 'مصطلح الحديث' },
+			data: { label:  $LL.fields.hadith.ulum_title() },
 			width: 60,
 			height: 45,
 			bgColor: '#00DF65',
@@ -279,7 +280,7 @@
 			id: 21,
 			position: { x: 1, y: 855 },
 			data: {
-				label: 'معرفة طرق الأحاديث والأسانيد ومصادر السنة',
+				label:  $LL.fields.hadith.ulum_content(),
 			},
 			width: 135,
 			height: 70,
@@ -290,7 +291,7 @@
 		{
 			id: 22,
 			position: { x: 170, y: 783 },
-			data: { label: 'علم الحديث وراية ودراية' },
+			data: { label:  $LL.fields.hadith.main_title() },
 			width: 65,
 			height: 55,
 			sourcePosition: 'left',
@@ -303,7 +304,7 @@
 			position: { x: 1, y: 775 },
 
 			data: {
-				label: 'قراءة الكتب التسعة بالسند المتصل وقراءة شروحها',
+				label:  $LL.fields.hadith.main_content(),
 			},
 			width: 135,
 			height: 70,
@@ -315,7 +316,7 @@
 		{
 			id: 24,
 			position: { x: 170, y: 950 },
-			data: { label: 'السيرة والشمائل' },
+			data: { label:  $LL.fields.hadith.seerah_title() },
 			width: 60,
 			height: 45,
 
@@ -328,7 +329,7 @@
 			id: 25,
 			position: { x: 1, y: 935 },
 			data: {
-				label: 'معرفة النبي ﷺ من حيث الشمائل والأخلاق وأحداث السيرة',
+				label:  $LL.fields.hadith.seerah_content(),
 			},
 			width: 135,
 			height: 70,
@@ -340,7 +341,7 @@
 		{
 			id: 26,
 			position: { x: 269, y: 1085 },
-			data: { label: 'العقيدة' },
+			data: { label:  $LL.fields.aqidah.title() },
 			width: 50,
 			height: 55,
 			bgColor: '#61FFA3',
@@ -351,7 +352,7 @@
 			id: 27,
 			position: { x: 1, y: 1070 },
 			data: {
-				label: 'دراسة العقيدة الإسلامية على مذهب أهل السنة والجماعة من الأشاعرة والماتريدية',
+				label:  $LL.fields.aqidah.explanation(),
 			},
 			width: 135,
 			height: 70,
@@ -363,7 +364,7 @@
 		{
 			id: 28,
 			position: { x: 269, y: 1360 },
-			data: { label: 'الفقه وأصوله' },
+			data: { label:  $LL.fields.fiqh.title() },
 			width: 50,
 			height: 55,
 			bgColor: '#FFD3A7',
@@ -373,7 +374,7 @@
 		{
 			id: 29,
 			position: { x: 170, y: 1230 },
-			data: { label: 'الفروع' },
+			data: { label:  $LL.fields.fiqh.furu_title() },
 			width: 60,
 			height: 55,
 			bgColor: '#FFE8A7',
@@ -385,7 +386,7 @@
 			id: 30,
 			position: { x: 1, y: 1215 },
 			data: {
-				label: 'دراسة الأحكام التفصيرية الشاملة لجيمع أبواب الفقه',
+				label:  $LL.fields.fiqh.furu_content(),
 			},
 			width: 135,
 			height: 70,
@@ -396,7 +397,7 @@
 		{
 			id: 31,
 			position: { x: 170, y: 1315 },
-			data: { label: 'الأصول' },
+			data: { label:  $LL.fields.fiqh.usul_title() },
 			width: 60,
 			height: 55,
 			bgColor: '#FFDEA7',
@@ -408,7 +409,7 @@
 			id: 32,
 			position: { x: 1, y: 1300 },
 			data: {
-				label: 'معرفة طرق الاستدلال ومناهج الأصوليين ',
+				label:  $LL.fields.fiqh.usul_content(),
 			},
 			width: 135,
 			height: 70,
@@ -419,7 +420,7 @@
 		{
 			id: 33,
 			position: { x: 170, y: 1400 },
-			data: { label: 'القواعد' },
+			data: { label:  $LL.fields.fiqh.qawaid_title() },
 			width: 60,
 			height: 55,
 			bgColor: '#FFD3A7',
@@ -431,7 +432,7 @@
 			id: 34,
 			position: { x: 1, y: 1385 },
 			data: {
-				label: 'دراسة القواعد الفقهية',
+				label:  $LL.fields.fiqh.qawaid_content(),
 			},
 			width: 135,
 			height: 70,
@@ -442,7 +443,7 @@
 		{
 			id: 35,
 			position: { x: 170, y: 1485 },
-			data: { label: 'الأدلة' },
+			data: { label:  $LL.fields.fiqh.adillah_title() },
 			width: 60,
 			height: 55,
 			bgColor: '#FFCAA7',
@@ -454,7 +455,7 @@
 			id: 36,
 			position: { x: 1, y: 1470 },
 			data: {
-				label: 'معرفة الأدلة القرآنية والنبوية التي استند إليها المجتهدد',
+				label:  $LL.fields.fiqh.adillah_content(),
 			},
 			width: 135,
 			height: 70,
@@ -466,7 +467,7 @@
 		{
 			id: 37,
 			position: { x: 269, y: 1675 },
-			data: { label: 'التصوف' },
+			data: { label:  $LL.fields.tasawwuf.title() },
 			width: 50,
 			height: 55,
 			bgColor: '#DDFFB2',
@@ -476,7 +477,7 @@
 		{
 			id: 38,
 			position: { x: 170, y: 1635 },
-			data: { label: 'السلوك' },
+			data: { label:  $LL.fields.tasawwuf.suluk_title() },
 			width: 60,
 			height: 55,
 			bgColor: '#EEFFB2',
@@ -488,7 +489,7 @@
 			id: 39,
 			position: { x: 1, y: 1615 },
 			data: {
-				label: 'التخلية النفس من الرذائل وتحليتها بالفضائل وبيان السير على الهدي المحمدي ظاهرا وباطنا',
+				label:  $LL.fields.tasawwuf.suluk_content(),
 			},
 			width: 135,
 			height: 80,
@@ -499,7 +500,7 @@
 		{
 			id: 40,
 			position: { x: 170, y: 1725 },
-			data: { label: 'العرفان' },
+			data: { label:  $LL.fields.tasawwuf.irfan_title() },
 			width: 60,
 			height: 55,
 			bgColor: '#DDFFB2',
@@ -511,7 +512,7 @@
 			id: 41,
 			position: { x: 1, y: 1710 },
 			data: {
-				label: 'معرفة الله تعالى وذوق حقائق التوحيد',
+				label:  $LL.fields.tasawwuf.irfan_content(),
 			},
 			width: 135,
 			height: 70,
@@ -523,7 +524,7 @@
 		{
 			id: 42,
 			position: { x: 269, y: 2000 },
-			data: { label: 'اللغة العربية' },
+			data: { label:  $LL.fields.arabayyiah.title() },
 			width: 50,
 			height: 55,
 			bgColor: '#E2B2FF',
@@ -533,7 +534,7 @@
 		{
 			id: 43,
 			position: { x: 170, y: 1865 },
-			data: { label: 'النحو' },
+			data: { label:  $LL.fields.arabayyiah.nahw_title() },
 			width: 60,
 			height: 55,
 			bgColor: '#ECB2FF',
@@ -545,7 +546,7 @@
 			id: 44,
 			position: { x: 1, y: 1850 },
 			data: {
-				label: 'إتقان مباحث النحو بشكل نظري وعملي',
+				label:  $LL.fields.arabayyiah.nahw_content(),
 			},
 			width: 135,
 			height: 70,
@@ -556,7 +557,7 @@
 		{
 			id: 45,
 			position: { x: 170, y: 1950 },
-			data: { label: 'الصرف' },
+			data: { label:  $LL.fields.arabayyiah.sarf_title() },
 			width: 60,
 			height: 55,
 			bgColor: '#E2B2FF',
@@ -579,7 +580,7 @@
 		{
 			id: 47,
 			position: { x: 170, y: 2040 },
-			data: { label: 'البلاغة' },
+			data: { label:  $LL.fields.arabayyiah.balaghah_title()},
 			width: 60,
 			height: 55,
 			bgColor: '#D5B2FF',
@@ -591,7 +592,7 @@
 			id: 48,
 			position: { x: 1, y: 2025 },
 			data: {
-				label: 'إتقان مباحث البلاغة من البيان والمعاني والبديع',
+				label:  $LL.fields.arabayyiah.balaghah_content(),
 			},
 			width: 135,
 			height: 70,
@@ -602,7 +603,7 @@
 		{
 			id: 49,
 			position: { x: 170, y: 2110 },
-			data: { label: 'دراسة اللعربية للناطقين بغيرها' },
+			data: { label:  $LL.fields.arabayyiah.natiq_title() },
 			width: 60,
 			height: 70,
 			bgColor: '#C6B2FF',
@@ -614,7 +615,7 @@
 			id: 50,
 			position: { x: 1, y: 2110 },
 			data: {
-				label: 'العناية بالطالب لإتقان اللغة العربية قراءة والكتابة وإنشاء',
+				label:  $LL.fields.arabayyiah.natiq_content(),
 			},
 			width: 135,
 			height: 70,
@@ -626,7 +627,7 @@
 		{
 			id: 51,
 			position: { x: 269, y: 2490 },
-			data: { label: 'البرامج المتنوعة' },
+			data: { label:  $LL.fields.baramij.title() },
 			width: 50,
 			height: 55,
 			bgColor: '#FFB2CE',
@@ -636,7 +637,7 @@
 		{
 			id: 52,
 			position: { x: 170, y: 2265 },
-			data: { label: 'الدعوة والخطابة' },
+			data: { label:  $LL.fields.baramij.dawah_title() },
 			width: 60,
 			height: 55,
 			bgColor: '#FFB2E6',
@@ -648,7 +649,7 @@
 			id: 53,
 			position: { x: 1, y: 2250 },
 			data: {
-				label: 'إتقان مهارة الخطابة والدعوة لإفادة الناس على الوجه الأمثل',
+				label:  $LL.fields.baramij.dawah_content(),
 			},
 			width: 135,
 			height: 70,
@@ -659,7 +660,7 @@
 		{
 			id: 54,
 			position: { x: 170, y: 2345 },
-			data: { label: 'دورات تعليمية للنساء' },
+			data: { label:  $LL.fields.baramij.nisa_title() },
 			width: 60,
 			height: 60,
 			bgColor: '#FFB2DA',
@@ -671,7 +672,7 @@
 			id: 55,
 			position: { x: 1, y: 2340 },
 			data: {
-				label: 'تعليم ما تحتاجها المرأة المسلمة في حياتها',
+				label:  $LL.fields.baramij.nisa_content(),
 			},
 			width: 135,
 			height: 70,
@@ -682,7 +683,7 @@
 		{
 			id: 56,
 			position: { x: 170, y: 2435 },
-			data: { label: 'دورات تعليمية للأطفال' },
+			data: { label:  $LL.fields.baramij.atfal_title() },
 			width: 60,
 			height: 60,
 			bgColor: '#FFB2CE',
@@ -694,7 +695,7 @@
 			id: 57,
 			position: { x: 1, y: 2430 },
 			data: {
-				label: 'تعليم الأطفال والعناية بتربيتهم وتوجيههم',
+				label:  $LL.fields.baramij.atfal_content(),
 			},
 			width: 135,
 			height: 70,
@@ -705,7 +706,7 @@
 		{
 			id: 58,
 			position: { x: 170, y: 2520 },
-			data: { label: 'دورات تأهليلية للحياة الزوجية' },
+			data: { label:  $LL.fields.baramij.zawjiyyah_title() },
 			width: 65,
 			height: 70,
 			bgColor: '#FFB2C3',
@@ -717,7 +718,7 @@
 			id: 59,
 			position: { x: 1, y: 2520 },
 			data: {
-				label: 'توضوح مفاهيم الزواج وأحكام الأسرة وبيان طرق الحكمة في تعامل الزوجين مع بعضهما',
+				label:  $LL.fields.baramij.zawjiyyah_content(),
 			},
 			width: 135,
 			height: 70,
@@ -728,7 +729,7 @@
 		{
 			id: 60,
 			position: { x: 170, y: 2615 },
-			data: { label: 'تربية الأطفال' },
+			data: { label:  $LL.fields.baramij.tarbiyah_title() },
 			width: 60,
 			height: 60,
 			bgColor: '#FFB2C3',
@@ -740,7 +741,7 @@
 			id: 61,
 			position: { x: 1, y: 2610 },
 			data: {
-				label: 'بيان الطريقة المثلى في كيفية تنشئة الأطفال تنشئة معتبرة',
+				label:  $LL.fields.baramij.tarbiyah_content(),
 			},
 			width: 135,
 			height: 70,
@@ -751,7 +752,7 @@
 		{
 			id: 62,
 			position: { x: 170, y: 2705 },
-			data: { label: 'الأصوات والمقامات' },
+			data: { label:  $LL.fields.baramij.aswat_title() },
 			width: 60,
 			height: 60,
 			bgColor: '#FFB2C3',
@@ -763,7 +764,7 @@
 			id: 63,
 			position: { x: 1, y: 2700 },
 			data: {
-				label: 'تعليم المقامات والإنشاد الديني',
+				label:  $LL.fields.baramij.aswat_content(),
 			},
 			width: 135,
 			height: 70,
@@ -1255,7 +1256,7 @@
 		{
 			id: 1,
 			position: { x: 300, y: 210 },
-			data: { label: 'الفرض العيني' },
+			data: { label:  $LL.fields.fard.title() },
 			width: 125,
 			height: 55,
 			bgColor: '#61FFA3',
@@ -1265,7 +1266,7 @@
 		{
 			id: 2,
 			position: { x: 200, y: 60 },
-			data: { label: 'علم التوحيد' },
+			data: { label: $LL.fields.fard.tawhid_title() },
 			width: 80,
 			height: 55,
 			bgColor: '#EBBAB9',
@@ -1277,7 +1278,7 @@
 			id: 3.1,
 			position: { x: 1, y: 25 },
 			data: {
-				label: 'الإلهيات',
+				label: $LL.fields.fard.tawhid_content1(),
 			},
 
 			width: 175,
@@ -1290,7 +1291,7 @@
 			id: 3.2,
 			position: { x: 1, y: 65 },
 			data: {
-				label: 'النبويات',
+				label: $LL.fields.fard.tawhid_content2(),
 			},
 			width: 175,
 			height: 55,
@@ -1302,7 +1303,7 @@
 			id: 3.3,
 			position: { x: 1, y: 105 },
 			data: {
-				label: 'السمعيات',
+				label: $LL.fields.fard.tawhid_content3(),
 			},
 			width: 175,
 			height: 55,
@@ -1313,7 +1314,7 @@
 		{
 			id: 4,
 			position: { x: 200, y: 145 },
-			data: { label: 'علم التجويد' },
+			data: { label: $LL.fields.fard.tajwid_title() },
 			width: 80,
 			height: 55,
 			bgColor: '#A2FDFF',
@@ -1325,7 +1326,7 @@
 			id: 5,
 			position: { x: 1, y: 145 },
 			data: {
-				label: 'إتقان تلاوة القرآن وترتيله',
+				label: $LL.fields.fard.tajwid_content(),
 			},
 			width: 175,
 			height: 55,
@@ -1336,7 +1337,7 @@
 		{
 			id: 6,
 			position: { x: 200, y: 210 },
-			data: { label: 'علم العبادات' },
+			data: { label: $LL.fields.fard.ibadat_title() },
 			width: 80,
 			height: 55,
 			bgColor: '#A7B7FF',
@@ -1348,7 +1349,7 @@
 			id: 7,
 			position: { x: 1, y: 197 },
 			data: {
-				label: 'الإتيان بالعبادات من طهارة وصلاة وصوم وزكاة وحج على الوجه الشرعي الصحيح',
+				label: $LL.fields.fard.ibadat_content(),
 			},
 			width: 175,
 			height: 65,
@@ -1359,7 +1360,7 @@
 		{
 			id: 8,
 			position: { x: 200, y: 285 },
-			data: { label: 'علم المعاملات' },
+			data: { label: $LL.fields.fard.muamalat_title() },
 			width: 80,
 			height: 55,
 			bgColor: '#FFC5A7',
@@ -1371,7 +1372,7 @@
 			id: 9.1,
 			position: { x: 1, y: 270 },
 			data: {
-				label: 'أحكام البيوع',
+				label: $LL.fields.fard.muamalat_content1(),
 			},
 			width: 175,
 			height: 55,
@@ -1383,7 +1384,7 @@
 			id: 9.2,
 			position: { x: 1, y: 310 },
 			data: {
-				label: 'أحكام الأسرة',
+				label: $LL.fields.fard.muamalat_content2(),
 			},
 			width: 175,
 			height: 55,
@@ -1394,7 +1395,7 @@
 		{
 			id: 10,
 			position: { x: 200, y: 370 },
-			data: { label: 'علم التصوف' },
+			data: { label: $LL.fields.fard.tasawwuf_title() },
 			width: 80,
 			height: 55,
 			bgColor: '#EEFFB2',
@@ -1406,7 +1407,7 @@
 			id: 11,
 			position: { x: 1, y: 355 },
 			data: {
-				label: 'إصلاح القلب وتهذيب النفس',
+				label: $LL.fields.fard.tasawwuf_content(),
 			},
 			width: 175,
 			height: 70,
@@ -1418,7 +1419,7 @@
 		{
 			id: 12,
 			position: { x: 300, y: 580 },
-			data: { label: 'القرآن الكريم وعلومه' },
+			data: { label: $LL.fields.quran.title() },
 			width: 125,
 			height: 55,
 			bgColor: '#97D9FF',
@@ -1428,7 +1429,7 @@
 		{
 			id: 13,
 			position: { x: 200, y: 500 },
-			data: { label: 'علم التجويد' },
+			data: { label: $LL.fields.fard.tajwid_title() },
 			width: 80,
 			height: 55,
 			bgColor: '#A2FDFF',
@@ -1440,7 +1441,7 @@
 			id: 14,
 			position: { x: 1, y: 485 },
 			data: {
-				label: 'إتقان تلاوة القرآن وترتيله نظريا وعمليا',
+				label:  $LL.fields.quran.tajwid_content(),
 			},
 			width: 175,
 			height: 70,
@@ -1451,7 +1452,7 @@
 		{
 			id: 15,
 			position: { x: 200, y: 580 },
-			data: { label: 'علم التفسير' },
+			data: { label:  $LL.fields.quran.tafsir_title() },
 			width: 80,
 			height: 55,
 			bgColor: '#97D9FF',
@@ -1463,7 +1464,7 @@
 			id: 16,
 			position: { x: 1, y: 565 },
 			data: {
-				label: 'تفسير كتاب الله تعالى ومعرفة معانيه الظاهرة والباطنة',
+				label:  $LL.fields.quran.tafsir_content(),
 			},
 			width: 175,
 			height: 70,
@@ -1474,7 +1475,7 @@
 		{
 			id: 17,
 			position: { x: 200, y: 660 },
-			data: { label: 'علوم القرآن' },
+			data: { label:  $LL.fields.quran.ulum_title() },
 			width: 80,
 			height: 55,
 			bgColor: '#97BFFF',
@@ -1486,7 +1487,7 @@
 			id: 18,
 			position: { x: 1, y: 645 },
 			data: {
-				label: 'معرفة ما يتعلق بالقرآن الكريم كأسباب النزول ومعرفة الناسخ والمنسوخ وغيره',
+				label:  $LL.fields.quran.ulum_content(),
 			},
 			width: 175,
 			height: 70,
@@ -1498,7 +1499,7 @@
 		{
 			id: 19,
 			position: { x: 300, y: 870 },
-			data: { label: 'الحديث وعلومه' },
+			data: { label:  $LL.fields.hadith.title() },
 			width: 125,
 			height: 55,
 			bgColor: '#00DF65',
@@ -1508,7 +1509,7 @@
 		{
 			id: 20,
 			position: { x: 200, y: 867 },
-			data: { label: 'مصطلح الحديث' },
+			data: { label:  $LL.fields.hadith.ulum_title() },
 
 			width: 80,
 			height: 45,
@@ -1521,7 +1522,7 @@
 			id: 21,
 			position: { x: 1, y: 855 },
 			data: {
-				label: 'معرفة طرق الأحاديث والأسانيد ومصادر السنة',
+				label:  $LL.fields.hadith.ulum_content(),
 			},
 			width: 175,
 			height: 70,
@@ -1532,7 +1533,7 @@
 		{
 			id: 22,
 			position: { x: 200, y: 787 },
-			data: { label: 'علم الحديث وراية ودراية' },
+			data: { label:  $LL.fields.hadith.main_title() },
 			width: 80,
 			height: 45,
 			sourcePosition: 'left',
@@ -1545,7 +1546,7 @@
 			position: { x: 1, y: 775 },
 
 			data: {
-				label: 'قراءة الكتب التسعة بالسند المتصل وقراءة شروحها',
+				label:  $LL.fields.hadith.main_content(),
 			},
 			width: 175,
 			height: 70,
@@ -1557,7 +1558,7 @@
 		{
 			id: 24,
 			position: { x: 200, y: 950 },
-			data: { label: 'السيرة والشمائل' },
+			data: { label:  $LL.fields.hadith.seerah_title() },
 			width: 80,
 			height: 45,
 
@@ -1570,7 +1571,7 @@
 			id: 25,
 			position: { x: 1, y: 935 },
 			data: {
-				label: 'معرفة النبي ﷺ من حيث الشمائل والأخلاق وأحداث السيرة',
+				label:  $LL.fields.hadith.seerah_content(),
 			},
 			width: 175,
 			height: 70,
@@ -1582,7 +1583,7 @@
 		{
 			id: 26,
 			position: { x: 300, y: 1085 },
-			data: { label: 'العقيدة' },
+			data: { label:  $LL.fields.aqidah.title() },
 			width: 125,
 			height: 55,
 			bgColor: '#61FFA3',
@@ -1593,7 +1594,7 @@
 			id: 27,
 			position: { x: 1, y: 1070 },
 			data: {
-				label: 'دراسة العقيدة الإسلامية على مذهب أهل السنة والجماعة من الأشاعرة والماتريدية',
+				label:  $LL.fields.aqidah.explanation(),
 			},
 			width: 175,
 			height: 70,
@@ -1605,7 +1606,7 @@
 		{
 			id: 28,
 			position: { x: 300, y: 1360 },
-			data: { label: 'الفقه وأصوله' },
+			data: { label:  $LL.fields.fiqh.title() },
 			width: 125,
 			height: 55,
 			bgColor: '#FFD3A7',
@@ -1615,7 +1616,7 @@
 		{
 			id: 29,
 			position: { x: 200, y: 1230 },
-			data: { label: 'الفروع' },
+			data: { label:  $LL.fields.fiqh.furu_title() },
 			width: 80,
 			height: 55,
 			bgColor: '#FFE8A7',
@@ -1627,7 +1628,7 @@
 			id: 30,
 			position: { x: 1, y: 1215 },
 			data: {
-				label: 'دراسة الأحكام التفصيرية الشاملة لجيمع أبواب الفقه',
+				label:  $LL.fields.fiqh.furu_content(),
 			},
 			width: 175,
 			height: 70,
@@ -1638,7 +1639,7 @@
 		{
 			id: 31,
 			position: { x: 200, y: 1315 },
-			data: { label: 'الأصول' },
+			data: { label:  $LL.fields.fiqh.usul_title() },
 			width: 80,
 			height: 55,
 			bgColor: '#FFDEA7',
@@ -1650,7 +1651,7 @@
 			id: 32,
 			position: { x: 1, y: 1300 },
 			data: {
-				label: 'معرفة طرق الاستدلال ومناهج الأصوليين ',
+				label:  $LL.fields.fiqh.usul_content(),
 			},
 			width: 175,
 			height: 70,
@@ -1661,7 +1662,7 @@
 		{
 			id: 33,
 			position: { x: 200, y: 1400 },
-			data: { label: 'القواعد' },
+			data: { label:  $LL.fields.fiqh.qawaid_title() },
 			width: 80,
 			height: 55,
 			bgColor: '#FFD3A7',
@@ -1673,7 +1674,7 @@
 			id: 34,
 			position: { x: 1, y: 1385 },
 			data: {
-				label: 'دراسة القواعد الفقهية',
+				label:  $LL.fields.fiqh.qawaid_content(),
 			},
 			width: 175,
 			height: 70,
@@ -1684,7 +1685,7 @@
 		{
 			id: 35,
 			position: { x: 200, y: 1485 },
-			data: { label: 'الأدلة' },
+			data: { label:  $LL.fields.fiqh.adillah_title() },
 			width: 80,
 			height: 55,
 			bgColor: '#FFCAA7',
@@ -1696,7 +1697,7 @@
 			id: 36,
 			position: { x: 1, y: 1470 },
 			data: {
-				label: 'معرفة الأدلة القرآنية والنبوية التي استند إليها المجتهدد',
+				label:  $LL.fields.fiqh.adillah_content(),
 			},
 			width: 175,
 			height: 70,
@@ -1708,7 +1709,7 @@
 		{
 			id: 37,
 			position: { x: 300, y: 1675 },
-			data: { label: 'التصوف' },
+			data: { label:  $LL.fields.tasawwuf.title() },
 			width: 125,
 			height: 55,
 			bgColor: '#DDFFB2',
@@ -1718,7 +1719,7 @@
 		{
 			id: 38,
 			position: { x: 200, y: 1635 },
-			data: { label: 'السلوك' },
+			data: { label:  $LL.fields.tasawwuf.suluk_title() },
 			width: 80,
 			height: 55,
 			bgColor: '#EEFFB2',
@@ -1730,7 +1731,7 @@
 			id: 39,
 			position: { x: 1, y: 1615 },
 			data: {
-				label: 'التخلية النفس من الرذائل وتحليتها بالفضائل وبيان السير على الهدي المحمدي ظاهرا وباطنا',
+				label:  $LL.fields.tasawwuf.suluk_content(),
 			},
 			width: 175,
 			height: 80,
@@ -1741,7 +1742,7 @@
 		{
 			id: 40,
 			position: { x: 200, y: 1725 },
-			data: { label: 'العرفان' },
+			data: { label:  $LL.fields.tasawwuf.irfan_title() },
 			width: 80,
 			height: 55,
 			bgColor: '#DDFFB2',
@@ -1753,7 +1754,7 @@
 			id: 41,
 			position: { x: 1, y: 1710 },
 			data: {
-				label: 'معرفة الله تعالى وذوق حقائق التوحيد',
+				label:  $LL.fields.tasawwuf.irfan_content(),
 			},
 			width: 175,
 			height: 70,
@@ -1765,7 +1766,7 @@
 		{
 			id: 42,
 			position: { x: 300, y: 2000 },
-			data: { label: 'اللغة العربية' },
+			data: { label:  $LL.fields.arabayyiah.title() },
 			width: 125,
 			height: 55,
 			bgColor: '#E2B2FF',
@@ -1775,7 +1776,7 @@
 		{
 			id: 43,
 			position: { x: 200, y: 1865 },
-			data: { label: 'النحو' },
+			data: { label:  $LL.fields.arabayyiah.nahw_title() },
 			width: 80,
 			height: 55,
 			bgColor: '#ECB2FF',
@@ -1787,7 +1788,7 @@
 			id: 44,
 			position: { x: 1, y: 1850 },
 			data: {
-				label: 'إتقان مباحث النحو بشكل نظري وعملي',
+				label:  $LL.fields.arabayyiah.nahw_content(),
 			},
 			width: 175,
 			height: 70,
@@ -1798,7 +1799,7 @@
 		{
 			id: 45,
 			position: { x: 200, y: 1950 },
-			data: { label: 'الصرف' },
+			data: { label:  $LL.fields.arabayyiah.sarf_title() },
 			width: 80,
 			height: 55,
 			bgColor: '#E2B2FF',
@@ -1810,7 +1811,7 @@
 			id: 46,
 			position: { x: 1, y: 1935 },
 			data: {
-				label: 'معرفة بينة الكلمة واشتقاقها ',
+				label:  $LL.fields.arabayyiah.sarf_content(),
 			},
 			width: 175,
 			height: 70,
@@ -1821,7 +1822,7 @@
 		{
 			id: 47,
 			position: { x: 200, y: 2040 },
-			data: { label: 'البلاغة' },
+			data: { label:  $LL.fields.arabayyiah.balaghah_title()},
 			width: 80,
 			height: 55,
 			bgColor: '#D5B2FF',
@@ -1833,7 +1834,7 @@
 			id: 48,
 			position: { x: 1, y: 2025 },
 			data: {
-				label: 'إتقان مباحث البلاغة من البيان والمعاني والبديع',
+				label:  $LL.fields.arabayyiah.balaghah_content(),
 			},
 			width: 175,
 			height: 70,
@@ -1844,7 +1845,7 @@
 		{
 			id: 49,
 			position: { x: 200, y: 2110 },
-			data: { label: 'دراسة اللعربية للناطقين بغيرها' },
+			data: { label:  $LL.fields.arabayyiah.natiq_title() },
 			width: 85,
 			height: 70,
 			bgColor: '#C6B2FF',
@@ -1856,7 +1857,7 @@
 			id: 50,
 			position: { x: 1, y: 2110 },
 			data: {
-				label: 'العناية بالطالب لإتقان اللغة العربية قراءة والكتابة وإنشاء',
+				label:  $LL.fields.arabayyiah.natiq_content(),
 			},
 			width: 175,
 			height: 70,
@@ -1868,7 +1869,7 @@
 		{
 			id: 51,
 			position: { x: 300, y: 2490 },
-			data: { label: 'البرامج المتنوعة' },
+			data: { label:  $LL.fields.baramij.title() },
 			width: 125,
 			height: 55,
 			bgColor: '#FFB2CE',
@@ -1878,7 +1879,7 @@
 		{
 			id: 52,
 			position: { x: 200, y: 2265 },
-			data: { label: 'الدعوة والخطابة' },
+			data: { label:  $LL.fields.baramij.dawah_title() },
 			width: 80,
 			height: 55,
 			bgColor: '#FFB2E6',
@@ -1890,7 +1891,7 @@
 			id: 53,
 			position: { x: 1, y: 2250 },
 			data: {
-				label: 'إتقان مهارة الخطابة والدعوة لإفادة الناس على الوجه الأمثل',
+				label:  $LL.fields.baramij.dawah_content(),
 			},
 			width: 175,
 			height: 70,
@@ -1901,7 +1902,7 @@
 		{
 			id: 54,
 			position: { x: 200, y: 2345 },
-			data: { label: 'دورات تعليمية للنساء' },
+			data: { label:  $LL.fields.baramij.nisa_title() },
 			width: 80,
 			height: 60,
 			bgColor: '#FFB2DA',
@@ -1913,7 +1914,7 @@
 			id: 55,
 			position: { x: 1, y: 2340 },
 			data: {
-				label: 'تعليم ما تحتاجها المرأة المسلمة في حياتها',
+				label:  $LL.fields.baramij.nisa_content(),
 			},
 			width: 175,
 			height: 70,
@@ -1924,7 +1925,7 @@
 		{
 			id: 56,
 			position: { x: 200, y: 2435 },
-			data: { label: 'دورات تعليمية للأطفال' },
+			data: { label:  $LL.fields.baramij.atfal_title() },
 			width: 80,
 			height: 60,
 			bgColor: '#FFB2CE',
@@ -1936,7 +1937,7 @@
 			id: 57,
 			position: { x: 1, y: 2430 },
 			data: {
-				label: 'تعليم الأطفال والعناية بتربيتهم وتوجيههم',
+				label:  $LL.fields.baramij.atfal_content(),
 			},
 			width: 175,
 			height: 70,
@@ -1947,7 +1948,7 @@
 		{
 			id: 58,
 			position: { x: 200, y: 2525 },
-			data: { label: 'دورات تأهليلية للحياة الزوجية' },
+			data: { label:  $LL.fields.baramij.zawjiyyah_title() },
 			width: 80,
 			height: 60,
 			bgColor: '#FFB2C3',
@@ -1959,7 +1960,7 @@
 			id: 59,
 			position: { x: 1, y: 2520 },
 			data: {
-				label: 'توضوح مفاهيم الزواج وأحكام الأسرة وبيان طرق الحكمة في تعامل الزوجين مع بعضهما',
+				label:  $LL.fields.baramij.zawjiyyah_content(),
 			},
 			width: 175,
 			height: 70,
@@ -1970,7 +1971,7 @@
 		{
 			id: 60,
 			position: { x: 200, y: 2615 },
-			data: { label: 'تربية الأطفال' },
+			data: { label:  $LL.fields.baramij.tarbiyah_title() },
 			width: 80,
 			height: 60,
 			bgColor: '#FFB2C3',
@@ -1982,7 +1983,7 @@
 			id: 61,
 			position: { x: 1, y: 2610 },
 			data: {
-				label: 'بيان الطريقة المثلى في كيفية تنشئة الأطفال تنشئة معتبرة',
+				label:  $LL.fields.baramij.tarbiyah_content(),
 			},
 			width: 175,
 			height: 70,
@@ -1993,7 +1994,7 @@
 		{
 			id: 62,
 			position: { x: 200, y: 2705 },
-			data: { label: 'الأصوات والمقامات' },
+			data: { label:  $LL.fields.baramij.aswat_title() },
 			width: 80,
 			height: 60,
 			bgColor: '#FFB2C3',
@@ -2005,7 +2006,7 @@
 			id: 63,
 			position: { x: 1, y: 2700 },
 			data: {
-				label: 'تعليم المقامات والإنشاد الديني',
+				label:  $LL.fields.baramij.aswat_content(),
 			},
 			width: 175,
 			height: 70,
@@ -2497,7 +2498,7 @@
 		{
 			id: 1,
 			position: { x: 770, y: 330 },
-			data: { label: 'الفرض العيني' },
+			data: { label:  $LL.fields.fard.title() },
 			width: 125,
 			height: 80,
 			bgColor: '#61FFA3',
@@ -2507,7 +2508,7 @@
 		{
 			id: 2,
 			position: { x: 500, y: 75 },
-			data: { label: 'علم التوحيد' },
+			data: { label: $LL.fields.fard.tawhid_title() },
 			width: 160,
 			height: 55,
 			bgColor: '#EBBAB9',
@@ -2519,7 +2520,7 @@
 			id: 3.1,
 			position: { x: 1, y: 0 },
 			data: {
-				label: 'الإلهيات',
+				label: $LL.fields.fard.tawhid_content1(),
 			},
 
 			width: 400,
@@ -2532,7 +2533,7 @@
 			id: 3.2,
 			position: { x: 1, y: 75 },
 			data: {
-				label: 'النبويات',
+				label: $LL.fields.fard.tawhid_content2(),
 			},
 			width: 400,
 			height: 55,
@@ -2544,7 +2545,7 @@
 			id: 3.3,
 			position: { x: 1, y: 150 },
 			data: {
-				label: 'السمعيات',
+				label: $LL.fields.fard.tawhid_content3(),
 			},
 			width: 400,
 			height: 55,
@@ -2555,7 +2556,7 @@
 		{
 			id: 4,
 			position: { x: 500, y: 240 },
-			data: { label: 'علم التجويد' },
+			data: { label: $LL.fields.fard.tajwid_title() },
 			width: 160,
 			height: 55,
 			bgColor: '#A2FDFF',
@@ -2567,7 +2568,7 @@
 			id: 5,
 			position: { x: 1, y: 240 },
 			data: {
-				label: 'إتقان تلاوة القرآن وترتيله',
+				label: $LL.fields.fard.tajwid_content(),
 			},
 			width: 400,
 			height: 55,
@@ -2578,7 +2579,7 @@
 		{
 			id: 6,
 			position: { x: 500, y: 340 },
-			data: { label: 'علم العبادات' },
+			data: { label: $LL.fields.fard.ibadat_title() },
 			width: 160,
 			height: 55,
 			bgColor: '#A7B7FF',
@@ -2590,7 +2591,7 @@
 			id: 7,
 			position: { x: 1, y: 330 },
 			data: {
-				label: 'الإتيان بالعبادات من طهارة وصلاة وصوم وزكاة وحج على الوجه الشرعي الصحيح',
+				label: $LL.fields.fard.ibadat_content(),
 			},
 			width: 400,
 			height: 75,
@@ -2601,7 +2602,7 @@
 		{
 			id: 8,
 			position: { x: 500, y: 475 },
-			data: { label: 'علم المعاملات' },
+			data: { label: $LL.fields.fard.muamalat_title() },
 			width: 160,
 			height: 55,
 			bgColor: '#FFC5A7',
@@ -2613,7 +2614,7 @@
 			id: 9.1,
 			position: { x: 1, y: 440 },
 			data: {
-				label: 'أحكام البيوع',
+				label: $LL.fields.fard.muamalat_content1(),
 			},
 			width: 400,
 			height: 55,
@@ -2625,7 +2626,7 @@
 			id: 9.2,
 			position: { x: 1, y: 515 },
 			data: {
-				label: 'أحكام الأسرة',
+				label: $LL.fields.fard.muamalat_content2(),
 			},
 			width: 400,
 			height: 55,
@@ -2636,7 +2637,7 @@
 		{
 			id: 10,
 			position: { x: 500, y: 600 },
-			data: { label: 'علم التصوف' },
+			data: { label: $LL.fields.fard.tasawwuf_title() },
 			width: 160,
 			height: 55,
 			bgColor: '#EEFFB2',
@@ -2648,7 +2649,7 @@
 			id: 11,
 			position: { x: 1, y: 600 },
 			data: {
-				label: 'إصلاح القلب وتهذيب النفس',
+				label: $LL.fields.fard.tasawwuf_content(),
 			},
 			width: 400,
 			height: 55,
@@ -2660,7 +2661,7 @@
 		{
 			id: 12,
 			position: { x: 770, y: 846 },
-			data: { label: 'القرآن الكريم وعلومه' },
+			data: { label: $LL.fields.quran.title() },
 			width: 125,
 			height: 80,
 			bgColor: '#97D9FF',
@@ -2670,7 +2671,7 @@
 		{
 			id: 13,
 			position: { x: 500, y: 768 },
-			data: { label: 'علم التجويد' },
+			data: { label: $LL.fields.fard.tajwid_title() },
 			width: 160,
 			height: 55,
 			bgColor: '#A2FDFF',
@@ -2682,7 +2683,7 @@
 			id: 14,
 			position: { x: 1, y: 760 },
 			data: {
-				label: 'إتقان تلاوة القرآن وترتيله نظريا وعمليا',
+				label:  $LL.fields.quran.tajwid_content(),
 			},
 			width: 400,
 			height: 70,
@@ -2693,7 +2694,7 @@
 		{
 			id: 15,
 			position: { x: 500, y: 858 },
-			data: { label: 'علم التفسير' },
+			data: { label:  $LL.fields.quran.tafsir_title() },
 			width: 160,
 			height: 55,
 			bgColor: '#97D9FF',
@@ -2705,7 +2706,7 @@
 			id: 16,
 			position: { x: 1, y: 850 },
 			data: {
-				label: 'تفسير كتاب الله تعالى ومعرفة معانيه الظاهرة والباطنة',
+				label:  $LL.fields.quran.tafsir_content(),
 			},
 			width: 400,
 			height: 70,
@@ -2716,7 +2717,7 @@
 		{
 			id: 17,
 			position: { x: 500, y: 948 },
-			data: { label: 'علوم القرآن' },
+			data: { label:  $LL.fields.quran.ulum_title() },
 			width: 160,
 			height: 55,
 			bgColor: '#97BFFF',
@@ -2728,7 +2729,7 @@
 			id: 18,
 			position: { x: 1, y: 940 },
 			data: {
-				label: 'معرفة ما يتعلق بالقرآن الكريم كأسباب النزول ومعرفة الناسخ والمنسوخ وغيره',
+				label:  $LL.fields.quran.ulum_content(),
 			},
 			width: 400,
 			height: 70,
@@ -2740,7 +2741,7 @@
 		{
 			id: 19,
 			position: { x: 770, y: 1195 },
-			data: { label: 'الحديث وعلومه' },
+			data: { label:  $LL.fields.hadith.title() },
 			width: 125,
 			height: 80,
 			bgColor: '#00DF65',
@@ -2750,7 +2751,7 @@
 		{
 			id: 20,
 			position: { x: 500, y: 1212 },
-			data: { label: 'مصطلح الحديث' },
+			data: { label:  $LL.fields.hadith.ulum_title() },
 
 			width: 160,
 			height: 45,
@@ -2763,7 +2764,7 @@
 			id: 21,
 			position: { x: 1, y: 1200 },
 			data: {
-				label: 'معرفة طرق الأحاديث والأسانيد ومصادر السنة',
+				label:  $LL.fields.hadith.ulum_content(),
 			},
 			width: 400,
 			height: 70,
@@ -2774,7 +2775,7 @@
 		{
 			id: 22,
 			position: { x: 500, y: 1100 },
-			data: { label: 'علم الحديث وراية ودراية' },
+			data: { label:  $LL.fields.hadith.main_title() },
 			width: 160,
 			height: 70,
 			sourcePosition: 'left',
@@ -2787,7 +2788,7 @@
 			position: { x: 1, y: 1100 },
 
 			data: {
-				label: 'قراءة الكتب التسعة بالسند المتصل وقراءة شروحها',
+				label:  $LL.fields.hadith.main_content(),
 			},
 			width: 400,
 			height: 70,
@@ -2799,7 +2800,7 @@
 		{
 			id: 24,
 			position: { x: 500, y: 1312 },
-			data: { label: 'السيرة والشمائل' },
+			data: { label:  $LL.fields.hadith.seerah_title() },
 			width: 160,
 			height: 45,
 
@@ -2812,7 +2813,7 @@
 			id: 25,
 			position: { x: 1, y: 1300 },
 			data: {
-				label: 'معرفة النبي ﷺ من حيث الشمائل والأخلاق وأحداث السيرة',
+				label:  $LL.fields.hadith.seerah_content(),
 			},
 			width: 400,
 			height: 70,
@@ -2824,7 +2825,7 @@
 		{
 			id: 26,
 			position: { x: 770, y: 1488 },
-			data: { label: 'العقيدة' },
+			data: { label:  $LL.fields.aqidah.title() },
 			width: 125,
 			height: 55,
 			bgColor: '#61FFA3',
@@ -2835,7 +2836,7 @@
 			id: 27,
 			position: { x: 1, y: 1480 },
 			data: {
-				label: 'دراسة العقيدة الإسلامية على مذهب أهل السنة والجماعة من الأشاعرة والماتريدية',
+				label:  $LL.fields.aqidah.explanation(),
 			},
 			width: 400,
 			height: 70,
@@ -2847,7 +2848,7 @@
 		{
 			id: 28,
 			position: { x: 770, y: 1790 },
-			data: { label: 'الفقه وأصوله' },
+			data: { label:  $LL.fields.fiqh.title() },
 			width: 125,
 			height: 80,
 			bgColor: '#FFD3A7',
@@ -2857,7 +2858,7 @@
 		{
 			id: 29,
 			position: { x: 500, y: 1658 },
-			data: { label: 'الفروع' },
+			data: { label:  $LL.fields.fiqh.furu_title() },
 			width: 160,
 			height: 55,
 			bgColor: '#FFE8A7',
@@ -2869,7 +2870,7 @@
 			id: 30,
 			position: { x: 1, y: 1650 },
 			data: {
-				label: 'دراسة الأحكام التفصيرية الشاملة لجيمع أبواب الفقه',
+				label:  $LL.fields.fiqh.furu_content(),
 			},
 			width: 400,
 			height: 70,
@@ -2880,7 +2881,7 @@
 		{
 			id: 31,
 			position: { x: 500, y: 1758 },
-			data: { label: 'الأصول' },
+			data: { label:  $LL.fields.fiqh.usul_title() },
 			width: 160,
 			height: 55,
 			bgColor: '#FFDEA7',
@@ -2892,7 +2893,7 @@
 			id: 32,
 			position: { x: 1, y: 1750 },
 			data: {
-				label: 'معرفة طرق الاستدلال ومناهج الأصوليين ',
+				label:  $LL.fields.fiqh.usul_content(),
 			},
 			width: 400,
 			height: 70,
@@ -2903,7 +2904,7 @@
 		{
 			id: 33,
 			position: { x: 500, y: 1858 },
-			data: { label: 'القواعد' },
+			data: { label:  $LL.fields.fiqh.qawaid_title() },
 			width: 160,
 			height: 55,
 			bgColor: '#FFD3A7',
@@ -2915,7 +2916,7 @@
 			id: 34,
 			position: { x: 1, y: 1850 },
 			data: {
-				label: 'دراسة القواعد الفقهية',
+				label:  $LL.fields.fiqh.qawaid_content(),
 			},
 			width: 400,
 			height: 70,
@@ -2926,7 +2927,7 @@
 		{
 			id: 35,
 			position: { x: 500, y: 1958 },
-			data: { label: 'الأدلة' },
+			data: { label:  $LL.fields.fiqh.adillah_title() },
 			width: 160,
 			height: 55,
 			bgColor: '#FFCAA7',
@@ -2938,7 +2939,7 @@
 			id: 36,
 			position: { x: 1, y: 1950 },
 			data: {
-				label: 'معرفة الأدلة القرآنية والنبوية التي استند إليها المجتهدد',
+				label:  $LL.fields.fiqh.adillah_content(),
 			},
 			width: 400,
 			height: 70,
@@ -2950,7 +2951,7 @@
 		{
 			id: 37,
 			position: { x: 770, y: 2220 },
-			data: { label: 'التصوف' },
+			data: { label:  $LL.fields.tasawwuf.title() },
 			width: 125,
 			height: 80,
 			bgColor: '#DDFFB2',
@@ -2960,7 +2961,7 @@
 		{
 			id: 38,
 			position: { x: 500, y: 2172 },
-			data: { label: 'السلوك' },
+			data: { label:  $LL.fields.tasawwuf.suluk_title() },
 			width: 160,
 			height: 55,
 			bgColor: '#EEFFB2',
@@ -2972,7 +2973,7 @@
 			id: 39,
 			position: { x: 1, y: 2150 },
 			data: {
-				label: 'التخلية النفس من الرذائل وتحليتها بالفضائل وبيان السير على الهدي المحمدي ظاهرا وباطنا',
+				label:  $LL.fields.tasawwuf.suluk_content(),
 			},
 			width: 400,
 			height: 100,
@@ -2983,7 +2984,7 @@
 		{
 			id: 40,
 			position: { x: 500, y: 2290 },
-			data: { label: 'العرفان' },
+			data: { label:  $LL.fields.tasawwuf.irfan_title() },
 			width: 160,
 			height: 55,
 			bgColor: '#DDFFB2',
@@ -2995,7 +2996,7 @@
 			id: 41,
 			position: { x: 1, y: 2280 },
 			data: {
-				label: 'معرفة الله تعالى وذوق حقائق التوحيد',
+				label:  $LL.fields.tasawwuf.irfan_content(),
 			},
 			width: 400,
 			height: 70,
@@ -3007,7 +3008,7 @@
 		{
 			id: 42,
 			position: { x: 770, y: 2650 },
-			data: { label: 'اللغة العربية' },
+			data: { label:  $LL.fields.arabayyiah.title() },
 			width: 125,
 			height: 80,
 			bgColor: '#E2B2FF',
@@ -3017,7 +3018,7 @@
 		{
 			id: 43,
 			position: { x: 500, y: 2508 },
-			data: { label: 'النحو' },
+			data: { label:  $LL.fields.arabayyiah.nahw_title() },
 			width: 160,
 			height: 55,
 			bgColor: '#ECB2FF',
@@ -3029,7 +3030,7 @@
 			id: 44,
 			position: { x: 1, y: 2500 },
 			data: {
-				label: 'إتقان مباحث النحو بشكل نظري وعملي',
+				label:  $LL.fields.arabayyiah.nahw_content(),
 			},
 			width: 400,
 			height: 70,
@@ -3040,7 +3041,7 @@
 		{
 			id: 45,
 			position: { x: 500, y: 2608 },
-			data: { label: 'الصرف' },
+			data: { label:  $LL.fields.arabayyiah.sarf_title() },
 			width: 160,
 			height: 55,
 			bgColor: '#E2B2FF',
@@ -3063,7 +3064,7 @@
 		{
 			id: 47,
 			position: { x: 500, y: 2708 },
-			data: { label: 'البلاغة' },
+			data: { label:  $LL.fields.arabayyiah.balaghah_title()},
 			width: 160,
 			height: 55,
 			bgColor: '#D5B2FF',
@@ -3075,7 +3076,7 @@
 			id: 48,
 			position: { x: 1, y: 2700 },
 			data: {
-				label: 'إتقان مباحث البلاغة من البيان والمعاني والبديع',
+				label:  $LL.fields.arabayyiah.balaghah_content(),
 			},
 			width: 400,
 			height: 70,
@@ -3086,7 +3087,7 @@
 		{
 			id: 49,
 			position: { x: 500, y: 2800 },
-			data: { label: 'دراسة اللعربية للناطقين بغيرها' },
+			data: { label:  $LL.fields.arabayyiah.natiq_title() },
 			width: 160,
 			height: 70,
 			bgColor: '#C6B2FF',
@@ -3098,7 +3099,7 @@
 			id: 50,
 			position: { x: 1, y: 2800 },
 			data: {
-				label: 'العناية بالطالب لإتقان اللغة العربية قراءة والكتابة وإنشاء',
+				label:  $LL.fields.arabayyiah.natiq_content(),
 			},
 			width: 400,
 			height: 70,
@@ -3110,7 +3111,7 @@
 		{
 			id: 51,
 			position: { x: 770, y: 3250 },
-			data: { label: 'البرامج المتنوعة' },
+			data: { label:  $LL.fields.baramij.title() },
 			width: 125,
 			height: 80,
 			bgColor: '#FFB2CE',
@@ -3120,7 +3121,7 @@
 		{
 			id: 52,
 			position: { x: 500, y: 3008 },
-			data: { label: 'الدعوة والخطابة' },
+			data: { label:  $LL.fields.baramij.dawah_title() },
 			width: 160,
 			height: 55,
 			bgColor: '#FFB2E6',
@@ -3132,7 +3133,7 @@
 			id: 53,
 			position: { x: 1, y: 3000 },
 			data: {
-				label: 'إتقان مهارة الخطابة والدعوة لإفادة الناس على الوجه الأمثل',
+				label:  $LL.fields.baramij.dawah_content(),
 			},
 			width: 400,
 			height: 70,
@@ -3143,7 +3144,7 @@
 		{
 			id: 54,
 			position: { x: 500, y: 3105 },
-			data: { label: 'دورات تعليمية للنساء' },
+			data: { label:  $LL.fields.baramij.nisa_title() },
 			width: 160,
 			height: 60,
 			bgColor: '#FFB2DA',
@@ -3155,7 +3156,7 @@
 			id: 55,
 			position: { x: 1, y: 3100 },
 			data: {
-				label: 'تعليم ما تحتاجها المرأة المسلمة في حياتها',
+				label:  $LL.fields.baramij.nisa_content(),
 			},
 			width: 400,
 			height: 70,
@@ -3166,7 +3167,7 @@
 		{
 			id: 56,
 			position: { x: 500, y: 3205 },
-			data: { label: 'دورات تعليمية للأطفال' },
+			data: { label:  $LL.fields.baramij.atfal_title() },
 			width: 160,
 			height: 60,
 			bgColor: '#FFB2CE',
@@ -3178,7 +3179,7 @@
 			id: 57,
 			position: { x: 1, y: 3200 },
 			data: {
-				label: 'تعليم الأطفال والعناية بتربيتهم وتوجيههم',
+				label:  $LL.fields.baramij.atfal_content(),
 			},
 			width: 400,
 			height: 70,
@@ -3189,7 +3190,7 @@
 		{
 			id: 58,
 			position: { x: 500, y: 3305 },
-			data: { label: 'دورات تأهليلية للحياة الزوجية' },
+			data: { label:  $LL.fields.baramij.zawjiyyah_title() },
 			width: 160,
 			height: 60,
 			bgColor: '#FFB2C3',
@@ -3201,7 +3202,7 @@
 			id: 59,
 			position: { x: 1, y: 3300 },
 			data: {
-				label: 'توضوح مفاهيم الزواج وأحكام الأسرة وبيان طرق الحكمة في تعامل الزوجين مع بعضهما',
+				label:  $LL.fields.baramij.zawjiyyah_content(),
 			},
 			width: 400,
 			height: 70,
@@ -3212,7 +3213,7 @@
 		{
 			id: 60,
 			position: { x: 500, y: 3405 },
-			data: { label: 'تربية الأطفال' },
+			data: { label:  $LL.fields.baramij.tarbiyah_title() },
 			width: 160,
 			height: 60,
 			bgColor: '#FFB2C3',
@@ -3224,7 +3225,7 @@
 			id: 61,
 			position: { x: 1, y: 3400 },
 			data: {
-				label: 'بيان الطريقة المثلى في كيفية تنشئة الأطفال تنشئة معتبرة',
+				label:  $LL.fields.baramij.tarbiyah_content(),
 			},
 			width: 400,
 			height: 70,
@@ -3235,7 +3236,7 @@
 		{
 			id: 62,
 			position: { x: 500, y: 3505 },
-			data: { label: 'الأصوات والمقامات' },
+			data: { label:  $LL.fields.baramij.aswat_title() },
 			width: 160,
 			height: 60,
 			bgColor: '#FFB2C3',
@@ -3247,7 +3248,7 @@
 			id: 63,
 			position: { x: 1, y: 3500 },
 			data: {
-				label: 'تعليم المقامات والإنشاد الديني',
+				label:  $LL.fields.baramij.aswat_content(),
 			},
 			width: 400,
 			height: 70,
