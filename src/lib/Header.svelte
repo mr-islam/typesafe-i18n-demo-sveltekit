@@ -1,12 +1,21 @@
 <script lang="ts">
 	import LL, { locale } from '$i18n/i18n-svelte'
 	import LocaleSwitcher from './LocaleSwitcher.svelte'
+	// import { onMount, afterUpdate } from 'svelte'
 
-	function scrollIntoView({ target }) {
-		const el = document.querySelector(target.getAttribute('href'))
-		if (!el) return
-		el.scrollIntoView(true)
-	}
+	// let p_elements // This below: for custom styles (fonts mainly) based on language
+	// onMount(() => {
+	// 	p_elements = document.querySelectorAll('.intro-bullet')
+	// 	for (const p_element of p_elements) {
+	// 		p_element.classList.add($locale === 'ar' ? 'rtl' : 'ltr')
+	// 	}
+	// })
+	// afterUpdate(() => {
+	// 	for (const p_element of p_elements) {
+	// 		p_element.classList.add($locale === 'ar' ? 'rtl' : 'ltr')
+	// 	}
+	// })
+
 </script>
 
 <header>
@@ -36,11 +45,14 @@
 <style>
 	div#title-container {
 		flex: 1;
+		border-radius: 12px;
+		border: 2px solid gold;
+		padding: 8px;
+		background-color: beige;
 	}
 	h1 {
 		font-size: 2.2rem;
 		margin: 0;
-		
 	}
 	h2 {
 		margin-top: -5px;
