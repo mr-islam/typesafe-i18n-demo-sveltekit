@@ -788,7 +788,7 @@
 			source: 2,
 			target: 3.1,
 			noHandle: true,
-			arrow: true,
+			arrow: false,
 			edgeColor: 'black',
 		},
 		{
@@ -796,7 +796,7 @@
 			source: 2,
 			target: 3.2,
 			noHandle: true,
-			arrow: true,
+			arrow: false,
 			edgeColor: 'black',
 		},
 		{
@@ -804,7 +804,7 @@
 			source: 2,
 			target: 3.3,
 			noHandle: true,
-			arrow: true,
+			arrow: false,
 			edgeColor: 'black',
 		},
 		{
@@ -820,7 +820,7 @@
 			source: 4,
 			target: 5,
 			noHandle: true,
-			arrow: true,
+			arrow: false,
 			edgeColor: 'black',
 		},
 		{
@@ -836,7 +836,7 @@
 			source: 6,
 			target: 7,
 			noHandle: true,
-			arrow: true,
+			arrow: false,
 			edgeColor: 'black',
 		},
 		{
@@ -852,7 +852,7 @@
 			source: 8,
 			target: 9.1,
 			noHandle: true,
-			arrow: true,
+			arrow: false,
 			edgeColor: 'black',
 		},
 		{
@@ -860,7 +860,7 @@
 			source: 8,
 			target: 9.2,
 			noHandle: true,
-			arrow: true,
+			arrow: false,
 			edgeColor: 'black',
 		},
 		{
@@ -876,7 +876,7 @@
 			source: 10,
 			target: 11,
 			noHandle: true,
-			arrow: true,
+			arrow: false,
 			edgeColor: 'black',
 		},
 		// END FARD, START QURAN
@@ -909,7 +909,7 @@
 			source: 13,
 			target: 14,
 			noHandle: true,
-			arrow: true,
+			arrow: false,
 			edgeColor: 'black',
 		},
 		{
@@ -917,7 +917,7 @@
 			source: 15,
 			target: 16,
 			noHandle: true,
-			arrow: true,
+			arrow: false,
 			edgeColor: 'black',
 		},
 		{
@@ -925,7 +925,7 @@
 			source: 17,
 			target: 18,
 			noHandle: true,
-			arrow: true,
+			arrow: false,
 			edgeColor: 'black',
 		},
 		// HADITH
@@ -958,7 +958,7 @@
 			source: 20,
 			target: 21,
 			noHandle: true,
-			arrow: true,
+			arrow: false,
 			edgeColor: 'black',
 		},
 		{
@@ -966,7 +966,7 @@
 			source: 22,
 			target: 23,
 			noHandle: true,
-			arrow: true,
+			arrow: false,
 			edgeColor: 'black',
 		},
 		{
@@ -974,7 +974,7 @@
 			source: 24,
 			target: 25,
 			noHandle: true,
-			arrow: true,
+			arrow: false,
 			edgeColor: 'black',
 		},
 		//
@@ -983,7 +983,7 @@
 			source: 26,
 			target: 27,
 			noHandle: true,
-			arrow: true,
+			arrow: false,
 			edgeColor: 'black',
 		},
 		// FIQH
@@ -1025,7 +1025,7 @@
 			source: 29,
 			target: 30,
 			noHandle: true,
-			arrow: true,
+			arrow: false,
 			edgeColor: 'black',
 		},
 		{
@@ -1033,7 +1033,7 @@
 			source: 31,
 			target: 32,
 			noHandle: true,
-			arrow: true,
+			arrow: false,
 			edgeColor: 'black',
 		},
 		{
@@ -1041,7 +1041,7 @@
 			source: 33,
 			target: 34,
 			noHandle: true,
-			arrow: true,
+			arrow: false,
 			edgeColor: 'black',
 		},
 		{
@@ -1049,7 +1049,7 @@
 			source: 35,
 			target: 36,
 			noHandle: true,
-			arrow: true,
+			arrow: false,
 			edgeColor: 'black',
 		},
 		// TASAWWUF
@@ -1075,7 +1075,7 @@
 			source: 38,
 			target: 39,
 			noHandle: true,
-			arrow: true,
+			arrow: false,
 			edgeColor: 'black',
 		},
 		{
@@ -1083,7 +1083,7 @@
 			source: 40,
 			target: 41,
 			noHandle: true,
-			arrow: true,
+			arrow: false,
 			edgeColor: 'black',
 		},
 		// ARABIYAH
@@ -1125,7 +1125,7 @@
 			source: 43,
 			target: 44,
 			noHandle: true,
-			arrow: true,
+			arrow: false,
 			edgeColor: 'black',
 		},
 		{
@@ -1133,7 +1133,7 @@
 			source: 45,
 			target: 46,
 			noHandle: true,
-			arrow: true,
+			arrow: false,
 			edgeColor: 'black',
 		},
 		{
@@ -1141,7 +1141,7 @@
 			source: 47,
 			target: 48,
 			noHandle: true,
-			arrow: true,
+			arrow: false,
 			edgeColor: 'black',
 		},
 		{
@@ -1149,7 +1149,7 @@
 			source: 49,
 			target: 50,
 			noHandle: true,
-			arrow: true,
+			arrow: false,
 			edgeColor: 'black',
 		},
 		// VARIOUS
@@ -1207,7 +1207,7 @@
 			source: 52,
 			target: 53,
 			noHandle: true,
-			arrow: true,
+			arrow: false,
 			edgeColor: 'black',
 		},
 		{
@@ -1215,7 +1215,7 @@
 			source: 54,
 			target: 55,
 			noHandle: true,
-			arrow: true,
+			arrow: false,
 			edgeColor: 'black',
 		},
 		{
@@ -1223,7 +1223,7 @@
 			source: 56,
 			target: 57,
 			noHandle: true,
-			arrow: true,
+			arrow: false,
 			edgeColor: 'black',
 		},
 		{
@@ -1231,7 +1231,7 @@
 			source: 58,
 			target: 59,
 			noHandle: true,
-			arrow: true,
+			arrow: false,
 			edgeColor: 'black',
 		},
 		{
@@ -1239,7 +1239,7 @@
 			source: 60,
 			target: 61,
 			noHandle: true,
-			arrow: true,
+			arrow: false,
 			edgeColor: 'black',
 		},
 		{
@@ -1247,7 +1247,7 @@
 			source: 62,
 			target: 63,
 			noHandle: true,
-			arrow: true,
+			arrow: false,
 			edgeColor: 'black',
 		},
 	]
