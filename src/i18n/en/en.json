@@ -62,6 +62,89 @@
       "content": "ترجمة الوصايا لطالب العلم الوصية الأولى\\nAdvice for Students of Knowledge\nAdvice 1: Good Intentions\\nThe Prophet, peace and blessings be upon him, said, “Actions are only by intention, and for every man is only what he intended.”\\nThe first obligation upon a student of knowledge is to make a good intention for his knowledge and teaching. A good, sincere intention is the greatest of elixirs — the good and benefit of an action is multiplied in accordance with the plentitude of intentions.\nSome the intentions that a student of knowledge should have are the following:\\n- Preservation of the Book of Allah and the Sunnah of His Messenger, peace and blessings be upon him\\n- Obedience to the command of the Beloved, peace and blessings be upon him\\n- Listening to and transmitting the speech of the Messenger of Allah, peace and blessings be upon him\\n- Lifting sins from oneself and fellow Muslims by learning and teaching the personal and communal obligations\\n- Exposure to the winds of Divine Mercy in order to attain His pleasure\\n- Remembrance and reminder\\n- Preserving one’s time \\n- Spreading the sacred teachings of Islam \\n- I`tikāf (religious seclusion) if the gathering is in the mosque \\n- Renewal of faith\\n- Mutual assistance to piety,  mindfulness of God, commanding the good, and forbidding the evil\\n- Increasing the collective body of the people of good \\n- Seeking the mercy of Allah to descend by remembering the righteous\\n- Purification of the inward and struggling against the lower self\\n- Acting according to one’s knowledge Oh Allah, make our knowledge, actions, teaching, and the rest of our actions sincere for Your Noble Countenance, by the rank of Your Greatest Beloved, peace and blessings be upon him and his beloveds.\\n A servant of this noble knowledge,\\nAbd al-Rahman al-Sha`ār\\n02/21/19"
     }
   },
+  "fields": {
+    "fard": {
+      "title": "Obligatory Knowledge",
+      "tawhid_title": "Beliefs",
+      "tawhid_content1": "Divine Traits",
+      "tawhid_content2": "Prophetic Traits",
+      "tawhid_content3": "Other Topics",
+      "tajwid_title": "Tajwid",
+      "tajwid_content": "Mastering Quranic recitation",
+      "ibadat_title": "Law of Worship",
+      "ibadat_content": "Learning to worship -such as wudu, salah, fasting, zakat and hajj- correctly",
+      "muamalat_title": "Law of Conduct",
+      "muamalat_content1": "Business Law",
+      "muamalat_content2": "Family Law",
+      "tasawwuf_title": "Tasawwuf",
+      "tasawwuf_content": "Repairing the heart and rectifying the self"
+    },
+    "quran": {
+      "title": "The Quran & Its Sciences",
+      "tajwid_content": "Mastering Quranic recitation in practice and theory",
+      "tafsir_title":"Tafsir",
+      "tafsir_content":"Learning the outer and deeper meanings of Allah Almighty's Book",
+      "ulum_title":"Quranic Sciences",
+      "ulum_content":"Fields related to the Noble Quran, such as reasons for revelation & abrogation"
+    },
+    "hadith": {
+      "title": "Hadith & Its Sciences",
+      "ulum_title":"Hadith Terminology",
+      "ulum_content":"The paths, chains and sources of the Sunnah",
+      "main_title":"Hadith Texts",
+      "main_content":"Reading the 9 Books with Sanad & explanations",
+      "seerah_title":"Prophetic Biography",
+      "seerah_content":"Learning about the Prophet ﷺ and his life"
+    },
+    "aqidah": {
+      "title": "Beliefs",
+      "explanation":"Islamic Theology based on Sunni Methodology, such as the Ash'ari and Maturidi"
+    },
+    "fiqh": {
+      "title": "Fiqh & Its Foundations",
+      "furu_title":"Rulings",
+      "furu_content":"Study of the detailed rulings covering all sections of Fiqh",
+      "usul_title":"Foundations",
+      "usul_content":"Learning the methods and approaches of Usul scholars",
+      "qawaid_title":"Principles",
+      "qawaid_content":"Study of the principles in Fiqh and similar rulings across sections",
+      "adillah_title":"Evidences",
+      "adillah_content":"Learning the evidence from the Quran & Sunnah relied on by the Mujtahid scholars"
+    },
+    "tasawwuf": {
+      "title": "Tasawwuf",
+      "suluk_title":"Tazkiyah",
+      "suluk_content":"Replacing ugly traits with the beautiful & learning the Muhammadan Way to strive to Allah Almighty",
+      "irfan_title":"'Irfan",
+      "irfan_content":"Explaining the realities of Tawhid & the levels of manifestation & witnessing"
+    },
+    "arabayyiah": {
+      "title": "Arabic Language",
+      "nahw_title":"Grammar (Nahw)",
+      "nahw_content":"Mastering the studies of grammar practically and theoretically",
+      "sarf_title":"Morphology (Sarf)",
+      "sarf_content":"Knowing the foundation of a word and its etymology",
+      "balaghah_title":"Rhetoric (Balaghah)",
+      "balaghah_content":"Mastering the studies of rhetoric practically and theoretically",
+      "natiq_title":"Arabic for Non-native Speakers",
+      "natiq_content":"Raising a student to mastery of Arabic, in reading, writing & speaking"
+    },
+    "baramij": {
+      "title": "Assorted Programs",
+      "dawah_title":"Da'wah & Outreach",
+      "dawah_content":"Mastering speaking & outreach to benefit people in the ideal way",
+      "nisa_title":"Educational courses for Women",
+      "nisa_content":"Teaching what the Muslim Lady needs in her life",
+      "atfal_title":"Educational courses for Children",
+      "atfal_content":"Teaching children and caring for their upbringing",
+      "zawjiyyah_title":"Preparatory courses for Married Life",
+      "zawjiyyah_content":"Clearing up concepts of marriage & family law & wisdom in interaction",
+      "tarbiyah_title":"Raising Children",
+      "tarbiyah_content":"Explaining the ideal way of raising children properly",
+      "aswat_title":"Voice & Maqamat",
+      "aswat_content":"Teaching the vocal Maqamat and religious inshad"
+    }
+  },
   "tags": {
     "fard": "Obligatory Knowledge",
     "fard_explanation": "The Prophet said - Allah bless him and send him peace: \"Seeking knowledge is mandatory upon every Muslim.\" The Scholars have explained that this obligatory knowledge on every Muslim man and women are five: Beliefs, Tajwid to correct what is recited in Salah, Fiqh of Worship & Interactions, and Purification of the soul.",

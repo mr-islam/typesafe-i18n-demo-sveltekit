@@ -208,6 +208,284 @@ type RootTranslation = {
 			content: string
 		}
 	}
+	fields: {
+		fard: {
+			/**
+			 * Obligatory Knowledge
+			 */
+			title: string
+			/**
+			 * Beliefs
+			 */
+			tawhid_title: string
+			/**
+			 * Divine Traits
+			 */
+			tawhid_content1: string
+			/**
+			 * Prophetic Traits
+			 */
+			tawhid_content2: string
+			/**
+			 * Other Topics
+			 */
+			tawhid_content3: string
+			/**
+			 * Tajwid
+			 */
+			tajwid_title: string
+			/**
+			 * Mastering Quranic recitation
+			 */
+			tajwid_content: string
+			/**
+			 * Law of Worship
+			 */
+			ibadat_title: string
+			/**
+			 * Learning to worship -such as wudu, salah, fasting, zakat and hajj- correctly
+			 */
+			ibadat_content: string
+			/**
+			 * Law of Conduct
+			 */
+			muamalat_title: string
+			/**
+			 * Business Law
+			 */
+			muamalat_content1: string
+			/**
+			 * Family Law
+			 */
+			muamalat_content2: string
+			/**
+			 * Tasawwuf
+			 */
+			tasawwuf_title: string
+			/**
+			 * Repairing the heart and rectifying the self
+			 */
+			tasawwuf_content: string
+		}
+		quran: {
+			/**
+			 * The Quran & Its Sciences
+			 */
+			title: string
+			/**
+			 * Mastering Quranic recitation in practice and theory
+			 */
+			tajwid_content: string
+			/**
+			 * Tafsir
+			 */
+			tafsir_title: string
+			/**
+			 * Learning the outer and deeper meanings of Allah Almighty's Book
+			 */
+			tafsir_content: string
+			/**
+			 * Quranic Sciences
+			 */
+			ulum_title: string
+			/**
+			 * Fields related to the Noble Quran, such as reasons for revelation & abrogation
+			 */
+			ulum_content: string
+		}
+		hadith: {
+			/**
+			 * Hadith & Its Sciences
+			 */
+			title: string
+			/**
+			 * Hadith Terminology
+			 */
+			ulum_title: string
+			/**
+			 * The paths, chains and sources of the Sunnah
+			 */
+			ulum_content: string
+			/**
+			 * Hadith Texts
+			 */
+			main_title: string
+			/**
+			 * Reading the 9 Books with Sanad & explanations
+			 */
+			main_content: string
+			/**
+			 * Prophetic Biography
+			 */
+			seerah_title: string
+			/**
+			 * Learning about the Prophet ﷺ and his life
+			 */
+			seerah_content: string
+		}
+		aqidah: {
+			/**
+			 * Beliefs
+			 */
+			title: string
+			/**
+			 * Islamic Theology based on Sunni Methodology, such as the Ash'ari and Maturidi
+			 */
+			explanation: string
+		}
+		fiqh: {
+			/**
+			 * Fiqh & Its Foundations
+			 */
+			title: string
+			/**
+			 * Rulings
+			 */
+			furu_title: string
+			/**
+			 * Study of the detailed rulings covering all sections of Fiqh
+			 */
+			furu_content: string
+			/**
+			 * Foundations
+			 */
+			usul_title: string
+			/**
+			 * Learning the methods and approaches of Usul scholars
+			 */
+			usul_content: string
+			/**
+			 * Principles
+			 */
+			qawaid_title: string
+			/**
+			 * Study of the principles in Fiqh and similar rulings across sections
+			 */
+			qawaid_content: string
+			/**
+			 * Evidences
+			 */
+			adillah_title: string
+			/**
+			 * Learning the evidence from the Quran & Sunnah relied on by the Mujtahid scholars
+			 */
+			adillah_content: string
+		}
+		tasawwuf: {
+			/**
+			 * Tasawwuf
+			 */
+			title: string
+			/**
+			 * Tazkiyah
+			 */
+			suluk_title: string
+			/**
+			 * Replacing ugly traits with the beautiful & learning the Muhammadan Way to strive to Allah Almighty
+			 */
+			suluk_content: string
+			/**
+			 * 'Irfan
+			 */
+			irfan_title: string
+			/**
+			 * Explaining the realities of Tawhid & the levels of manifestation & witnessing
+			 */
+			irfan_content: string
+		}
+		arabayyiah: {
+			/**
+			 * Arabic Language
+			 */
+			title: string
+			/**
+			 * Grammar (Nahw)
+			 */
+			nahw_title: string
+			/**
+			 * Mastering the studies of grammar practically and theoretically
+			 */
+			nahw_content: string
+			/**
+			 * Morphology (Sarf)
+			 */
+			sarf_title: string
+			/**
+			 * Knowing the foundation of a word and its etymology
+			 */
+			sarf_content: string
+			/**
+			 * Rhetoric (Balaghah)
+			 */
+			balaghah_title: string
+			/**
+			 * Mastering the studies of rhetoric practically and theoretically
+			 */
+			balaghah_content: string
+			/**
+			 * Arabic for Non-native Speakers
+			 */
+			natiq_title: string
+			/**
+			 * Raising a student to mastery of Arabic, in reading, writing & speaking
+			 */
+			natiq_content: string
+		}
+		baramij: {
+			/**
+			 * Assorted Programs
+			 */
+			title: string
+			/**
+			 * Da'wah & Outreach
+			 */
+			dawah_title: string
+			/**
+			 * Mastering speaking & outreach to benefit people in the ideal way
+			 */
+			dawah_content: string
+			/**
+			 * Educational courses for Women
+			 */
+			nisa_title: string
+			/**
+			 * Teaching what the Muslim Lady needs in her life
+			 */
+			nisa_content: string
+			/**
+			 * Educational courses for Children
+			 */
+			atfal_title: string
+			/**
+			 * Teaching children and caring for their upbringing
+			 */
+			atfal_content: string
+			/**
+			 * Preparatory courses for Married Life
+			 */
+			zawjiyyah_title: string
+			/**
+			 * Clearing up concepts of marriage & family law & wisdom in interaction
+			 */
+			zawjiyyah_content: string
+			/**
+			 * Raising Children
+			 */
+			tarbiyah_title: string
+			/**
+			 * Explaining the ideal way of raising children properly
+			 */
+			tarbiyah_content: string
+			/**
+			 * Voice & Maqamat
+			 */
+			aswat_title: string
+			/**
+			 * Teaching the vocal Maqamat and religious inshad
+			 */
+			aswat_content: string
+		}
+	}
 	tags: {
 		/**
 		 * Obligatory Knowledge
@@ -1926,6 +2204,284 @@ export type TranslationFunctions = {
 		Some the intentions that a student of knowledge should have are the following:\n- Preservation of the Book of Allah and the Sunnah of His Messenger, peace and blessings be upon him\n- Obedience to the command of the Beloved, peace and blessings be upon him\n- Listening to and transmitting the speech of the Messenger of Allah, peace and blessings be upon him\n- Lifting sins from oneself and fellow Muslims by learning and teaching the personal and communal obligations\n- Exposure to the winds of Divine Mercy in order to attain His pleasure\n- Remembrance and reminder\n- Preserving one’s time \n- Spreading the sacred teachings of Islam \n- I`tikāf (religious seclusion) if the gathering is in the mosque \n- Renewal of faith\n- Mutual assistance to piety,  mindfulness of God, commanding the good, and forbidding the evil\n- Increasing the collective body of the people of good \n- Seeking the mercy of Allah to descend by remembering the righteous\n- Purification of the inward and struggling against the lower self\n- Acting according to one’s knowledge Oh Allah, make our knowledge, actions, teaching, and the rest of our actions sincere for Your Noble Countenance, by the rank of Your Greatest Beloved, peace and blessings be upon him and his beloveds.\n A servant of this noble knowledge,\nAbd al-Rahman al-Sha`ār\n02/21/19
 			 */
 			content: () => LocalizedString
+		}
+	}
+	fields: {
+		fard: {
+			/**
+			 * Obligatory Knowledge
+			 */
+			title: () => LocalizedString
+			/**
+			 * Beliefs
+			 */
+			tawhid_title: () => LocalizedString
+			/**
+			 * Divine Traits
+			 */
+			tawhid_content1: () => LocalizedString
+			/**
+			 * Prophetic Traits
+			 */
+			tawhid_content2: () => LocalizedString
+			/**
+			 * Other Topics
+			 */
+			tawhid_content3: () => LocalizedString
+			/**
+			 * Tajwid
+			 */
+			tajwid_title: () => LocalizedString
+			/**
+			 * Mastering Quranic recitation
+			 */
+			tajwid_content: () => LocalizedString
+			/**
+			 * Law of Worship
+			 */
+			ibadat_title: () => LocalizedString
+			/**
+			 * Learning to worship -such as wudu, salah, fasting, zakat and hajj- correctly
+			 */
+			ibadat_content: () => LocalizedString
+			/**
+			 * Law of Conduct
+			 */
+			muamalat_title: () => LocalizedString
+			/**
+			 * Business Law
+			 */
+			muamalat_content1: () => LocalizedString
+			/**
+			 * Family Law
+			 */
+			muamalat_content2: () => LocalizedString
+			/**
+			 * Tasawwuf
+			 */
+			tasawwuf_title: () => LocalizedString
+			/**
+			 * Repairing the heart and rectifying the self
+			 */
+			tasawwuf_content: () => LocalizedString
+		}
+		quran: {
+			/**
+			 * The Quran & Its Sciences
+			 */
+			title: () => LocalizedString
+			/**
+			 * Mastering Quranic recitation in practice and theory
+			 */
+			tajwid_content: () => LocalizedString
+			/**
+			 * Tafsir
+			 */
+			tafsir_title: () => LocalizedString
+			/**
+			 * Learning the outer and deeper meanings of Allah Almighty's Book
+			 */
+			tafsir_content: () => LocalizedString
+			/**
+			 * Quranic Sciences
+			 */
+			ulum_title: () => LocalizedString
+			/**
+			 * Fields related to the Noble Quran, such as reasons for revelation & abrogation
+			 */
+			ulum_content: () => LocalizedString
+		}
+		hadith: {
+			/**
+			 * Hadith & Its Sciences
+			 */
+			title: () => LocalizedString
+			/**
+			 * Hadith Terminology
+			 */
+			ulum_title: () => LocalizedString
+			/**
+			 * The paths, chains and sources of the Sunnah
+			 */
+			ulum_content: () => LocalizedString
+			/**
+			 * Hadith Texts
+			 */
+			main_title: () => LocalizedString
+			/**
+			 * Reading the 9 Books with Sanad & explanations
+			 */
+			main_content: () => LocalizedString
+			/**
+			 * Prophetic Biography
+			 */
+			seerah_title: () => LocalizedString
+			/**
+			 * Learning about the Prophet ﷺ and his life
+			 */
+			seerah_content: () => LocalizedString
+		}
+		aqidah: {
+			/**
+			 * Beliefs
+			 */
+			title: () => LocalizedString
+			/**
+			 * Islamic Theology based on Sunni Methodology, such as the Ash'ari and Maturidi
+			 */
+			explanation: () => LocalizedString
+		}
+		fiqh: {
+			/**
+			 * Fiqh & Its Foundations
+			 */
+			title: () => LocalizedString
+			/**
+			 * Rulings
+			 */
+			furu_title: () => LocalizedString
+			/**
+			 * Study of the detailed rulings covering all sections of Fiqh
+			 */
+			furu_content: () => LocalizedString
+			/**
+			 * Foundations
+			 */
+			usul_title: () => LocalizedString
+			/**
+			 * Learning the methods and approaches of Usul scholars
+			 */
+			usul_content: () => LocalizedString
+			/**
+			 * Principles
+			 */
+			qawaid_title: () => LocalizedString
+			/**
+			 * Study of the principles in Fiqh and similar rulings across sections
+			 */
+			qawaid_content: () => LocalizedString
+			/**
+			 * Evidences
+			 */
+			adillah_title: () => LocalizedString
+			/**
+			 * Learning the evidence from the Quran & Sunnah relied on by the Mujtahid scholars
+			 */
+			adillah_content: () => LocalizedString
+		}
+		tasawwuf: {
+			/**
+			 * Tasawwuf
+			 */
+			title: () => LocalizedString
+			/**
+			 * Tazkiyah
+			 */
+			suluk_title: () => LocalizedString
+			/**
+			 * Replacing ugly traits with the beautiful & learning the Muhammadan Way to strive to Allah Almighty
+			 */
+			suluk_content: () => LocalizedString
+			/**
+			 * 'Irfan
+			 */
+			irfan_title: () => LocalizedString
+			/**
+			 * Explaining the realities of Tawhid & the levels of manifestation & witnessing
+			 */
+			irfan_content: () => LocalizedString
+		}
+		arabayyiah: {
+			/**
+			 * Arabic Language
+			 */
+			title: () => LocalizedString
+			/**
+			 * Grammar (Nahw)
+			 */
+			nahw_title: () => LocalizedString
+			/**
+			 * Mastering the studies of grammar practically and theoretically
+			 */
+			nahw_content: () => LocalizedString
+			/**
+			 * Morphology (Sarf)
+			 */
+			sarf_title: () => LocalizedString
+			/**
+			 * Knowing the foundation of a word and its etymology
+			 */
+			sarf_content: () => LocalizedString
+			/**
+			 * Rhetoric (Balaghah)
+			 */
+			balaghah_title: () => LocalizedString
+			/**
+			 * Mastering the studies of rhetoric practically and theoretically
+			 */
+			balaghah_content: () => LocalizedString
+			/**
+			 * Arabic for Non-native Speakers
+			 */
+			natiq_title: () => LocalizedString
+			/**
+			 * Raising a student to mastery of Arabic, in reading, writing & speaking
+			 */
+			natiq_content: () => LocalizedString
+		}
+		baramij: {
+			/**
+			 * Assorted Programs
+			 */
+			title: () => LocalizedString
+			/**
+			 * Da'wah & Outreach
+			 */
+			dawah_title: () => LocalizedString
+			/**
+			 * Mastering speaking & outreach to benefit people in the ideal way
+			 */
+			dawah_content: () => LocalizedString
+			/**
+			 * Educational courses for Women
+			 */
+			nisa_title: () => LocalizedString
+			/**
+			 * Teaching what the Muslim Lady needs in her life
+			 */
+			nisa_content: () => LocalizedString
+			/**
+			 * Educational courses for Children
+			 */
+			atfal_title: () => LocalizedString
+			/**
+			 * Teaching children and caring for their upbringing
+			 */
+			atfal_content: () => LocalizedString
+			/**
+			 * Preparatory courses for Married Life
+			 */
+			zawjiyyah_title: () => LocalizedString
+			/**
+			 * Clearing up concepts of marriage & family law & wisdom in interaction
+			 */
+			zawjiyyah_content: () => LocalizedString
+			/**
+			 * Raising Children
+			 */
+			tarbiyah_title: () => LocalizedString
+			/**
+			 * Explaining the ideal way of raising children properly
+			 */
+			tarbiyah_content: () => LocalizedString
+			/**
+			 * Voice & Maqamat
+			 */
+			aswat_title: () => LocalizedString
+			/**
+			 * Teaching the vocal Maqamat and religious inshad
+			 */
+			aswat_content: () => LocalizedString
 		}
 	}
 	tags: {
