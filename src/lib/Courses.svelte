@@ -570,7 +570,7 @@
 			id: 46,
 			position: { x: 1, y: 1935 },
 			data: {
-				label: 'معرفة بينة الكلمة واشتقاقها ',
+				label: $LL.fields.arabayyiah.sarf_content(),
 			},
 			width: 135,
 			height: 70,
