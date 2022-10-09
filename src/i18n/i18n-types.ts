@@ -329,7 +329,7 @@ type RootTranslation = {
 			 */
 			title: string
 			/**
-			 * Islamic Theology based on Sunni Methodology, such as the Ash'ari and Maturidi
+			 * Islamic Theology based on Sunni Methodology, such as Ash'ari and Maturidi
 			 */
 			explanation: string
 		}
@@ -2327,7 +2327,7 @@ export type TranslationFunctions = {
 			 */
 			title: () => LocalizedString
 			/**
-			 * Islamic Theology based on Sunni Methodology, such as the Ash'ari and Maturidi
+			 * Islamic Theology based on Sunni Methodology, such as Ash'ari and Maturidi
 			 */
 			explanation: () => LocalizedString
 		}
