@@ -46,17 +46,19 @@
 	div#title-container {
 		flex: 1;
 		border-radius: 12px;
-		border: 2px solid gold;
+		border: 2px solid green;
 		padding: 8px;
-		background-color: beige;
+		background-color: rgb(214, 247, 214);
 	}
 	h1 {
 		font-size: 2.2rem;
 		margin: 0;
 	}
 	h2 {
-		margin-top: -5px;
+		/* margin-top: -5px; */
 		font-size: 1.25rem;
+		/* color: inherit; */
+		font-weight: bold;
 	}
 	div#heading {
 		flex-direction: column;
