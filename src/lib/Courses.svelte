@@ -1255,7 +1255,7 @@
 	$: initialNodesMobile = [
 		{
 			id: 1,
-			position: { x: 300, y: 210 },
+			position: { x: 300, y: 230 },
 			data: { label:  $LL.fields.fard.title() },
 			width: 125,
 			height: 55,
@@ -1276,25 +1276,25 @@
 		},
 		{
 			id: 3.1,
-			position: { x: 1, y: 25 },
+			position: { x: 1, y: 5 },
 			data: {
 				label: $LL.fields.fard.tawhid_content1(),
 			},
 
 			width: 175,
-			height: 55,
+			height: 45,
 			bgColor: '#EBBAB9',
 			borderColor: '#EBBAB9',
 			targetPosition: 'right',
 		},
 		{
 			id: 3.2,
-			position: { x: 1, y: 65 },
+			position: { x: 1, y: 55 },
 			data: {
 				label: $LL.fields.fard.tawhid_content2(),
 			},
 			width: 175,
-			height: 55,
+			height: 45,
 			bgColor: '#EBBAB9',
 			borderColor: '#EBBAB9',
 			targetPosition: 'right',
@@ -1306,14 +1306,14 @@
 				label: $LL.fields.fard.tawhid_content3(),
 			},
 			width: 175,
-			height: 55,
+			height: 45,
 			bgColor: '#EBBAB9',
 			borderColor: '#EBBAB9',
 			targetPosition: 'right',
 		},
 		{
 			id: 4,
-			position: { x: 200, y: 145 },
+			position: { x: 200, y: 165 },
 			data: { label: $LL.fields.fard.tajwid_title() },
 			width: 80,
 			height: 55,
@@ -1324,19 +1324,19 @@
 		},
 		{
 			id: 5,
-			position: { x: 1, y: 145 },
+			position: { x: 1, y: 165 },
 			data: {
 				label: $LL.fields.fard.tajwid_content(),
 			},
 			width: 175,
-			height: 55,
+			height: 45,
 			bgColor: '#A2FDFF',
 			borderColor: '#A2FDFF',
 			targetPosition: 'right',
 		},
 		{
 			id: 6,
-			position: { x: 200, y: 210 },
+			position: { x: 200, y: 230 },
 			data: { label: $LL.fields.fard.ibadat_title() },
 			width: 80,
 			height: 55,
@@ -1347,7 +1347,7 @@
 		},
 		{
 			id: 7,
-			position: { x: 1, y: 197 },
+			position: { x: 1, y: 225 },
 			data: {
 				label: $LL.fields.fard.ibadat_content(),
 			},
@@ -1359,7 +1359,7 @@
 		},
 		{
 			id: 8,
-			position: { x: 200, y: 285 },
+			position: { x: 200, y: 320 },
 			data: { label: $LL.fields.fard.muamalat_title() },
 			width: 80,
 			height: 55,
@@ -1370,31 +1370,31 @@
 		},
 		{
 			id: 9.1,
-			position: { x: 1, y: 270 },
+			position: { x: 1, y: 300 },
 			data: {
 				label: $LL.fields.fard.muamalat_content1(),
 			},
 			width: 175,
-			height: 55,
+			height: 45,
 			bgColor: '#FFC5A7',
 			targetPosition: 'right',
 			borderColor: '#FFC5A7',
 		},
 		{
 			id: 9.2,
-			position: { x: 1, y: 310 },
+			position: { x: 1, y: 350 },
 			data: {
 				label: $LL.fields.fard.muamalat_content2(),
 			},
 			width: 175,
-			height: 55,
+			height: 45,
 			bgColor: '#FFC5A7',
 			targetPosition: 'right',
 			borderColor: '#FFC5A7',
 		},
 		{
 			id: 10,
-			position: { x: 200, y: 370 },
+			position: { x: 200, y: 400 },
 			data: { label: $LL.fields.fard.tasawwuf_title() },
 			width: 80,
 			height: 55,
@@ -1405,12 +1405,12 @@
 		},
 		{
 			id: 11,
-			position: { x: 1, y: 355 },
+			position: { x: 1, y: 400 },
 			data: {
 				label: $LL.fields.fard.tasawwuf_content(),
 			},
 			width: 175,
-			height: 70,
+			height: 55,
 			bgColor: '#EEFFB2',
 			targetPosition: 'right',
 			borderColor: '#EEFFB2',
