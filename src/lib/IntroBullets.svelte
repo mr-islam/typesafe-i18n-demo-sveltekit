@@ -18,7 +18,7 @@
 
 <div id="flex">
 	<a class="box" id="box-1" href="/{$locale}/goals">
-		<div class="main-title">هدفنا</div>
+		<div class="main-title">{$LL.welcome.mission_title()}</div>
 		<div>
 			<p class="intro-bullet">
 				{$LL.welcome.mission()}
@@ -27,7 +27,7 @@
 	</a>
 
 	<a class="box" id="box-4" href="/{$locale}/articles">
-		<div class="main-title">المكتبة</div>
+		<div class="main-title">{$LL.welcome.online_title()}</div>
 		<div>
 			<p class="intro-bullet">
 				{$LL.welcome.online()}
@@ -36,7 +36,7 @@
 	</a>
 
 	<a class="box" id="box-3" href="/{$locale}/contact">
-		<div class="main-title">للاستفسار</div>
+		<div class="main-title">{$LL.welcome.contact_title()}</div>
 		<div>
 			<p class="intro-bullet">
 				{$LL.welcome.contact()}

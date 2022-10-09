@@ -15,8 +15,11 @@
   },
   "welcome": {
     "complete_curriculum": "Begin or continue your studies with our complete curriculum covering all the religious sciences",
+    "mission_title": "Goal",
     "mission": "Our goal is to produce Lordly Scholars and Righteous Leaders, and reviving the Religious Sciencess",
+    "online_title": "Library",
     "online": "Our Libary contains writtent articles and audio recordings",
+    "contact_title": "Contact",
     "contact": "Find out more about studying through this website and benefitting from it"
   },
   "shaykh": {
@@ -63,6 +66,7 @@
     }
   },
   "fields": {
+    "title":"Scienes of Shariah & Reality",
     "fard": {
       "title": "Obligatory Knowledge",
       "tawhid_title": "Beliefs",

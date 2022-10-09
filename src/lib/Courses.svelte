@@ -3734,7 +3734,10 @@
 	]
 </script>
 
-<h1>علوم الشريعة والحقيقة</h1>
+<br><br>
+<br>
+
+<h1>{$LL.fields.title()}</h1>
 {#if pageWidth < 450}
 	<div id="tiny">
 		<Svelvet width={320} height={2800} nodes={initialNodesTiny} edges={initialEdgesTiny} movement={false} />

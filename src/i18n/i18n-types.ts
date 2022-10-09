@@ -58,13 +58,25 @@ type RootTranslation = {
 		 */
 		complete_curriculum: string
 		/**
+		 * Goal
+		 */
+		mission_title: string
+		/**
 		 * Our goal is to produce Lordly Scholars and Righteous Leaders, and reviving the Religious Sciencess
 		 */
 		mission: string
 		/**
+		 * Library
+		 */
+		online_title: string
+		/**
 		 * Our Libary contains writtent articles and audio recordings
 		 */
 		online: string
+		/**
+		 * Contact
+		 */
+		contact_title: string
 		/**
 		 * Find out more about studying through this website and benefitting from it
 		 */
@@ -209,6 +221,10 @@ type RootTranslation = {
 		}
 	}
 	fields: {
+		/**
+		 * Scienes of Shariah & Reality
+		 */
+		title: string
 		fard: {
 			/**
 			 * Obligatory Knowledge
@@ -2056,13 +2072,25 @@ export type TranslationFunctions = {
 		 */
 		complete_curriculum: () => LocalizedString
 		/**
+		 * Goal
+		 */
+		mission_title: () => LocalizedString
+		/**
 		 * Our goal is to produce Lordly Scholars and Righteous Leaders, and reviving the Religious Sciencess
 		 */
 		mission: () => LocalizedString
 		/**
+		 * Library
+		 */
+		online_title: () => LocalizedString
+		/**
 		 * Our Libary contains writtent articles and audio recordings
 		 */
 		online: () => LocalizedString
+		/**
+		 * Contact
+		 */
+		contact_title: () => LocalizedString
 		/**
 		 * Find out more about studying through this website and benefitting from it
 		 */
@@ -2207,6 +2235,10 @@ export type TranslationFunctions = {
 		}
 	}
 	fields: {
+		/**
+		 * Scienes of Shariah & Reality
+		 */
+		title: () => LocalizedString
 		fard: {
 			/**
 			 * Obligatory Knowledge
