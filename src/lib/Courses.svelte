@@ -487,12 +487,12 @@
 		},
 		{
 			id: 39,
-			position: { x: 1, y: 1615 },
+			position: { x: 1, y: 1605 },
 			data: {
 				label:  $LL.fields.tasawwuf.suluk_content(),
 			},
 			width: 135,
-			height: 80,
+			height: 100,
 			bgColor: '#EEFFB2',
 			targetPosition: 'right',
 			borderColor: '#EEFFB2',
@@ -510,7 +510,7 @@
 		},
 		{
 			id: 41,
-			position: { x: 1, y: 1710 },
+			position: { x: 1, y: 1725 },
 			data: {
 				label:  $LL.fields.tasawwuf.irfan_content(),
 			},

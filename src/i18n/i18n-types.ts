@@ -381,7 +381,7 @@ type RootTranslation = {
 			 */
 			suluk_title: string
 			/**
-			 * Replacing ugly traits with the beautiful & learning the Muhammadan Way to strive to Allah Almighty
+			 * Replacing ugly traits with the beautiful & learning the Muhammadan Way to strive to Allah ﷻ
 			 */
 			suluk_content: string
 			/**
@@ -2379,7 +2379,7 @@ export type TranslationFunctions = {
 			 */
 			suluk_title: () => LocalizedString
 			/**
-			 * Replacing ugly traits with the beautiful & learning the Muhammadan Way to strive to Allah Almighty
+			 * Replacing ugly traits with the beautiful & learning the Muhammadan Way to strive to Allah ﷻ
 			 */
 			suluk_content: () => LocalizedString
 			/**
