@@ -16,7 +16,7 @@
 		{
 			id: 1,
 			position: { x: 249, y: 210 },
-			data: { label:  $LL.fields.fard.title() },
+			data: { label: $LL.fields.fard.title() },
 			width: 70,
 			height: 45,
 			bgColor: '#61FFA3',
@@ -201,7 +201,7 @@
 			id: 14,
 			position: { x: 1, y: 485 },
 			data: {
-				label:  $LL.fields.quran.tajwid_content(),
+				label: $LL.fields.quran.tajwid_content(),
 			},
 			width: 135,
 			height: 70,
@@ -212,7 +212,7 @@
 		{
 			id: 15,
 			position: { x: 155, y: 580 },
-			data: { label:  $LL.fields.quran.tafsir_title() },
+			data: { label: $LL.fields.quran.tafsir_title() },
 			width: 75,
 			height: 40,
 			bgColor: '#97D9FF',
@@ -224,7 +224,7 @@
 			id: 16,
 			position: { x: 1, y: 565 },
 			data: {
-				label:  $LL.fields.quran.tafsir_content(),
+				label: $LL.fields.quran.tafsir_content(),
 			},
 			width: 135,
 			height: 70,
@@ -235,7 +235,7 @@
 		{
 			id: 17,
 			position: { x: 155, y: 662 },
-			data: { label:  $LL.fields.quran.ulum_title() },
+			data: { label: $LL.fields.quran.ulum_title() },
 			width: 75,
 			height: 40,
 			bgColor: '#97BFFF',
@@ -247,7 +247,7 @@
 			id: 18,
 			position: { x: 1, y: 645 },
 			data: {
-				label:  $LL.fields.quran.ulum_content(),
+				label: $LL.fields.quran.ulum_content(),
 			},
 			width: 135,
 			height: 75,
@@ -259,7 +259,7 @@
 		{
 			id: 19,
 			position: { x: 249, y: 870 },
-			data: { label:  $LL.fields.hadith.title() },
+			data: { label: $LL.fields.hadith.title() },
 			width: 70,
 			height: 55,
 			bgColor: '#00DF65',
@@ -269,7 +269,7 @@
 		{
 			id: 20,
 			position: { x: 155, y: 867 },
-			data: { label:  $LL.fields.hadith.ulum_title() },
+			data: { label: $LL.fields.hadith.ulum_title() },
 			width: 75,
 			height: 45,
 			bgColor: '#00DF65',
@@ -281,7 +281,7 @@
 			id: 21,
 			position: { x: 1, y: 855 },
 			data: {
-				label:  $LL.fields.hadith.ulum_content(),
+				label: $LL.fields.hadith.ulum_content(),
 			},
 			width: 135,
 			height: 70,
@@ -292,7 +292,7 @@
 		{
 			id: 22,
 			position: { x: 155, y: 788 },
-			data: { label:  $LL.fields.hadith.main_title() },
+			data: { label: $LL.fields.hadith.main_title() },
 			width: 75,
 			height: 45,
 			sourcePosition: 'left',
@@ -305,7 +305,7 @@
 			position: { x: 1, y: 775 },
 
 			data: {
-				label:  $LL.fields.hadith.main_content(),
+				label: $LL.fields.hadith.main_content(),
 			},
 			width: 135,
 			height: 70,
@@ -317,7 +317,7 @@
 		{
 			id: 24,
 			position: { x: 155, y: 950 },
-			data: { label:  $LL.fields.hadith.seerah_title() },
+			data: { label: $LL.fields.hadith.seerah_title() },
 			width: 75,
 			height: 45,
 			sourcePosition: 'left',
@@ -329,7 +329,7 @@
 			id: 25,
 			position: { x: 1, y: 935 },
 			data: {
-				label:  $LL.fields.hadith.seerah_content(),
+				label: $LL.fields.hadith.seerah_content(),
 			},
 			width: 135,
 			height: 70,
@@ -341,7 +341,7 @@
 		{
 			id: 26,
 			position: { x: 249, y: 1085 },
-			data: { label:  $LL.fields.aqidah.title() },
+			data: { label: $LL.fields.aqidah.title() },
 			width: 70,
 			height: 55,
 			bgColor: '#61FFA3',
@@ -352,7 +352,7 @@
 			id: 27,
 			position: { x: 1, y: 1070 },
 			data: {
-				label:  $LL.fields.aqidah.explanation(),
+				label: $LL.fields.aqidah.explanation(),
 			},
 			width: 135,
 			height: 85,
@@ -364,7 +364,7 @@
 		{
 			id: 28,
 			position: { x: 249, y: 1360 },
-			data: { label:  $LL.fields.fiqh.title() },
+			data: { label: $LL.fields.fiqh.title() },
 			width: 70,
 			height: 55,
 			bgColor: '#FFD3A7',
@@ -374,7 +374,7 @@
 		{
 			id: 29,
 			position: { x: 155, y: 1230 },
-			data: { label:  $LL.fields.fiqh.furu_title() },
+			data: { label: $LL.fields.fiqh.furu_title() },
 			width: 75,
 			height: 55,
 			bgColor: '#FFE8A7',
@@ -386,7 +386,7 @@
 			id: 30,
 			position: { x: 1, y: 1215 },
 			data: {
-				label:  $LL.fields.fiqh.furu_content(),
+				label: $LL.fields.fiqh.furu_content(),
 			},
 			width: 135,
 			height: 70,
@@ -397,7 +397,7 @@
 		{
 			id: 31,
 			position: { x: 155, y: 1315 },
-			data: { label:  $LL.fields.fiqh.usul_title() },
+			data: { label: $LL.fields.fiqh.usul_title() },
 			width: 75,
 			height: 55,
 			bgColor: '#FFDEA7',
@@ -409,7 +409,7 @@
 			id: 32,
 			position: { x: 1, y: 1300 },
 			data: {
-				label:  $LL.fields.fiqh.usul_content(),
+				label: $LL.fields.fiqh.usul_content(),
 			},
 			width: 135,
 			height: 70,
@@ -420,7 +420,7 @@
 		{
 			id: 33,
 			position: { x: 155, y: 1400 },
-			data: { label:  $LL.fields.fiqh.qawaid_title() },
+			data: { label: $LL.fields.fiqh.qawaid_title() },
 			width: 75,
 			height: 55,
 			bgColor: '#FFD3A7',
@@ -432,7 +432,7 @@
 			id: 34,
 			position: { x: 1, y: 1385 },
 			data: {
-				label:  $LL.fields.fiqh.qawaid_content(),
+				label: $LL.fields.fiqh.qawaid_content(),
 			},
 			width: 135,
 			height: 70,
@@ -443,7 +443,7 @@
 		{
 			id: 35,
 			position: { x: 155, y: 1485 },
-			data: { label:  $LL.fields.fiqh.adillah_title() },
+			data: { label: $LL.fields.fiqh.adillah_title() },
 			width: 75,
 			height: 55,
 			bgColor: '#FFCAA7',
@@ -455,7 +455,7 @@
 			id: 36,
 			position: { x: 1, y: 1470 },
 			data: {
-				label:  $LL.fields.fiqh.adillah_content(),
+				label: $LL.fields.fiqh.adillah_content(),
 			},
 			width: 135,
 			height: 70,
@@ -467,7 +467,7 @@
 		{
 			id: 37,
 			position: { x: 249, y: 1675 },
-			data: { label:  $LL.fields.tasawwuf.title() },
+			data: { label: $LL.fields.tasawwuf.title() },
 			width: 70,
 			height: 55,
 			bgColor: '#DDFFB2',
@@ -477,7 +477,7 @@
 		{
 			id: 38,
 			position: { x: 155, y: 1635 },
-			data: { label:  $LL.fields.tasawwuf.suluk_title() },
+			data: { label: $LL.fields.tasawwuf.suluk_title() },
 			width: 75,
 			height: 55,
 			bgColor: '#EEFFB2',
@@ -489,7 +489,7 @@
 			id: 39,
 			position: { x: 1, y: 1605 },
 			data: {
-				label:  $LL.fields.tasawwuf.suluk_content(),
+				label: $LL.fields.tasawwuf.suluk_content(),
 			},
 			width: 135,
 			height: 100,
@@ -500,7 +500,7 @@
 		{
 			id: 40,
 			position: { x: 155, y: 1725 },
-			data: { label:  $LL.fields.tasawwuf.irfan_title() },
+			data: { label: $LL.fields.tasawwuf.irfan_title() },
 			width: 75,
 			height: 55,
 			bgColor: '#DDFFB2',
@@ -512,7 +512,7 @@
 			id: 41,
 			position: { x: 1, y: 1725 },
 			data: {
-				label:  $LL.fields.tasawwuf.irfan_content(),
+				label: $LL.fields.tasawwuf.irfan_content(),
 			},
 			width: 135,
 			height: 70,
@@ -524,7 +524,7 @@
 		{
 			id: 42,
 			position: { x: 249, y: 2000 },
-			data: { label:  $LL.fields.arabayyiah.title() },
+			data: { label: $LL.fields.arabayyiah.title() },
 			width: 70,
 			height: 55,
 			bgColor: '#E2B2FF',
@@ -534,7 +534,7 @@
 		{
 			id: 43,
 			position: { x: 155, y: 1865 },
-			data: { label:  $LL.fields.arabayyiah.nahw_title() },
+			data: { label: $LL.fields.arabayyiah.nahw_title() },
 			width: 75,
 			height: 55,
 			bgColor: '#ECB2FF',
@@ -546,7 +546,7 @@
 			id: 44,
 			position: { x: 1, y: 1850 },
 			data: {
-				label:  $LL.fields.arabayyiah.nahw_content(),
+				label: $LL.fields.arabayyiah.nahw_content(),
 			},
 			width: 135,
 			height: 70,
@@ -557,7 +557,7 @@
 		{
 			id: 45,
 			position: { x: 155, y: 1950 },
-			data: { label:  $LL.fields.arabayyiah.sarf_title() },
+			data: { label: $LL.fields.arabayyiah.sarf_title() },
 			width: 75,
 			height: 55,
 			bgColor: '#E2B2FF',
@@ -580,7 +580,7 @@
 		{
 			id: 47,
 			position: { x: 155, y: 2040 },
-			data: { label:  $LL.fields.arabayyiah.balaghah_title()},
+			data: { label: $LL.fields.arabayyiah.balaghah_title() },
 			width: 75,
 			height: 55,
 			bgColor: '#D5B2FF',
@@ -592,7 +592,7 @@
 			id: 48,
 			position: { x: 1, y: 2025 },
 			data: {
-				label:  $LL.fields.arabayyiah.balaghah_content(),
+				label: $LL.fields.arabayyiah.balaghah_content(),
 			},
 			width: 135,
 			height: 70,
@@ -603,7 +603,7 @@
 		{
 			id: 49,
 			position: { x: 155, y: 2110 },
-			data: { label:  $LL.fields.arabayyiah.natiq_title() },
+			data: { label: $LL.fields.arabayyiah.natiq_title() },
 			width: 75,
 			height: 70,
 			bgColor: '#C6B2FF',
@@ -615,7 +615,7 @@
 			id: 50,
 			position: { x: 1, y: 2110 },
 			data: {
-				label:  $LL.fields.arabayyiah.natiq_content(),
+				label: $LL.fields.arabayyiah.natiq_content(),
 			},
 			width: 135,
 			height: 70,
@@ -627,7 +627,7 @@
 		{
 			id: 51,
 			position: { x: 249, y: 2490 },
-			data: { label:  $LL.fields.baramij.title() },
+			data: { label: $LL.fields.baramij.title() },
 			width: 70,
 			height: 55,
 			bgColor: '#FFB2CE',
@@ -637,7 +637,7 @@
 		{
 			id: 52,
 			position: { x: 155, y: 2265 },
-			data: { label:  $LL.fields.baramij.dawah_title() },
+			data: { label: $LL.fields.baramij.dawah_title() },
 			width: 75,
 			height: 55,
 			bgColor: '#FFB2E6',
@@ -649,7 +649,7 @@
 			id: 53,
 			position: { x: 1, y: 2250 },
 			data: {
-				label:  $LL.fields.baramij.dawah_content(),
+				label: $LL.fields.baramij.dawah_content(),
 			},
 			width: 135,
 			height: 70,
@@ -660,7 +660,7 @@
 		{
 			id: 54,
 			position: { x: 155, y: 2345 },
-			data: { label:  $LL.fields.baramij.nisa_title() },
+			data: { label: $LL.fields.baramij.nisa_title() },
 			width: 75,
 			height: 60,
 			bgColor: '#FFB2DA',
@@ -672,7 +672,7 @@
 			id: 55,
 			position: { x: 1, y: 2340 },
 			data: {
-				label:  $LL.fields.baramij.nisa_content(),
+				label: $LL.fields.baramij.nisa_content(),
 			},
 			width: 135,
 			height: 70,
@@ -683,7 +683,7 @@
 		{
 			id: 56,
 			position: { x: 155, y: 2435 },
-			data: { label:  $LL.fields.baramij.atfal_title() },
+			data: { label: $LL.fields.baramij.atfal_title() },
 			width: 75,
 			height: 60,
 			bgColor: '#FFB2CE',
@@ -695,7 +695,7 @@
 			id: 57,
 			position: { x: 1, y: 2430 },
 			data: {
-				label:  $LL.fields.baramij.atfal_content(),
+				label: $LL.fields.baramij.atfal_content(),
 			},
 			width: 135,
 			height: 70,
@@ -706,7 +706,7 @@
 		{
 			id: 58,
 			position: { x: 155, y: 2520 },
-			data: { label:  $LL.fields.baramij.zawjiyyah_title() },
+			data: { label: $LL.fields.baramij.zawjiyyah_title() },
 			width: 75,
 			height: 70,
 			bgColor: '#FFB2C3',
@@ -718,7 +718,7 @@
 			id: 59,
 			position: { x: 1, y: 2520 },
 			data: {
-				label:  $LL.fields.baramij.zawjiyyah_content(),
+				label: $LL.fields.baramij.zawjiyyah_content(),
 			},
 			width: 135,
 			height: 70,
@@ -729,7 +729,7 @@
 		{
 			id: 60,
 			position: { x: 155, y: 2615 },
-			data: { label:  $LL.fields.baramij.tarbiyah_title() },
+			data: { label: $LL.fields.baramij.tarbiyah_title() },
 			width: 75,
 			height: 60,
 			bgColor: '#FFB2C3',
@@ -741,7 +741,7 @@
 			id: 61,
 			position: { x: 1, y: 2610 },
 			data: {
-				label:  $LL.fields.baramij.tarbiyah_content(),
+				label: $LL.fields.baramij.tarbiyah_content(),
 			},
 			width: 135,
 			height: 70,
@@ -752,7 +752,7 @@
 		{
 			id: 62,
 			position: { x: 155, y: 2705 },
-			data: { label:  $LL.fields.baramij.aswat_title() },
+			data: { label: $LL.fields.baramij.aswat_title() },
 			width: 75,
 			height: 60,
 			bgColor: '#FFB2C3',
@@ -764,7 +764,7 @@
 			id: 63,
 			position: { x: 1, y: 2700 },
 			data: {
-				label:  $LL.fields.baramij.aswat_content(),
+				label: $LL.fields.baramij.aswat_content(),
 			},
 			width: 135,
 			height: 70,
@@ -1256,7 +1256,7 @@
 		{
 			id: 1,
 			position: { x: 300, y: 230 },
-			data: { label:  $LL.fields.fard.title() },
+			data: { label: $LL.fields.fard.title() },
 			width: 125,
 			height: 55,
 			bgColor: '#61FFA3',
@@ -1441,7 +1441,7 @@
 			id: 14,
 			position: { x: 1, y: 485 },
 			data: {
-				label:  $LL.fields.quran.tajwid_content(),
+				label: $LL.fields.quran.tajwid_content(),
 			},
 			width: 175,
 			height: 70,
@@ -1452,7 +1452,7 @@
 		{
 			id: 15,
 			position: { x: 200, y: 580 },
-			data: { label:  $LL.fields.quran.tafsir_title() },
+			data: { label: $LL.fields.quran.tafsir_title() },
 			width: 80,
 			height: 55,
 			bgColor: '#97D9FF',
@@ -1464,7 +1464,7 @@
 			id: 16,
 			position: { x: 1, y: 565 },
 			data: {
-				label:  $LL.fields.quran.tafsir_content(),
+				label: $LL.fields.quran.tafsir_content(),
 			},
 			width: 175,
 			height: 70,
@@ -1475,7 +1475,7 @@
 		{
 			id: 17,
 			position: { x: 200, y: 660 },
-			data: { label:  $LL.fields.quran.ulum_title() },
+			data: { label: $LL.fields.quran.ulum_title() },
 			width: 80,
 			height: 55,
 			bgColor: '#97BFFF',
@@ -1487,7 +1487,7 @@
 			id: 18,
 			position: { x: 1, y: 645 },
 			data: {
-				label:  $LL.fields.quran.ulum_content(),
+				label: $LL.fields.quran.ulum_content(),
 			},
 			width: 175,
 			height: 70,
@@ -1499,7 +1499,7 @@
 		{
 			id: 19,
 			position: { x: 300, y: 870 },
-			data: { label:  $LL.fields.hadith.title() },
+			data: { label: $LL.fields.hadith.title() },
 			width: 125,
 			height: 55,
 			bgColor: '#00DF65',
@@ -1509,7 +1509,7 @@
 		{
 			id: 20,
 			position: { x: 200, y: 867 },
-			data: { label:  $LL.fields.hadith.ulum_title() },
+			data: { label: $LL.fields.hadith.ulum_title() },
 
 			width: 80,
 			height: 45,
@@ -1522,7 +1522,7 @@
 			id: 21,
 			position: { x: 1, y: 855 },
 			data: {
-				label:  $LL.fields.hadith.ulum_content(),
+				label: $LL.fields.hadith.ulum_content(),
 			},
 			width: 175,
 			height: 70,
@@ -1533,7 +1533,7 @@
 		{
 			id: 22,
 			position: { x: 200, y: 787 },
-			data: { label:  $LL.fields.hadith.main_title() },
+			data: { label: $LL.fields.hadith.main_title() },
 			width: 80,
 			height: 45,
 			sourcePosition: 'left',
@@ -1546,7 +1546,7 @@
 			position: { x: 1, y: 775 },
 
 			data: {
-				label:  $LL.fields.hadith.main_content(),
+				label: $LL.fields.hadith.main_content(),
 			},
 			width: 175,
 			height: 70,
@@ -1558,7 +1558,7 @@
 		{
 			id: 24,
 			position: { x: 200, y: 950 },
-			data: { label:  $LL.fields.hadith.seerah_title() },
+			data: { label: $LL.fields.hadith.seerah_title() },
 			width: 80,
 			height: 45,
 
@@ -1571,7 +1571,7 @@
 			id: 25,
 			position: { x: 1, y: 935 },
 			data: {
-				label:  $LL.fields.hadith.seerah_content(),
+				label: $LL.fields.hadith.seerah_content(),
 			},
 			width: 175,
 			height: 70,
@@ -1583,7 +1583,7 @@
 		{
 			id: 26,
 			position: { x: 300, y: 1085 },
-			data: { label:  $LL.fields.aqidah.title() },
+			data: { label: $LL.fields.aqidah.title() },
 			width: 125,
 			height: 55,
 			bgColor: '#61FFA3',
@@ -1594,7 +1594,7 @@
 			id: 27,
 			position: { x: 1, y: 1070 },
 			data: {
-				label:  $LL.fields.aqidah.explanation(),
+				label: $LL.fields.aqidah.explanation(),
 			},
 			width: 175,
 			height: 85,
@@ -1606,7 +1606,7 @@
 		{
 			id: 28,
 			position: { x: 300, y: 1360 },
-			data: { label:  $LL.fields.fiqh.title() },
+			data: { label: $LL.fields.fiqh.title() },
 			width: 125,
 			height: 55,
 			bgColor: '#FFD3A7',
@@ -1616,7 +1616,7 @@
 		{
 			id: 29,
 			position: { x: 200, y: 1230 },
-			data: { label:  $LL.fields.fiqh.furu_title() },
+			data: { label: $LL.fields.fiqh.furu_title() },
 			width: 80,
 			height: 55,
 			bgColor: '#FFE8A7',
@@ -1628,7 +1628,7 @@
 			id: 30,
 			position: { x: 1, y: 1215 },
 			data: {
-				label:  $LL.fields.fiqh.furu_content(),
+				label: $LL.fields.fiqh.furu_content(),
 			},
 			width: 175,
 			height: 70,
@@ -1639,7 +1639,7 @@
 		{
 			id: 31,
 			position: { x: 200, y: 1315 },
-			data: { label:  $LL.fields.fiqh.usul_title() },
+			data: { label: $LL.fields.fiqh.usul_title() },
 			width: 80,
 			height: 55,
 			bgColor: '#FFDEA7',
@@ -1651,7 +1651,7 @@
 			id: 32,
 			position: { x: 1, y: 1300 },
 			data: {
-				label:  $LL.fields.fiqh.usul_content(),
+				label: $LL.fields.fiqh.usul_content(),
 			},
 			width: 175,
 			height: 70,
@@ -1662,7 +1662,7 @@
 		{
 			id: 33,
 			position: { x: 200, y: 1400 },
-			data: { label:  $LL.fields.fiqh.qawaid_title() },
+			data: { label: $LL.fields.fiqh.qawaid_title() },
 			width: 80,
 			height: 55,
 			bgColor: '#FFD3A7',
@@ -1674,7 +1674,7 @@
 			id: 34,
 			position: { x: 1, y: 1385 },
 			data: {
-				label:  $LL.fields.fiqh.qawaid_content(),
+				label: $LL.fields.fiqh.qawaid_content(),
 			},
 			width: 175,
 			height: 70,
@@ -1685,7 +1685,7 @@
 		{
 			id: 35,
 			position: { x: 200, y: 1485 },
-			data: { label:  $LL.fields.fiqh.adillah_title() },
+			data: { label: $LL.fields.fiqh.adillah_title() },
 			width: 80,
 			height: 55,
 			bgColor: '#FFCAA7',
@@ -1697,7 +1697,7 @@
 			id: 36,
 			position: { x: 1, y: 1470 },
 			data: {
-				label:  $LL.fields.fiqh.adillah_content(),
+				label: $LL.fields.fiqh.adillah_content(),
 			},
 			width: 175,
 			height: 70,
@@ -1709,7 +1709,7 @@
 		{
 			id: 37,
 			position: { x: 300, y: 1675 },
-			data: { label:  $LL.fields.tasawwuf.title() },
+			data: { label: $LL.fields.tasawwuf.title() },
 			width: 125,
 			height: 55,
 			bgColor: '#DDFFB2',
@@ -1719,7 +1719,7 @@
 		{
 			id: 38,
 			position: { x: 200, y: 1635 },
-			data: { label:  $LL.fields.tasawwuf.suluk_title() },
+			data: { label: $LL.fields.tasawwuf.suluk_title() },
 			width: 80,
 			height: 55,
 			bgColor: '#EEFFB2',
@@ -1731,7 +1731,7 @@
 			id: 39,
 			position: { x: 1, y: 1615 },
 			data: {
-				label:  $LL.fields.tasawwuf.suluk_content(),
+				label: $LL.fields.tasawwuf.suluk_content(),
 			},
 			width: 175,
 			height: 80,
@@ -1742,7 +1742,7 @@
 		{
 			id: 40,
 			position: { x: 200, y: 1725 },
-			data: { label:  $LL.fields.tasawwuf.irfan_title() },
+			data: { label: $LL.fields.tasawwuf.irfan_title() },
 			width: 80,
 			height: 55,
 			bgColor: '#DDFFB2',
@@ -1754,7 +1754,7 @@
 			id: 41,
 			position: { x: 1, y: 1710 },
 			data: {
-				label:  $LL.fields.tasawwuf.irfan_content(),
+				label: $LL.fields.tasawwuf.irfan_content(),
 			},
 			width: 175,
 			height: 70,
@@ -1766,7 +1766,7 @@
 		{
 			id: 42,
 			position: { x: 300, y: 2000 },
-			data: { label:  $LL.fields.arabayyiah.title() },
+			data: { label: $LL.fields.arabayyiah.title() },
 			width: 125,
 			height: 55,
 			bgColor: '#E2B2FF',
@@ -1776,7 +1776,7 @@
 		{
 			id: 43,
 			position: { x: 200, y: 1865 },
-			data: { label:  $LL.fields.arabayyiah.nahw_title() },
+			data: { label: $LL.fields.arabayyiah.nahw_title() },
 			width: 80,
 			height: 55,
 			bgColor: '#ECB2FF',
@@ -1788,7 +1788,7 @@
 			id: 44,
 			position: { x: 1, y: 1850 },
 			data: {
-				label:  $LL.fields.arabayyiah.nahw_content(),
+				label: $LL.fields.arabayyiah.nahw_content(),
 			},
 			width: 175,
 			height: 70,
@@ -1799,7 +1799,7 @@
 		{
 			id: 45,
 			position: { x: 200, y: 1950 },
-			data: { label:  $LL.fields.arabayyiah.sarf_title() },
+			data: { label: $LL.fields.arabayyiah.sarf_title() },
 			width: 80,
 			height: 55,
 			bgColor: '#E2B2FF',
@@ -1811,7 +1811,7 @@
 			id: 46,
 			position: { x: 1, y: 1935 },
 			data: {
-				label:  $LL.fields.arabayyiah.sarf_content(),
+				label: $LL.fields.arabayyiah.sarf_content(),
 			},
 			width: 175,
 			height: 70,
@@ -1822,7 +1822,7 @@
 		{
 			id: 47,
 			position: { x: 200, y: 2040 },
-			data: { label:  $LL.fields.arabayyiah.balaghah_title()},
+			data: { label: $LL.fields.arabayyiah.balaghah_title() },
 			width: 80,
 			height: 55,
 			bgColor: '#D5B2FF',
@@ -1834,7 +1834,7 @@
 			id: 48,
 			position: { x: 1, y: 2025 },
 			data: {
-				label:  $LL.fields.arabayyiah.balaghah_content(),
+				label: $LL.fields.arabayyiah.balaghah_content(),
 			},
 			width: 175,
 			height: 70,
@@ -1845,7 +1845,7 @@
 		{
 			id: 49,
 			position: { x: 200, y: 2110 },
-			data: { label:  $LL.fields.arabayyiah.natiq_title() },
+			data: { label: $LL.fields.arabayyiah.natiq_title() },
 			width: 85,
 			height: 70,
 			bgColor: '#C6B2FF',
@@ -1857,7 +1857,7 @@
 			id: 50,
 			position: { x: 1, y: 2110 },
 			data: {
-				label:  $LL.fields.arabayyiah.natiq_content(),
+				label: $LL.fields.arabayyiah.natiq_content(),
 			},
 			width: 175,
 			height: 70,
@@ -1869,7 +1869,7 @@
 		{
 			id: 51,
 			position: { x: 300, y: 2490 },
-			data: { label:  $LL.fields.baramij.title() },
+			data: { label: $LL.fields.baramij.title() },
 			width: 125,
 			height: 55,
 			bgColor: '#FFB2CE',
@@ -1879,7 +1879,7 @@
 		{
 			id: 52,
 			position: { x: 200, y: 2265 },
-			data: { label:  $LL.fields.baramij.dawah_title() },
+			data: { label: $LL.fields.baramij.dawah_title() },
 			width: 80,
 			height: 55,
 			bgColor: '#FFB2E6',
@@ -1891,7 +1891,7 @@
 			id: 53,
 			position: { x: 1, y: 2250 },
 			data: {
-				label:  $LL.fields.baramij.dawah_content(),
+				label: $LL.fields.baramij.dawah_content(),
 			},
 			width: 175,
 			height: 70,
@@ -1902,7 +1902,7 @@
 		{
 			id: 54,
 			position: { x: 200, y: 2345 },
-			data: { label:  $LL.fields.baramij.nisa_title() },
+			data: { label: $LL.fields.baramij.nisa_title() },
 			width: 80,
 			height: 60,
 			bgColor: '#FFB2DA',
@@ -1914,7 +1914,7 @@
 			id: 55,
 			position: { x: 1, y: 2340 },
 			data: {
-				label:  $LL.fields.baramij.nisa_content(),
+				label: $LL.fields.baramij.nisa_content(),
 			},
 			width: 175,
 			height: 70,
@@ -1925,7 +1925,7 @@
 		{
 			id: 56,
 			position: { x: 200, y: 2435 },
-			data: { label:  $LL.fields.baramij.atfal_title() },
+			data: { label: $LL.fields.baramij.atfal_title() },
 			width: 80,
 			height: 60,
 			bgColor: '#FFB2CE',
@@ -1937,7 +1937,7 @@
 			id: 57,
 			position: { x: 1, y: 2430 },
 			data: {
-				label:  $LL.fields.baramij.atfal_content(),
+				label: $LL.fields.baramij.atfal_content(),
 			},
 			width: 175,
 			height: 70,
@@ -1948,7 +1948,7 @@
 		{
 			id: 58,
 			position: { x: 200, y: 2525 },
-			data: { label:  $LL.fields.baramij.zawjiyyah_title() },
+			data: { label: $LL.fields.baramij.zawjiyyah_title() },
 			width: 80,
 			height: 60,
 			bgColor: '#FFB2C3',
@@ -1960,7 +1960,7 @@
 			id: 59,
 			position: { x: 1, y: 2520 },
 			data: {
-				label:  $LL.fields.baramij.zawjiyyah_content(),
+				label: $LL.fields.baramij.zawjiyyah_content(),
 			},
 			width: 175,
 			height: 70,
@@ -1971,7 +1971,7 @@
 		{
 			id: 60,
 			position: { x: 200, y: 2615 },
-			data: { label:  $LL.fields.baramij.tarbiyah_title() },
+			data: { label: $LL.fields.baramij.tarbiyah_title() },
 			width: 80,
 			height: 60,
 			bgColor: '#FFB2C3',
@@ -1983,7 +1983,7 @@
 			id: 61,
 			position: { x: 1, y: 2610 },
 			data: {
-				label:  $LL.fields.baramij.tarbiyah_content(),
+				label: $LL.fields.baramij.tarbiyah_content(),
 			},
 			width: 175,
 			height: 70,
@@ -1994,7 +1994,7 @@
 		{
 			id: 62,
 			position: { x: 200, y: 2705 },
-			data: { label:  $LL.fields.baramij.aswat_title() },
+			data: { label: $LL.fields.baramij.aswat_title() },
 			width: 80,
 			height: 60,
 			bgColor: '#FFB2C3',
@@ -2006,7 +2006,7 @@
 			id: 63,
 			position: { x: 1, y: 2700 },
 			data: {
-				label:  $LL.fields.baramij.aswat_content(),
+				label: $LL.fields.baramij.aswat_content(),
 			},
 			width: 175,
 			height: 70,
@@ -2498,7 +2498,7 @@
 		{
 			id: 1,
 			position: { x: 770, y: 330 },
-			data: { label:  $LL.fields.fard.title() },
+			data: { label: $LL.fields.fard.title() },
 			width: 125,
 			height: 80,
 			bgColor: '#61FFA3',
@@ -2524,7 +2524,7 @@
 			},
 
 			width: 400,
-			height: 55,
+			height: 60,
 			bgColor: '#EBBAB9',
 			borderColor: '#EBBAB9',
 			targetPosition: 'right',
@@ -2536,7 +2536,7 @@
 				label: $LL.fields.fard.tawhid_content2(),
 			},
 			width: 400,
-			height: 55,
+			height: 60,
 			bgColor: '#EBBAB9',
 			borderColor: '#EBBAB9',
 			targetPosition: 'right',
@@ -2548,7 +2548,7 @@
 				label: $LL.fields.fard.tawhid_content3(),
 			},
 			width: 400,
-			height: 55,
+			height: 60,
 			bgColor: '#EBBAB9',
 			borderColor: '#EBBAB9',
 			targetPosition: 'right',
@@ -2571,7 +2571,7 @@
 				label: $LL.fields.fard.tajwid_content(),
 			},
 			width: 400,
-			height: 55,
+			height: 60,
 			bgColor: '#A2FDFF',
 			borderColor: '#A2FDFF',
 			targetPosition: 'right',
@@ -2617,7 +2617,7 @@
 				label: $LL.fields.fard.muamalat_content1(),
 			},
 			width: 400,
-			height: 55,
+			height: 60,
 			bgColor: '#FFC5A7',
 			targetPosition: 'right',
 			borderColor: '#FFC5A7',
@@ -2629,7 +2629,7 @@
 				label: $LL.fields.fard.muamalat_content2(),
 			},
 			width: 400,
-			height: 55,
+			height: 60,
 			bgColor: '#FFC5A7',
 			targetPosition: 'right',
 			borderColor: '#FFC5A7',
@@ -2652,7 +2652,7 @@
 				label: $LL.fields.fard.tasawwuf_content(),
 			},
 			width: 400,
-			height: 55,
+			height: 60,
 			bgColor: '#EEFFB2',
 			targetPosition: 'right',
 			borderColor: '#EEFFB2',
@@ -2660,10 +2660,10 @@
 		// END FARD, START QURAN
 		{
 			id: 12,
-			position: { x: 770, y: 846 },
+			position: { x: 770, y: 840 },
 			data: { label: $LL.fields.quran.title() },
 			width: 125,
-			height: 80,
+			height: 90,
 			bgColor: '#97D9FF',
 			sourcePosition: 'left',
 			borderColor: 'black',
@@ -2683,7 +2683,7 @@
 			id: 14,
 			position: { x: 1, y: 760 },
 			data: {
-				label:  $LL.fields.quran.tajwid_content(),
+				label: $LL.fields.quran.tajwid_content(),
 			},
 			width: 400,
 			height: 70,
@@ -2694,7 +2694,7 @@
 		{
 			id: 15,
 			position: { x: 500, y: 858 },
-			data: { label:  $LL.fields.quran.tafsir_title() },
+			data: { label: $LL.fields.quran.tafsir_title() },
 			width: 160,
 			height: 55,
 			bgColor: '#97D9FF',
@@ -2706,7 +2706,7 @@
 			id: 16,
 			position: { x: 1, y: 850 },
 			data: {
-				label:  $LL.fields.quran.tafsir_content(),
+				label: $LL.fields.quran.tafsir_content(),
 			},
 			width: 400,
 			height: 70,
@@ -2717,7 +2717,7 @@
 		{
 			id: 17,
 			position: { x: 500, y: 948 },
-			data: { label:  $LL.fields.quran.ulum_title() },
+			data: { label: $LL.fields.quran.ulum_title() },
 			width: 160,
 			height: 55,
 			bgColor: '#97BFFF',
@@ -2729,7 +2729,7 @@
 			id: 18,
 			position: { x: 1, y: 940 },
 			data: {
-				label:  $LL.fields.quran.ulum_content(),
+				label: $LL.fields.quran.ulum_content(),
 			},
 			width: 400,
 			height: 70,
@@ -2741,7 +2741,7 @@
 		{
 			id: 19,
 			position: { x: 770, y: 1195 },
-			data: { label:  $LL.fields.hadith.title() },
+			data: { label: $LL.fields.hadith.title() },
 			width: 125,
 			height: 80,
 			bgColor: '#00DF65',
@@ -2751,10 +2751,10 @@
 		{
 			id: 20,
 			position: { x: 500, y: 1212 },
-			data: { label:  $LL.fields.hadith.ulum_title() },
+			data: { label: $LL.fields.hadith.ulum_title() },
 
 			width: 160,
-			height: 45,
+			height: 60,
 			bgColor: '#00DF65',
 			sourcePosition: 'left',
 			targetPosition: 'right',
@@ -2764,7 +2764,7 @@
 			id: 21,
 			position: { x: 1, y: 1200 },
 			data: {
-				label:  $LL.fields.hadith.ulum_content(),
+				label: $LL.fields.hadith.ulum_content(),
 			},
 			width: 400,
 			height: 70,
@@ -2775,9 +2775,9 @@
 		{
 			id: 22,
 			position: { x: 500, y: 1100 },
-			data: { label:  $LL.fields.hadith.main_title() },
+			data: { label: $LL.fields.hadith.main_title() },
 			width: 160,
-			height: 70,
+			height: 60,
 			sourcePosition: 'left',
 			targetPosition: 'right',
 			bgColor: '#00DF35',
@@ -2788,7 +2788,7 @@
 			position: { x: 1, y: 1100 },
 
 			data: {
-				label:  $LL.fields.hadith.main_content(),
+				label: $LL.fields.hadith.main_content(),
 			},
 			width: 400,
 			height: 70,
@@ -2800,10 +2800,9 @@
 		{
 			id: 24,
 			position: { x: 500, y: 1312 },
-			data: { label:  $LL.fields.hadith.seerah_title() },
+			data: { label: $LL.fields.hadith.seerah_title() },
 			width: 160,
-			height: 45,
-
+			height: 60,
 			sourcePosition: 'left',
 			targetPosition: 'right',
 			borderColor: '#00DF89',
@@ -2813,7 +2812,7 @@
 			id: 25,
 			position: { x: 1, y: 1300 },
 			data: {
-				label:  $LL.fields.hadith.seerah_content(),
+				label: $LL.fields.hadith.seerah_content(),
 			},
 			width: 400,
 			height: 70,
@@ -2825,7 +2824,7 @@
 		{
 			id: 26,
 			position: { x: 770, y: 1488 },
-			data: { label:  $LL.fields.aqidah.title() },
+			data: { label: $LL.fields.aqidah.title() },
 			width: 125,
 			height: 55,
 			bgColor: '#61FFA3',
@@ -2836,7 +2835,7 @@
 			id: 27,
 			position: { x: 1, y: 1480 },
 			data: {
-				label:  $LL.fields.aqidah.explanation(),
+				label: $LL.fields.aqidah.explanation(),
 			},
 			width: 400,
 			height: 85,
@@ -2848,7 +2847,7 @@
 		{
 			id: 28,
 			position: { x: 770, y: 1790 },
-			data: { label:  $LL.fields.fiqh.title() },
+			data: { label: $LL.fields.fiqh.title() },
 			width: 125,
 			height: 80,
 			bgColor: '#FFD3A7',
@@ -2858,7 +2857,7 @@
 		{
 			id: 29,
 			position: { x: 500, y: 1658 },
-			data: { label:  $LL.fields.fiqh.furu_title() },
+			data: { label: $LL.fields.fiqh.furu_title() },
 			width: 160,
 			height: 55,
 			bgColor: '#FFE8A7',
@@ -2870,7 +2869,7 @@
 			id: 30,
 			position: { x: 1, y: 1650 },
 			data: {
-				label:  $LL.fields.fiqh.furu_content(),
+				label: $LL.fields.fiqh.furu_content(),
 			},
 			width: 400,
 			height: 70,
@@ -2881,7 +2880,7 @@
 		{
 			id: 31,
 			position: { x: 500, y: 1758 },
-			data: { label:  $LL.fields.fiqh.usul_title() },
+			data: { label: $LL.fields.fiqh.usul_title() },
 			width: 160,
 			height: 55,
 			bgColor: '#FFDEA7',
@@ -2893,7 +2892,7 @@
 			id: 32,
 			position: { x: 1, y: 1750 },
 			data: {
-				label:  $LL.fields.fiqh.usul_content(),
+				label: $LL.fields.fiqh.usul_content(),
 			},
 			width: 400,
 			height: 70,
@@ -2904,7 +2903,7 @@
 		{
 			id: 33,
 			position: { x: 500, y: 1858 },
-			data: { label:  $LL.fields.fiqh.qawaid_title() },
+			data: { label: $LL.fields.fiqh.qawaid_title() },
 			width: 160,
 			height: 55,
 			bgColor: '#FFD3A7',
@@ -2916,7 +2915,7 @@
 			id: 34,
 			position: { x: 1, y: 1850 },
 			data: {
-				label:  $LL.fields.fiqh.qawaid_content(),
+				label: $LL.fields.fiqh.qawaid_content(),
 			},
 			width: 400,
 			height: 70,
@@ -2927,7 +2926,7 @@
 		{
 			id: 35,
 			position: { x: 500, y: 1958 },
-			data: { label:  $LL.fields.fiqh.adillah_title() },
+			data: { label: $LL.fields.fiqh.adillah_title() },
 			width: 160,
 			height: 55,
 			bgColor: '#FFCAA7',
@@ -2939,10 +2938,10 @@
 			id: 36,
 			position: { x: 1, y: 1950 },
 			data: {
-				label:  $LL.fields.fiqh.adillah_content(),
+				label: $LL.fields.fiqh.adillah_content(),
 			},
 			width: 400,
-			height: 70,
+			height: 85,
 			bgColor: '#FFCAA7',
 			targetPosition: 'right',
 			borderColor: '#FFCAA7',
@@ -2951,7 +2950,7 @@
 		{
 			id: 37,
 			position: { x: 770, y: 2220 },
-			data: { label:  $LL.fields.tasawwuf.title() },
+			data: { label: $LL.fields.tasawwuf.title() },
 			width: 125,
 			height: 80,
 			bgColor: '#DDFFB2',
@@ -2961,7 +2960,7 @@
 		{
 			id: 38,
 			position: { x: 500, y: 2172 },
-			data: { label:  $LL.fields.tasawwuf.suluk_title() },
+			data: { label: $LL.fields.tasawwuf.suluk_title() },
 			width: 160,
 			height: 55,
 			bgColor: '#EEFFB2',
@@ -2973,7 +2972,7 @@
 			id: 39,
 			position: { x: 1, y: 2150 },
 			data: {
-				label:  $LL.fields.tasawwuf.suluk_content(),
+				label: $LL.fields.tasawwuf.suluk_content(),
 			},
 			width: 400,
 			height: 100,
@@ -2984,7 +2983,7 @@
 		{
 			id: 40,
 			position: { x: 500, y: 2290 },
-			data: { label:  $LL.fields.tasawwuf.irfan_title() },
+			data: { label: $LL.fields.tasawwuf.irfan_title() },
 			width: 160,
 			height: 55,
 			bgColor: '#DDFFB2',
@@ -2996,7 +2995,7 @@
 			id: 41,
 			position: { x: 1, y: 2280 },
 			data: {
-				label:  $LL.fields.tasawwuf.irfan_content(),
+				label: $LL.fields.tasawwuf.irfan_content(),
 			},
 			width: 400,
 			height: 70,
@@ -3008,7 +3007,7 @@
 		{
 			id: 42,
 			position: { x: 770, y: 2650 },
-			data: { label:  $LL.fields.arabayyiah.title() },
+			data: { label: $LL.fields.arabayyiah.title() },
 			width: 125,
 			height: 80,
 			bgColor: '#E2B2FF',
@@ -3018,9 +3017,9 @@
 		{
 			id: 43,
 			position: { x: 500, y: 2508 },
-			data: { label:  $LL.fields.arabayyiah.nahw_title() },
+			data: { label: $LL.fields.arabayyiah.nahw_title() },
 			width: 160,
-			height: 55,
+			height: 70,
 			bgColor: '#ECB2FF',
 			sourcePosition: 'left',
 			targetPosition: 'right',
@@ -3030,7 +3029,7 @@
 			id: 44,
 			position: { x: 1, y: 2500 },
 			data: {
-				label:  $LL.fields.arabayyiah.nahw_content(),
+				label: $LL.fields.arabayyiah.nahw_content(),
 			},
 			width: 400,
 			height: 70,
@@ -3041,9 +3040,9 @@
 		{
 			id: 45,
 			position: { x: 500, y: 2608 },
-			data: { label:  $LL.fields.arabayyiah.sarf_title() },
+			data: { label: $LL.fields.arabayyiah.sarf_title() },
 			width: 160,
-			height: 55,
+			height: 70,
 			bgColor: '#E2B2FF',
 			sourcePosition: 'left',
 			targetPosition: 'right',
@@ -3052,9 +3051,7 @@
 		{
 			id: 46,
 			position: { x: 1, y: 2600 },
-			data: {
-				label: 'معرفة بينة الكلمة واشتقاقها ',
-			},
+			data: { label: $LL.fields.arabayyiah.sarf_content() },
 			width: 400,
 			height: 70,
 			bgColor: '#E2B2FF',
@@ -3064,9 +3061,9 @@
 		{
 			id: 47,
 			position: { x: 500, y: 2708 },
-			data: { label:  $LL.fields.arabayyiah.balaghah_title()},
+			data: { label: $LL.fields.arabayyiah.balaghah_title() },
 			width: 160,
-			height: 55,
+			height: 70,
 			bgColor: '#D5B2FF',
 			sourcePosition: 'left',
 			targetPosition: 'right',
@@ -3076,7 +3073,7 @@
 			id: 48,
 			position: { x: 1, y: 2700 },
 			data: {
-				label:  $LL.fields.arabayyiah.balaghah_content(),
+				label: $LL.fields.arabayyiah.balaghah_content(),
 			},
 			width: 400,
 			height: 70,
@@ -3087,7 +3084,7 @@
 		{
 			id: 49,
 			position: { x: 500, y: 2800 },
-			data: { label:  $LL.fields.arabayyiah.natiq_title() },
+			data: { label: $LL.fields.arabayyiah.natiq_title() },
 			width: 160,
 			height: 70,
 			bgColor: '#C6B2FF',
@@ -3099,7 +3096,7 @@
 			id: 50,
 			position: { x: 1, y: 2800 },
 			data: {
-				label:  $LL.fields.arabayyiah.natiq_content(),
+				label: $LL.fields.arabayyiah.natiq_content(),
 			},
 			width: 400,
 			height: 70,
@@ -3111,7 +3108,7 @@
 		{
 			id: 51,
 			position: { x: 770, y: 3250 },
-			data: { label:  $LL.fields.baramij.title() },
+			data: { label: $LL.fields.baramij.title() },
 			width: 125,
 			height: 80,
 			bgColor: '#FFB2CE',
@@ -3120,10 +3117,10 @@
 		},
 		{
 			id: 52,
-			position: { x: 500, y: 3008 },
-			data: { label:  $LL.fields.baramij.dawah_title() },
+			position: { x: 500, y: 3000 },
+			data: { label: $LL.fields.baramij.dawah_title() },
 			width: 160,
-			height: 55,
+			height: 70,
 			bgColor: '#FFB2E6',
 			sourcePosition: 'left',
 			targetPosition: 'right',
@@ -3133,7 +3130,7 @@
 			id: 53,
 			position: { x: 1, y: 3000 },
 			data: {
-				label:  $LL.fields.baramij.dawah_content(),
+				label: $LL.fields.baramij.dawah_content(),
 			},
 			width: 400,
 			height: 70,
@@ -3143,10 +3140,10 @@
 		},
 		{
 			id: 54,
-			position: { x: 500, y: 3105 },
-			data: { label:  $LL.fields.baramij.nisa_title() },
+			position: { x: 500, y: 3100 },
+			data: { label: $LL.fields.baramij.nisa_title() },
 			width: 160,
-			height: 60,
+			height: 85,
 			bgColor: '#FFB2DA',
 			sourcePosition: 'left',
 			targetPosition: 'right',
@@ -3156,7 +3153,7 @@
 			id: 55,
 			position: { x: 1, y: 3100 },
 			data: {
-				label:  $LL.fields.baramij.nisa_content(),
+				label: $LL.fields.baramij.nisa_content(),
 			},
 			width: 400,
 			height: 70,
@@ -3167,9 +3164,9 @@
 		{
 			id: 56,
 			position: { x: 500, y: 3205 },
-			data: { label:  $LL.fields.baramij.atfal_title() },
+			data: { label: $LL.fields.baramij.atfal_title() },
 			width: 160,
-			height: 60,
+			height: 85,
 			bgColor: '#FFB2CE',
 			sourcePosition: 'left',
 			targetPosition: 'right',
@@ -3179,7 +3176,7 @@
 			id: 57,
 			position: { x: 1, y: 3200 },
 			data: {
-				label:  $LL.fields.baramij.atfal_content(),
+				label: $LL.fields.baramij.atfal_content(),
 			},
 			width: 400,
 			height: 70,
@@ -3190,9 +3187,9 @@
 		{
 			id: 58,
 			position: { x: 500, y: 3305 },
-			data: { label:  $LL.fields.baramij.zawjiyyah_title() },
+			data: { label: $LL.fields.baramij.zawjiyyah_title() },
 			width: 160,
-			height: 60,
+			height: 85,
 			bgColor: '#FFB2C3',
 			sourcePosition: 'left',
 			targetPosition: 'right',
@@ -3202,7 +3199,7 @@
 			id: 59,
 			position: { x: 1, y: 3300 },
 			data: {
-				label:  $LL.fields.baramij.zawjiyyah_content(),
+				label: $LL.fields.baramij.zawjiyyah_content(),
 			},
 			width: 400,
 			height: 70,
@@ -3213,9 +3210,9 @@
 		{
 			id: 60,
 			position: { x: 500, y: 3405 },
-			data: { label:  $LL.fields.baramij.tarbiyah_title() },
+			data: { label: $LL.fields.baramij.tarbiyah_title() },
 			width: 160,
-			height: 60,
+			height: 70,
 			bgColor: '#FFB2C3',
 			sourcePosition: 'left',
 			targetPosition: 'right',
@@ -3225,7 +3222,7 @@
 			id: 61,
 			position: { x: 1, y: 3400 },
 			data: {
-				label:  $LL.fields.baramij.tarbiyah_content(),
+				label: $LL.fields.baramij.tarbiyah_content(),
 			},
 			width: 400,
 			height: 70,
@@ -3236,9 +3233,9 @@
 		{
 			id: 62,
 			position: { x: 500, y: 3505 },
-			data: { label:  $LL.fields.baramij.aswat_title() },
+			data: { label: $LL.fields.baramij.aswat_title() },
 			width: 160,
-			height: 60,
+			height: 70,
 			bgColor: '#FFB2C3',
 			sourcePosition: 'left',
 			targetPosition: 'right',
@@ -3248,7 +3245,7 @@
 			id: 63,
 			position: { x: 1, y: 3500 },
 			data: {
-				label:  $LL.fields.baramij.aswat_content(),
+				label: $LL.fields.baramij.aswat_content(),
 			},
 			width: 400,
 			height: 70,
