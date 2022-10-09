@@ -11,7 +11,8 @@
 		pageWidth = window.innerWidth
 	})
 
-	const initialNodesTiny = [
+	// these are all reactive so language changes without refresh update the chart
+	$: initialNodesTiny = [
 		{
 			id: 1,
 			position: { x: 269, y: 210 },
@@ -774,7 +775,7 @@
 		},
 	]
 
-	const initialEdgesTiny = [
+	$: initialEdgesTiny = [
 		{
 			id: 'e1-2',
 			source: 1,
@@ -1252,7 +1253,7 @@
 		},
 	]
 
-	const initialNodesMobile = [
+	$: initialNodesMobile = [
 		{
 			id: 1,
 			position: { x: 300, y: 210 },
@@ -2016,7 +2017,7 @@
 		},
 	]
 
-	const initialEdgesMobile = [
+	$: initialEdgesMobile = [
 		{
 			id: 'e1-2',
 			source: 1,
@@ -2494,7 +2495,7 @@
 		},
 	]
 
-	const initialNodesDesktop = [
+	$: initialNodesDesktop = [
 		{
 			id: 1,
 			position: { x: 770, y: 330 },
@@ -3258,7 +3259,7 @@
 		},
 	]
 
-	const initialEdgesDesktop = [
+	$: initialEdgesDesktop = [
 		{
 			id: 'e1-2',
 			source: 1,
