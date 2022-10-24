@@ -1,5 +1,7 @@
 <script>
 	import LL, { locale } from '$i18n/i18n-svelte'
+	import Books from '$lib/elements/books.svelte'
+
 </script>
 
 <!-- convert wisdoms and articles to {#each} and run through the i18n dict -->
@@ -13,6 +15,8 @@
 		<a target="_blank" href="/{$locale}/articles/knowledge_good_intentions">
 			{$LL.articles.knowledge_good_intentions.title()}
 		</a>
+
+	
 	</container>
 
 </bigboy>
@@ -20,6 +24,12 @@
 <h1>حكم القوم رضي الله عنهم</h1>
 <h1>حكم الشيخه</h1>
 <h1>مقالات الشيخ</h1>
+<div class="img-left">
+	<h1>الكتب</h1>
+	<Books />
+</div>
+
+
 
 
 
@@ -45,13 +55,14 @@
 	a {
 		border: 2px dashed gold;
 	}
-	div, a {
+	container > div, container > a {
 		margin: 0 5px;
 		border-radius: 8px;
 		border: 2px dashed gold;
 		padding: 10px;
 		background-color: white;
 		box-shadow: rgba(44, 105, 70, 0.2) 0px 2px 8px 0px;
+		color: var(--text-color)
 	}
 	a:hover,
 	div:hover {

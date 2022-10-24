@@ -1,21 +1,12 @@
 <script>
 	import LL from '$i18n/i18n-svelte'
-	import Books from '$lib/elements/books.svelte'
 
 	let simpleList = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 </script>
 
 <div id="goals" class="container">
 	<div class="flex-row">
-		<div class="img-left">
-			<!-- <h1>{$LL.shaykh.heading()}</h1>
-
-			<img alt="Shaykh Abd al-Rahman" class="profile" src="master.jpg" />
-			<p style="text-align: center">{$LL.shaykh.title()}<br>{$LL.shaykh.name()}</p>
-			<p>{$LL.shaykh.short_bio()}</p> -->
-			<h1>الكتب</h1>
-			<Books />
-		</div>
+		
 		<div class="text-right">
 			<div>
 				<h1>{$LL.goals.goal()}</h1>
@@ -54,12 +45,6 @@
 		justify-content: space-between;
 		gap: 10px;
 	}
-	div.img-left {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		max-width: 25%;
-	}
 	div.text-right {
 		min-width: 50%;
 	}
@@ -70,7 +55,6 @@
 		border: 4px solid #efffe4;
 	}
 	h2,
-	.img-left > p,
 	ol {
 		display: grid;
 		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -110,12 +94,6 @@
 			padding: 0 3vw;
 			flex-direction: column;
 			align-items: center;
-		}
-		div.img-left {
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-			max-width: 98%;
 		}
 		ol {
 			padding: 0;

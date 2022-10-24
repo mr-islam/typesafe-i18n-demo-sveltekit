@@ -78,7 +78,6 @@
 
 <style>
 	p {
-		color: white;
 		border: 1px solid burlywood;
 		padding: 6px;
 		border-radius: 12px;
@@ -86,7 +85,6 @@
 	}
 	a {
 		font-weight: bold;
-		color: var(--secondary-color);
 	}
 	img {
 		max-width: 100%;
