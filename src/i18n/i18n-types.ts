@@ -222,7 +222,7 @@ type RootTranslation = {
 	}
 	fields: {
 		/**
-		 * Scienes of Shariah & Reality
+		 * Sciences of Shariah & Reality
 		 */
 		title: string
 		fard: {
@@ -2236,7 +2236,7 @@ export type TranslationFunctions = {
 	}
 	fields: {
 		/**
-		 * Scienes of Shariah & Reality
+		 * Sciences of Shariah & Reality
 		 */
 		title: () => LocalizedString
 		fard: {
