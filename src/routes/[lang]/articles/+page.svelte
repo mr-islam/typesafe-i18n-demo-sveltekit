@@ -4,6 +4,10 @@
 
 </script>
 
+<div class="books-slider">
+	<h1>الكتب</h1>
+	<Books />
+</div>
 <!-- convert wisdoms and articles to {#each} and run through the i18n dict -->
 <bigboy id="wisdoms">
 	<container>
@@ -24,10 +28,7 @@
 <h1>حكم القوم رضي الله عنهم</h1>
 <h1>حكم الشيخه</h1>
 <h1>مقالات الشيخ</h1>
-<div class="img-left">
-	<h1>الكتب</h1>
-	<Books />
-</div>
+
 
 
 
