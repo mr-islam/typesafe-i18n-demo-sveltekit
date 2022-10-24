@@ -86,7 +86,7 @@
 		flex: 1 1 auto;
 		display: flex;
 		align-items: center;
-		border-width: 5px;
+		border-width: 2px;
 		border-style: solid;
 	}
 	a > div.main-title {
