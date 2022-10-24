@@ -3772,11 +3772,19 @@
 		text-align: center;
 	}
 	:global(div#desktop > div > div > div > .Node) {
-		font-size: 22px !important; /* this should be a param in svelvet..... */
+		font-size: 20px !important; /* this should be a param in svelvet..... */
+		font-family: "Cabin", "Scheherazade New", "adwa-assalaf", -apple-system,
+		BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
+		"Open Sans", "Helvetica Neue", sans-serif;
+		line-height: 145%;
 	}
 	/* and mobile size gets the default, which is 14px in the library styles (file: Node/index.svelte) */
 	:global(div#tiny > div > div > div > .Node) {
 		font-size: 13px !important; /* this should be a param in svelvet..... */
+		font-family: "Cabin", "Scheherazade New", "adwa-assalaf", -apple-system,
+		BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
+		"Open Sans", "Helvetica Neue", sans-serif;
+		line-height: 130%;
 	}
 	@media only screen and (max-width: 500px) {
 		div#mobile {
