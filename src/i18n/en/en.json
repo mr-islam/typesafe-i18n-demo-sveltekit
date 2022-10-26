@@ -781,8 +781,7 @@
     }
   },
   "contact": {
-    "courses": "Contact us from below to inquire about any course and register",
-    "contact_us": "Get in touch with us through ",
+    "explain": "Contact us through",
     "email": "Email",
     "or": " or ",
     "telegram": "Telegram",

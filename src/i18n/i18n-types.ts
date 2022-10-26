@@ -1977,13 +1977,9 @@ type RootTranslation = {
 	}
 	contact: {
 		/**
-		 * Contact us from below to inquire about any course and register
+		 * Contact us through
 		 */
-		courses: string
-		/**
-		 * Get in touch with us through 
-		 */
-		contact_us: string
+		explain: string
 		/**
 		 * Email
 		 */
@@ -3991,13 +3987,9 @@ export type TranslationFunctions = {
 	}
 	contact: {
 		/**
-		 * Contact us from below to inquire about any course and register
+		 * Contact us through
 		 */
-		courses: () => LocalizedString
-		/**
-		 * Get in touch with us through 
-		 */
-		contact_us: () => LocalizedString
+		explain: () => LocalizedString
 		/**
 		 * Email
 		 */

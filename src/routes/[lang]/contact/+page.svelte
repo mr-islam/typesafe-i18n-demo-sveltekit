@@ -2,18 +2,18 @@
 	import LL from '$i18n/i18n-svelte'
 </script>
 
-<h1>للاستفسار</h1>
+<h1>{$LL.welcome.contact_title()}</h1>
 
 <div id="contact">
-	<p><strong>تواصل معنا عبر:</strong></p>
+	<p><strong>{$LL.contact.explain()}:</strong></p>
 	<ul>
 		<li>
-			البريد الاكتروني: <br />
+			{$LL.contact.email()} <br />
 			<a href="mailto:markaz@ilm-marifah.com">markaz@ilm-marifah.com</a>
 		</li>
 		<br />
 		<li>
-			تليغرام: <br />
+			{$LL.contact.telegram()} <br />
 			<a href="https://t.me/naved_islam">https://t.me/naved_islam</a>
 		</li>
 	</ul>
