@@ -26,7 +26,7 @@
 		</div>
 	</a>
 
-	<a class="box" id="box-4" href="/{$locale}/articles">
+	<a class="box" id="box-4" href="/{$locale}/library">
 		<div class="main-title">{$LL.welcome.online_title()}</div>
 		<div>
 			<p class="intro-bullet">
@@ -88,6 +88,10 @@
 		align-items: center;
 		border-width: 2px;
 		border-style: solid;
+	}
+	div.main-title {
+		font-weight: bold;
+
 	}
 	a > div.main-title {
 		border-width: 1px;

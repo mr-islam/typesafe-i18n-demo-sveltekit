@@ -91,7 +91,6 @@
 	}
 	div :global(.swiper) {
 		z-index: 1;
-		margin-top: 40px;
 		width: 240px;
 		height: 334px;
 	}
