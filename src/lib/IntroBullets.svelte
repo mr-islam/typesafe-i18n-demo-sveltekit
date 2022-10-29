@@ -143,7 +143,6 @@
 		a.box {
 			/* margin: 5px; */
 			border-radius: 12px;
-			box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 			display: block;
 			flex: 1 1 auto;
 			display: flex;

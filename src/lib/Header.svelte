@@ -48,20 +48,24 @@
 	div#title-container {
 		flex: 1;
 		border-radius: 12px;
-		border: 4px solid #017878;
+		border: 1px solid #017878;
 		padding: 8px;
 		background-color: #ecffff;
 		color: #017878;
+		box-shadow: rgba(1, 120, 120, 0.16) 0px 1px 4px;
+
 	}
 	h1 {
 		font-size: 2.2rem;
 		margin: 0;
+		font-weight: bold;
 	}
 	h2 {
 		/* margin-top: -5px; */
 		font-size: 1.25rem;
 		/* color: inherit; */
 		font-weight: bold;
+		color: #017878;
 	}
 	div#heading {
 		flex-direction: column;
