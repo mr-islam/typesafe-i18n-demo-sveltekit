@@ -22,6 +22,7 @@
 	<div style="flex: 1;" />
 	<div id="heading">
 		<a href="/{$locale}">
+			<section class="img-bg"></section>
 			<img alt="Logo of Arabic calligraphy" id="logo" src="/logo-new.png" />
 		</a>
 
@@ -43,13 +44,29 @@
 </header>
 
 <style>
+	.img-bg {
+		width: 14vw;
+		height: 14vw;
+		/* margin: 0 0 1vw 1vw; */
+		position: absolute;
+		background-image: linear-gradient(#017878, #017878);
+		filter: blur(12px);
+		z-index: -1;
+		border-radius: 50%;
+		animation: pulse 4s cubic-bezier(0,0,0,0.5);
+	}
+	@keyframes pulse {
+		50% {
+			transform: scale(1.5)
+		}
+	}
 	div#title-container {
 		flex: 1;
 		border-radius: 12px;
-		border: 2px solid green;
+		border: 4px solid #017878;
 		padding: 8px;
-		background-color: rgb(214, 247, 214);
-		box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+		background-color: #ecffff;
+		color: #017878;
 	}
 	h1 {
 		font-size: 2.2rem;
@@ -79,7 +96,6 @@
 	}
 	a {
 		all: unset;
-		color: #4a5d33;
 	}
 	a:hover {
 		cursor: pointer;
@@ -101,7 +117,8 @@
 		border: 1px black solid;
 		border-radius: 360px;
 		max-width: 14vw;
-		box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;	}
+		/* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;	 */
+	}
 	h2 {
 		margin-bottom: 0;
 	}

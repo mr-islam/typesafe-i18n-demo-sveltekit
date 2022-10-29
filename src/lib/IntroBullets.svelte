@@ -86,7 +86,7 @@
 		flex: 1 1 auto;
 		display: flex;
 		align-items: center;
-		border-width: 2px;
+		border-width: 0;
 		border-style: solid;
 	}
 	div.main-title {
@@ -101,13 +101,13 @@
 		border-radius: 12px;
 	}
 	a#box-1 {
-		border-color: #017878;
-		background-color: #ecffff;
-		color: #017878;
+		border-color: green;
+		background-color: rgb(214, 247, 214);
+		color: #4a5d33;
 	}
 	a#box-1 > div.main-title {
-		border-color: #017878;
-		background-color: #017878;
+		border-color: green;
+		background-color: green;
 		color: #ecffff;
 	}
 	a#box-2 {
