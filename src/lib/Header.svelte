@@ -44,22 +44,7 @@
 </header>
 
 <style>
-	.img-bg {
-		width: 14vw;
-		height: 14vw;
-		/* margin: 0 0 1vw 1vw; */
-		position: absolute;
-		background-image: linear-gradient(#017878, #017878);
-		filter: blur(12px);
-		z-index: -1;
-		border-radius: 50%;
-		animation: pulse 4s cubic-bezier(0,0,0,0.5);
-	}
-	@keyframes pulse {
-		50% {
-			transform: scale(1.5)
-		}
-	}
+
 	div#title-container {
 		flex: 1;
 		border-radius: 12px;
@@ -117,7 +102,7 @@
 		border: 1px black solid;
 		border-radius: 360px;
 		max-width: 14vw;
-		/* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;	 */
+		box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;	
 	}
 	h2 {
 		margin-bottom: 0;
