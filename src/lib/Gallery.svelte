@@ -5,6 +5,8 @@
 	import IntroBullets from '$lib/IntroBullets.svelte'
 
 	import 'swiper/css'
+	// TODO: want to move to blaze-slider, 10x smaller bundle
+	// https://github.com/blaze-slider/blaze-slider
 
 	import SwiperCore, { Autoplay } from 'swiper'
 
