@@ -86,8 +86,8 @@
 		flex: 1 1 auto;
 		display: flex;
 		align-items: center;
-		border-width: 0;
-		border-style: solid;
+		border-width: 0px;
+		border-style: none;
 	}
 	div.main-title {
 		font-weight: bold;
@@ -101,7 +101,7 @@
 		border-radius: 12px;
 	}
 	a#box-1 {
-		border-color: green;
+		/* border-color: green; */
 		background-color: rgb(214, 247, 214);
 		color: #4a5d33;
 	}
@@ -111,7 +111,7 @@
 		color: #ecffff;
 	}
 	a#box-2 {
-		border: 10px solid rgb(255, 255, 195);
+		/* border: 10px solid rgb(255, 255, 195); */
 	}
 	a#box-2 > div.main-title {
 		border-color: #017878;
@@ -119,7 +119,7 @@
 		color: #ecffff;
 	}
 	a#box-3 {
-		border-color: rgb(118, 118, 0);
+		/* border-color: rgb(118, 118, 0); */
 		background-color: rgb(255, 255, 227);
 		color: rgb(118, 118, 0);
 	}
@@ -129,7 +129,7 @@
 		color: rgb(255, 255, 227);
 	}
 	a#box-4 {
-		border-color: rgb(173, 0, 173);
+		/* border-color: rgb(173, 0, 173); */
 		background-color: rgb(255, 245, 255);
 		color: rgb(173, 0, 173);
 	}
