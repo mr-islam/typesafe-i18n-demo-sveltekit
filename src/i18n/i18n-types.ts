@@ -70,7 +70,7 @@ type RootTranslation = {
 		 */
 		online_title: string
 		/**
-		 * Our Libary contains writtent articles and audio recordings
+		 * Our Libary contains written articles and audio recordings
 		 */
 		online: string
 		/**
@@ -142,7 +142,7 @@ type RootTranslation = {
 	}
 	goals: {
 		/**
-		 * Spreading the inner and outer sciences as Imam al-Ghazali accomplished – Allah be pleased with him.
+		 * Spreading the inner and outer sciences, as Imam al-Ghazali and other Lordly Scholars accomplished – Allah be pleased with them all.
 		 */
 		'1': string
 		/**
@@ -2080,7 +2080,7 @@ export type TranslationFunctions = {
 		 */
 		online_title: () => LocalizedString
 		/**
-		 * Our Libary contains writtent articles and audio recordings
+		 * Our Libary contains written articles and audio recordings
 		 */
 		online: () => LocalizedString
 		/**
@@ -2152,7 +2152,7 @@ export type TranslationFunctions = {
 	}
 	goals: {
 		/**
-		 * Spreading the inner and outer sciences as Imam al-Ghazali accomplished – Allah be pleased with him.
+		 * Spreading the inner and outer sciences, as Imam al-Ghazali and other Lordly Scholars accomplished – Allah be pleased with them all.
 		 */
 		'1': () => LocalizedString
 		/**
