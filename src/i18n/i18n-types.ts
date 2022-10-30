@@ -30,6 +30,10 @@ type RootTranslation = {
 	 *  and 
 	 */
 	and: string
+	/**
+	 * Coming soon, inshaAllah!
+	 */
+	coming_soon: string
 	coursePage: {
 		/**
 		 * About this course
@@ -2040,6 +2044,10 @@ export type TranslationFunctions = {
 	 *  and 
 	 */
 	and: () => LocalizedString
+	/**
+	 * Coming soon, inshaAllah!
+	 */
+	coming_soon: () => LocalizedString
 	coursePage: {
 		/**
 		 * About this course
