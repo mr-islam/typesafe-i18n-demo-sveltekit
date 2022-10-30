@@ -15,13 +15,13 @@
 		<a>
 			<h2>حكم القوم رضي الله عنهم</h2>
 		</a> -->
-	<div class="title">
+	<div class="title" style="background-color: rgb(255, 245, 255);">
 		<a href="library/wisdoms/">
 			<h2>حكم الشيخ</h2>
 		</a>
 	</div>
 
-	<div class="title">
+	<div class="title" style="background-color: rgb(214, 247, 214);">
 		<a href="library/articles/">
 			<h2>مقالات الشيخ</h2>
 		</a>
@@ -29,6 +29,8 @@
 
 	
 <div class="books-slider">
+	<br>	<br>
+
 	<h1>الكتب</h1>
 	<Books />
 </div>
@@ -44,8 +46,9 @@
 		max-width: 200px;
 		margin: 20px auto;
 		border-radius: 8px;
-		border: 2px solid rgb(65, 84, 91);
-		box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+		padding: 5px;
+		/* border: 1px solid rgb(65, 84, 91); */
+		box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 		}
 	.books-slider {
 		margin: 20px 20px;
