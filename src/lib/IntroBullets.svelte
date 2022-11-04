@@ -147,8 +147,6 @@
 			flex: 1 1 auto;
 			display: flex;
 			align-items: center;
-			border-width: 2px;
-			border-style: solid;
 		}
 		:global(p.rtl) {
 			font-weight: normal;
