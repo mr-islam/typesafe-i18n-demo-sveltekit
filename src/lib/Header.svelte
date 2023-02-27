@@ -105,7 +105,7 @@
 	img#logo {
 		border: 1px black solid;
 		border-radius: 360px;
-		max-width: 14vw;
+		max-width: 180px;
 		box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 	}
 	h2 {
