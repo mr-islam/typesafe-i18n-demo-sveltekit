@@ -15,14 +15,13 @@
 	// 		p_element.classList.add($locale === 'ar' ? 'rtl' : 'ltr')
 	// 	}
 	// })
-
 </script>
 
 <header>
 	<div style="flex: 1;" />
 	<div id="heading">
 		<a href="/{$locale}">
-			<section class="img-bg"></section>
+			<section class="img-bg" />
 			<img alt="Logo of Arabic calligraphy" id="logo" src="/logo-new.png" />
 		</a>
 
@@ -44,16 +43,14 @@
 </header>
 
 <style>
-
 	div#title-container {
 		flex: 1;
-		border-radius: 12px;
-		border: 1px solid #017878;
 		padding: 8px;
-		background-color: #ecffff;
-		color: #017878;
-		box-shadow: rgba(1, 120, 120, 0.16) 0px 1px 4px;
-
+		border-radius: 12px;
+		/* color: #017878; */
+		/* border: 1px solid #017878; */
+		/* background-color: #ecffff; */
+		/* box-shadow: rgba(1, 120, 120, 0.16) 0px 1px 4px; */
 	}
 	h1 {
 		font-size: 2.2rem;
@@ -63,9 +60,9 @@
 	h2 {
 		/* margin-top: -5px; */
 		font-size: 1.25rem;
-		/* color: inherit; */
+		color: inherit;
 		font-weight: bold;
-		color: #017878;
+		/* color: #017878; */
 	}
 	div#heading {
 		flex-direction: column;
@@ -106,7 +103,7 @@
 		border: 1px black solid;
 		border-radius: 360px;
 		max-width: 14vw;
-		box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;	
+		box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 	}
 	h2 {
 		margin-bottom: 0;
