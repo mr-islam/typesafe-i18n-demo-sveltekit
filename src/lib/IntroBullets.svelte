@@ -44,7 +44,7 @@
 		</div>
 	</a>
 
-	<!-- NOT READY YET 
+	<!-- NOT READY YET
     <a href="/{$locale}/curriculum">
 		<div class="box" id="box-2">
 			<p>
@@ -70,7 +70,7 @@
 
 	:global(p.rtl) {
 		color: var(--accent-color);
-		font-weight: bold;
+		/* font-weight: bold; */
 		font-size: 1.4rem;
 	}
 	:global(p.ltr) {
@@ -78,19 +78,26 @@
 		font-size: 1.2rem;
 	}
 
+	.box + .box {
+		border-top: 1px solid #b3b3b3;
+	}
+
+	div.main-title {
+		font-weight: bold;
+	}
 	a.box {
 		/* margin: 5px; */
-		border-radius: 12px;
-		box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 		display: block;
 		flex: 1 1 auto;
 		display: flex;
 		align-items: center;
 		border-width: 0px;
 		border-style: none;
-	}
-	div.main-title {
-		font-weight: bold;
+		/* so no need to cancel each element */
+		color: #444 !important;
+		background-color: transparent !important;
+		border-radius: 0px !important;
+		/* box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px; */
 
 	}
 	a > div.main-title {
