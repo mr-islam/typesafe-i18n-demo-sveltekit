@@ -91,7 +91,7 @@
 	  }
 	}
 	select {
-	  margin: 10px;
+	  margin: 5px;
 	}
 	h1 {
 	  font-size: 1.5rem;
