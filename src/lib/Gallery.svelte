@@ -39,29 +39,26 @@
 			>
 				<SwiperSlide>
 					<div class="center">
-						<h1>{$LL.hero.header1()}</h1>
-						<p>{$LL.hero.subheader1()}</p>
+						<!-- <h1>{$LL.hero.header1()}</h1> -->
+						<!-- <p>{$LL.hero.subheader1()}</p> -->
 					</div>
 					<img alt="pretty background for announcement background" src="/backgrounds/flowers.jpg" />
 				</SwiperSlide>
 				<SwiperSlide>
 					<div class="center">
-						<h1>{$LL.hero.header1()}</h1>
-						<p>{$LL.hero.subheader1()}</p>
+						
 					</div>
 					<img alt="pretty background for announcement background" src="/backgrounds/cloud.jpg" />
 				</SwiperSlide>
 				<SwiperSlide>
 					<div class="center">
-						<h1>{$LL.hero.header1()}</h1>
-						<p>{$LL.hero.subheader1()}</p>
+						
 					</div>
 					<img alt="pretty background for announcement background" src="/backgrounds/garden.jpg" />
 				</SwiperSlide>
 				<SwiperSlide>
 					<div class="center">
-						<h1>{$LL.hero.header1()}</h1>
-						<p>{$LL.hero.subheader1()}</p>
+						
 					</div>
 					<img alt="pretty background for announcement background" src="/backgrounds/flowers.jpg" />
 				</SwiperSlide>
