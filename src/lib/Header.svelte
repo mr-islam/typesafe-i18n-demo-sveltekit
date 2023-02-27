@@ -1,20 +1,20 @@
 <script lang="ts">
 	import LL, { locale } from '$i18n/i18n-svelte'
 	import LocaleSwitcher from './LocaleSwitcher.svelte'
-	// import { onMount, afterUpdate } from 'svelte'
+	import { onMount, afterUpdate } from 'svelte'
 
-	// let p_elements // This below: for custom styles (fonts mainly) based on language
-	// onMount(() => {
-	// 	p_elements = document.querySelectorAll('.intro-bullet')
-	// 	for (const p_element of p_elements) {
-	// 		p_element.classList.add($locale === 'ar' ? 'rtl' : 'ltr')
-	// 	}
-	// })
-	// afterUpdate(() => {
-	// 	for (const p_element of p_elements) {
-	// 		p_element.classList.add($locale === 'ar' ? 'rtl' : 'ltr')
-	// 	}
-	// })
+	let h1_element // This below: for custom styles (fonts mainly) based on language
+	onMount(() => {
+		h1_element = document.getElementById('h1-title-text')
+		h1_element.classList.add($locale === 'ar' ? 'rtl' : 'ltr')
+	})
+	afterUpdate(() => {
+		// clear all old classes
+		h1_element.classList.remove("rtl");
+		h1_element.classList.remove("ltr");
+		// add current correct class 
+		h1_element.classList.add($locale === 'ar' ? 'rtl' : 'ltr')
+	})
 </script>
 
 <header>
@@ -30,7 +30,7 @@
 				<span>{$LL.center()}</span>
 			{/if}
 			<a href="/{$locale}">
-				<h1>{$LL.title()}</h1>
+				<h1 id="h1-title-text">{$LL.title()}</h1>
 			</a>
 
 			<h2>{$LL.slogan()}</h2>
@@ -56,6 +56,9 @@
 		font-size: 2.2rem;
 		margin: 0;
 		font-weight: bold;
+	}
+	:global(#h1-title-text.rtl) {
+		margin-top: -20px;
 	}
 	h2 {
 		/* margin-top: -5px; */
@@ -122,10 +125,14 @@
 			border-radius: 0px;
 			top: 0px;
 			border: 0px;
-			padding-top: 10px;
+			padding: 10px 0 0 0;
+			margin-top: 0;
 		}
 		h1 {
 			font-size: 2rem;
+		}
+		div#title-container {
+			padding: 0;
 		}
 	}
 	@media only screen and (max-width: 400px) {
