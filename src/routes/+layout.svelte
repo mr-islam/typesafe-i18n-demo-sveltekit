@@ -26,4 +26,17 @@
 
 <style lang="scss" global>
 	@import '../styles/global.scss';
+	main {
+		padding: 0 8rem;
+	}
+	@media only screen and (max-width: 1000px) {
+		main {
+			padding: 0 5rem;
+		}
+	}
+	@media only screen and (max-width: 600px) {
+		main {
+			padding: 0;
+		}
+	}
 </style>

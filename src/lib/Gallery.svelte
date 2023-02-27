@@ -78,7 +78,7 @@
 		margin: 0 15px;
 	}
 	div#intro {
-		min-width: 40vw;
+		min-width: 30vw;
 	}
 	div.container {
 		width: 82%;
@@ -149,7 +149,7 @@
 		object-fit: cover;
 	}
 
-	@media only screen and (max-width: 800px) {
+	@media only screen and (max-width: 1000px) {
 		div#flex {
 			flex-direction: column-reverse;
 		}
