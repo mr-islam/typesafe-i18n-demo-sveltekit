@@ -9,12 +9,12 @@
 	<ul>
 		<li>
 			{$LL.contact.email()} <br />
-			<a href="mailto:markaz@ilm-marifah.com">markaz@ilm-marifah.com</a>
+			<a href="mailto:ilm.marifah.center@gmail.com" target="_blank">ilm.marifah.center@gmail.com</a>
 		</li>
 		<br />
 		<li>
 			{$LL.contact.telegram()} <br />
-			<a href="https://t.me/naved_islam">https://t.me/naved_islam</a>
+			<a href="https://t.me/ilm_marifah" target="_blank">t.me/ilm_marifah</a>
 		</li>
 	</ul>
 </div>
