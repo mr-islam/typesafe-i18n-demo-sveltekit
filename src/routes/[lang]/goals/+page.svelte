@@ -65,7 +65,7 @@
 	li {
 		padding-right: 10px;
 		border-radius: 8px;
-		margin: 15px 0;
+		margin: 40px 0;
 		padding: 20px 20px;
 		max-width: 700px;
 		/* border: 4px solid; */
