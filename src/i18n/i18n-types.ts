@@ -66,7 +66,7 @@ type RootTranslation = {
 		 */
 		mission_title: string
 		/**
-		 * Our goal is to produce Lordly Scholars and Righteous Leaders, and reviving the Religious Sciencess
+		 * Producing lordly scholars and righteous leaders, in order to revive the Religious Sciences
 		 */
 		mission: string
 		/**
@@ -74,7 +74,7 @@ type RootTranslation = {
 		 */
 		online_title: string
 		/**
-		 * Our Libary contains written articles and audio recordings
+		 * Featuring written articles and audio recordings
 		 */
 		online: string
 		/**
@@ -82,7 +82,7 @@ type RootTranslation = {
 		 */
 		contact_title: string
 		/**
-		 * Find out more about studying through this website and benefitting from it
+		 * Learn how to study through this website and benefit from it
 		 */
 		contact: string
 	}
@@ -150,11 +150,11 @@ type RootTranslation = {
 		 */
 		'1': string
 		/**
-		 * Perfecting the reading of the Noble Quran in recitation and tajwid, with a linked chain of ascription and ijaza certification in the Ten Readings – all upon the way the noble Companions received the Quran from the Prophet – peace and blessings upon him –along with reviving the role of the Quran in Muslims’ souls.
+		 * Perfecting the reading of the Noble Quran in recitation and tajwid, with a linked chain of ascription and ijaza certification in the Ten Readings, the way the noble Companions received the Quran from the Prophet (peace and blessings upon him), along with reviving the role of the Quran in Muslims’ souls.
 		 */
 		'2': string
 		/**
-		 * Reviving the service of the Prophetic Sunnah and the noble Science of Hadith in both narration and understanding. Furthermore, resetting the compass of the Ummah towards following the guidance of the Prophet – Allah send peace and blessings upon him – and also his biography (Sirah), so that the Ummah can gain peace and be saved.
+		 * Reviving the service of the Prophetic Sunnah and the noble Science of Hadith in both narration and understanding. Furthermore, resetting the compass of the Ummah towards following the guidance of the Prophet – Allah send peace and blessings upon him – and also his biography (Sirah), so that the Ummah can gain peace and salvation.
 		 */
 		'3': string
 		/**
@@ -162,27 +162,27 @@ type RootTranslation = {
 		 */
 		'4': string
 		/**
-		 * Teaching the correct beliefs of the righteous predecessors (Salaf). This is done through the Sunni method as demonstrated in the beliefs of the Ashʿari, Maturidi, and Athar approaches, along with the understanding of the lordly scholars and knowers of the Ummah.
+		 * Teaching the correct beliefs of the righteous predecessors (Salaf). This is done through the Sunni method as demonstrated in the beliefs of the Ashʿari, Maturidi, and Athari approaches, along with the understanding of the lordly scholars and knowers of the Ummah.
 		 */
 		'5': string
 		/**
-		 * Explaining the detailed rulings of the Divine law of Allah (Shariʿa) in accordance with the Four Imams – Allah be pleased upon them. Thus, a Muslim can apply his religion correctly in accordance with the pure Sharia, and his actions can be built upon Fiqh and sound knowledge, allowing one to worship Allah Almighty based upon guidance and leave the prison of ignorance and the forbidden.
+		 * Explaining the detailed rulings of the Divine law of Allah (Shariʿa) in accordance with the Four Imams – Allah be pleased upon them. Thus, a Muslim can live his religion correctly in accordance with the pure Sharia, and his actions are upon Fiqh and sound knowledge, allowing one to worship Allah Almighty based upon guidance and leave the prison of ignorance and the forbidden.
 		 */
 		'6': string
 		/**
-		 * Spreading the correct spirituality (tasawwuf) which is the soul of the religion, what’s been named ihsan. This includes both spiritual seeking and enlightened understanding. This is for a Muslim to leave all sins and follow the way of the Master of All Creation in worshipping His lord with witnessing and awareness that he himself is being witnessed, which leads to complete inheritance and following.
+		 * Spreading the correct spirituality (Tasawwuf) which is the soul of the religion, also been named Ihsan. This includes both spiritual struggle and enlightened understanding. This is for a Muslim to leave all sins and follow the way of the Master of All Creation in worshipping His lord with presence and awareness that he himself is being witnessed. This leads to complete inheritance and following.
 		 */
 		'7': string
 		/**
-		 * Teaching the Arabic language, the language of the Quan and the Beloved Prophet – peace and blessings upon him. This is to correctly understand the words of Allah Almighty and the purified prophetic Sunnah, and the words of the scholars. Indeed, it has been said: “Whoever does not perfect the Arabic language, is not trusted in his knowledge.”
+		 * Teaching the Arabic language, the language of the Quran and the Beloved Prophet (peace and blessings upon him), in order to correctly understand the words of Allah Almighty and the purified prophetic Sunnah, and the words of the scholars. Indeed, it has been said: “Whoever does not perfect the Arabic language, is not trusted in his knowledge.”
 		 */
 		'8': string
 		/**
-		 * Perfecting the tool-sciences such as rhetoric (maʿani), expression (bayan), linguistic devices (badiʿ), etymology (sarf), grammar (nahw), poetic meters, and logic. A student of knowledge needs all of them in order to completely absorb knowledge and then present it in the best way possible.
+		 * Perfecting the tool-sciences such as rhetoric (Maʿani), expression (Bayan), linguistic devices (Badiʿ), etymology (Sarf), grammar (Nahw), poetic meters, and logic. A student of knowledge needs all of them in order to completely absorb knowledge and then present it in the best way possible.
 		 */
 		'9': string
 		/**
-		 * Training in dawah, public speaking and poetry skills, all of which are essential in benefitting others, through an approach where one can express things in a clear, convincing, and moving way.
+		 * Training in Dawah, public speaking and poetry skills, all of which are essential in benefitting others, through an approach where one can express things in a clear, convincing, and moving way.
 		 */
 		'10': string
 		/**
@@ -190,7 +190,7 @@ type RootTranslation = {
 		 */
 		goal: string
 		/**
-		 * Reviving the religious sciences by
+		 * Reviving the religious sciences by:
 		 */
 		title: string
 	}
@@ -2080,7 +2080,7 @@ export type TranslationFunctions = {
 		 */
 		mission_title: () => LocalizedString
 		/**
-		 * Our goal is to produce Lordly Scholars and Righteous Leaders, and reviving the Religious Sciencess
+		 * Producing lordly scholars and righteous leaders, in order to revive the Religious Sciences
 		 */
 		mission: () => LocalizedString
 		/**
@@ -2088,7 +2088,7 @@ export type TranslationFunctions = {
 		 */
 		online_title: () => LocalizedString
 		/**
-		 * Our Libary contains written articles and audio recordings
+		 * Featuring written articles and audio recordings
 		 */
 		online: () => LocalizedString
 		/**
@@ -2096,7 +2096,7 @@ export type TranslationFunctions = {
 		 */
 		contact_title: () => LocalizedString
 		/**
-		 * Find out more about studying through this website and benefitting from it
+		 * Learn how to study through this website and benefit from it
 		 */
 		contact: () => LocalizedString
 	}
@@ -2164,11 +2164,11 @@ export type TranslationFunctions = {
 		 */
 		'1': () => LocalizedString
 		/**
-		 * Perfecting the reading of the Noble Quran in recitation and tajwid, with a linked chain of ascription and ijaza certification in the Ten Readings – all upon the way the noble Companions received the Quran from the Prophet – peace and blessings upon him –along with reviving the role of the Quran in Muslims’ souls.
+		 * Perfecting the reading of the Noble Quran in recitation and tajwid, with a linked chain of ascription and ijaza certification in the Ten Readings, the way the noble Companions received the Quran from the Prophet (peace and blessings upon him), along with reviving the role of the Quran in Muslims’ souls.
 		 */
 		'2': () => LocalizedString
 		/**
-		 * Reviving the service of the Prophetic Sunnah and the noble Science of Hadith in both narration and understanding. Furthermore, resetting the compass of the Ummah towards following the guidance of the Prophet – Allah send peace and blessings upon him – and also his biography (Sirah), so that the Ummah can gain peace and be saved.
+		 * Reviving the service of the Prophetic Sunnah and the noble Science of Hadith in both narration and understanding. Furthermore, resetting the compass of the Ummah towards following the guidance of the Prophet – Allah send peace and blessings upon him – and also his biography (Sirah), so that the Ummah can gain peace and salvation.
 		 */
 		'3': () => LocalizedString
 		/**
@@ -2176,27 +2176,27 @@ export type TranslationFunctions = {
 		 */
 		'4': () => LocalizedString
 		/**
-		 * Teaching the correct beliefs of the righteous predecessors (Salaf). This is done through the Sunni method as demonstrated in the beliefs of the Ashʿari, Maturidi, and Athar approaches, along with the understanding of the lordly scholars and knowers of the Ummah.
+		 * Teaching the correct beliefs of the righteous predecessors (Salaf). This is done through the Sunni method as demonstrated in the beliefs of the Ashʿari, Maturidi, and Athari approaches, along with the understanding of the lordly scholars and knowers of the Ummah.
 		 */
 		'5': () => LocalizedString
 		/**
-		 * Explaining the detailed rulings of the Divine law of Allah (Shariʿa) in accordance with the Four Imams – Allah be pleased upon them. Thus, a Muslim can apply his religion correctly in accordance with the pure Sharia, and his actions can be built upon Fiqh and sound knowledge, allowing one to worship Allah Almighty based upon guidance and leave the prison of ignorance and the forbidden.
+		 * Explaining the detailed rulings of the Divine law of Allah (Shariʿa) in accordance with the Four Imams – Allah be pleased upon them. Thus, a Muslim can live his religion correctly in accordance with the pure Sharia, and his actions are upon Fiqh and sound knowledge, allowing one to worship Allah Almighty based upon guidance and leave the prison of ignorance and the forbidden.
 		 */
 		'6': () => LocalizedString
 		/**
-		 * Spreading the correct spirituality (tasawwuf) which is the soul of the religion, what’s been named ihsan. This includes both spiritual seeking and enlightened understanding. This is for a Muslim to leave all sins and follow the way of the Master of All Creation in worshipping His lord with witnessing and awareness that he himself is being witnessed, which leads to complete inheritance and following.
+		 * Spreading the correct spirituality (Tasawwuf) which is the soul of the religion, also been named Ihsan. This includes both spiritual struggle and enlightened understanding. This is for a Muslim to leave all sins and follow the way of the Master of All Creation in worshipping His lord with presence and awareness that he himself is being witnessed. This leads to complete inheritance and following.
 		 */
 		'7': () => LocalizedString
 		/**
-		 * Teaching the Arabic language, the language of the Quan and the Beloved Prophet – peace and blessings upon him. This is to correctly understand the words of Allah Almighty and the purified prophetic Sunnah, and the words of the scholars. Indeed, it has been said: “Whoever does not perfect the Arabic language, is not trusted in his knowledge.”
+		 * Teaching the Arabic language, the language of the Quran and the Beloved Prophet (peace and blessings upon him), in order to correctly understand the words of Allah Almighty and the purified prophetic Sunnah, and the words of the scholars. Indeed, it has been said: “Whoever does not perfect the Arabic language, is not trusted in his knowledge.”
 		 */
 		'8': () => LocalizedString
 		/**
-		 * Perfecting the tool-sciences such as rhetoric (maʿani), expression (bayan), linguistic devices (badiʿ), etymology (sarf), grammar (nahw), poetic meters, and logic. A student of knowledge needs all of them in order to completely absorb knowledge and then present it in the best way possible.
+		 * Perfecting the tool-sciences such as rhetoric (Maʿani), expression (Bayan), linguistic devices (Badiʿ), etymology (Sarf), grammar (Nahw), poetic meters, and logic. A student of knowledge needs all of them in order to completely absorb knowledge and then present it in the best way possible.
 		 */
 		'9': () => LocalizedString
 		/**
-		 * Training in dawah, public speaking and poetry skills, all of which are essential in benefitting others, through an approach where one can express things in a clear, convincing, and moving way.
+		 * Training in Dawah, public speaking and poetry skills, all of which are essential in benefitting others, through an approach where one can express things in a clear, convincing, and moving way.
 		 */
 		'10': () => LocalizedString
 		/**
@@ -2204,7 +2204,7 @@ export type TranslationFunctions = {
 		 */
 		goal: () => LocalizedString
 		/**
-		 * Reviving the religious sciences by
+		 * Reviving the religious sciences by:
 		 */
 		title: () => LocalizedString
 	}
