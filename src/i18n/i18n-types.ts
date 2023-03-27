@@ -31,6 +31,10 @@ type RootTranslation = {
 	 */
 	and: string
 	/**
+	 * ⭠ Back to main page
+	 */
+	back_main_page: string
+	/**
 	 * Coming soon, inshaAllah!
 	 */
 	coming_soon: string
@@ -2044,6 +2048,10 @@ export type TranslationFunctions = {
 	 *  and 
 	 */
 	and: () => LocalizedString
+	/**
+	 * ⭠ Back to main page
+	 */
+	back_main_page: () => LocalizedString
 	/**
 	 * Coming soon, inshaAllah!
 	 */

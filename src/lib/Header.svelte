@@ -2,6 +2,9 @@
 	import LL, { locale } from '$i18n/i18n-svelte'
 	import LocaleSwitcher from './LocaleSwitcher.svelte'
 	import { onMount, afterUpdate } from 'svelte'
+	import { page } from '$app/stores';
+
+	console.log($page.url.pathname)
 
 	let h1_element // This below: for custom styles (fonts mainly) based on language
 	onMount(() => {
@@ -18,7 +21,12 @@
 </script>
 
 <header>
-	<div style="flex: 1;" />
+	<div style="flex: 1;">
+		{#if $page.url.pathname != '/en' && $page.url.pathname != '/ar'}
+			<a href="/">{$LL.back_main_page()}</a>
+		{/if}
+	</div>
+	<div  />
 	<div id="heading">
 		<a href="/{$locale}">
 			<section class="img-bg" />
