@@ -344,7 +344,7 @@
 			data: { label: $LL.fields.aqidah.title() },
 			width: 70,
 			height: 55,
-			bgColor: '#61FFA3',
+			bgColor: '#D7D5A2',
 			sourcePosition: 'left',
 			borderColor: 'black',
 		},
@@ -356,9 +356,9 @@
 			},
 			width: 135,
 			height: 85,
-			bgColor: '#61FFA3',
+			bgColor: '#D7D5A2',
 			targetPosition: 'right',
-			borderColor: '#61FFA3',
+			borderColor: '#D7D5A2',
 		},
 		// FIQH
 		{
@@ -1586,7 +1586,7 @@
 			data: { label: $LL.fields.aqidah.title() },
 			width: 125,
 			height: 55,
-			bgColor: '#61FFA3',
+			bgColor: '#D7D5A2',
 			sourcePosition: 'left',
 			borderColor: 'black',
 		},
@@ -1598,9 +1598,9 @@
 			},
 			width: 175,
 			height: 85,
-			bgColor: '#61FFA3',
+			bgColor: '#D7D5A2',
 			targetPosition: 'right',
-			borderColor: '#61FFA3',
+			borderColor: '#D7D5A2',
 		},
 		// FIQH
 		{
@@ -2827,7 +2827,7 @@
 			data: { label: $LL.fields.aqidah.title() },
 			width: 125,
 			height: 55,
-			bgColor: '#61FFA3',
+			bgColor: '#D7D5A2',
 			sourcePosition: 'left',
 			borderColor: 'black',
 		},
@@ -2839,9 +2839,9 @@
 			},
 			width: 400,
 			height: 85,
-			bgColor: '#61FFA3',
+			bgColor: '#D7D5A2',
 			targetPosition: 'right',
-			borderColor: '#61FFA3',
+			borderColor: '#D7D5A2',
 		},
 		// FIQH
 		{
