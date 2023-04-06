@@ -30,7 +30,7 @@
 	<div id="heading">
 		<a href="/{$locale}">
 			<section class="img-bg" />
-			<img alt="Logo of Arabic calligraphy" id="logo" src="/logo-new.png" />
+			<img alt="Logo of Arabic calligraphy" id="logo" src="/logo-new.webp" />
 		</a>
 
 		<div id="title-container">
