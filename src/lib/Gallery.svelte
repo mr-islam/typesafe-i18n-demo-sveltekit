@@ -26,6 +26,8 @@
 				aria-label="Image carousel"
 				options={{
 					rewind: true,
+					arrows: true,
+					pagination: true,
 					width: 800,
 					gap: '1rem',
 					drag: true,
