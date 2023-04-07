@@ -68,7 +68,7 @@
 				</SplideSlide>
 				<SplideSlide>
 					<div class="center" />
-					<img alt="pretty background for announcement background" src="/backgrounds/cloud.jpg" />
+					<img loading="lazy" alt="pretty background for announcement background" src="/backgrounds/cloud.jpg" />
 				</SplideSlide>
 			</Splide>
 		</div>
