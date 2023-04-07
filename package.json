@@ -52,7 +52,6 @@
 		"@splidejs/svelte-splide": "^0.2.9",
 		"svelte-markdown": "^0.2.3",
 		"svelvet": "2.0.2",
-		"swiper": "^8.3.2",
 		"typesafe-i18n": "^5.12.0"
 	}
 }

@@ -1,15 +1,9 @@
 <script>
-	import { Swiper, SwiperSlide } from 'swiper/svelte'
+	import { Splide, SplideSlide } from '@splidejs/svelte-splide'
+	import '@splidejs/svelte-splide/css/core'
+
 	import LL, { locale } from '$i18n/i18n-svelte'
 	import { onMount, afterUpdate } from 'svelte'
-
-	// Import Swiper styles
-	import 'swiper/css'
-	import 'swiper/css/effect-cards'
-	import 'swiper/css/pagination'
-
-	import SwiperCore, { Autoplay, EffectCards } from 'swiper'
-	SwiperCore.use([EffectCards, Autoplay])
 
 	let dir
 	onMount(() => {
@@ -22,52 +16,66 @@
 
 {#key dir}
 	<div>
-		<Swiper
-			{dir}
-			effect={'cards'}
-			grabCursor={true}
-			autoplay={{
-				delay: 2500,
-				disableOnInteraction: true,
-			}}
-			pagination={{
-				clickable: true,
+		<Splide
+			aria-label="Image carousel"
+			options={{
+				rewind: true,
+				arrows: false,
+				pagination: false,
+				width: '240px',
+				height: '334px',
+				gap: '1rem',
+				drag: true,
+				autoplay: true,
+				interval: 2500,
+				pauseOnHover: true,
+				pauseOnFocus: true,
+				resetProgress: false,
+				direction: dir, //see <script> above onMount()
+				paginationDirection: dir,
+				mediaQuery: 'max',
+				breakpoints: {
+					600: {
+						width: '158.1px',
+						height: '220px',
+					},
+				},
 			}}
 		>
-			<SwiperSlide>
+			<SplideSlide>
 				<img loading="lazy" src="/books/tasawwuf-kamilah.jpg" alt="kamilah" />
-			</SwiperSlide>
-			<SwiperSlide>
+			</SplideSlide>
+			<SplideSlide>
 				<img loading="lazy" src="/books/tasawwuf-fuyud.jpg" alt="fuyud" />
-			</SwiperSlide>
-			<SwiperSlide>
+			</SplideSlide>
+			<SplideSlide>
 				<img loading="lazy" src="/books/fiqh-maslak.jpg" alt="maslak" />
-			</SwiperSlide>
-			<SwiperSlide>
+			</SplideSlide>
+			<SplideSlide>
 				<img loading="lazy" src="/books/sawanih.jpg" alt="sawanih" />
-			</SwiperSlide>
-			<SwiperSlide>
+			</SplideSlide>
+			<SplideSlide>
 				<img loading="lazy" src="/books/tasawwuf-qawanin.jpg" alt="qawanin" />
-			</SwiperSlide>
-			<SwiperSlide>
+			</SplideSlide>
+			<SplideSlide>
 				<img loading="lazy" src="/books/tasawwuf-rawdah.jpg" alt="rawdah" />
-			</SwiperSlide>
-			<SwiperSlide>
+			</SplideSlide>
+			<SplideSlide>
 				<img loading="lazy" src="/books/aqidah-sharh-nazm.jpg" alt="majmu" />
-			</SwiperSlide>
-			<SwiperSlide>
+			</SplideSlide>
+			<SplideSlide>
 				<img loading="lazy" src="/books/tasawwuf-tuhfah.jpg" alt="tuhfah" />
-			</SwiperSlide>
-			<SwiperSlide>
+			</SplideSlide>
+			<SplideSlide>
 				<img loading="lazy" src="/books/fiqh-manar.jpg" alt="manar" />
-			</SwiperSlide>
-			<SwiperSlide>
+			</SplideSlide>
+			<SplideSlide>
 				<img loading="lazy" src="/books/aqidah-miftah.jpg" alt="miftah" />
-			</SwiperSlide>
-			<SwiperSlide>
+			</SplideSlide>
+			<SplideSlide>
 				<img loading="lazy" src="/books/suyuti.jpg" alt="suyuti" />
-			</SwiperSlide>
-		</Swiper>
+			</SplideSlide>
+		</Splide>
 
 		<p>
 			{$LL.contact.books.text()}
@@ -89,12 +97,6 @@
 	img {
 		max-width: 100%;
 	}
-	div :global(.swiper) {
-		z-index: 1;
-		width: 240px;
-		height: 334px;
-	}
-
 	div :global(.swiper-slide) {
 		display: flex;
 		align-items: center;
@@ -105,10 +107,5 @@
 		color: #fff;
 		background-color: #7e7e7e;
 	}
-	@media only screen and (max-width: 600px) {
-		div :global(.swiper) {
-			width: 158.1px;
-			height: 220px;
-		}
-	}
+
 </style>
