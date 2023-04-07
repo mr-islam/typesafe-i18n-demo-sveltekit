@@ -82,6 +82,7 @@
 	div.container {
 		width: 82%;
 		border-radius: 12px;
+		max-height: 500px;
 	}
 	:global(div.swiper-button-prev, div.swiper-button-next) {
 		background-color: var(--accent-color);
