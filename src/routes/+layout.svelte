@@ -27,7 +27,7 @@
 <style lang="scss" global>
 	@import '../styles/global.scss';
 	main {
-		padding: 0 8rem;
+		padding: 0 12rem;
 	}
 	@media only screen and (max-width: 1000px) {
 		main {

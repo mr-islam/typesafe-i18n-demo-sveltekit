@@ -37,65 +37,53 @@
 
 <svelte:window on:popstate={handlePopStateEvent} />
 
-<select id="select-lang" on:change={() => switchLocale(document.getElementById("select-lang").selectedOptions[0].value)}>
-	<option value={"ar"} selected={$locale == "ar"}>العربية</option>
-	<option value={"en"} selected={$locale == "en"}>English</option>
-</select>
+<div id="select-container">
+	<select
+		id="select-lang"
+		on:change={() => switchLocale(document.getElementById('select-lang').selectedOptions[0].value)}
+	>
+		<option value={'ar'} selected={$locale == 'ar'}>العربية</option>
+		<option value={'en'} selected={$locale == 'en'}>English</option>
+	</select>
+</div>
 
 <style>
-	header {
-	  background-color: var(--pure-white);
-	  display: flex;
-	  flex-direction: row;
-	  align-items: center;
-	  justify-content: space-between;
-	  border-bottom: 4px solid var(--primary-color);
-	  left: 30vw;
-	  padding: 10px 0;
-	  z-index: 5;
-	}
-	div > div > a {
-	  background-color: var(--accent-color);
-	  color: var(--primary-color);
-	  padding: 5px;
-	  margin: 5px;
-	  border-radius: 4px;
-	}
-	
-	div.flex-column {
-	  margin: 20px 0 0 0;
-	  display: flex;
-	  flex-direction: column;
-	  align-items: center;
-	}
-	@media only screen and (max-width: 600px) {
-	  img#logo {
-		max-width: 8vw;
-		margin: 10px;
-	  }
-	  header {
-		position: relative;
-		flex-direction: column;
-		left: 0;
-		min-width: 100%;
-		border-radius: 0px;
-		top: 0px;
-		border: 0px;
-		padding-top: 10px;
-	  }
-	  h1 {
-		font-size: 0.8rem;
-	  }
-	  div.flex-column {
-		flex-direction: column;
-	  }
-	}
 	select {
-	  margin: 5px;
+		/* appearance: none; */
+		background-color: transparent;
+		border: none;
+		padding: 10px 20px;
+		margin: 0;
+		width: 100%;
+		font-family: inherit;
+		font-size: inherit;
+		cursor: inherit;
+		line-height: inherit;
 	}
-	h1 {
-	  font-size: 1.5rem;
-	  margin: 0;
+	div#select-container {
+		border-radius: 12px !important;
+		font-size: 16px;
+		cursor: pointer;
+		line-height: 1.9;
+		background-color: #fff;
+		box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+		max-width: 110px;
 	}
-  </style>
-  
+	@media only screen and (max-width: 1100px) {
+		div#select-container {
+			padding: 0.12em 0.25em;
+			width: 90%;
+			font-size: 16px;
+		}
+	}
+	@media only screen and (max-width: 400px) {
+		select {
+
+		}
+		div#select-container {
+			padding: 0.12em 0.25em;
+			width: 90%;
+			font-size: 14px;
+		}
+	}
+</style>
