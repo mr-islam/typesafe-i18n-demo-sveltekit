@@ -174,7 +174,6 @@
 			/* min-height: 700px; */
 			margin-top: 0vh;
 			padding: 1rem 0.5rem;
-			max-height: 350px;
 		}
 
 		p {
@@ -198,7 +197,6 @@
 		div.container {
 			/* max-height: 82%; */
 			padding: 0;
-			max-height: 300px;
 		}
 	}
 </style>
