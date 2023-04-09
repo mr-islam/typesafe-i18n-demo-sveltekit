@@ -49,7 +49,6 @@
 		"vite": "^3.0.8"
 	},
 	"dependencies": {
-		"@splidejs/svelte-splide": "^0.2.9",
 		"svelte-markdown": "^0.2.3",
 		"svelvet": "2.0.2",
 		"swiper": "^8.3.2",

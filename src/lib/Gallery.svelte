@@ -11,8 +11,6 @@
 	import SwiperCore, { Autoplay } from 'swiper'
 
 	SwiperCore.use([Autoplay])
-	import { Splide, SplideSlide } from '@splidejs/svelte-splide'
-	import '@splidejs/svelte-splide/css'
 
 	let dir
 	onMount(() => {
@@ -30,47 +28,41 @@
 		</div>
 
 		<div class="container">
-			<Splide
-				aria-label="Image carousel"
-				options={{
-					rewind: true,
-					width: 800,
-					gap: '1rem',
-					drag: true,
-					autoplay: true,
-					interval: 4000,
-					pauseOnHover: true,
-					pauseOnFocus: true,
-					resetProgress: false,
-					direction: dir, //see <script> above onMount()
-					paginationDirection: dir,
-					mediaQuery: 'max',
-					breakpoints: {
-						1000: {
-							width: '100vw',			height: '40vh',
-						},
-						600: {
-							
-						},
-						450: {
-							width: '100vw',			height: '25vh',
-							arrows: false,
-						},
-					},
+			<Swiper
+				{dir}
+				navigation={false}
+				autoplay={{
+					delay: 4000,
+					disableOnInteraction: false,
 				}}
+				class="mySwiper"
 			>
-				<SplideSlide>
+				<SwiperSlide>
 					<div class="center">
 						<!-- <h1>{$LL.hero.header1()}</h1> -->
 						<!-- <p>{$LL.hero.subheader1()}</p> -->
 					</div>
 					<img alt="pretty background for announcement background" src="/backgrounds/flowers.jpg" />
-				</SplideSlide>
-				<SplideSlide>
-					<div class="center" />
+				</SwiperSlide>
+				<SwiperSlide>
+					<div class="center">
+						
+					</div>
 					<img alt="pretty background for announcement background" src="/backgrounds/cloud.jpg" />
-				</SplideSlide>
-			</Splide>
+				</SwiperSlide>
+				<SwiperSlide>
+					<div class="center">
+						
+					</div>
+					<img alt="pretty background for announcement background" src="/backgrounds/garden.jpg" />
+				</SwiperSlide>
+				<SwiperSlide>
+					<div class="center">
+						
+					</div>
+					<img alt="pretty background for announcement background" src="/backgrounds/flowers.jpg" />
+				</SwiperSlide>
+			</Swiper>
 		</div>
 	</div>
 {/key}
@@ -87,7 +79,6 @@
 	}
 	div.container {
 		width: 82%;
-		border-radius: 12px;
 	}
 	:global(div.swiper-button-prev, div.swiper-button-next) {
 		background-color: var(--accent-color);
@@ -121,9 +112,6 @@
 	img {
 		filter: blur(1px) brightness(70%);
 		border-radius: 12px;
-		width: 100%;
-		height: 100%;
-		object-fit: cover;
 	}
 	div :global(.swiper) {
 		width: 70%;
@@ -162,7 +150,9 @@
 		div#flex {
 			flex-direction: column-reverse;
 		}
-		div.container {
+		div :global(.swiper) {
+			width: 100%;
+			height: 40vh;
 			top: 0;
 		}
 		div.container {
@@ -201,7 +191,6 @@
 
 		div.container {
 			/* max-height: 82%; */
-			padding: 0;
 		}
 	}
 </style>
