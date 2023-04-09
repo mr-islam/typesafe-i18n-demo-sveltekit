@@ -1,11 +1,19 @@
 <script>
+	import { Swiper, SwiperSlide } from 'swiper/svelte'
 	import LL, { locale } from '$i18n/i18n-svelte'
+	import { onMount, afterUpdate } from 'svelte'
+	import IntroBullets from '$lib/IntroBullets.svelte'
+
+	import 'swiper/css'
+	// TODO: want to move to blaze-slider, 10x smaller bundle
+	// https://github.com/blaze-slider/blaze-slider
+
+	import SwiperCore, { Autoplay } from 'swiper'
+
+	SwiperCore.use([Autoplay])
 	import { Splide, SplideSlide } from '@splidejs/svelte-splide'
 	import '@splidejs/svelte-splide/css'
 
-	import { onMount, afterUpdate } from 'svelte'
-	import IntroBullets from '$lib/IntroBullets.svelte'
-	
 	let dir
 	onMount(() => {
 		dir = $locale === 'ar' ? 'rtl' : 'ltr'
