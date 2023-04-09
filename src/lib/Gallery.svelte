@@ -47,13 +47,13 @@
 					mediaQuery: 'max',
 					breakpoints: {
 						1000: {
-							width: '100vw',
-							height: '40vh',
+							width: '100vw',			height: '40vh',
 						},
-						600: {},
+						600: {
+							
+						},
 						450: {
-							width: '100vw',
-							height: '25vh',
+							width: '100vw',			height: '25vh',
 							arrows: false,
 						},
 					},
