@@ -235,7 +235,7 @@ type RootTranslation = {
 		title: string
 		fard: {
 			/**
-			 * Individually Obligatory Knowledge (farḍ ʿayn)
+			 * Personal Obligations (farḍ ʿayn)
 			 */
 			title: string
 			/**
@@ -267,7 +267,7 @@ type RootTranslation = {
 			 */
 			ibadat_title: string
 			/**
-			 * Learning the practices of cleanliness, prayer, fasting, almsgiving and pilgrimage in the legally prescribed manner
+			 * Learning the practices of cleanliness, prayer, fasting, almsgiving and pilgrimage as prescribed
 			 */
 			ibadat_content: string
 			/**
@@ -287,7 +287,7 @@ type RootTranslation = {
 			 */
 			tasawwuf_title: string
 			/**
-			 * Testoring the heart and refining the self
+			 * Restoring the heart and refining the self
 			 */
 			tasawwuf_content: string
 		}
@@ -335,15 +335,15 @@ type RootTranslation = {
 			 */
 			main_title: string
 			/**
-			 * Teading the 9 canonical collections with their commentaries with a chain of transmission
+			 * Reading the 9 canonical collections with their commentaries in a chain of transmission
 			 */
 			main_content: string
 			/**
-			 * Prophetic Biography (sīra) and Characteristics (shamā’il)
+			 * Prophetic Biography & Shamā’il
 			 */
 			seerah_title: string
 			/**
-			 * Becoming acquainted with the Prophet ﷺ and his portrait, character, and life events
+			 * Becoming acquainted with the Prophet ﷺ - his portrait, character, and life events (sīra)
 			 */
 			seerah_content: string
 		}
@@ -359,7 +359,7 @@ type RootTranslation = {
 		}
 		fiqh: {
 			/**
-			 * Law (fiqh) and Legal Theory (uṣūl al-fiqh)
+			 * Law (fiqh) and Legal Theory
 			 */
 			title: string
 			/**
@@ -375,7 +375,7 @@ type RootTranslation = {
 			 */
 			usul_title: string
 			/**
-			 * knowing the sources, patterns of reasoning, and methods of extracting rulings
+			 * Knowing the sources, patterns of reasoning, and methods of extracting rulings
 			 */
 			usul_content: string
 			/**
@@ -391,7 +391,7 @@ type RootTranslation = {
 			 */
 			adillah_title: string
 			/**
-			 * understanding the evidence in the Quran and Prophetic tradition (sunna) cited by jurists
+			 * Understanding the evidence in the Quran and Prophetic tradition (sunna) cited by jurists
 			 */
 			adillah_content: string
 		}
@@ -435,7 +435,7 @@ type RootTranslation = {
 			 */
 			sarf_title: string
 			/**
-			 * Knowing the patterns and derivation of words
+			 * nowing the patterns and derivation of words
 			 */
 			sarf_content: string
 			/**
@@ -443,7 +443,7 @@ type RootTranslation = {
 			 */
 			balaghah_title: string
 			/**
-			 * Perfecting the rhetorical arts of semantics (maʿānī), style (bayān), and literary devices (badīʿ)
+			 * Perfecting the rhetorical arts of maʿānī, bayān, badīʿ
 			 */
 			balaghah_content: string
 			/**
@@ -461,11 +461,11 @@ type RootTranslation = {
 			 */
 			title: string
 			/**
-			 * Outreach (daʿwa) and Oration
+			 * Outreach (daʿwa) and Public Speaking
 			 */
 			dawah_title: string
 			/**
-			 * Mastering the skills of outreach and public speaking to teach people in most exemplary manner
+			 * Mastering the skills of outreach and oration to reach people with excellence
 			 */
 			dawah_content: string
 			/**
@@ -485,11 +485,11 @@ type RootTranslation = {
 			 */
 			atfal_content: string
 			/**
-			 * Marriage Courses
+			 * Preparatory Marriage Courses
 			 */
 			zawjiyyah_title: string
 			/**
-			 * Prepatory courses clarifying misconceptions about marriage and family law & explaining how to interact with a spouse with wisdom
+			 * Explaining misconceptions about family law & how to interact with a spouse with wisdom
 			 */
 			zawjiyyah_content: string
 			/**
@@ -2253,7 +2253,7 @@ export type TranslationFunctions = {
 		title: () => LocalizedString
 		fard: {
 			/**
-			 * Individually Obligatory Knowledge (farḍ ʿayn)
+			 * Personal Obligations (farḍ ʿayn)
 			 */
 			title: () => LocalizedString
 			/**
@@ -2285,7 +2285,7 @@ export type TranslationFunctions = {
 			 */
 			ibadat_title: () => LocalizedString
 			/**
-			 * Learning the practices of cleanliness, prayer, fasting, almsgiving and pilgrimage in the legally prescribed manner
+			 * Learning the practices of cleanliness, prayer, fasting, almsgiving and pilgrimage as prescribed
 			 */
 			ibadat_content: () => LocalizedString
 			/**
@@ -2305,7 +2305,7 @@ export type TranslationFunctions = {
 			 */
 			tasawwuf_title: () => LocalizedString
 			/**
-			 * Testoring the heart and refining the self
+			 * Restoring the heart and refining the self
 			 */
 			tasawwuf_content: () => LocalizedString
 		}
@@ -2353,15 +2353,15 @@ export type TranslationFunctions = {
 			 */
 			main_title: () => LocalizedString
 			/**
-			 * Teading the 9 canonical collections with their commentaries with a chain of transmission
+			 * Reading the 9 canonical collections with their commentaries in a chain of transmission
 			 */
 			main_content: () => LocalizedString
 			/**
-			 * Prophetic Biography (sīra) and Characteristics (shamā’il)
+			 * Prophetic Biography & Shamā’il
 			 */
 			seerah_title: () => LocalizedString
 			/**
-			 * Becoming acquainted with the Prophet ﷺ and his portrait, character, and life events
+			 * Becoming acquainted with the Prophet ﷺ - his portrait, character, and life events (sīra)
 			 */
 			seerah_content: () => LocalizedString
 		}
@@ -2377,7 +2377,7 @@ export type TranslationFunctions = {
 		}
 		fiqh: {
 			/**
-			 * Law (fiqh) and Legal Theory (uṣūl al-fiqh)
+			 * Law (fiqh) and Legal Theory
 			 */
 			title: () => LocalizedString
 			/**
@@ -2393,7 +2393,7 @@ export type TranslationFunctions = {
 			 */
 			usul_title: () => LocalizedString
 			/**
-			 * knowing the sources, patterns of reasoning, and methods of extracting rulings
+			 * Knowing the sources, patterns of reasoning, and methods of extracting rulings
 			 */
 			usul_content: () => LocalizedString
 			/**
@@ -2409,7 +2409,7 @@ export type TranslationFunctions = {
 			 */
 			adillah_title: () => LocalizedString
 			/**
-			 * understanding the evidence in the Quran and Prophetic tradition (sunna) cited by jurists
+			 * Understanding the evidence in the Quran and Prophetic tradition (sunna) cited by jurists
 			 */
 			adillah_content: () => LocalizedString
 		}
@@ -2453,7 +2453,7 @@ export type TranslationFunctions = {
 			 */
 			sarf_title: () => LocalizedString
 			/**
-			 * Knowing the patterns and derivation of words
+			 * nowing the patterns and derivation of words
 			 */
 			sarf_content: () => LocalizedString
 			/**
@@ -2461,7 +2461,7 @@ export type TranslationFunctions = {
 			 */
 			balaghah_title: () => LocalizedString
 			/**
-			 * Perfecting the rhetorical arts of semantics (maʿānī), style (bayān), and literary devices (badīʿ)
+			 * Perfecting the rhetorical arts of maʿānī, bayān, badīʿ
 			 */
 			balaghah_content: () => LocalizedString
 			/**
@@ -2479,11 +2479,11 @@ export type TranslationFunctions = {
 			 */
 			title: () => LocalizedString
 			/**
-			 * Outreach (daʿwa) and Oration
+			 * Outreach (daʿwa) and Public Speaking
 			 */
 			dawah_title: () => LocalizedString
 			/**
-			 * Mastering the skills of outreach and public speaking to teach people in most exemplary manner
+			 * Mastering the skills of outreach and oration to reach people with excellence
 			 */
 			dawah_content: () => LocalizedString
 			/**
@@ -2503,11 +2503,11 @@ export type TranslationFunctions = {
 			 */
 			atfal_content: () => LocalizedString
 			/**
-			 * Marriage Courses
+			 * Preparatory Marriage Courses
 			 */
 			zawjiyyah_title: () => LocalizedString
 			/**
-			 * Prepatory courses clarifying misconceptions about marriage and family law & explaining how to interact with a spouse with wisdom
+			 * Explaining misconceptions about family law & how to interact with a spouse with wisdom
 			 */
 			zawjiyyah_content: () => LocalizedString
 			/**
