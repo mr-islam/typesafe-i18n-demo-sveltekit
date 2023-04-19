@@ -270,7 +270,7 @@ type RootTranslation = {
 			 */
 			ibadat_title: string
 			/**
-			 * Learning the practices of cleanliness, prayer, fasting, almsgiving and pilgrimage as prescribed
+			 * Learning the practices of cleanliness, prayer, fasting, zakat and pilgrimage as prescribed
 			 */
 			ibadat_content: string
 			/**
@@ -2302,7 +2302,7 @@ export type TranslationFunctions = {
 			 */
 			ibadat_title: () => LocalizedString
 			/**
-			 * Learning the practices of cleanliness, prayer, fasting, almsgiving and pilgrimage as prescribed
+			 * Learning the practices of cleanliness, prayer, fasting, zakat and pilgrimage as prescribed
 			 */
 			ibadat_content: () => LocalizedString
 			/**
