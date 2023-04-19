@@ -70,7 +70,7 @@
   "fields": {
     "title":"A Breakdown of Sciences and Courses",
     "fard": {
-      "title": "Personal Obligations (farḍ ʿayn)",
+      "title": "Mandatory (farḍ ʿayn)",
       "tawhid_title": "Creed (ʿaqīda)",
       "tawhid_content1": "Divinity",
       "tawhid_content2": "Prophetology",
@@ -99,7 +99,7 @@
       "ulum_content":"The chains of hadith transmission and sources of the Prophetic tradition",
       "main_title":"Hadith Texts",
       "main_content":"Reading the 9 canonical collections with their commentaries in a chain of transmission",
-      "seerah_title":"Prophetic Biography & Shamā’il",
+      "seerah_title":"Sīrah & Shamā’il",
       "seerah_content":"Becoming acquainted with the Prophet ﷺ - his portrait, character, and life events (sīra)"
     },
     "aqidah": {
@@ -112,7 +112,7 @@
       "furu_content":"Studying the rulings across all chapters of law",
       "usul_title":"Legal Theory (uṣūl)",
       "usul_content":"Knowing the sources, patterns of reasoning, and methods of extracting rulings",
-      "qawaid_title":"Legal Canons (qawāʿid fiqhiyya)",
+      "qawaid_title":"Legal Canons (qawāʿid)",
       "qawaid_content":"Studying legal canons and similar cases across all chapters of law",
       "adillah_title":"Legal Evidence",
       "adillah_content":"Understanding the evidence in the Quran and Prophetic tradition (sunna) cited by jurists"
@@ -122,14 +122,14 @@
       "suluk_title":"Purification (tazkiya)",
       "suluk_content":"Purging the soul of vices, inculcating its virtues, and elaborating the Muhammadan way of journeying to Allah ﷻ",
       "irfan_title":"Mysticism (ʿirfān)",
-      "irfan_content":"Detailing the realities of tawḥīd and the stations of Divine manifestation & witnessing them"
+      "irfan_content":"Detail of the realities of tawḥīd and the stations of Divine manifestation & witnessing them"
     },
     "arabayyiah": {
       "title": "Arabic Language",
       "nahw_title":"Syntax (naḥw)",
       "nahw_content":"Theoretical and practical mastery of the principles of grammar",
       "sarf_title":"Morphology (ṣarf)",
-      "sarf_content":"nowing the patterns and derivation of words",
+      "sarf_content":"Knowing the patterns and derivation of words",
       "balaghah_title":"Rhetoric (balāgha)",
       "balaghah_content":"Perfecting the rhetorical arts of maʿānī, bayān, badīʿ",
       "natiq_title":"Arabic for Non-Native Speakers",
@@ -137,14 +137,14 @@
     },
     "baramij": {
       "title": "Additional Programs",
-      "dawah_title":"Outreach (daʿwa) and Public Speaking",
+      "dawah_title":"Daʿwah and Public Speaking",
       "dawah_content":"Mastering the skills of outreach and oration to reach people with excellence",
       "nisa_title":"Ladies' Education",
       "nisa_content":"Courses teaching what a Muslim lady needs to know in her life",
       "atfal_title":"Primary Education for Children",
       "atfal_content":"How to teach, raise, and guide young children",
       "zawjiyyah_title":"Preparatory Marriage Courses",
-      "zawjiyyah_content":"Explaining misconceptions about family law & how to interact with a spouse with wisdom",
+      "zawjiyyah_content":"Explaining family law & how to interact with a spouse with wisdom",
       "tarbiyah_title":"Parenting Courses",
       "tarbiyah_content":"Explaining the model manner of raising children properly",
       "aswat_title":"Harmony (maqāmāt)",

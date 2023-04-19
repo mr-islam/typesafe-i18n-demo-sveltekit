@@ -235,7 +235,7 @@ type RootTranslation = {
 		title: string
 		fard: {
 			/**
-			 * Personal Obligations (farḍ ʿayn)
+			 * Mandatory (farḍ ʿayn)
 			 */
 			title: string
 			/**
@@ -339,7 +339,7 @@ type RootTranslation = {
 			 */
 			main_content: string
 			/**
-			 * Prophetic Biography & Shamā’il
+			 * Sīrah & Shamā’il
 			 */
 			seerah_title: string
 			/**
@@ -379,7 +379,7 @@ type RootTranslation = {
 			 */
 			usul_content: string
 			/**
-			 * Legal Canons (qawāʿid fiqhiyya)
+			 * Legal Canons (qawāʿid)
 			 */
 			qawaid_title: string
 			/**
@@ -413,7 +413,7 @@ type RootTranslation = {
 			 */
 			irfan_title: string
 			/**
-			 * Detailing the realities of tawḥīd and the stations of Divine manifestation & witnessing them
+			 * Detail of the realities of tawḥīd and the stations of Divine manifestation & witnessing them
 			 */
 			irfan_content: string
 		}
@@ -435,7 +435,7 @@ type RootTranslation = {
 			 */
 			sarf_title: string
 			/**
-			 * nowing the patterns and derivation of words
+			 * Knowing the patterns and derivation of words
 			 */
 			sarf_content: string
 			/**
@@ -461,7 +461,7 @@ type RootTranslation = {
 			 */
 			title: string
 			/**
-			 * Outreach (daʿwa) and Public Speaking
+			 * Daʿwah and Public Speaking
 			 */
 			dawah_title: string
 			/**
@@ -489,7 +489,7 @@ type RootTranslation = {
 			 */
 			zawjiyyah_title: string
 			/**
-			 * Explaining misconceptions about family law & how to interact with a spouse with wisdom
+			 * Explaining family law & how to interact with a spouse with wisdom
 			 */
 			zawjiyyah_content: string
 			/**
@@ -2253,7 +2253,7 @@ export type TranslationFunctions = {
 		title: () => LocalizedString
 		fard: {
 			/**
-			 * Personal Obligations (farḍ ʿayn)
+			 * Mandatory (farḍ ʿayn)
 			 */
 			title: () => LocalizedString
 			/**
@@ -2357,7 +2357,7 @@ export type TranslationFunctions = {
 			 */
 			main_content: () => LocalizedString
 			/**
-			 * Prophetic Biography & Shamā’il
+			 * Sīrah & Shamā’il
 			 */
 			seerah_title: () => LocalizedString
 			/**
@@ -2397,7 +2397,7 @@ export type TranslationFunctions = {
 			 */
 			usul_content: () => LocalizedString
 			/**
-			 * Legal Canons (qawāʿid fiqhiyya)
+			 * Legal Canons (qawāʿid)
 			 */
 			qawaid_title: () => LocalizedString
 			/**
@@ -2431,7 +2431,7 @@ export type TranslationFunctions = {
 			 */
 			irfan_title: () => LocalizedString
 			/**
-			 * Detailing the realities of tawḥīd and the stations of Divine manifestation & witnessing them
+			 * Detail of the realities of tawḥīd and the stations of Divine manifestation & witnessing them
 			 */
 			irfan_content: () => LocalizedString
 		}
@@ -2453,7 +2453,7 @@ export type TranslationFunctions = {
 			 */
 			sarf_title: () => LocalizedString
 			/**
-			 * nowing the patterns and derivation of words
+			 * Knowing the patterns and derivation of words
 			 */
 			sarf_content: () => LocalizedString
 			/**
@@ -2479,7 +2479,7 @@ export type TranslationFunctions = {
 			 */
 			title: () => LocalizedString
 			/**
-			 * Outreach (daʿwa) and Public Speaking
+			 * Daʿwah and Public Speaking
 			 */
 			dawah_title: () => LocalizedString
 			/**
@@ -2507,7 +2507,7 @@ export type TranslationFunctions = {
 			 */
 			zawjiyyah_title: () => LocalizedString
 			/**
-			 * Explaining misconceptions about family law & how to interact with a spouse with wisdom
+			 * Explaining family law & how to interact with a spouse with wisdom
 			 */
 			zawjiyyah_content: () => LocalizedString
 			/**
