@@ -53,7 +53,7 @@
     "10": "by training the skills of outreach (daʿwa), oration, and poetics, all of which are the crafts needed to bring benefit to people in any science clearly, persuasively, and powerfully.",
     "goal": "Our Purpose",
     "title": "is to revive religious knowledge through the following:"
-  }, 
+  },
   "wisdoms": {
     "title": "Aphorisms of Shaykh ʿAbd al-Raḥmān",
     "list": {
@@ -68,7 +68,7 @@
     }
   },
   "fields": {
-    "title":"A Breakdown of Sciences and Courses",
+    "title": "A Breakdown of Sciences and Courses",
     "fard": {
       "title": "Mandatory (farḍ ʿayn)",
       "tawhid_title": "Creed (ʿaqīda)",
@@ -88,698 +88,67 @@
     "quran": {
       "title": "Qur’anic Sciences and Exegesis",
       "tajwid_content": "Mastering Qur’anic recitation in practice and theory",
-      "tafsir_title":"Exegesis (tafsīr)",
-      "tafsir_content":"The apparent and deeper meanings of Allah's scripture",
-      "ulum_title":"Qur’anic Sciences",
-      "ulum_content":"The other fields related to the Noble Quran: occasions of revelation, abrogation, etc."
+      "tafsir_title": "Exegesis (tafsīr)",
+      "tafsir_content": "The apparent and deeper meanings of Allah's scripture",
+      "ulum_title": "Qur’anic Sciences",
+      "ulum_content": "The other fields related to the Noble Quran: occasions of revelation, abrogation, etc."
     },
     "hadith": {
       "title": "Hadith Sciences",
-      "ulum_title":"Hadith Terminology",
-      "ulum_content":"The chains of hadith transmission and sources of the Prophetic tradition",
-      "main_title":"Hadith Texts",
-      "main_content":"Reading the 9 canonical collections with their commentaries in a chain of transmission",
-      "seerah_title":"Sīrah & Shamā’il",
-      "seerah_content":"Becoming acquainted with the Prophet ﷺ - his portrait, character, and life events (sīra)"
+      "ulum_title": "Hadith Terminology",
+      "ulum_content": "The chains of hadith transmission and sources of the Prophetic tradition",
+      "main_title": "Hadith Texts",
+      "main_content": "Reading the 9 canonical collections with their commentaries in a chain of transmission",
+      "seerah_title": "Sīrah & Shamā’il",
+      "seerah_content": "Becoming acquainted with the Prophet ﷺ - his portrait, character, and life events (sīra)"
     },
     "aqidah": {
       "title": "Creed",
-      "explanation":"Studying Islamic creed according to Sunni orthodoxy through the Ashʿarī, Māturīdī, and Ṣūfī methdologies"
+      "explanation": "Studying Islamic creed according to Sunni orthodoxy through the Ashʿarī, Māturīdī, and Ṣūfī methdologies"
     },
     "fiqh": {
       "title": "Law (fiqh) and Legal Theory",
-      "furu_title":"Legal Rulings (furūʿ)",
-      "furu_content":"Studying the rulings across all chapters of law",
-      "usul_title":"Legal Theory (uṣūl)",
-      "usul_content":"Knowing the sources, patterns of reasoning, and methods of extracting rulings",
-      "qawaid_title":"Legal Canons (qawāʿid)",
-      "qawaid_content":"Studying legal canons and similar cases across all chapters of law",
-      "adillah_title":"Legal Evidence",
-      "adillah_content":"Understanding the evidence in the Quran and Prophetic tradition (sunna) cited by jurists"
+      "furu_title": "Legal Rulings (furūʿ)",
+      "furu_content": "Studying the rulings across all chapters of law",
+      "usul_title": "Legal Theory (uṣūl)",
+      "usul_content": "Knowing the sources, patterns of reasoning, and methods of extracting rulings",
+      "qawaid_title": "Legal Canons (qawāʿid)",
+      "qawaid_content": "Studying legal canons and similar cases across all chapters of law",
+      "adillah_title": "Legal Evidence",
+      "adillah_content": "Understanding the evidence in the Quran and Prophetic tradition (sunna) cited by jurists"
     },
     "tasawwuf": {
       "title": "Spirituality (taṣawwuf)",
-      "suluk_title":"Purification (tazkiya)",
-      "suluk_content":"Purging the soul of vices, inculcating its virtues, and elaborating the Muhammadan way of journeying to Allah ﷻ",
-      "irfan_title":"Mysticism (ʿirfān)",
-      "irfan_content":"Detail of the realities of tawḥīd and the stations of Divine manifestation & witnessing them"
+      "suluk_title": "Purification (tazkiya)",
+      "suluk_content": "Purging the soul of vices, inculcating its virtues, and elaborating the Muhammadan way of journeying to Allah ﷻ",
+      "irfan_title": "Mysticism (ʿirfān)",
+      "irfan_content": "Detail of the realities of tawḥīd and the stations of Divine manifestation & witnessing them"
     },
     "arabayyiah": {
       "title": "Arabic Language",
-      "nahw_title":"Syntax (naḥw)",
-      "nahw_content":"Theoretical and practical mastery of the principles of grammar",
-      "sarf_title":"Morphology (ṣarf)",
-      "sarf_content":"Knowing the patterns and derivation of words",
-      "balaghah_title":"Rhetoric (balāgha)",
-      "balaghah_content":"Perfecting the rhetorical arts of maʿānī, bayān, badīʿ",
-      "natiq_title":"Arabic for Non-Native Speakers",
-      "natiq_content":"Fostering the language skills of reading, writing, & speaking"
+      "nahw_title": "Syntax (naḥw)",
+      "nahw_content": "Theoretical and practical mastery of the principles of grammar",
+      "sarf_title": "Morphology (ṣarf)",
+      "sarf_content": "Knowing the patterns and derivation of words",
+      "balaghah_title": "Rhetoric (balāgha)",
+      "balaghah_content": "Perfecting the rhetorical arts of maʿānī, bayān, badīʿ",
+      "natiq_title": "Arabic for Non-Native Speakers",
+      "natiq_content": "Fostering the language skills of reading, writing, & speaking"
     },
     "baramij": {
       "title": "Additional Programs",
-      "dawah_title":"Daʿwah and Public Speaking",
-      "dawah_content":"Mastering the skills of outreach and oration to reach people with excellence",
-      "nisa_title":"Ladies' Education",
-      "nisa_content":"Courses teaching what a Muslim lady needs to know in her life",
-      "atfal_title":"Primary Education for Children",
-      "atfal_content":"How to teach, raise, and guide young children",
-      "zawjiyyah_title":"Preparatory Marriage Courses",
-      "zawjiyyah_content":"Explaining family law & how to interact with a spouse with wisdom",
-      "tarbiyah_title":"Parenting Courses",
-      "tarbiyah_content":"Explaining the model manner of raising children properly",
-      "aswat_title":"Harmony (maqāmāt)",
-      "aswat_content":"Teaching maqām scales and religious odes"
-    }
-  },
-  "tags": {
-    "fard": "Individually Obligatory Knowledge (farḍ ʿayn)",
-    "fard_explanation": "The Prophet said - Allah bless him and send him peace: \"Seeking knowledge is mandatory upon every Muslim.\" The Scholars have explained that this obligatory knowledge on every Muslim man and women are five: Beliefs, Tajwid to correct what is recited in Salah, Fiqh of Worship & Interactions, and Purification of the soul.",
-    "aqidah": "Creed ",
-    "aqidah_explanation": "Truly, Beliefs is the most noble religious science. It is the bedrock of all obligations, and the foundation of all commands—because it is linked to the Divine Being. This is why it's mandatory for every Muslim to learn what will correct his beliefs, as Allah Almighty said: \"And I have not created jinn or human beings except to worship Me.\" [51:56] Ibn Jurayj explained: \"That means: 'To know Me.'\"",
-    "sirah": "Prophetic Biography (sīra) and Characteristics (shamā’il)",
-    "sirah_explanation": "Works of Prophetic Biography & Description give out rays of light, the light of Islamic principles and lofty ettiqutte. It is what allows one to udnerstand the book of Allah Almighty and its goals. Surely the Prophet (peace and blessings upon him) is the practical example of all that is in the Quran, as Lady Aisha (Allah be pleased upon her) said: 'His ettiquette was the Quran.'",
-    "program": "Additional Programs",
-    "program_explanation": "",
-    "natiq": "Arabic for Non-Native Speakers",
-    "natiq_explanation": "After learning the knowledge obligatory upon every Muslim, learning Arabic for non-Arabs is a life-changing improvement, allowing them to understand the Quran, Sunnah, and Scholars directly without any barrier.",
-    "misc": "Various Courses",
-    "misc_explanation": "Various Courses",
-    "tajwid": "Qur’anic Recitation & Tajwīd",
-    "tajwid_nazari": "Theoretical",
-    "tajwid_amali": "Practical",
-    "tajwid_explanation": "Truly the science of Tajwid is part of the knowledge obligatory for every Muslim to learn – to the extent by which Salah is valid. The goal of Tajwid is giving the Quran and each letter in it its right, and to recite as the Prophet (peace and blessings upon him) recited.",
-    "arabi": "Arabic Language Arts",
-    "arabi_nahw": "Syntax",
-    "arabi_sarf": "Morphology",
-    "arabi_balaghah": "Rhetoric",
-    "arabi_explanation": "\"Indeed Allah Almighty honored the Arabic language out of all others, by making it the vessel for His Noble Book and the Sunnah of His Prophet - Allah send blessings and peace upon him - the Almighty said: \"We have sent it down as an Arabic Quran so that you may understand\" [Yusuf: 2]. Thus, it is the tongue of the clear Divine law and it's study is widespread and an inseparable part of the religion.\"",
-    "fiqh": "Law (fiqh) and Legal Theory (uṣūl al-fiqh)",
-    "fiqh_rulings": "Legal Rulings (furūʿ)",
-    "fiqh_foundations": "Legal Theory (uṣūl)",
-    "fiqh_principles": "Legal Canons (qawāʿid fiqhiyya)",
-    "fiqh_evidences": "Legal Evidence",
-    "fiqh_explanation": "Truly Fiqh is one of the noblest and greatest religious sciences - after learning what corrects his belief. Indeed, Fiqh corrects a person's worship and interactions, allowing him to worship Allah upon guidance, getting to know Him in the worldy life upto the levels of the rigtheous, and in the afterlife upto the ranks of the best. Allah make us of them by His generosity and favor!",
-    "tasawwuf": "Spirituality (taṣawwuf)",
-    "tasawwuf_suluk": "Self-purification & Suluk",
-    "tasawwuf_irfan": "Deeper Reflection",
-    "tasawwuf_explanation": "There is no doubt that Tasawwuf (Spirituality) is the most beneficial knowledge, because it is the way to clear the soul of its flaws and filth, and adorning it with higher truths and realities, and purifying it with precise and wonderful details. Thus it is the beneficial knowledge the fruit of which is fear of Allah Almighty. Real Spirituality is what makes clear the behavioural, nurturing and development method - and after that the spiritual. It is made up of three stages: cleansing, adorning and manifesting.",
-    "tafsir": "Qur’anic Sciences and Exegesis",
-    "tafsir_ishari": "Inspired Exegesis",
-    "tafsir_zahir": "Formal Exegesis (tafsīr)",
-    "ulum_quran": "Qur’anic Sciences",
-    "tafsir_explanation": "\"Truly the Quran is the book of guidance for mankind, it guides them to the upright, and leads them to what is good for their worldly- and afterlife. Among the most important things a Muslim must be concerned about and focus on: reflecting on the Quran and understanding its meanings. That is the way to success in this life and the next, and this is not possible except by returning to what the Scholars of Tafsir have written about the Words of Allah Almighty.\"",
-    "hadith": "Hadith Sciences",
-    "hadith_texts": "Hadith Texts",
-    "hadith_sciences": "Other Hadith Sciences",
-    "hadith_explanation": "Surely the Prophetic Sunnah is the source of Islam and reviver of Iman in the hearts. Whoever reads these noble hadith is in the company of the Messenger of Allah (peace and blessings upon him), receiving knowledge and insight from him. And truly the scholars of Islam have precisely preserved all these narrations with the utmost excellence and clarity.",
-    "other": "Assorted Classes",
-    "other_explanation": "",
-    "public": "Outreach and Oration"
-  },
-  "courses": {
-    "title": "Courses",
-    "tajwid-qaida": {
-      "title": "Tajwid: 1",
-      "desc": "A practical first text to reciting the Noble Quran correctly with tajwid",
-      "book": "Al-Qaida al-Nuraniyyah",
-      "explanation": ""
-    },
-    "tajwid-hidayatrahman": {
-      "title": "Tajwid: 2",
-      "desc": "",
-      "book": "Hidayat al-Rahman"
-    },
-    "tajwid-thani": {
-      "title": "Tajwid: 3",
-      "desc": "Written by the expert scholar Yahya al-Ghawthani",
-      "book": "Al-Mustawa al-Thani"
-    },
-    "tajwid-jazari": {
-      "title": "Tajwid: 4",
-      "desc": "",
-      "book": "Sharh al-Jazariyyah"
-    },
-    "tajwid-amma": {
-      "title": "Level 1: Open-book Recitation",
-      "desc": "Apply the rules of tajwid to these regularly read surah!",
-      "book": "Quran Juz 30: ʿAmma"
-    },
-    "tajwid-reading": {
-      "title": "Level 2: Open-book Recitation",
-      "desc": "",
-      "book": "The Entire Quran"
-    },
-    "tajwid-reciting": {
-      "title": "Level 3: Reciting from Memory",
-      "desc": "In all 10 recitations, depending on the student's aims",
-      "book": "The Entire Quran for Ijaza"
-    },
-    "fiqh-nur": {
-      "title": "Fiqh of Worship: 1",
-      "desc": "Essential rules for a Muslim's worship and all things related to that",
-      "book": "Nur al-Idah",
-      "explanation": ""
-    },
-    "fiqh-quduri": {
-      "title": "Fiqh of Interactions: 1",
-      "desc": "Essential rules for a Muslim's dealings  with Allah's creation and his relations",
-      "book": "Mukhtasar al-Quduri",
-      "explanation": ""
-    },
-    "aqidah-ahl-sunnah": {
-      "title": "Beliefs: Essentials",
-      "desc": "The obligatory beliefs for every Muslim in a brief and simple text",
-      "book": "Aqida Ahl al-Sunnah",
-      "explanation": ""
-    },
-    "tasawwuf-rawdah": {
-      "title": "Spirituality: Introduction",
-      "desc": "The essential introduction to Ihsan in every part of life to get closer to Allah Almighty",
-      "book": "Radwat al-Ushaq",
-      "explanation": ""
-    },
-    "tasawwuf-tuhfah": {
-      "title": "Spirituality: Essentials",
-      "desc": "Rectifying worship, regular actions, and repairing the bad traits of the heart",
-      "book": "Tuhfat al-Salikin",
-      "explanation": ""
-    },
-    "tasawwuf-fuyud": {
-      "title": "Spirituality: Essentials",
-      "desc": "A collection of commanding hadith, with explanations to help bring them to life",
-      "book": "Al-Fuyud al-Ahmadiyyah",
-      "explanation": ""
-    },
-    "program-youth": {
-      "title": "A complete program spanning several books",
-      "desc": "This is placeholder of some text, we need to write later",
-      "book": "Youth Program",
-      "explanation": ""
-    },
-    "program-women": {
-      "title": "A complete program spanning several books",
-      "desc": "This is placeholder of some text, we need to write later",
-      "book": "Women's Program",
-      "explanation": ""
-    },
-    "natiq-um1": {
-      "title": "Preparatory Level",
-      "desc": "Starting from how to pronounce letters, all the way to communicating in everyday situations",
-      "book": "Silsilah al-Lisan: 1",
-      "explanation": ""
-    },
-    "natiq-um2": {
-      "title": "Beginner Level",
-      "desc": "Students begin learning a foundation in Arabic grammar and sentence construction.",
-      "book": "Silsilah al-Lisan: 2",
-      "explanation": ""
-    },
-    "natiq-um3": {
-      "title": "Intermediate Level",
-      "desc": "Learners start composing short essays, cover more topics for vocabulary, and expand their grammar.",
-      "book": "Silsilah al-Lisan: 3",
-      "explanation": ""
-    },
-    "natiq-um4": {
-      "title": "Advanced Level",
-      "desc": "Training to write long texts, dialogues and being able to handle any Arabic book or reference",
-      "book": "Silsilah al-Lisan: 4",
-      "explanation": ""
-    },
-    "nahw-mabadi": {
-      "title": "Level 1",
-      "desc": "",
-      "book": "Mabadiʾ Durus al-Arabiyyah",
-      "explanation": ""
-    },
-    "nahw-tawdih": {
-      "title": "Level 1",
-      "desc": "",
-      "book": "Al-Tawdih: Sharh al-Ajurumiyyah",
-      "explanation": ""
-    },
-    "nahw-tashil": {
-      "title": "Level 2",
-      "desc": "",
-      "book": "Al-Tashil: Sharh al-Ajurumiyyah",
-      "explanation": ""
-    },
-    "nahw-durus": {
-      "title": "Level 3",
-      "desc": "",
-      "book": "Durus Nahwiyya",
-      "explanation": ""
-    },
-    "nahw-qatr": {
-      "title": "Level 4",
-      "desc": "",
-      "book": "Sharh Qatr al-Nada",
-      "explanation": ""
-    },
-    "nahw-alfiyyah": {
-      "title": "Level 5",
-      "desc": "",
-      "book": "Al-Alfiyyah",
-      "explanation": ""
-    },
-    "nahw-ibnaqil": {
-      "title": "Level 6",
-      "desc": "",
-      "book": "Sharh ibn Aqīl",
-      "explanation": ""
-    },
-    "sarf-amthilah": {
-      "title": "Level 1",
-      "desc": "",
-      "book": "Al-Amthilah",
-      "explanation": ""
-    },
-    "sarf-bina": {
-      "title": "Level 2",
-      "desc": "",
-      "book": "Sharh Bina al-Afʿāl",
-      "explanation": ""
-    },
-    "sarf-shadha": {
-      "title": "Level 3",
-      "desc": "",
-      "book": "Shadha al-ʿArf",
-      "explanation": ""
-    },
-    "balaghah-durus": {
-      "title": "Level 1",
-      "desc": "",
-      "book": "Durus al-balagha",
-      "explanation": ""
-    },
-    "balaghah-tuhfah": {
-      "title": "Level 2",
-      "desc": "",
-      "book": "Tuhfat al-Ikhwan",
-      "explanation": ""
-    },
-    "balaghah-mukhtasar": {
-      "title": "Level 3",
-      "desc": "",
-      "book": "Mukhtasar al-Maʿāni",
-      "explanation": ""
-    },
-    "balaghah-balaghah": {
-      "title": "Perusal",
-      "desc": "",
-      "book": "Al-Balaghah al-Arabiyyah",
-      "explanation": ""
-    },
-    "balaghah-burdah": {
-      "title": "Perusal",
-      "desc": "",
-      "book": "Al-Burdah: Explanation, Grammar & Balaghah",
-      "explanation": ""
-    },
-    "aqidah-sharh-nazm": {
-      "title": "Beliefs: 1",
-      "desc": "A masterful educational poem that's approachable yet vast, with an explanation and commentary",
-      "book": "Nazm Aqida Ahl al-Sunnah",
-      "explanation": ""
-    },
-    "aqidah-tali": {
-      "title": "Beliefs: 2",
-      "desc": "An expert explanation for this major text. This level is sufficient for students not specialzing in beliefs",
-      "book": "Taliʿ al-Bushra",
-      "explanation": ""
-    },
-    "aqidah-miftah": {
-      "title": "Beliefs: 3",
-      "desc": "A summary of over 50 works in Creed, this book opens the doors of advanced topics to come",
-      "book": "Miftah al-Jannah",
-      "explanation": ""
-    },
-    "aqidah-jawharah": {
-      "title": "Beliefs: 4",
-      "desc": "A didactic poem containing most topics of belief, decorated with glimpses of higher truths",
-      "book": "Jawharat al-Tawhid",
-      "explanation": ""
-    },
-    "aqidah-taftazani": {
-      "title": "Beliefs: 5",
-      "desc": "An explanation of a brief yet comprehensive book containing the Sunni beliefs of those who lean to intellectual investigation",
-      "book": "Sharh al-Nasafiyyah",
-      "explanation": ""
-    },
-    "aqidah-tahrir": {
-      "title": "Beliefs: 6",
-      "desc": "A deep dive and joruney through the range of views",
-      "book": "Tahrir al-Matalib",
-      "explanation": ""
-    },
-    "fiqh-maslak": {
-      "title": "Fiqh: 2",
-      "desc": "A complete study of the rulings related to acts of worship: purification, prayer, fasting, zakah & hajj",
-      "book": "Maslak al-Najah",
-      "explanation": ""
-    },
-    "fiqh-lubab": {
-      "title": "Fiqh: 3",
-      "desc": "A later work that gathers what came before it to explain the most important Hanafi book",
-      "book": "Al-Lubab",
-      "explanation": ""
-    },
-    "fiqh-hidayah": {
-      "title": "Fiqh: 4",
-      "desc": "The source and key for every book in the Madhhab that came after it",
-      "book": "Al-Hidayah",
-      "explanation": ""
-    },
-    "fiqh-rad": {
-      "title": "Fiqh: 5",
-      "desc": "The book relied upon for issuing rulings in the Hanafi madhhab",
-      "book": "Radd al-Muhtar",
-      "explanation": ""
-    },
-    "fiqh-manar": {
-      "title": "Fiqh: Foundations 1",
-      "desc": "A brief, comprehensive introduction for the student of foundations and seeker of results",
-      "book": "Sharh Mukhtasar al-Manar",
-      "explanation": ""
-    },
-    "fiqh-sharhmanar": {
-      "title": "Fiqh: Foundations 2",
-      "desc": "",
-      "book": "Sharh al-Manar",
-      "explanation": ""
-    },
-    "fiqh-zad": {
-      "title": "Fiqh: Foundations 3",
-      "desc": "",
-      "book": "Zad al-Muktafi",
-      "explanation": ""
-    },
-    "fiqh-talwih": {
-      "title": "Fiqh: Foundations 4",
-      "desc": "",
-      "book": "Al-Talwih maʿa al-Tawdih",
-      "explanation": ""
-    },
-    "fiqh-zaydan": {
-      "title": "Fiqh: Principles 1",
-      "desc": "",
-      "book": "Al-Wajiz Fi al-Qawaid",
-      "explanation": ""
-    },
-    "fiqh-isad": {
-      "title": "Fiqh: Principles 2",
-      "desc": "A poem and explanation explaining everything needed by a Mufti or anyone working with fiqh and the madhhab.",
-      "book": "Sharh Uqud Rasm al-Mufti",
-      "explanation": ""
-    },
-    "fiqh-ghamz": {
-      "title": "Fiqh: Principles 3",
-      "desc": "",
-      "book": "Ghamz al-Basair",
-      "explanation": ""
-    },
-    "fiqh-maram": {
-      "title": "Fiqh: Evidences 1",
-      "desc": "",
-      "book": "Sharh Bulugh al-Maram",
-      "explanation": ""
-    },
-    "fiqh-ila": {
-      "title": "Fiqh: Evidences 2",
-      "desc": "",
-      "book": "Ila al-Sunan",
-      "explanation": ""
-    },
-    "tasawwuf-bidayah": {
-      "title": "Spirituality",
-      "desc": "The principles of beginnings, which increase Muslims in good activity and correcting their method in that",
-      "book": "Bidayat al-Hidayah",
-      "explanation": ""
-    },
-    "tasawwuf-taj": {
-      "title": "Spirituality",
-      "desc": "",
-      "book": "Taj al-Arus",
-      "explanation": ""
-    },
-    "tasawwuf-uyub": {
-      "title": "Spirituality",
-      "desc": "",
-      "book": "Uyub al-Nafs wa Adwiyatuha",
-      "explanation": ""
-    },
-    "tasawwuf-qasd": {
-      "title": "Spirituality",
-      "desc": "A collection of principles which are the foundation of Tasawwuf and the Path to Allah Almighty",
-      "book": "Sharh al-Muntaqa min al-Qawaid",
-      "explanation": ""
-    },
-    "tasawwuf-mabahith": {
-      "title": "Spirituality",
-      "desc": "",
-      "book": "Sharh al-Mabahith al-Asliyyah",
-      "explanation": ""
-    },
-    "tasawwuf-manazil": {
-      "title": "Spirituality",
-      "desc": "",
-      "book": "Manazil al-Saʾirin",
-      "explanation": ""
-    },
-    "tasawwuf-himam": {
-      "title": "Spirituality",
-      "desc": "",
-      "book": "Iqaz al-Himam",
-      "explanation": ""
-    },
-    "tasawwuf-wasaya": {
-      "title": "Spirituality: 1",
-      "desc": "",
-      "book": "Al-Wasaya",
-      "explanation": ""
-    },
-    "tasawwuf-qawanin": {
-      "title": "Spirituality: 2",
-      "desc": "One of the most important books of Tasawwuf: innovative in expression and containing major wisdoms in suluk and irfan",
-      "book": "Qawanin Hikam al-Ishraq",
-      "explanation": ""
-    },
-    "tasawwuf-naqsh": {
-      "title": "Spirituality: 3",
-      "desc": "",
-      "book": "Naqsh al-Fusus",
-      "explanation": ""
-    },
-    "tasawwuf-insankamil": {
-      "title": "Spirituality: 4",
-      "desc": "",
-      "book": "Al-Insan al-Kamil",
-      "explanation": ""
-    },
-    "tasawwuf-fusus": {
-      "title": "Spirituality: 5",
-      "desc": "",
-      "book": "Fusus al-Hikam",
-      "explanation": ""
-    },
-    "ulumQuran-ulum": {
-      "title": "Sciences: 1",
-      "desc": "A modern book on the Sciences of the Quran by Dr. Nur al-Din Itr, one of the great scholars of the last century",
-      "book": "Ulum al-Quran",
-      "explanation": ""
-    },
-    "ulumQuran-zubdah": {
-      "title": "Sciences: Side reading",
-      "desc": "A summary of the key text in the field",
-      "book": "Zubdat al-Itqan",
-      "explanation": ""
-    },
-    "tafsir-durrah": {
-      "title": "Tafsir: External 1",
-      "desc": "Simply phrased, mentioning the incidents of revelation from hadith, with important and precise notes",
-      "book": "Durrah al-Tafasir",
-      "explanation": ""
-    },
-    "tafsir-nasafi": {
-      "title": "Tafsir: External 2",
-      "desc": "A summary of Baydawi's tafsir with clear phrasing and benefits in fiqh and beliefs",
-      "book": "Tafsir al-Nasafi",
-      "explanation": ""
-    },
-    "tafsir-baydawi": {
-      "title": "Tafsir: External 3",
-      "desc": "",
-      "book": "Tafsir al-Baydawi",
-      "explanation": ""
-    },
-    "tafsir-qurtubi": {
-      "title": "Tafsir: External 4",
-      "desc": "",
-      "book": "Tafsir al-Qurtubi",
-      "explanation": ""
-    },
-    "tafsir-bahr": {
-      "title": "Tafsir: Ishari 1",
-      "desc": "",
-      "book": "Mukhtasar al-Bahr al-Madid",
-      "explanation": ""
-    },
-    "tafsir-waridat": {
-      "title": "Tafsir: Ishari 2",
-      "desc": "",
-      "book": "Al-Waridat al-Ilahiyyah",
-      "explanation": ""
-    },
-    "tafsir-mawaqif": {
-      "title": "Tafsir: Ishari 3",
-      "desc": "",
-      "book": "Al-Mawaqif al-Ruhaniyyah",
-      "explanation": ""
-    },
-    "hadith-nawawi": {
-      "title": "Hadith: Text 1",
-      "desc": "Famous Hadith which contain the foundations of the religion and principles of Divine Law",
-      "book": "The 40 Nawawi Hadith",
-      "explanation": ""
-    },
-    "hadith-riyad": {
-      "title": "Hadith: Text 2",
-      "desc": "A short collection of strong hadith, with rectification for our hearts and actions, making clear the way to the afterlife",
-      "book": "Mukktasar Riyad al-Salihin",
-      "explanation": ""
-    },
-    "hadith-adab": {
-      "title": "Hadith: Text 3",
-      "desc": "A book of Prophetic, educational ettiquette that inspire the Ummah to folow and be adorned by them",
-      "book": "Al-Adab al-Mufrad",
-      "explanation": ""
-    },
-    "hadith-athar": {
-      "title": "Hadith: Text 4",
-      "desc": "",
-      "book": "Al-Athar by Imam Muhammad",
-      "explanation": ""
-    },
-    "hadith-bukhari": {
-      "title": "Hadith: Text",
-      "desc": "",
-      "book": "Sahih al-Bukhari",
-      "explanation": ""
-    },
-    "hadith-muslim": {
-      "title": "Hadith: Text",
-      "desc": "",
-      "book": "Sahih Muslim",
-      "explanation": ""
-    },
-    "hadith-tirmidhi": {
-      "title": "Hadith: Text",
-      "desc": "",
-      "book": "Sunan al-Tirmidhi",
-      "explanation": ""
-    },
-    "hadith-abudawud": {
-      "title": "Hadith: Text",
-      "desc": "",
-      "book": "Sunan Abu Dawud",
-      "explanation": ""
-    },
-    "hadith-ibnmajah": {
-      "title": "Hadith: Text",
-      "desc": "",
-      "book": "Sunan ibn Majah",
-      "explanation": ""
-    },
-    "hadith-nasai": {
-      "title": "Hadith: Text",
-      "desc": "",
-      "book": "Sunan al-Nasai",
-      "explanation": ""
-    },
-    "hadith-musnad": {
-      "title": "Hadith: Text",
-      "desc": "",
-      "book": "Musnad Ahmad",
-      "explanation": ""
-    },
-    "hadith-darimi": {
-      "title": "Hadith: Text",
-      "desc": "",
-      "book": "Sunan al-Darimi",
-      "explanation": ""
-    },
-    "hadith-muwatta": {
-      "title": "Hadith: Text",
-      "desc": "",
-      "book": "Al-Muwatta",
-      "explanation": ""
-    },
-    
-    "hadith-umdah": {
-      "title": "Hadith: Text",
-      "desc": "",
-      "book": "Umdah al-Ahkam",
-      "explanation": ""
-    },
-    "hadith-bulugh": {
-      "title": "Hadith: Text",
-      "desc": "",
-      "book": "Bulugh al-Maram",
-      "explanation": ""
-    },
-    "hadith-jami-suyuti": {
-      "title": "Hadith: Text",
-      "desc": "",
-      "book": "Al-Jami al-Saghir",
-      "explanation": "By Imam al-Suyuti"
-    },
-    "hadith-bayquni": {
-      "title": "Hadith: Terminology 1",
-      "desc": "Introducing the most famous Hadith sciences and the needed explanations and terminology",
-      "book": "Sharh al-Bayquniyyah",
-      "explanation": ""
-    },
-    "hadith-nuzhah": {
-      "title": "Hadith: Terminology 2",
-      "desc": "",
-      "book": "Nuzhah al-Nazar",
-      "explanation": ""
-    },
-    "hadith-salah": {
-      "title": "Hadith: Terminology 3",
-      "desc": "",
-      "book": "Muqaddimah Ibn al-Salah",
-      "explanation": ""
-    },
-    "hadith-tadrib": {
-      "title": "Hadith: Terminology 4",
-      "desc": "",
-      "book": "Tadrib al-Rawi",
-      "explanation": ""
-    },
-    "sirah-halabi": {
-      "title": "Seerah 1",
-      "desc": "A refined edition of a trusted reference in Prophetic Biography, containing fluid writing, accurate reports and deep explanations",
-      "book": "Tahdhib al-Seerah al-Halabiyyah",
-      "explanation": ""
-    },
-    "sirah-wasail": {
-      "title": "Shamail 1",
-      "desc": "A brief book that gathers the traits of the Prophet, blessings and peace upon him, with explanations",
-      "book": "Wasail al-Wusul",
-      "explanation": ""
-    },
-    "other-isa": {
-      "title": "Logic",
-      "desc": "An explanation of the foundational text in the study of Logic",
-      "book": "Mughni al-Tullab",
-      "explanation": ""
-    },
-    "other-diwankurdi": {
-      "title": "Inshad & Singing",
-      "desc": "",
-      "book": "Diwan al-Shaykh al-Kurdi",
-      "explanation": ""
+      "dawah_title": "Daʿwah and Public Speaking",
+      "dawah_content": "Mastering the skills of outreach and oration to reach people with excellence",
+      "nisa_title": "Ladies' Education",
+      "nisa_content": "Courses teaching what a Muslim lady needs to know in her life",
+      "atfal_title": "Primary Education for Children",
+      "atfal_content": "How to teach, raise, and guide young children",
+      "zawjiyyah_title": "Preparatory Marriage Courses",
+      "zawjiyyah_content": "Explaining family law & how to interact with a spouse with wisdom",
+      "tarbiyah_title": "Parenting Courses",
+      "tarbiyah_content": "Explaining the model manner of raising children properly",
+      "aswat_title": "Harmony (maqāmāt)",
+      "aswat_content": "Teaching maqām scales and religious odes"
     }
   },
   "contact": {

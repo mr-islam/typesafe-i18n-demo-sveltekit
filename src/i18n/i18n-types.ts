@@ -2,16 +2,19 @@
 /* eslint-disable */
 import type { BaseTranslation as BaseTranslationType, LocalizedString } from 'typesafe-i18n'
 
-export type BaseTranslation = BaseTranslationType
+export type BaseTranslation = BaseTranslationType & DisallowNamespaces
 export type BaseLocale = 'en'
 
 export type Locales =
 	| 'ar'
 	| 'en'
 
-export type Translation = RootTranslation
+export type Translation = RootTranslation & DisallowNamespaces
 
-export type Translations = RootTranslation
+export type Translations = RootTranslation &
+{
+	'low-priority': NamespaceLowPriorityTranslation
+}
 
 type RootTranslation = {
 	/**
@@ -510,6 +513,55 @@ type RootTranslation = {
 			aswat_content: string
 		}
 	}
+	contact: {
+		/**
+		 * Contact us through
+		 */
+		explain: string
+		/**
+		 * Email
+		 */
+		email: string
+		/**
+		 *  or 
+		 */
+		or: string
+		/**
+		 * Telegram
+		 */
+		telegram: string
+		books: {
+			/**
+			 * To obtain these books, please contact Ustadh Nael Hajjar: 
+			 */
+			text: string
+			/**
+			 * +9613040478
+			 */
+			number: string
+		}
+	}
+	payment: {
+		/**
+		 * Payment successful!
+		 */
+		successful_alert: string
+		/**
+		 * Something went wrong
+		 */
+		error: string
+		/**
+		 * $140 (all proceeds are re-invested into the Center's projects)
+		 */
+		price_140: string
+	}
+	/**
+	 * The Inner & Outer Sciences
+	 */
+	slogan: string
+}
+
+export type NamespaceLowPriorityTranslation = {
 	tags: {
 		/**
 		 * Individually Obligatory Knowledge (farḍ ʿayn)
@@ -1983,52 +2035,17 @@ type RootTranslation = {
 			explanation: string
 		}
 	}
-	contact: {
-		/**
-		 * Contact us through
-		 */
-		explain: string
-		/**
-		 * Email
-		 */
-		email: string
-		/**
-		 *  or 
-		 */
-		or: string
-		/**
-		 * Telegram
-		 */
-		telegram: string
-		books: {
-			/**
-			 * To obtain these books, please contact Ustadh Nael Hajjar: 
-			 */
-			text: string
-			/**
-			 * +9613040478
-			 */
-			number: string
-		}
-	}
-	payment: {
-		/**
-		 * Payment successful!
-		 */
-		successful_alert: string
-		/**
-		 * Something went wrong
-		 */
-		error: string
-		/**
-		 * $140 (all proceeds are re-invested into the Center's projects)
-		 */
-		price_140: string
-	}
+}
+
+export type Namespaces =
+	| 'low-priority'
+
+type DisallowNamespaces = {
 	/**
-	 * The Inner & Outer Sciences
+	 * reserved for 'low-priority'-namespace\
+	 * you need to use the `./low-priority/index.ts` file instead
 	 */
-	slogan: string
+	'low-priority'?: "[typesafe-i18n] reserved for 'low-priority'-namespace. You need to use the `./low-priority/index.ts` file instead."
 }
 
 export type TranslationFunctions = {
@@ -2528,1479 +2545,6 @@ export type TranslationFunctions = {
 			aswat_content: () => LocalizedString
 		}
 	}
-	tags: {
-		/**
-		 * Individually Obligatory Knowledge (farḍ ʿayn)
-		 */
-		fard: () => LocalizedString
-		/**
-		 * The Prophet said - Allah bless him and send him peace: "Seeking knowledge is mandatory upon every Muslim." The Scholars have explained that this obligatory knowledge on every Muslim man and women are five: Beliefs, Tajwid to correct what is recited in Salah, Fiqh of Worship & Interactions, and Purification of the soul.
-		 */
-		fard_explanation: () => LocalizedString
-		/**
-		 * Creed 
-		 */
-		aqidah: () => LocalizedString
-		/**
-		 * Truly, Beliefs is the most noble religious science. It is the bedrock of all obligations, and the foundation of all commands—because it is linked to the Divine Being. This is why it's mandatory for every Muslim to learn what will correct his beliefs, as Allah Almighty said: "And I have not created jinn or human beings except to worship Me." [51:56] Ibn Jurayj explained: "That means: 'To know Me.'"
-		 */
-		aqidah_explanation: () => LocalizedString
-		/**
-		 * Prophetic Biography (sīra) and Characteristics (shamā’il)
-		 */
-		sirah: () => LocalizedString
-		/**
-		 * Works of Prophetic Biography & Description give out rays of light, the light of Islamic principles and lofty ettiqutte. It is what allows one to udnerstand the book of Allah Almighty and its goals. Surely the Prophet (peace and blessings upon him) is the practical example of all that is in the Quran, as Lady Aisha (Allah be pleased upon her) said: 'His ettiquette was the Quran.'
-		 */
-		sirah_explanation: () => LocalizedString
-		/**
-		 * Additional Programs
-		 */
-		program: () => LocalizedString
-		program_explanation: () => LocalizedString
-		/**
-		 * Arabic for Non-Native Speakers
-		 */
-		natiq: () => LocalizedString
-		/**
-		 * After learning the knowledge obligatory upon every Muslim, learning Arabic for non-Arabs is a life-changing improvement, allowing them to understand the Quran, Sunnah, and Scholars directly without any barrier.
-		 */
-		natiq_explanation: () => LocalizedString
-		/**
-		 * Various Courses
-		 */
-		misc: () => LocalizedString
-		/**
-		 * Various Courses
-		 */
-		misc_explanation: () => LocalizedString
-		/**
-		 * Qur’anic Recitation & Tajwīd
-		 */
-		tajwid: () => LocalizedString
-		/**
-		 * Theoretical
-		 */
-		tajwid_nazari: () => LocalizedString
-		/**
-		 * Practical
-		 */
-		tajwid_amali: () => LocalizedString
-		/**
-		 * Truly the science of Tajwid is part of the knowledge obligatory for every Muslim to learn – to the extent by which Salah is valid. The goal of Tajwid is giving the Quran and each letter in it its right, and to recite as the Prophet (peace and blessings upon him) recited.
-		 */
-		tajwid_explanation: () => LocalizedString
-		/**
-		 * Arabic Language Arts
-		 */
-		arabi: () => LocalizedString
-		/**
-		 * Syntax
-		 */
-		arabi_nahw: () => LocalizedString
-		/**
-		 * Morphology
-		 */
-		arabi_sarf: () => LocalizedString
-		/**
-		 * Rhetoric
-		 */
-		arabi_balaghah: () => LocalizedString
-		/**
-		 * "Indeed Allah Almighty honored the Arabic language out of all others, by making it the vessel for His Noble Book and the Sunnah of His Prophet - Allah send blessings and peace upon him - the Almighty said: "We have sent it down as an Arabic Quran so that you may understand" [Yusuf: 2]. Thus, it is the tongue of the clear Divine law and it's study is widespread and an inseparable part of the religion."
-		 */
-		arabi_explanation: () => LocalizedString
-		/**
-		 * Law (fiqh) and Legal Theory (uṣūl al-fiqh)
-		 */
-		fiqh: () => LocalizedString
-		/**
-		 * Legal Rulings (furūʿ)
-		 */
-		fiqh_rulings: () => LocalizedString
-		/**
-		 * Legal Theory (uṣūl)
-		 */
-		fiqh_foundations: () => LocalizedString
-		/**
-		 * Legal Canons (qawāʿid fiqhiyya)
-		 */
-		fiqh_principles: () => LocalizedString
-		/**
-		 * Legal Evidence
-		 */
-		fiqh_evidences: () => LocalizedString
-		/**
-		 * Truly Fiqh is one of the noblest and greatest religious sciences - after learning what corrects his belief. Indeed, Fiqh corrects a person's worship and interactions, allowing him to worship Allah upon guidance, getting to know Him in the worldy life upto the levels of the rigtheous, and in the afterlife upto the ranks of the best. Allah make us of them by His generosity and favor!
-		 */
-		fiqh_explanation: () => LocalizedString
-		/**
-		 * Spirituality (taṣawwuf)
-		 */
-		tasawwuf: () => LocalizedString
-		/**
-		 * Self-purification & Suluk
-		 */
-		tasawwuf_suluk: () => LocalizedString
-		/**
-		 * Deeper Reflection
-		 */
-		tasawwuf_irfan: () => LocalizedString
-		/**
-		 * There is no doubt that Tasawwuf (Spirituality) is the most beneficial knowledge, because it is the way to clear the soul of its flaws and filth, and adorning it with higher truths and realities, and purifying it with precise and wonderful details. Thus it is the beneficial knowledge the fruit of which is fear of Allah Almighty. Real Spirituality is what makes clear the behavioural, nurturing and development method - and after that the spiritual. It is made up of three stages: cleansing, adorning and manifesting.
-		 */
-		tasawwuf_explanation: () => LocalizedString
-		/**
-		 * Qur’anic Sciences and Exegesis
-		 */
-		tafsir: () => LocalizedString
-		/**
-		 * Inspired Exegesis
-		 */
-		tafsir_ishari: () => LocalizedString
-		/**
-		 * Formal Exegesis (tafsīr)
-		 */
-		tafsir_zahir: () => LocalizedString
-		/**
-		 * Qur’anic Sciences
-		 */
-		ulum_quran: () => LocalizedString
-		/**
-		 * "Truly the Quran is the book of guidance for mankind, it guides them to the upright, and leads them to what is good for their worldly- and afterlife. Among the most important things a Muslim must be concerned about and focus on: reflecting on the Quran and understanding its meanings. That is the way to success in this life and the next, and this is not possible except by returning to what the Scholars of Tafsir have written about the Words of Allah Almighty."
-		 */
-		tafsir_explanation: () => LocalizedString
-		/**
-		 * Hadith Sciences
-		 */
-		hadith: () => LocalizedString
-		/**
-		 * Hadith Texts
-		 */
-		hadith_texts: () => LocalizedString
-		/**
-		 * Other Hadith Sciences
-		 */
-		hadith_sciences: () => LocalizedString
-		/**
-		 * Surely the Prophetic Sunnah is the source of Islam and reviver of Iman in the hearts. Whoever reads these noble hadith is in the company of the Messenger of Allah (peace and blessings upon him), receiving knowledge and insight from him. And truly the scholars of Islam have precisely preserved all these narrations with the utmost excellence and clarity.
-		 */
-		hadith_explanation: () => LocalizedString
-		/**
-		 * Assorted Classes
-		 */
-		other: () => LocalizedString
-		other_explanation: () => LocalizedString
-		/**
-		 * Outreach and Oration
-		 */
-		'public': () => LocalizedString
-	}
-	courses: {
-		/**
-		 * Courses
-		 */
-		title: () => LocalizedString
-		'tajwid-qaida': {
-			/**
-			 * Tajwid: 1
-			 */
-			title: () => LocalizedString
-			/**
-			 * A practical first text to reciting the Noble Quran correctly with tajwid
-			 */
-			desc: () => LocalizedString
-			/**
-			 * Al-Qaida al-Nuraniyyah
-			 */
-			book: () => LocalizedString
-			explanation: () => LocalizedString
-		}
-		'tajwid-hidayatrahman': {
-			/**
-			 * Tajwid: 2
-			 */
-			title: () => LocalizedString
-			desc: () => LocalizedString
-			/**
-			 * Hidayat al-Rahman
-			 */
-			book: () => LocalizedString
-		}
-		'tajwid-thani': {
-			/**
-			 * Tajwid: 3
-			 */
-			title: () => LocalizedString
-			/**
-			 * Written by the expert scholar Yahya al-Ghawthani
-			 */
-			desc: () => LocalizedString
-			/**
-			 * Al-Mustawa al-Thani
-			 */
-			book: () => LocalizedString
-		}
-		'tajwid-jazari': {
-			/**
-			 * Tajwid: 4
-			 */
-			title: () => LocalizedString
-			desc: () => LocalizedString
-			/**
-			 * Sharh al-Jazariyyah
-			 */
-			book: () => LocalizedString
-		}
-		'tajwid-amma': {
-			/**
-			 * Level 1: Open-book Recitation
-			 */
-			title: () => LocalizedString
-			/**
-			 * Apply the rules of tajwid to these regularly read surah!
-			 */
-			desc: () => LocalizedString
-			/**
-			 * Quran Juz 30: ʿAmma
-			 */
-			book: () => LocalizedString
-		}
-		'tajwid-reading': {
-			/**
-			 * Level 2: Open-book Recitation
-			 */
-			title: () => LocalizedString
-			desc: () => LocalizedString
-			/**
-			 * The Entire Quran
-			 */
-			book: () => LocalizedString
-		}
-		'tajwid-reciting': {
-			/**
-			 * Level 3: Reciting from Memory
-			 */
-			title: () => LocalizedString
-			/**
-			 * In all 10 recitations, depending on the student's aims
-			 */
-			desc: () => LocalizedString
-			/**
-			 * The Entire Quran for Ijaza
-			 */
-			book: () => LocalizedString
-		}
-		'fiqh-nur': {
-			/**
-			 * Fiqh of Worship: 1
-			 */
-			title: () => LocalizedString
-			/**
-			 * Essential rules for a Muslim's worship and all things related to that
-			 */
-			desc: () => LocalizedString
-			/**
-			 * Nur al-Idah
-			 */
-			book: () => LocalizedString
-			explanation: () => LocalizedString
-		}
-		'fiqh-quduri': {
-			/**
-			 * Fiqh of Interactions: 1
-			 */
-			title: () => LocalizedString
-			/**
-			 * Essential rules for a Muslim's dealings  with Allah's creation and his relations
-			 */
-			desc: () => LocalizedString
-			/**
-			 * Mukhtasar al-Quduri
-			 */
-			book: () => LocalizedString
-			explanation: () => LocalizedString
-		}
-		'aqidah-ahl-sunnah': {
-			/**
-			 * Beliefs: Essentials
-			 */
-			title: () => LocalizedString
-			/**
-			 * The obligatory beliefs for every Muslim in a brief and simple text
-			 */
-			desc: () => LocalizedString
-			/**
-			 * Aqida Ahl al-Sunnah
-			 */
-			book: () => LocalizedString
-			explanation: () => LocalizedString
-		}
-		'tasawwuf-rawdah': {
-			/**
-			 * Spirituality: Introduction
-			 */
-			title: () => LocalizedString
-			/**
-			 * The essential introduction to Ihsan in every part of life to get closer to Allah Almighty
-			 */
-			desc: () => LocalizedString
-			/**
-			 * Radwat al-Ushaq
-			 */
-			book: () => LocalizedString
-			explanation: () => LocalizedString
-		}
-		'tasawwuf-tuhfah': {
-			/**
-			 * Spirituality: Essentials
-			 */
-			title: () => LocalizedString
-			/**
-			 * Rectifying worship, regular actions, and repairing the bad traits of the heart
-			 */
-			desc: () => LocalizedString
-			/**
-			 * Tuhfat al-Salikin
-			 */
-			book: () => LocalizedString
-			explanation: () => LocalizedString
-		}
-		'tasawwuf-fuyud': {
-			/**
-			 * Spirituality: Essentials
-			 */
-			title: () => LocalizedString
-			/**
-			 * A collection of commanding hadith, with explanations to help bring them to life
-			 */
-			desc: () => LocalizedString
-			/**
-			 * Al-Fuyud al-Ahmadiyyah
-			 */
-			book: () => LocalizedString
-			explanation: () => LocalizedString
-		}
-		'program-youth': {
-			/**
-			 * A complete program spanning several books
-			 */
-			title: () => LocalizedString
-			/**
-			 * This is placeholder of some text, we need to write later
-			 */
-			desc: () => LocalizedString
-			/**
-			 * Youth Program
-			 */
-			book: () => LocalizedString
-			explanation: () => LocalizedString
-		}
-		'program-women': {
-			/**
-			 * A complete program spanning several books
-			 */
-			title: () => LocalizedString
-			/**
-			 * This is placeholder of some text, we need to write later
-			 */
-			desc: () => LocalizedString
-			/**
-			 * Women's Program
-			 */
-			book: () => LocalizedString
-			explanation: () => LocalizedString
-		}
-		'natiq-um1': {
-			/**
-			 * Preparatory Level
-			 */
-			title: () => LocalizedString
-			/**
-			 * Starting from how to pronounce letters, all the way to communicating in everyday situations
-			 */
-			desc: () => LocalizedString
-			/**
-			 * Silsilah al-Lisan: 1
-			 */
-			book: () => LocalizedString
-			explanation: () => LocalizedString
-		}
-		'natiq-um2': {
-			/**
-			 * Beginner Level
-			 */
-			title: () => LocalizedString
-			/**
-			 * Students begin learning a foundation in Arabic grammar and sentence construction.
-			 */
-			desc: () => LocalizedString
-			/**
-			 * Silsilah al-Lisan: 2
-			 */
-			book: () => LocalizedString
-			explanation: () => LocalizedString
-		}
-		'natiq-um3': {
-			/**
-			 * Intermediate Level
-			 */
-			title: () => LocalizedString
-			/**
-			 * Learners start composing short essays, cover more topics for vocabulary, and expand their grammar.
-			 */
-			desc: () => LocalizedString
-			/**
-			 * Silsilah al-Lisan: 3
-			 */
-			book: () => LocalizedString
-			explanation: () => LocalizedString
-		}
-		'natiq-um4': {
-			/**
-			 * Advanced Level
-			 */
-			title: () => LocalizedString
-			/**
-			 * Training to write long texts, dialogues and being able to handle any Arabic book or reference
-			 */
-			desc: () => LocalizedString
-			/**
-			 * Silsilah al-Lisan: 4
-			 */
-			book: () => LocalizedString
-			explanation: () => LocalizedString
-		}
-		'nahw-mabadi': {
-			/**
-			 * Level 1
-			 */
-			title: () => LocalizedString
-			desc: () => LocalizedString
-			/**
-			 * Mabadiʾ Durus al-Arabiyyah
-			 */
-			book: () => LocalizedString
-			explanation: () => LocalizedString
-		}
-		'nahw-tawdih': {
-			/**
-			 * Level 1
-			 */
-			title: () => LocalizedString
-			desc: () => LocalizedString
-			/**
-			 * Al-Tawdih: Sharh al-Ajurumiyyah
-			 */
-			book: () => LocalizedString
-			explanation: () => LocalizedString
-		}
-		'nahw-tashil': {
-			/**
-			 * Level 2
-			 */
-			title: () => LocalizedString
-			desc: () => LocalizedString
-			/**
-			 * Al-Tashil: Sharh al-Ajurumiyyah
-			 */
-			book: () => LocalizedString
-			explanation: () => LocalizedString
-		}
-		'nahw-durus': {
-			/**
-			 * Level 3
-			 */
-			title: () => LocalizedString
-			desc: () => LocalizedString
-			/**
-			 * Durus Nahwiyya
-			 */
-			book: () => LocalizedString
-			explanation: () => LocalizedString
-		}
-		'nahw-qatr': {
-			/**
-			 * Level 4
-			 */
-			title: () => LocalizedString
-			desc: () => LocalizedString
-			/**
-			 * Sharh Qatr al-Nada
-			 */
-			book: () => LocalizedString
-			explanation: () => LocalizedString
-		}
-		'nahw-alfiyyah': {
-			/**
-			 * Level 5
-			 */
-			title: () => LocalizedString
-			desc: () => LocalizedString
-			/**
-			 * Al-Alfiyyah
-			 */
-			book: () => LocalizedString
-			explanation: () => LocalizedString
-		}
-		'nahw-ibnaqil': {
-			/**
-			 * Level 6
-			 */
-			title: () => LocalizedString
-			desc: () => LocalizedString
-			/**
-			 * Sharh ibn Aqīl
-			 */
-			book: () => LocalizedString
-			explanation: () => LocalizedString
-		}
-		'sarf-amthilah': {
-			/**
-			 * Level 1
-			 */
-			title: () => LocalizedString
-			desc: () => LocalizedString
-			/**
-			 * Al-Amthilah
-			 */
-			book: () => LocalizedString
-			explanation: () => LocalizedString
-		}
-		'sarf-bina': {
-			/**
-			 * Level 2
-			 */
-			title: () => LocalizedString
-			desc: () => LocalizedString
-			/**
-			 * Sharh Bina al-Afʿāl
-			 */
-			book: () => LocalizedString
-			explanation: () => LocalizedString
-		}
-		'sarf-shadha': {
-			/**
-			 * Level 3
-			 */
-			title: () => LocalizedString
-			desc: () => LocalizedString
-			/**
-			 * Shadha al-ʿArf
-			 */
-			book: () => LocalizedString
-			explanation: () => LocalizedString
-		}
-		'balaghah-durus': {
-			/**
-			 * Level 1
-			 */
-			title: () => LocalizedString
-			desc: () => LocalizedString
-			/**
-			 * Durus al-balagha
-			 */
-			book: () => LocalizedString
-			explanation: () => LocalizedString
-		}
-		'balaghah-tuhfah': {
-			/**
-			 * Level 2
-			 */
-			title: () => LocalizedString
-			desc: () => LocalizedString
-			/**
-			 * Tuhfat al-Ikhwan
-			 */
-			book: () => LocalizedString
-			explanation: () => LocalizedString
-		}
-		'balaghah-mukhtasar': {
-			/**
-			 * Level 3
-			 */
-			title: () => LocalizedString
-			desc: () => LocalizedString
-			/**
-			 * Mukhtasar al-Maʿāni
-			 */
-			book: () => LocalizedString
-			explanation: () => LocalizedString
-		}
-		'balaghah-balaghah': {
-			/**
-			 * Perusal
-			 */
-			title: () => LocalizedString
-			desc: () => LocalizedString
-			/**
-			 * Al-Balaghah al-Arabiyyah
-			 */
-			book: () => LocalizedString
-			explanation: () => LocalizedString
-		}
-		'balaghah-burdah': {
-			/**
-			 * Perusal
-			 */
-			title: () => LocalizedString
-			desc: () => LocalizedString
-			/**
-			 * Al-Burdah: Explanation, Grammar & Balaghah
-			 */
-			book: () => LocalizedString
-			explanation: () => LocalizedString
-		}
-		'aqidah-sharh-nazm': {
-			/**
-			 * Beliefs: 1
-			 */
-			title: () => LocalizedString
-			/**
-			 * A masterful educational poem that's approachable yet vast, with an explanation and commentary
-			 */
-			desc: () => LocalizedString
-			/**
-			 * Nazm Aqida Ahl al-Sunnah
-			 */
-			book: () => LocalizedString
-			explanation: () => LocalizedString
-		}
-		'aqidah-tali': {
-			/**
-			 * Beliefs: 2
-			 */
-			title: () => LocalizedString
-			/**
-			 * An expert explanation for this major text. This level is sufficient for students not specialzing in beliefs
-			 */
-			desc: () => LocalizedString
-			/**
-			 * Taliʿ al-Bushra
-			 */
-			book: () => LocalizedString
-			explanation: () => LocalizedString
-		}
-		'aqidah-miftah': {
-			/**
-			 * Beliefs: 3
-			 */
-			title: () => LocalizedString
-			/**
-			 * A summary of over 50 works in Creed, this book opens the doors of advanced topics to come
-			 */
-			desc: () => LocalizedString
-			/**
-			 * Miftah al-Jannah
-			 */
-			book: () => LocalizedString
-			explanation: () => LocalizedString
-		}
-		'aqidah-jawharah': {
-			/**
-			 * Beliefs: 4
-			 */
-			title: () => LocalizedString
-			/**
-			 * A didactic poem containing most topics of belief, decorated with glimpses of higher truths
-			 */
-			desc: () => LocalizedString
-			/**
-			 * Jawharat al-Tawhid
-			 */
-			book: () => LocalizedString
-			explanation: () => LocalizedString
-		}
-		'aqidah-taftazani': {
-			/**
-			 * Beliefs: 5
-			 */
-			title: () => LocalizedString
-			/**
-			 * An explanation of a brief yet comprehensive book containing the Sunni beliefs of those who lean to intellectual investigation
-			 */
-			desc: () => LocalizedString
-			/**
-			 * Sharh al-Nasafiyyah
-			 */
-			book: () => LocalizedString
-			explanation: () => LocalizedString
-		}
-		'aqidah-tahrir': {
-			/**
-			 * Beliefs: 6
-			 */
-			title: () => LocalizedString
-			/**
-			 * A deep dive and joruney through the range of views
-			 */
-			desc: () => LocalizedString
-			/**
-			 * Tahrir al-Matalib
-			 */
-			book: () => LocalizedString
-			explanation: () => LocalizedString
-		}
-		'fiqh-maslak': {
-			/**
-			 * Fiqh: 2
-			 */
-			title: () => LocalizedString
-			/**
-			 * A complete study of the rulings related to acts of worship: purification, prayer, fasting, zakah & hajj
-			 */
-			desc: () => LocalizedString
-			/**
-			 * Maslak al-Najah
-			 */
-			book: () => LocalizedString
-			explanation: () => LocalizedString
-		}
-		'fiqh-lubab': {
-			/**
-			 * Fiqh: 3
-			 */
-			title: () => LocalizedString
-			/**
-			 * A later work that gathers what came before it to explain the most important Hanafi book
-			 */
-			desc: () => LocalizedString
-			/**
-			 * Al-Lubab
-			 */
-			book: () => LocalizedString
-			explanation: () => LocalizedString
-		}
-		'fiqh-hidayah': {
-			/**
-			 * Fiqh: 4
-			 */
-			title: () => LocalizedString
-			/**
-			 * The source and key for every book in the Madhhab that came after it
-			 */
-			desc: () => LocalizedString
-			/**
-			 * Al-Hidayah
-			 */
-			book: () => LocalizedString
-			explanation: () => LocalizedString
-		}
-		'fiqh-rad': {
-			/**
-			 * Fiqh: 5
-			 */
-			title: () => LocalizedString
-			/**
-			 * The book relied upon for issuing rulings in the Hanafi madhhab
-			 */
-			desc: () => LocalizedString
-			/**
-			 * Radd al-Muhtar
-			 */
-			book: () => LocalizedString
-			explanation: () => LocalizedString
-		}
-		'fiqh-manar': {
-			/**
-			 * Fiqh: Foundations 1
-			 */
-			title: () => LocalizedString
-			/**
-			 * A brief, comprehensive introduction for the student of foundations and seeker of results
-			 */
-			desc: () => LocalizedString
-			/**
-			 * Sharh Mukhtasar al-Manar
-			 */
-			book: () => LocalizedString
-			explanation: () => LocalizedString
-		}
-		'fiqh-sharhmanar': {
-			/**
-			 * Fiqh: Foundations 2
-			 */
-			title: () => LocalizedString
-			desc: () => LocalizedString
-			/**
-			 * Sharh al-Manar
-			 */
-			book: () => LocalizedString
-			explanation: () => LocalizedString
-		}
-		'fiqh-zad': {
-			/**
-			 * Fiqh: Foundations 3
-			 */
-			title: () => LocalizedString
-			desc: () => LocalizedString
-			/**
-			 * Zad al-Muktafi
-			 */
-			book: () => LocalizedString
-			explanation: () => LocalizedString
-		}
-		'fiqh-talwih': {
-			/**
-			 * Fiqh: Foundations 4
-			 */
-			title: () => LocalizedString
-			desc: () => LocalizedString
-			/**
-			 * Al-Talwih maʿa al-Tawdih
-			 */
-			book: () => LocalizedString
-			explanation: () => LocalizedString
-		}
-		'fiqh-zaydan': {
-			/**
-			 * Fiqh: Principles 1
-			 */
-			title: () => LocalizedString
-			desc: () => LocalizedString
-			/**
-			 * Al-Wajiz Fi al-Qawaid
-			 */
-			book: () => LocalizedString
-			explanation: () => LocalizedString
-		}
-		'fiqh-isad': {
-			/**
-			 * Fiqh: Principles 2
-			 */
-			title: () => LocalizedString
-			/**
-			 * A poem and explanation explaining everything needed by a Mufti or anyone working with fiqh and the madhhab.
-			 */
-			desc: () => LocalizedString
-			/**
-			 * Sharh Uqud Rasm al-Mufti
-			 */
-			book: () => LocalizedString
-			explanation: () => LocalizedString
-		}
-		'fiqh-ghamz': {
-			/**
-			 * Fiqh: Principles 3
-			 */
-			title: () => LocalizedString
-			desc: () => LocalizedString
-			/**
-			 * Ghamz al-Basair
-			 */
-			book: () => LocalizedString
-			explanation: () => LocalizedString
-		}
-		'fiqh-maram': {
-			/**
-			 * Fiqh: Evidences 1
-			 */
-			title: () => LocalizedString
-			desc: () => LocalizedString
-			/**
-			 * Sharh Bulugh al-Maram
-			 */
-			book: () => LocalizedString
-			explanation: () => LocalizedString
-		}
-		'fiqh-ila': {
-			/**
-			 * Fiqh: Evidences 2
-			 */
-			title: () => LocalizedString
-			desc: () => LocalizedString
-			/**
-			 * Ila al-Sunan
-			 */
-			book: () => LocalizedString
-			explanation: () => LocalizedString
-		}
-		'tasawwuf-bidayah': {
-			/**
-			 * Spirituality
-			 */
-			title: () => LocalizedString
-			/**
-			 * The principles of beginnings, which increase Muslims in good activity and correcting their method in that
-			 */
-			desc: () => LocalizedString
-			/**
-			 * Bidayat al-Hidayah
-			 */
-			book: () => LocalizedString
-			explanation: () => LocalizedString
-		}
-		'tasawwuf-taj': {
-			/**
-			 * Spirituality
-			 */
-			title: () => LocalizedString
-			desc: () => LocalizedString
-			/**
-			 * Taj al-Arus
-			 */
-			book: () => LocalizedString
-			explanation: () => LocalizedString
-		}
-		'tasawwuf-uyub': {
-			/**
-			 * Spirituality
-			 */
-			title: () => LocalizedString
-			desc: () => LocalizedString
-			/**
-			 * Uyub al-Nafs wa Adwiyatuha
-			 */
-			book: () => LocalizedString
-			explanation: () => LocalizedString
-		}
-		'tasawwuf-qasd': {
-			/**
-			 * Spirituality
-			 */
-			title: () => LocalizedString
-			/**
-			 * A collection of principles which are the foundation of Tasawwuf and the Path to Allah Almighty
-			 */
-			desc: () => LocalizedString
-			/**
-			 * Sharh al-Muntaqa min al-Qawaid
-			 */
-			book: () => LocalizedString
-			explanation: () => LocalizedString
-		}
-		'tasawwuf-mabahith': {
-			/**
-			 * Spirituality
-			 */
-			title: () => LocalizedString
-			desc: () => LocalizedString
-			/**
-			 * Sharh al-Mabahith al-Asliyyah
-			 */
-			book: () => LocalizedString
-			explanation: () => LocalizedString
-		}
-		'tasawwuf-manazil': {
-			/**
-			 * Spirituality
-			 */
-			title: () => LocalizedString
-			desc: () => LocalizedString
-			/**
-			 * Manazil al-Saʾirin
-			 */
-			book: () => LocalizedString
-			explanation: () => LocalizedString
-		}
-		'tasawwuf-himam': {
-			/**
-			 * Spirituality
-			 */
-			title: () => LocalizedString
-			desc: () => LocalizedString
-			/**
-			 * Iqaz al-Himam
-			 */
-			book: () => LocalizedString
-			explanation: () => LocalizedString
-		}
-		'tasawwuf-wasaya': {
-			/**
-			 * Spirituality: 1
-			 */
-			title: () => LocalizedString
-			desc: () => LocalizedString
-			/**
-			 * Al-Wasaya
-			 */
-			book: () => LocalizedString
-			explanation: () => LocalizedString
-		}
-		'tasawwuf-qawanin': {
-			/**
-			 * Spirituality: 2
-			 */
-			title: () => LocalizedString
-			/**
-			 * One of the most important books of Tasawwuf: innovative in expression and containing major wisdoms in suluk and irfan
-			 */
-			desc: () => LocalizedString
-			/**
-			 * Qawanin Hikam al-Ishraq
-			 */
-			book: () => LocalizedString
-			explanation: () => LocalizedString
-		}
-		'tasawwuf-naqsh': {
-			/**
-			 * Spirituality: 3
-			 */
-			title: () => LocalizedString
-			desc: () => LocalizedString
-			/**
-			 * Naqsh al-Fusus
-			 */
-			book: () => LocalizedString
-			explanation: () => LocalizedString
-		}
-		'tasawwuf-insankamil': {
-			/**
-			 * Spirituality: 4
-			 */
-			title: () => LocalizedString
-			desc: () => LocalizedString
-			/**
-			 * Al-Insan al-Kamil
-			 */
-			book: () => LocalizedString
-			explanation: () => LocalizedString
-		}
-		'tasawwuf-fusus': {
-			/**
-			 * Spirituality: 5
-			 */
-			title: () => LocalizedString
-			desc: () => LocalizedString
-			/**
-			 * Fusus al-Hikam
-			 */
-			book: () => LocalizedString
-			explanation: () => LocalizedString
-		}
-		'ulumQuran-ulum': {
-			/**
-			 * Sciences: 1
-			 */
-			title: () => LocalizedString
-			/**
-			 * A modern book on the Sciences of the Quran by Dr. Nur al-Din Itr, one of the great scholars of the last century
-			 */
-			desc: () => LocalizedString
-			/**
-			 * Ulum al-Quran
-			 */
-			book: () => LocalizedString
-			explanation: () => LocalizedString
-		}
-		'ulumQuran-zubdah': {
-			/**
-			 * Sciences: Side reading
-			 */
-			title: () => LocalizedString
-			/**
-			 * A summary of the key text in the field
-			 */
-			desc: () => LocalizedString
-			/**
-			 * Zubdat al-Itqan
-			 */
-			book: () => LocalizedString
-			explanation: () => LocalizedString
-		}
-		'tafsir-durrah': {
-			/**
-			 * Tafsir: External 1
-			 */
-			title: () => LocalizedString
-			/**
-			 * Simply phrased, mentioning the incidents of revelation from hadith, with important and precise notes
-			 */
-			desc: () => LocalizedString
-			/**
-			 * Durrah al-Tafasir
-			 */
-			book: () => LocalizedString
-			explanation: () => LocalizedString
-		}
-		'tafsir-nasafi': {
-			/**
-			 * Tafsir: External 2
-			 */
-			title: () => LocalizedString
-			/**
-			 * A summary of Baydawi's tafsir with clear phrasing and benefits in fiqh and beliefs
-			 */
-			desc: () => LocalizedString
-			/**
-			 * Tafsir al-Nasafi
-			 */
-			book: () => LocalizedString
-			explanation: () => LocalizedString
-		}
-		'tafsir-baydawi': {
-			/**
-			 * Tafsir: External 3
-			 */
-			title: () => LocalizedString
-			desc: () => LocalizedString
-			/**
-			 * Tafsir al-Baydawi
-			 */
-			book: () => LocalizedString
-			explanation: () => LocalizedString
-		}
-		'tafsir-qurtubi': {
-			/**
-			 * Tafsir: External 4
-			 */
-			title: () => LocalizedString
-			desc: () => LocalizedString
-			/**
-			 * Tafsir al-Qurtubi
-			 */
-			book: () => LocalizedString
-			explanation: () => LocalizedString
-		}
-		'tafsir-bahr': {
-			/**
-			 * Tafsir: Ishari 1
-			 */
-			title: () => LocalizedString
-			desc: () => LocalizedString
-			/**
-			 * Mukhtasar al-Bahr al-Madid
-			 */
-			book: () => LocalizedString
-			explanation: () => LocalizedString
-		}
-		'tafsir-waridat': {
-			/**
-			 * Tafsir: Ishari 2
-			 */
-			title: () => LocalizedString
-			desc: () => LocalizedString
-			/**
-			 * Al-Waridat al-Ilahiyyah
-			 */
-			book: () => LocalizedString
-			explanation: () => LocalizedString
-		}
-		'tafsir-mawaqif': {
-			/**
-			 * Tafsir: Ishari 3
-			 */
-			title: () => LocalizedString
-			desc: () => LocalizedString
-			/**
-			 * Al-Mawaqif al-Ruhaniyyah
-			 */
-			book: () => LocalizedString
-			explanation: () => LocalizedString
-		}
-		'hadith-nawawi': {
-			/**
-			 * Hadith: Text 1
-			 */
-			title: () => LocalizedString
-			/**
-			 * Famous Hadith which contain the foundations of the religion and principles of Divine Law
-			 */
-			desc: () => LocalizedString
-			/**
-			 * The 40 Nawawi Hadith
-			 */
-			book: () => LocalizedString
-			explanation: () => LocalizedString
-		}
-		'hadith-riyad': {
-			/**
-			 * Hadith: Text 2
-			 */
-			title: () => LocalizedString
-			/**
-			 * A short collection of strong hadith, with rectification for our hearts and actions, making clear the way to the afterlife
-			 */
-			desc: () => LocalizedString
-			/**
-			 * Mukktasar Riyad al-Salihin
-			 */
-			book: () => LocalizedString
-			explanation: () => LocalizedString
-		}
-		'hadith-adab': {
-			/**
-			 * Hadith: Text 3
-			 */
-			title: () => LocalizedString
-			/**
-			 * A book of Prophetic, educational ettiquette that inspire the Ummah to folow and be adorned by them
-			 */
-			desc: () => LocalizedString
-			/**
-			 * Al-Adab al-Mufrad
-			 */
-			book: () => LocalizedString
-			explanation: () => LocalizedString
-		}
-		'hadith-athar': {
-			/**
-			 * Hadith: Text 4
-			 */
-			title: () => LocalizedString
-			desc: () => LocalizedString
-			/**
-			 * Al-Athar by Imam Muhammad
-			 */
-			book: () => LocalizedString
-			explanation: () => LocalizedString
-		}
-		'hadith-bukhari': {
-			/**
-			 * Hadith: Text
-			 */
-			title: () => LocalizedString
-			desc: () => LocalizedString
-			/**
-			 * Sahih al-Bukhari
-			 */
-			book: () => LocalizedString
-			explanation: () => LocalizedString
-		}
-		'hadith-muslim': {
-			/**
-			 * Hadith: Text
-			 */
-			title: () => LocalizedString
-			desc: () => LocalizedString
-			/**
-			 * Sahih Muslim
-			 */
-			book: () => LocalizedString
-			explanation: () => LocalizedString
-		}
-		'hadith-tirmidhi': {
-			/**
-			 * Hadith: Text
-			 */
-			title: () => LocalizedString
-			desc: () => LocalizedString
-			/**
-			 * Sunan al-Tirmidhi
-			 */
-			book: () => LocalizedString
-			explanation: () => LocalizedString
-		}
-		'hadith-abudawud': {
-			/**
-			 * Hadith: Text
-			 */
-			title: () => LocalizedString
-			desc: () => LocalizedString
-			/**
-			 * Sunan Abu Dawud
-			 */
-			book: () => LocalizedString
-			explanation: () => LocalizedString
-		}
-		'hadith-ibnmajah': {
-			/**
-			 * Hadith: Text
-			 */
-			title: () => LocalizedString
-			desc: () => LocalizedString
-			/**
-			 * Sunan ibn Majah
-			 */
-			book: () => LocalizedString
-			explanation: () => LocalizedString
-		}
-		'hadith-nasai': {
-			/**
-			 * Hadith: Text
-			 */
-			title: () => LocalizedString
-			desc: () => LocalizedString
-			/**
-			 * Sunan al-Nasai
-			 */
-			book: () => LocalizedString
-			explanation: () => LocalizedString
-		}
-		'hadith-musnad': {
-			/**
-			 * Hadith: Text
-			 */
-			title: () => LocalizedString
-			desc: () => LocalizedString
-			/**
-			 * Musnad Ahmad
-			 */
-			book: () => LocalizedString
-			explanation: () => LocalizedString
-		}
-		'hadith-darimi': {
-			/**
-			 * Hadith: Text
-			 */
-			title: () => LocalizedString
-			desc: () => LocalizedString
-			/**
-			 * Sunan al-Darimi
-			 */
-			book: () => LocalizedString
-			explanation: () => LocalizedString
-		}
-		'hadith-muwatta': {
-			/**
-			 * Hadith: Text
-			 */
-			title: () => LocalizedString
-			desc: () => LocalizedString
-			/**
-			 * Al-Muwatta
-			 */
-			book: () => LocalizedString
-			explanation: () => LocalizedString
-		}
-		'hadith-umdah': {
-			/**
-			 * Hadith: Text
-			 */
-			title: () => LocalizedString
-			desc: () => LocalizedString
-			/**
-			 * Umdah al-Ahkam
-			 */
-			book: () => LocalizedString
-			explanation: () => LocalizedString
-		}
-		'hadith-bulugh': {
-			/**
-			 * Hadith: Text
-			 */
-			title: () => LocalizedString
-			desc: () => LocalizedString
-			/**
-			 * Bulugh al-Maram
-			 */
-			book: () => LocalizedString
-			explanation: () => LocalizedString
-		}
-		'hadith-jami-suyuti': {
-			/**
-			 * Hadith: Text
-			 */
-			title: () => LocalizedString
-			desc: () => LocalizedString
-			/**
-			 * Al-Jami al-Saghir
-			 */
-			book: () => LocalizedString
-			/**
-			 * By Imam al-Suyuti
-			 */
-			explanation: () => LocalizedString
-		}
-		'hadith-bayquni': {
-			/**
-			 * Hadith: Terminology 1
-			 */
-			title: () => LocalizedString
-			/**
-			 * Introducing the most famous Hadith sciences and the needed explanations and terminology
-			 */
-			desc: () => LocalizedString
-			/**
-			 * Sharh al-Bayquniyyah
-			 */
-			book: () => LocalizedString
-			explanation: () => LocalizedString
-		}
-		'hadith-nuzhah': {
-			/**
-			 * Hadith: Terminology 2
-			 */
-			title: () => LocalizedString
-			desc: () => LocalizedString
-			/**
-			 * Nuzhah al-Nazar
-			 */
-			book: () => LocalizedString
-			explanation: () => LocalizedString
-		}
-		'hadith-salah': {
-			/**
-			 * Hadith: Terminology 3
-			 */
-			title: () => LocalizedString
-			desc: () => LocalizedString
-			/**
-			 * Muqaddimah Ibn al-Salah
-			 */
-			book: () => LocalizedString
-			explanation: () => LocalizedString
-		}
-		'hadith-tadrib': {
-			/**
-			 * Hadith: Terminology 4
-			 */
-			title: () => LocalizedString
-			desc: () => LocalizedString
-			/**
-			 * Tadrib al-Rawi
-			 */
-			book: () => LocalizedString
-			explanation: () => LocalizedString
-		}
-		'sirah-halabi': {
-			/**
-			 * Seerah 1
-			 */
-			title: () => LocalizedString
-			/**
-			 * A refined edition of a trusted reference in Prophetic Biography, containing fluid writing, accurate reports and deep explanations
-			 */
-			desc: () => LocalizedString
-			/**
-			 * Tahdhib al-Seerah al-Halabiyyah
-			 */
-			book: () => LocalizedString
-			explanation: () => LocalizedString
-		}
-		'sirah-wasail': {
-			/**
-			 * Shamail 1
-			 */
-			title: () => LocalizedString
-			/**
-			 * A brief book that gathers the traits of the Prophet, blessings and peace upon him, with explanations
-			 */
-			desc: () => LocalizedString
-			/**
-			 * Wasail al-Wusul
-			 */
-			book: () => LocalizedString
-			explanation: () => LocalizedString
-		}
-		'other-isa': {
-			/**
-			 * Logic
-			 */
-			title: () => LocalizedString
-			/**
-			 * An explanation of the foundational text in the study of Logic
-			 */
-			desc: () => LocalizedString
-			/**
-			 * Mughni al-Tullab
-			 */
-			book: () => LocalizedString
-			explanation: () => LocalizedString
-		}
-		'other-diwankurdi': {
-			/**
-			 * Inshad & Singing
-			 */
-			title: () => LocalizedString
-			desc: () => LocalizedString
-			/**
-			 * Diwan al-Shaykh al-Kurdi
-			 */
-			book: () => LocalizedString
-			explanation: () => LocalizedString
-		}
-	}
 	contact: {
 		/**
 		 * Contact us through
@@ -4047,6 +2591,1481 @@ export type TranslationFunctions = {
 	 * The Inner & Outer Sciences
 	 */
 	slogan: () => LocalizedString
+	'low-priority': {
+		tags: {
+			/**
+			 * Individually Obligatory Knowledge (farḍ ʿayn)
+			 */
+			fard: () => LocalizedString
+			/**
+			 * The Prophet said - Allah bless him and send him peace: "Seeking knowledge is mandatory upon every Muslim." The Scholars have explained that this obligatory knowledge on every Muslim man and women are five: Beliefs, Tajwid to correct what is recited in Salah, Fiqh of Worship & Interactions, and Purification of the soul.
+			 */
+			fard_explanation: () => LocalizedString
+			/**
+			 * Creed 
+			 */
+			aqidah: () => LocalizedString
+			/**
+			 * Truly, Beliefs is the most noble religious science. It is the bedrock of all obligations, and the foundation of all commands—because it is linked to the Divine Being. This is why it's mandatory for every Muslim to learn what will correct his beliefs, as Allah Almighty said: "And I have not created jinn or human beings except to worship Me." [51:56] Ibn Jurayj explained: "That means: 'To know Me.'"
+			 */
+			aqidah_explanation: () => LocalizedString
+			/**
+			 * Prophetic Biography (sīra) and Characteristics (shamā’il)
+			 */
+			sirah: () => LocalizedString
+			/**
+			 * Works of Prophetic Biography & Description give out rays of light, the light of Islamic principles and lofty ettiqutte. It is what allows one to udnerstand the book of Allah Almighty and its goals. Surely the Prophet (peace and blessings upon him) is the practical example of all that is in the Quran, as Lady Aisha (Allah be pleased upon her) said: 'His ettiquette was the Quran.'
+			 */
+			sirah_explanation: () => LocalizedString
+			/**
+			 * Additional Programs
+			 */
+			program: () => LocalizedString
+			program_explanation: () => LocalizedString
+			/**
+			 * Arabic for Non-Native Speakers
+			 */
+			natiq: () => LocalizedString
+			/**
+			 * After learning the knowledge obligatory upon every Muslim, learning Arabic for non-Arabs is a life-changing improvement, allowing them to understand the Quran, Sunnah, and Scholars directly without any barrier.
+			 */
+			natiq_explanation: () => LocalizedString
+			/**
+			 * Various Courses
+			 */
+			misc: () => LocalizedString
+			/**
+			 * Various Courses
+			 */
+			misc_explanation: () => LocalizedString
+			/**
+			 * Qur’anic Recitation & Tajwīd
+			 */
+			tajwid: () => LocalizedString
+			/**
+			 * Theoretical
+			 */
+			tajwid_nazari: () => LocalizedString
+			/**
+			 * Practical
+			 */
+			tajwid_amali: () => LocalizedString
+			/**
+			 * Truly the science of Tajwid is part of the knowledge obligatory for every Muslim to learn – to the extent by which Salah is valid. The goal of Tajwid is giving the Quran and each letter in it its right, and to recite as the Prophet (peace and blessings upon him) recited.
+			 */
+			tajwid_explanation: () => LocalizedString
+			/**
+			 * Arabic Language Arts
+			 */
+			arabi: () => LocalizedString
+			/**
+			 * Syntax
+			 */
+			arabi_nahw: () => LocalizedString
+			/**
+			 * Morphology
+			 */
+			arabi_sarf: () => LocalizedString
+			/**
+			 * Rhetoric
+			 */
+			arabi_balaghah: () => LocalizedString
+			/**
+			 * "Indeed Allah Almighty honored the Arabic language out of all others, by making it the vessel for His Noble Book and the Sunnah of His Prophet - Allah send blessings and peace upon him - the Almighty said: "We have sent it down as an Arabic Quran so that you may understand" [Yusuf: 2]. Thus, it is the tongue of the clear Divine law and it's study is widespread and an inseparable part of the religion."
+			 */
+			arabi_explanation: () => LocalizedString
+			/**
+			 * Law (fiqh) and Legal Theory (uṣūl al-fiqh)
+			 */
+			fiqh: () => LocalizedString
+			/**
+			 * Legal Rulings (furūʿ)
+			 */
+			fiqh_rulings: () => LocalizedString
+			/**
+			 * Legal Theory (uṣūl)
+			 */
+			fiqh_foundations: () => LocalizedString
+			/**
+			 * Legal Canons (qawāʿid fiqhiyya)
+			 */
+			fiqh_principles: () => LocalizedString
+			/**
+			 * Legal Evidence
+			 */
+			fiqh_evidences: () => LocalizedString
+			/**
+			 * Truly Fiqh is one of the noblest and greatest religious sciences - after learning what corrects his belief. Indeed, Fiqh corrects a person's worship and interactions, allowing him to worship Allah upon guidance, getting to know Him in the worldy life upto the levels of the rigtheous, and in the afterlife upto the ranks of the best. Allah make us of them by His generosity and favor!
+			 */
+			fiqh_explanation: () => LocalizedString
+			/**
+			 * Spirituality (taṣawwuf)
+			 */
+			tasawwuf: () => LocalizedString
+			/**
+			 * Self-purification & Suluk
+			 */
+			tasawwuf_suluk: () => LocalizedString
+			/**
+			 * Deeper Reflection
+			 */
+			tasawwuf_irfan: () => LocalizedString
+			/**
+			 * There is no doubt that Tasawwuf (Spirituality) is the most beneficial knowledge, because it is the way to clear the soul of its flaws and filth, and adorning it with higher truths and realities, and purifying it with precise and wonderful details. Thus it is the beneficial knowledge the fruit of which is fear of Allah Almighty. Real Spirituality is what makes clear the behavioural, nurturing and development method - and after that the spiritual. It is made up of three stages: cleansing, adorning and manifesting.
+			 */
+			tasawwuf_explanation: () => LocalizedString
+			/**
+			 * Qur’anic Sciences and Exegesis
+			 */
+			tafsir: () => LocalizedString
+			/**
+			 * Inspired Exegesis
+			 */
+			tafsir_ishari: () => LocalizedString
+			/**
+			 * Formal Exegesis (tafsīr)
+			 */
+			tafsir_zahir: () => LocalizedString
+			/**
+			 * Qur’anic Sciences
+			 */
+			ulum_quran: () => LocalizedString
+			/**
+			 * "Truly the Quran is the book of guidance for mankind, it guides them to the upright, and leads them to what is good for their worldly- and afterlife. Among the most important things a Muslim must be concerned about and focus on: reflecting on the Quran and understanding its meanings. That is the way to success in this life and the next, and this is not possible except by returning to what the Scholars of Tafsir have written about the Words of Allah Almighty."
+			 */
+			tafsir_explanation: () => LocalizedString
+			/**
+			 * Hadith Sciences
+			 */
+			hadith: () => LocalizedString
+			/**
+			 * Hadith Texts
+			 */
+			hadith_texts: () => LocalizedString
+			/**
+			 * Other Hadith Sciences
+			 */
+			hadith_sciences: () => LocalizedString
+			/**
+			 * Surely the Prophetic Sunnah is the source of Islam and reviver of Iman in the hearts. Whoever reads these noble hadith is in the company of the Messenger of Allah (peace and blessings upon him), receiving knowledge and insight from him. And truly the scholars of Islam have precisely preserved all these narrations with the utmost excellence and clarity.
+			 */
+			hadith_explanation: () => LocalizedString
+			/**
+			 * Assorted Classes
+			 */
+			other: () => LocalizedString
+			other_explanation: () => LocalizedString
+			/**
+			 * Outreach and Oration
+			 */
+			'public': () => LocalizedString
+		}
+		courses: {
+			/**
+			 * Courses
+			 */
+			title: () => LocalizedString
+			'tajwid-qaida': {
+				/**
+				 * Tajwid: 1
+				 */
+				title: () => LocalizedString
+				/**
+				 * A practical first text to reciting the Noble Quran correctly with tajwid
+				 */
+				desc: () => LocalizedString
+				/**
+				 * Al-Qaida al-Nuraniyyah
+				 */
+				book: () => LocalizedString
+				explanation: () => LocalizedString
+			}
+			'tajwid-hidayatrahman': {
+				/**
+				 * Tajwid: 2
+				 */
+				title: () => LocalizedString
+				desc: () => LocalizedString
+				/**
+				 * Hidayat al-Rahman
+				 */
+				book: () => LocalizedString
+			}
+			'tajwid-thani': {
+				/**
+				 * Tajwid: 3
+				 */
+				title: () => LocalizedString
+				/**
+				 * Written by the expert scholar Yahya al-Ghawthani
+				 */
+				desc: () => LocalizedString
+				/**
+				 * Al-Mustawa al-Thani
+				 */
+				book: () => LocalizedString
+			}
+			'tajwid-jazari': {
+				/**
+				 * Tajwid: 4
+				 */
+				title: () => LocalizedString
+				desc: () => LocalizedString
+				/**
+				 * Sharh al-Jazariyyah
+				 */
+				book: () => LocalizedString
+			}
+			'tajwid-amma': {
+				/**
+				 * Level 1: Open-book Recitation
+				 */
+				title: () => LocalizedString
+				/**
+				 * Apply the rules of tajwid to these regularly read surah!
+				 */
+				desc: () => LocalizedString
+				/**
+				 * Quran Juz 30: ʿAmma
+				 */
+				book: () => LocalizedString
+			}
+			'tajwid-reading': {
+				/**
+				 * Level 2: Open-book Recitation
+				 */
+				title: () => LocalizedString
+				desc: () => LocalizedString
+				/**
+				 * The Entire Quran
+				 */
+				book: () => LocalizedString
+			}
+			'tajwid-reciting': {
+				/**
+				 * Level 3: Reciting from Memory
+				 */
+				title: () => LocalizedString
+				/**
+				 * In all 10 recitations, depending on the student's aims
+				 */
+				desc: () => LocalizedString
+				/**
+				 * The Entire Quran for Ijaza
+				 */
+				book: () => LocalizedString
+			}
+			'fiqh-nur': {
+				/**
+				 * Fiqh of Worship: 1
+				 */
+				title: () => LocalizedString
+				/**
+				 * Essential rules for a Muslim's worship and all things related to that
+				 */
+				desc: () => LocalizedString
+				/**
+				 * Nur al-Idah
+				 */
+				book: () => LocalizedString
+				explanation: () => LocalizedString
+			}
+			'fiqh-quduri': {
+				/**
+				 * Fiqh of Interactions: 1
+				 */
+				title: () => LocalizedString
+				/**
+				 * Essential rules for a Muslim's dealings  with Allah's creation and his relations
+				 */
+				desc: () => LocalizedString
+				/**
+				 * Mukhtasar al-Quduri
+				 */
+				book: () => LocalizedString
+				explanation: () => LocalizedString
+			}
+			'aqidah-ahl-sunnah': {
+				/**
+				 * Beliefs: Essentials
+				 */
+				title: () => LocalizedString
+				/**
+				 * The obligatory beliefs for every Muslim in a brief and simple text
+				 */
+				desc: () => LocalizedString
+				/**
+				 * Aqida Ahl al-Sunnah
+				 */
+				book: () => LocalizedString
+				explanation: () => LocalizedString
+			}
+			'tasawwuf-rawdah': {
+				/**
+				 * Spirituality: Introduction
+				 */
+				title: () => LocalizedString
+				/**
+				 * The essential introduction to Ihsan in every part of life to get closer to Allah Almighty
+				 */
+				desc: () => LocalizedString
+				/**
+				 * Radwat al-Ushaq
+				 */
+				book: () => LocalizedString
+				explanation: () => LocalizedString
+			}
+			'tasawwuf-tuhfah': {
+				/**
+				 * Spirituality: Essentials
+				 */
+				title: () => LocalizedString
+				/**
+				 * Rectifying worship, regular actions, and repairing the bad traits of the heart
+				 */
+				desc: () => LocalizedString
+				/**
+				 * Tuhfat al-Salikin
+				 */
+				book: () => LocalizedString
+				explanation: () => LocalizedString
+			}
+			'tasawwuf-fuyud': {
+				/**
+				 * Spirituality: Essentials
+				 */
+				title: () => LocalizedString
+				/**
+				 * A collection of commanding hadith, with explanations to help bring them to life
+				 */
+				desc: () => LocalizedString
+				/**
+				 * Al-Fuyud al-Ahmadiyyah
+				 */
+				book: () => LocalizedString
+				explanation: () => LocalizedString
+			}
+			'program-youth': {
+				/**
+				 * A complete program spanning several books
+				 */
+				title: () => LocalizedString
+				/**
+				 * This is placeholder of some text, we need to write later
+				 */
+				desc: () => LocalizedString
+				/**
+				 * Youth Program
+				 */
+				book: () => LocalizedString
+				explanation: () => LocalizedString
+			}
+			'program-women': {
+				/**
+				 * A complete program spanning several books
+				 */
+				title: () => LocalizedString
+				/**
+				 * This is placeholder of some text, we need to write later
+				 */
+				desc: () => LocalizedString
+				/**
+				 * Women's Program
+				 */
+				book: () => LocalizedString
+				explanation: () => LocalizedString
+			}
+			'natiq-um1': {
+				/**
+				 * Preparatory Level
+				 */
+				title: () => LocalizedString
+				/**
+				 * Starting from how to pronounce letters, all the way to communicating in everyday situations
+				 */
+				desc: () => LocalizedString
+				/**
+				 * Silsilah al-Lisan: 1
+				 */
+				book: () => LocalizedString
+				explanation: () => LocalizedString
+			}
+			'natiq-um2': {
+				/**
+				 * Beginner Level
+				 */
+				title: () => LocalizedString
+				/**
+				 * Students begin learning a foundation in Arabic grammar and sentence construction.
+				 */
+				desc: () => LocalizedString
+				/**
+				 * Silsilah al-Lisan: 2
+				 */
+				book: () => LocalizedString
+				explanation: () => LocalizedString
+			}
+			'natiq-um3': {
+				/**
+				 * Intermediate Level
+				 */
+				title: () => LocalizedString
+				/**
+				 * Learners start composing short essays, cover more topics for vocabulary, and expand their grammar.
+				 */
+				desc: () => LocalizedString
+				/**
+				 * Silsilah al-Lisan: 3
+				 */
+				book: () => LocalizedString
+				explanation: () => LocalizedString
+			}
+			'natiq-um4': {
+				/**
+				 * Advanced Level
+				 */
+				title: () => LocalizedString
+				/**
+				 * Training to write long texts, dialogues and being able to handle any Arabic book or reference
+				 */
+				desc: () => LocalizedString
+				/**
+				 * Silsilah al-Lisan: 4
+				 */
+				book: () => LocalizedString
+				explanation: () => LocalizedString
+			}
+			'nahw-mabadi': {
+				/**
+				 * Level 1
+				 */
+				title: () => LocalizedString
+				desc: () => LocalizedString
+				/**
+				 * Mabadiʾ Durus al-Arabiyyah
+				 */
+				book: () => LocalizedString
+				explanation: () => LocalizedString
+			}
+			'nahw-tawdih': {
+				/**
+				 * Level 1
+				 */
+				title: () => LocalizedString
+				desc: () => LocalizedString
+				/**
+				 * Al-Tawdih: Sharh al-Ajurumiyyah
+				 */
+				book: () => LocalizedString
+				explanation: () => LocalizedString
+			}
+			'nahw-tashil': {
+				/**
+				 * Level 2
+				 */
+				title: () => LocalizedString
+				desc: () => LocalizedString
+				/**
+				 * Al-Tashil: Sharh al-Ajurumiyyah
+				 */
+				book: () => LocalizedString
+				explanation: () => LocalizedString
+			}
+			'nahw-durus': {
+				/**
+				 * Level 3
+				 */
+				title: () => LocalizedString
+				desc: () => LocalizedString
+				/**
+				 * Durus Nahwiyya
+				 */
+				book: () => LocalizedString
+				explanation: () => LocalizedString
+			}
+			'nahw-qatr': {
+				/**
+				 * Level 4
+				 */
+				title: () => LocalizedString
+				desc: () => LocalizedString
+				/**
+				 * Sharh Qatr al-Nada
+				 */
+				book: () => LocalizedString
+				explanation: () => LocalizedString
+			}
+			'nahw-alfiyyah': {
+				/**
+				 * Level 5
+				 */
+				title: () => LocalizedString
+				desc: () => LocalizedString
+				/**
+				 * Al-Alfiyyah
+				 */
+				book: () => LocalizedString
+				explanation: () => LocalizedString
+			}
+			'nahw-ibnaqil': {
+				/**
+				 * Level 6
+				 */
+				title: () => LocalizedString
+				desc: () => LocalizedString
+				/**
+				 * Sharh ibn Aqīl
+				 */
+				book: () => LocalizedString
+				explanation: () => LocalizedString
+			}
+			'sarf-amthilah': {
+				/**
+				 * Level 1
+				 */
+				title: () => LocalizedString
+				desc: () => LocalizedString
+				/**
+				 * Al-Amthilah
+				 */
+				book: () => LocalizedString
+				explanation: () => LocalizedString
+			}
+			'sarf-bina': {
+				/**
+				 * Level 2
+				 */
+				title: () => LocalizedString
+				desc: () => LocalizedString
+				/**
+				 * Sharh Bina al-Afʿāl
+				 */
+				book: () => LocalizedString
+				explanation: () => LocalizedString
+			}
+			'sarf-shadha': {
+				/**
+				 * Level 3
+				 */
+				title: () => LocalizedString
+				desc: () => LocalizedString
+				/**
+				 * Shadha al-ʿArf
+				 */
+				book: () => LocalizedString
+				explanation: () => LocalizedString
+			}
+			'balaghah-durus': {
+				/**
+				 * Level 1
+				 */
+				title: () => LocalizedString
+				desc: () => LocalizedString
+				/**
+				 * Durus al-balagha
+				 */
+				book: () => LocalizedString
+				explanation: () => LocalizedString
+			}
+			'balaghah-tuhfah': {
+				/**
+				 * Level 2
+				 */
+				title: () => LocalizedString
+				desc: () => LocalizedString
+				/**
+				 * Tuhfat al-Ikhwan
+				 */
+				book: () => LocalizedString
+				explanation: () => LocalizedString
+			}
+			'balaghah-mukhtasar': {
+				/**
+				 * Level 3
+				 */
+				title: () => LocalizedString
+				desc: () => LocalizedString
+				/**
+				 * Mukhtasar al-Maʿāni
+				 */
+				book: () => LocalizedString
+				explanation: () => LocalizedString
+			}
+			'balaghah-balaghah': {
+				/**
+				 * Perusal
+				 */
+				title: () => LocalizedString
+				desc: () => LocalizedString
+				/**
+				 * Al-Balaghah al-Arabiyyah
+				 */
+				book: () => LocalizedString
+				explanation: () => LocalizedString
+			}
+			'balaghah-burdah': {
+				/**
+				 * Perusal
+				 */
+				title: () => LocalizedString
+				desc: () => LocalizedString
+				/**
+				 * Al-Burdah: Explanation, Grammar & Balaghah
+				 */
+				book: () => LocalizedString
+				explanation: () => LocalizedString
+			}
+			'aqidah-sharh-nazm': {
+				/**
+				 * Beliefs: 1
+				 */
+				title: () => LocalizedString
+				/**
+				 * A masterful educational poem that's approachable yet vast, with an explanation and commentary
+				 */
+				desc: () => LocalizedString
+				/**
+				 * Nazm Aqida Ahl al-Sunnah
+				 */
+				book: () => LocalizedString
+				explanation: () => LocalizedString
+			}
+			'aqidah-tali': {
+				/**
+				 * Beliefs: 2
+				 */
+				title: () => LocalizedString
+				/**
+				 * An expert explanation for this major text. This level is sufficient for students not specialzing in beliefs
+				 */
+				desc: () => LocalizedString
+				/**
+				 * Taliʿ al-Bushra
+				 */
+				book: () => LocalizedString
+				explanation: () => LocalizedString
+			}
+			'aqidah-miftah': {
+				/**
+				 * Beliefs: 3
+				 */
+				title: () => LocalizedString
+				/**
+				 * A summary of over 50 works in Creed, this book opens the doors of advanced topics to come
+				 */
+				desc: () => LocalizedString
+				/**
+				 * Miftah al-Jannah
+				 */
+				book: () => LocalizedString
+				explanation: () => LocalizedString
+			}
+			'aqidah-jawharah': {
+				/**
+				 * Beliefs: 4
+				 */
+				title: () => LocalizedString
+				/**
+				 * A didactic poem containing most topics of belief, decorated with glimpses of higher truths
+				 */
+				desc: () => LocalizedString
+				/**
+				 * Jawharat al-Tawhid
+				 */
+				book: () => LocalizedString
+				explanation: () => LocalizedString
+			}
+			'aqidah-taftazani': {
+				/**
+				 * Beliefs: 5
+				 */
+				title: () => LocalizedString
+				/**
+				 * An explanation of a brief yet comprehensive book containing the Sunni beliefs of those who lean to intellectual investigation
+				 */
+				desc: () => LocalizedString
+				/**
+				 * Sharh al-Nasafiyyah
+				 */
+				book: () => LocalizedString
+				explanation: () => LocalizedString
+			}
+			'aqidah-tahrir': {
+				/**
+				 * Beliefs: 6
+				 */
+				title: () => LocalizedString
+				/**
+				 * A deep dive and joruney through the range of views
+				 */
+				desc: () => LocalizedString
+				/**
+				 * Tahrir al-Matalib
+				 */
+				book: () => LocalizedString
+				explanation: () => LocalizedString
+			}
+			'fiqh-maslak': {
+				/**
+				 * Fiqh: 2
+				 */
+				title: () => LocalizedString
+				/**
+				 * A complete study of the rulings related to acts of worship: purification, prayer, fasting, zakah & hajj
+				 */
+				desc: () => LocalizedString
+				/**
+				 * Maslak al-Najah
+				 */
+				book: () => LocalizedString
+				explanation: () => LocalizedString
+			}
+			'fiqh-lubab': {
+				/**
+				 * Fiqh: 3
+				 */
+				title: () => LocalizedString
+				/**
+				 * A later work that gathers what came before it to explain the most important Hanafi book
+				 */
+				desc: () => LocalizedString
+				/**
+				 * Al-Lubab
+				 */
+				book: () => LocalizedString
+				explanation: () => LocalizedString
+			}
+			'fiqh-hidayah': {
+				/**
+				 * Fiqh: 4
+				 */
+				title: () => LocalizedString
+				/**
+				 * The source and key for every book in the Madhhab that came after it
+				 */
+				desc: () => LocalizedString
+				/**
+				 * Al-Hidayah
+				 */
+				book: () => LocalizedString
+				explanation: () => LocalizedString
+			}
+			'fiqh-rad': {
+				/**
+				 * Fiqh: 5
+				 */
+				title: () => LocalizedString
+				/**
+				 * The book relied upon for issuing rulings in the Hanafi madhhab
+				 */
+				desc: () => LocalizedString
+				/**
+				 * Radd al-Muhtar
+				 */
+				book: () => LocalizedString
+				explanation: () => LocalizedString
+			}
+			'fiqh-manar': {
+				/**
+				 * Fiqh: Foundations 1
+				 */
+				title: () => LocalizedString
+				/**
+				 * A brief, comprehensive introduction for the student of foundations and seeker of results
+				 */
+				desc: () => LocalizedString
+				/**
+				 * Sharh Mukhtasar al-Manar
+				 */
+				book: () => LocalizedString
+				explanation: () => LocalizedString
+			}
+			'fiqh-sharhmanar': {
+				/**
+				 * Fiqh: Foundations 2
+				 */
+				title: () => LocalizedString
+				desc: () => LocalizedString
+				/**
+				 * Sharh al-Manar
+				 */
+				book: () => LocalizedString
+				explanation: () => LocalizedString
+			}
+			'fiqh-zad': {
+				/**
+				 * Fiqh: Foundations 3
+				 */
+				title: () => LocalizedString
+				desc: () => LocalizedString
+				/**
+				 * Zad al-Muktafi
+				 */
+				book: () => LocalizedString
+				explanation: () => LocalizedString
+			}
+			'fiqh-talwih': {
+				/**
+				 * Fiqh: Foundations 4
+				 */
+				title: () => LocalizedString
+				desc: () => LocalizedString
+				/**
+				 * Al-Talwih maʿa al-Tawdih
+				 */
+				book: () => LocalizedString
+				explanation: () => LocalizedString
+			}
+			'fiqh-zaydan': {
+				/**
+				 * Fiqh: Principles 1
+				 */
+				title: () => LocalizedString
+				desc: () => LocalizedString
+				/**
+				 * Al-Wajiz Fi al-Qawaid
+				 */
+				book: () => LocalizedString
+				explanation: () => LocalizedString
+			}
+			'fiqh-isad': {
+				/**
+				 * Fiqh: Principles 2
+				 */
+				title: () => LocalizedString
+				/**
+				 * A poem and explanation explaining everything needed by a Mufti or anyone working with fiqh and the madhhab.
+				 */
+				desc: () => LocalizedString
+				/**
+				 * Sharh Uqud Rasm al-Mufti
+				 */
+				book: () => LocalizedString
+				explanation: () => LocalizedString
+			}
+			'fiqh-ghamz': {
+				/**
+				 * Fiqh: Principles 3
+				 */
+				title: () => LocalizedString
+				desc: () => LocalizedString
+				/**
+				 * Ghamz al-Basair
+				 */
+				book: () => LocalizedString
+				explanation: () => LocalizedString
+			}
+			'fiqh-maram': {
+				/**
+				 * Fiqh: Evidences 1
+				 */
+				title: () => LocalizedString
+				desc: () => LocalizedString
+				/**
+				 * Sharh Bulugh al-Maram
+				 */
+				book: () => LocalizedString
+				explanation: () => LocalizedString
+			}
+			'fiqh-ila': {
+				/**
+				 * Fiqh: Evidences 2
+				 */
+				title: () => LocalizedString
+				desc: () => LocalizedString
+				/**
+				 * Ila al-Sunan
+				 */
+				book: () => LocalizedString
+				explanation: () => LocalizedString
+			}
+			'tasawwuf-bidayah': {
+				/**
+				 * Spirituality
+				 */
+				title: () => LocalizedString
+				/**
+				 * The principles of beginnings, which increase Muslims in good activity and correcting their method in that
+				 */
+				desc: () => LocalizedString
+				/**
+				 * Bidayat al-Hidayah
+				 */
+				book: () => LocalizedString
+				explanation: () => LocalizedString
+			}
+			'tasawwuf-taj': {
+				/**
+				 * Spirituality
+				 */
+				title: () => LocalizedString
+				desc: () => LocalizedString
+				/**
+				 * Taj al-Arus
+				 */
+				book: () => LocalizedString
+				explanation: () => LocalizedString
+			}
+			'tasawwuf-uyub': {
+				/**
+				 * Spirituality
+				 */
+				title: () => LocalizedString
+				desc: () => LocalizedString
+				/**
+				 * Uyub al-Nafs wa Adwiyatuha
+				 */
+				book: () => LocalizedString
+				explanation: () => LocalizedString
+			}
+			'tasawwuf-qasd': {
+				/**
+				 * Spirituality
+				 */
+				title: () => LocalizedString
+				/**
+				 * A collection of principles which are the foundation of Tasawwuf and the Path to Allah Almighty
+				 */
+				desc: () => LocalizedString
+				/**
+				 * Sharh al-Muntaqa min al-Qawaid
+				 */
+				book: () => LocalizedString
+				explanation: () => LocalizedString
+			}
+			'tasawwuf-mabahith': {
+				/**
+				 * Spirituality
+				 */
+				title: () => LocalizedString
+				desc: () => LocalizedString
+				/**
+				 * Sharh al-Mabahith al-Asliyyah
+				 */
+				book: () => LocalizedString
+				explanation: () => LocalizedString
+			}
+			'tasawwuf-manazil': {
+				/**
+				 * Spirituality
+				 */
+				title: () => LocalizedString
+				desc: () => LocalizedString
+				/**
+				 * Manazil al-Saʾirin
+				 */
+				book: () => LocalizedString
+				explanation: () => LocalizedString
+			}
+			'tasawwuf-himam': {
+				/**
+				 * Spirituality
+				 */
+				title: () => LocalizedString
+				desc: () => LocalizedString
+				/**
+				 * Iqaz al-Himam
+				 */
+				book: () => LocalizedString
+				explanation: () => LocalizedString
+			}
+			'tasawwuf-wasaya': {
+				/**
+				 * Spirituality: 1
+				 */
+				title: () => LocalizedString
+				desc: () => LocalizedString
+				/**
+				 * Al-Wasaya
+				 */
+				book: () => LocalizedString
+				explanation: () => LocalizedString
+			}
+			'tasawwuf-qawanin': {
+				/**
+				 * Spirituality: 2
+				 */
+				title: () => LocalizedString
+				/**
+				 * One of the most important books of Tasawwuf: innovative in expression and containing major wisdoms in suluk and irfan
+				 */
+				desc: () => LocalizedString
+				/**
+				 * Qawanin Hikam al-Ishraq
+				 */
+				book: () => LocalizedString
+				explanation: () => LocalizedString
+			}
+			'tasawwuf-naqsh': {
+				/**
+				 * Spirituality: 3
+				 */
+				title: () => LocalizedString
+				desc: () => LocalizedString
+				/**
+				 * Naqsh al-Fusus
+				 */
+				book: () => LocalizedString
+				explanation: () => LocalizedString
+			}
+			'tasawwuf-insankamil': {
+				/**
+				 * Spirituality: 4
+				 */
+				title: () => LocalizedString
+				desc: () => LocalizedString
+				/**
+				 * Al-Insan al-Kamil
+				 */
+				book: () => LocalizedString
+				explanation: () => LocalizedString
+			}
+			'tasawwuf-fusus': {
+				/**
+				 * Spirituality: 5
+				 */
+				title: () => LocalizedString
+				desc: () => LocalizedString
+				/**
+				 * Fusus al-Hikam
+				 */
+				book: () => LocalizedString
+				explanation: () => LocalizedString
+			}
+			'ulumQuran-ulum': {
+				/**
+				 * Sciences: 1
+				 */
+				title: () => LocalizedString
+				/**
+				 * A modern book on the Sciences of the Quran by Dr. Nur al-Din Itr, one of the great scholars of the last century
+				 */
+				desc: () => LocalizedString
+				/**
+				 * Ulum al-Quran
+				 */
+				book: () => LocalizedString
+				explanation: () => LocalizedString
+			}
+			'ulumQuran-zubdah': {
+				/**
+				 * Sciences: Side reading
+				 */
+				title: () => LocalizedString
+				/**
+				 * A summary of the key text in the field
+				 */
+				desc: () => LocalizedString
+				/**
+				 * Zubdat al-Itqan
+				 */
+				book: () => LocalizedString
+				explanation: () => LocalizedString
+			}
+			'tafsir-durrah': {
+				/**
+				 * Tafsir: External 1
+				 */
+				title: () => LocalizedString
+				/**
+				 * Simply phrased, mentioning the incidents of revelation from hadith, with important and precise notes
+				 */
+				desc: () => LocalizedString
+				/**
+				 * Durrah al-Tafasir
+				 */
+				book: () => LocalizedString
+				explanation: () => LocalizedString
+			}
+			'tafsir-nasafi': {
+				/**
+				 * Tafsir: External 2
+				 */
+				title: () => LocalizedString
+				/**
+				 * A summary of Baydawi's tafsir with clear phrasing and benefits in fiqh and beliefs
+				 */
+				desc: () => LocalizedString
+				/**
+				 * Tafsir al-Nasafi
+				 */
+				book: () => LocalizedString
+				explanation: () => LocalizedString
+			}
+			'tafsir-baydawi': {
+				/**
+				 * Tafsir: External 3
+				 */
+				title: () => LocalizedString
+				desc: () => LocalizedString
+				/**
+				 * Tafsir al-Baydawi
+				 */
+				book: () => LocalizedString
+				explanation: () => LocalizedString
+			}
+			'tafsir-qurtubi': {
+				/**
+				 * Tafsir: External 4
+				 */
+				title: () => LocalizedString
+				desc: () => LocalizedString
+				/**
+				 * Tafsir al-Qurtubi
+				 */
+				book: () => LocalizedString
+				explanation: () => LocalizedString
+			}
+			'tafsir-bahr': {
+				/**
+				 * Tafsir: Ishari 1
+				 */
+				title: () => LocalizedString
+				desc: () => LocalizedString
+				/**
+				 * Mukhtasar al-Bahr al-Madid
+				 */
+				book: () => LocalizedString
+				explanation: () => LocalizedString
+			}
+			'tafsir-waridat': {
+				/**
+				 * Tafsir: Ishari 2
+				 */
+				title: () => LocalizedString
+				desc: () => LocalizedString
+				/**
+				 * Al-Waridat al-Ilahiyyah
+				 */
+				book: () => LocalizedString
+				explanation: () => LocalizedString
+			}
+			'tafsir-mawaqif': {
+				/**
+				 * Tafsir: Ishari 3
+				 */
+				title: () => LocalizedString
+				desc: () => LocalizedString
+				/**
+				 * Al-Mawaqif al-Ruhaniyyah
+				 */
+				book: () => LocalizedString
+				explanation: () => LocalizedString
+			}
+			'hadith-nawawi': {
+				/**
+				 * Hadith: Text 1
+				 */
+				title: () => LocalizedString
+				/**
+				 * Famous Hadith which contain the foundations of the religion and principles of Divine Law
+				 */
+				desc: () => LocalizedString
+				/**
+				 * The 40 Nawawi Hadith
+				 */
+				book: () => LocalizedString
+				explanation: () => LocalizedString
+			}
+			'hadith-riyad': {
+				/**
+				 * Hadith: Text 2
+				 */
+				title: () => LocalizedString
+				/**
+				 * A short collection of strong hadith, with rectification for our hearts and actions, making clear the way to the afterlife
+				 */
+				desc: () => LocalizedString
+				/**
+				 * Mukktasar Riyad al-Salihin
+				 */
+				book: () => LocalizedString
+				explanation: () => LocalizedString
+			}
+			'hadith-adab': {
+				/**
+				 * Hadith: Text 3
+				 */
+				title: () => LocalizedString
+				/**
+				 * A book of Prophetic, educational ettiquette that inspire the Ummah to folow and be adorned by them
+				 */
+				desc: () => LocalizedString
+				/**
+				 * Al-Adab al-Mufrad
+				 */
+				book: () => LocalizedString
+				explanation: () => LocalizedString
+			}
+			'hadith-athar': {
+				/**
+				 * Hadith: Text 4
+				 */
+				title: () => LocalizedString
+				desc: () => LocalizedString
+				/**
+				 * Al-Athar by Imam Muhammad
+				 */
+				book: () => LocalizedString
+				explanation: () => LocalizedString
+			}
+			'hadith-bukhari': {
+				/**
+				 * Hadith: Text
+				 */
+				title: () => LocalizedString
+				desc: () => LocalizedString
+				/**
+				 * Sahih al-Bukhari
+				 */
+				book: () => LocalizedString
+				explanation: () => LocalizedString
+			}
+			'hadith-muslim': {
+				/**
+				 * Hadith: Text
+				 */
+				title: () => LocalizedString
+				desc: () => LocalizedString
+				/**
+				 * Sahih Muslim
+				 */
+				book: () => LocalizedString
+				explanation: () => LocalizedString
+			}
+			'hadith-tirmidhi': {
+				/**
+				 * Hadith: Text
+				 */
+				title: () => LocalizedString
+				desc: () => LocalizedString
+				/**
+				 * Sunan al-Tirmidhi
+				 */
+				book: () => LocalizedString
+				explanation: () => LocalizedString
+			}
+			'hadith-abudawud': {
+				/**
+				 * Hadith: Text
+				 */
+				title: () => LocalizedString
+				desc: () => LocalizedString
+				/**
+				 * Sunan Abu Dawud
+				 */
+				book: () => LocalizedString
+				explanation: () => LocalizedString
+			}
+			'hadith-ibnmajah': {
+				/**
+				 * Hadith: Text
+				 */
+				title: () => LocalizedString
+				desc: () => LocalizedString
+				/**
+				 * Sunan ibn Majah
+				 */
+				book: () => LocalizedString
+				explanation: () => LocalizedString
+			}
+			'hadith-nasai': {
+				/**
+				 * Hadith: Text
+				 */
+				title: () => LocalizedString
+				desc: () => LocalizedString
+				/**
+				 * Sunan al-Nasai
+				 */
+				book: () => LocalizedString
+				explanation: () => LocalizedString
+			}
+			'hadith-musnad': {
+				/**
+				 * Hadith: Text
+				 */
+				title: () => LocalizedString
+				desc: () => LocalizedString
+				/**
+				 * Musnad Ahmad
+				 */
+				book: () => LocalizedString
+				explanation: () => LocalizedString
+			}
+			'hadith-darimi': {
+				/**
+				 * Hadith: Text
+				 */
+				title: () => LocalizedString
+				desc: () => LocalizedString
+				/**
+				 * Sunan al-Darimi
+				 */
+				book: () => LocalizedString
+				explanation: () => LocalizedString
+			}
+			'hadith-muwatta': {
+				/**
+				 * Hadith: Text
+				 */
+				title: () => LocalizedString
+				desc: () => LocalizedString
+				/**
+				 * Al-Muwatta
+				 */
+				book: () => LocalizedString
+				explanation: () => LocalizedString
+			}
+			'hadith-umdah': {
+				/**
+				 * Hadith: Text
+				 */
+				title: () => LocalizedString
+				desc: () => LocalizedString
+				/**
+				 * Umdah al-Ahkam
+				 */
+				book: () => LocalizedString
+				explanation: () => LocalizedString
+			}
+			'hadith-bulugh': {
+				/**
+				 * Hadith: Text
+				 */
+				title: () => LocalizedString
+				desc: () => LocalizedString
+				/**
+				 * Bulugh al-Maram
+				 */
+				book: () => LocalizedString
+				explanation: () => LocalizedString
+			}
+			'hadith-jami-suyuti': {
+				/**
+				 * Hadith: Text
+				 */
+				title: () => LocalizedString
+				desc: () => LocalizedString
+				/**
+				 * Al-Jami al-Saghir
+				 */
+				book: () => LocalizedString
+				/**
+				 * By Imam al-Suyuti
+				 */
+				explanation: () => LocalizedString
+			}
+			'hadith-bayquni': {
+				/**
+				 * Hadith: Terminology 1
+				 */
+				title: () => LocalizedString
+				/**
+				 * Introducing the most famous Hadith sciences and the needed explanations and terminology
+				 */
+				desc: () => LocalizedString
+				/**
+				 * Sharh al-Bayquniyyah
+				 */
+				book: () => LocalizedString
+				explanation: () => LocalizedString
+			}
+			'hadith-nuzhah': {
+				/**
+				 * Hadith: Terminology 2
+				 */
+				title: () => LocalizedString
+				desc: () => LocalizedString
+				/**
+				 * Nuzhah al-Nazar
+				 */
+				book: () => LocalizedString
+				explanation: () => LocalizedString
+			}
+			'hadith-salah': {
+				/**
+				 * Hadith: Terminology 3
+				 */
+				title: () => LocalizedString
+				desc: () => LocalizedString
+				/**
+				 * Muqaddimah Ibn al-Salah
+				 */
+				book: () => LocalizedString
+				explanation: () => LocalizedString
+			}
+			'hadith-tadrib': {
+				/**
+				 * Hadith: Terminology 4
+				 */
+				title: () => LocalizedString
+				desc: () => LocalizedString
+				/**
+				 * Tadrib al-Rawi
+				 */
+				book: () => LocalizedString
+				explanation: () => LocalizedString
+			}
+			'sirah-halabi': {
+				/**
+				 * Seerah 1
+				 */
+				title: () => LocalizedString
+				/**
+				 * A refined edition of a trusted reference in Prophetic Biography, containing fluid writing, accurate reports and deep explanations
+				 */
+				desc: () => LocalizedString
+				/**
+				 * Tahdhib al-Seerah al-Halabiyyah
+				 */
+				book: () => LocalizedString
+				explanation: () => LocalizedString
+			}
+			'sirah-wasail': {
+				/**
+				 * Shamail 1
+				 */
+				title: () => LocalizedString
+				/**
+				 * A brief book that gathers the traits of the Prophet, blessings and peace upon him, with explanations
+				 */
+				desc: () => LocalizedString
+				/**
+				 * Wasail al-Wusul
+				 */
+				book: () => LocalizedString
+				explanation: () => LocalizedString
+			}
+			'other-isa': {
+				/**
+				 * Logic
+				 */
+				title: () => LocalizedString
+				/**
+				 * An explanation of the foundational text in the study of Logic
+				 */
+				desc: () => LocalizedString
+				/**
+				 * Mughni al-Tullab
+				 */
+				book: () => LocalizedString
+				explanation: () => LocalizedString
+			}
+			'other-diwankurdi': {
+				/**
+				 * Inshad & Singing
+				 */
+				title: () => LocalizedString
+				desc: () => LocalizedString
+				/**
+				 * Diwan al-Shaykh al-Kurdi
+				 */
+				book: () => LocalizedString
+				explanation: () => LocalizedString
+			}
+		}
+	}
 }
 
 export type Formatters = {}

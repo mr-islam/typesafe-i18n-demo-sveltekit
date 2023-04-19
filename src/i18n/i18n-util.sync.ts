@@ -8,9 +8,18 @@ import { loadedFormatters, loadedLocales, locales } from './i18n-util'
 import ar from './ar'
 import en from './en'
 
+import ar_low_priority from './ar/low-priority'
+import en_low_priority from './en/low-priority'
+
 const localeTranslations = {
-	ar,
-	en,
+	ar: {
+		...ar,
+		'low-priority': ar_low_priority
+	},
+	en: {
+		...en,
+		'low-priority': en_low_priority
+	},
 }
 
 export const loadLocale = (locale: Locales): void => {
