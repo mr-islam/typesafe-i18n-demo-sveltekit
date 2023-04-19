@@ -72,83 +72,83 @@
     "fard": {
       "title": "Individually Obligatory Knowledge (farḍ ʿayn)",
       "tawhid_title": "Creed (ʿaqīda)",
-      "tawhid_content1": "divinity",
-      "tawhid_content2": "prophetology",
-      "tawhid_content3": "scriptural realities",
+      "tawhid_content1": "Divinity",
+      "tawhid_content2": "Prophetology",
+      "tawhid_content3": "Scriptural realities",
       "tajwid_title": "Tajwīd",
-      "tajwid_content": "mastering Qur’anic recitation",
+      "tajwid_content": "Mastering Qur’anic recitation",
       "ibadat_title": "Devotional Law",
-      "ibadat_content": "learning the practices of cleanliness, prayer, fasting, almsgiving and pilgrimage in the legally prescribed manner",
+      "ibadat_content": "Learning the practices of cleanliness, prayer, fasting, almsgiving and pilgrimage in the legally prescribed manner",
       "muamalat_title": "Social Law",
-      "muamalat_content1": "commercial Law",
-      "muamalat_content2": "family Law",
+      "muamalat_content1": "Commercial Law",
+      "muamalat_content2": "Family Law",
       "tasawwuf_title": "Spirituality (taṣawwuf)",
-      "tasawwuf_content": "restoring the heart and refining the self"
+      "tasawwuf_content": "Testoring the heart and refining the self"
     },
     "quran": {
       "title": "Qur’anic Sciences and Exegesis",
-      "tajwid_content": "mastering Qur’anic recitation in practice and theory",
+      "tajwid_content": "Mastering Qur’anic recitation in practice and theory",
       "tafsir_title":"Exegesis (tafsīr)",
-      "tafsir_content":"the apparent and deeper meanings of Allah's scripture",
+      "tafsir_content":"The apparent and deeper meanings of Allah's scripture",
       "ulum_title":"Qur’anic Sciences",
-      "ulum_content":"the other fields related to the Noble Quran: occasions of revelation, abrogation, etc."
+      "ulum_content":"The other fields related to the Noble Quran: occasions of revelation, abrogation, etc."
     },
     "hadith": {
       "title": "Hadith Sciences",
       "ulum_title":"Hadith Terminology",
-      "ulum_content":"the chains of hadith transmission and sources of the Prophetic tradition",
+      "ulum_content":"The chains of hadith transmission and sources of the Prophetic tradition",
       "main_title":"Hadith Texts",
-      "main_content":"reading the 9 canonical collections with their commentaries with a chain of transmission",
+      "main_content":"Teading the 9 canonical collections with their commentaries with a chain of transmission",
       "seerah_title":"Prophetic Biography (sīra) and Characteristics (shamā’il)",
-      "seerah_content":"becoming acquainted with the Prophet ﷺ and his portrait, character, and life events"
+      "seerah_content":"Becoming acquainted with the Prophet ﷺ and his portrait, character, and life events"
     },
     "aqidah": {
       "title": "Creed",
-      "explanation":"studying Islamic creed according to Sunni orthodoxy through the Ashʿarī, Māturīdī, and Ṣūfī methdologies"
+      "explanation":"Studying Islamic creed according to Sunni orthodoxy through the Ashʿarī, Māturīdī, and Ṣūfī methdologies"
     },
     "fiqh": {
       "title": "Law (fiqh) and Legal Theory (uṣūl al-fiqh)",
       "furu_title":"Legal Rulings (furūʿ)",
-      "furu_content":"studying the rulings across all chapters of law",
+      "furu_content":"Studying the rulings across all chapters of law",
       "usul_title":"Legal Theory (uṣūl)",
       "usul_content":"knowing the sources, patterns of reasoning, and methods of extracting rulings",
       "qawaid_title":"Legal Canons (qawāʿid fiqhiyya)",
-      "qawaid_content":"studying legal canons and similar cases across all chapters of law",
+      "qawaid_content":"Studying legal canons and similar cases across all chapters of law",
       "adillah_title":"Legal Evidence",
       "adillah_content":"understanding the evidence in the Quran and Prophetic tradition (sunna) cited by jurists"
     },
     "tasawwuf": {
       "title": "Spirituality (taṣawwuf)",
       "suluk_title":"Purification (tazkiya)",
-      "suluk_content":"purging the soul of vices, inculcating its virtues, and elaborating the Muhammadan way of journeying to Allah ﷻ",
-      "irfan_title":"'Mysticism (ʿirfān)",
-      "irfan_content":"detailing the realities of tawḥīd and the stations of Divine manifestation & witnessing them"
+      "suluk_content":"Purging the soul of vices, inculcating its virtues, and elaborating the Muhammadan way of journeying to Allah ﷻ",
+      "irfan_title":"Mysticism (ʿirfān)",
+      "irfan_content":"Detailing the realities of tawḥīd and the stations of Divine manifestation & witnessing them"
     },
     "arabayyiah": {
       "title": "Arabic Language",
       "nahw_title":"Syntax (naḥw)",
-      "nahw_content":"theoretical and practical mastery of the principles of grammar",
+      "nahw_content":"Theoretical and practical mastery of the principles of grammar",
       "sarf_title":"Morphology (ṣarf)",
-      "sarf_content":"knowing the patterns and derivation of words",
+      "sarf_content":"Knowing the patterns and derivation of words",
       "balaghah_title":"Rhetoric (balāgha)",
-      "balaghah_content":"perfecting the rhetorical arts of semantics (maʿānī), style (bayān), and literary devices (badīʿ)",
+      "balaghah_content":"Perfecting the rhetorical arts of semantics (maʿānī), style (bayān), and literary devices (badīʿ)",
       "natiq_title":"Arabic for Non-Native Speakers",
-      "natiq_content":"fostering the language skills of reading, writing, & speaking"
+      "natiq_content":"Fostering the language skills of reading, writing, & speaking"
     },
     "baramij": {
       "title": "Additional Programs",
       "dawah_title":"Outreach (daʿwa) and Oration",
-      "dawah_content":"mastering the skills of outreach and public speaking to teach people in most exemplary manner",
+      "dawah_content":"Mastering the skills of outreach and public speaking to teach people in most exemplary manner",
       "nisa_title":"Ladies' Education",
-      "nisa_content":"courses teaching what a Muslim lady needs to know in her life",
+      "nisa_content":"Courses teaching what a Muslim lady needs to know in her life",
       "atfal_title":"Primary Education for Children",
-      "atfal_content":"how to teach, raise, and guide young children",
+      "atfal_content":"How to teach, raise, and guide young children",
       "zawjiyyah_title":"Marriage Courses",
-      "zawjiyyah_content":"prepatory courses clarifying misconceptions about marriage and family law & explaining how to interact with a spouse with wisdom",
+      "zawjiyyah_content":"Prepatory courses clarifying misconceptions about marriage and family law & explaining how to interact with a spouse with wisdom",
       "tarbiyah_title":"Parenting Courses",
       "tarbiyah_content":"Explaining the model manner of raising children properly",
       "aswat_title":"Harmony (maqāmāt)",
-      "aswat_content":"teaching maqām scales and religious odes"
+      "aswat_content":"Teaching maqām scales and religious odes"
     }
   },
   "tags": {

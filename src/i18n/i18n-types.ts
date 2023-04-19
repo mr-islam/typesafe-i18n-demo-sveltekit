@@ -66,11 +66,11 @@ type RootTranslation = {
 		 */
 		complete_curriculum: string
 		/**
-		 * Goal
+		 * Purpose
 		 */
 		mission_title: string
 		/**
-		 * Producing lordly scholars and righteous leaders, in order to revive the Religious Sciences
+		 * To produce lordly scholars and righteous leaders, in order to revive the Religious Sciences
 		 */
 		mission: string
 		/**
@@ -78,7 +78,7 @@ type RootTranslation = {
 		 */
 		online_title: string
 		/**
-		 * Featuring written articles and audio recordings
+		 * Features written articles and audio and video recordings
 		 */
 		online: string
 		/**
@@ -86,13 +86,13 @@ type RootTranslation = {
 		 */
 		contact_title: string
 		/**
-		 * Learn how to study through this website and benefit from it
+		 * Learn how to apply and benefit
 		 */
 		contact: string
 	}
 	shaykh: {
 		/**
-		 * Supervisor
+		 * Director
 		 */
 		heading: string
 		/**
@@ -124,7 +124,7 @@ type RootTranslation = {
 		 */
 		long_bio_studies_1: string
 		/**
-		 * Shaykh ʿAbd al-Raḥmān attended the lessons of Shaykh Muḥammad Jumuʿa for ten years and studied many books with him in various sciences in Maʿhad al-Fatḥ as well as outside of it. Among the books Shaykh ʿAbd al-Raḥmān read in Ḥanafī fiqh are: Marāqī al-Falāḥ, al-Ikhtiyār li-Taʿlīl al-Mukhtār, two-thirds of Ḥāshiyat Ibn ʿĀbidīn, some of Sharḥ al-Jaṣṣāṣ ʿalá Mukhtaṣar al-Ṭahāwī, Badā’iʿ al-Ṣanā’iʿ, Sharḥ al-Taṣrīḥ ʿalá al-Tawḍīḥ, and Tafsīr al-Nasafī. Shaykh ʿAbd al-Raḥmān also read al-Aṣl: Mabsūṭ al-Imām Muḥammad and al-Lubāb: Sharḥ al-Kitāb by himself and reviewed more difficult passages with Shaykh Muḥammad Jumuʿa. 
+		 * Shaykh ʿAbd al-Raḥmān attended the lessons of Shaykh Muḥammad Jumuʿa for ten years and studied many books with him in various sciences in Maʿhad al-Fatḥ as well as outside of it. Among the books Shaykh ʿAbd al-Raḥmān read in Ḥanafī fiqh are: Marāqī al-Falāḥ, al-Ikhtiyār li-Taʿlīl al-Mukhtār, two-thirds of Ḥāshiyat Ibn ʿĀbidīn, some of Sharḥ al-Jaṣṣāṣ ʿalá Mukhtaṣar al-Ṭaḥāwī, Badā’iʿ al-Ṣanā’iʿ, Sharḥ al-Taṣrīḥ ʿalá al-Tawḍīḥ, and Tafsīr al-Nasafī. Shaykh ʿAbd al-Raḥmān also read al-Aṣl: Mabsūṭ al-Imām Muḥammad and al-Lubāb: Sharḥ al-Kitāb by himself and reviewed more difficult passages with Shaykh Muḥammad Jumuʿa. 
 		 */
 		long_bio_studies_2: string
 		/**
@@ -150,57 +150,57 @@ type RootTranslation = {
 	}
 	goals: {
 		/**
-		 * Spreading the inner and outer sciences, as Imam al-Ghazali and other Lordly Scholars accomplished – Allah be pleased with them all.
+		 * by disseminating knowledge of the formal sciences and the inner sciences of the heart in the way of as Imam al-Ghazāli and other lordly scholars  – Allah be pleased with them all.
 		 */
 		'1': string
 		/**
-		 * Perfecting the reading of the Noble Quran in recitation and tajwid, with a linked chain of ascription and ijaza certification in the Ten Readings, the way the noble Companions received the Quran from the Prophet (peace and blessings upon him), along with reviving the role of the Quran in Muslims’ souls.
+		 * by perfecting recitation of the noble Qur’an with tajwīd in its ten rescensions (in a chain of transmission and with certification) - the way the noble Companions received the Quran from the Prophet ﷺ - along with reviving the role of the Quran in the souls of Muslims
 		 */
 		'2': string
 		/**
-		 * Reviving the service of the Prophetic Sunnah and the noble Science of Hadith in both narration and understanding. Furthermore, resetting the compass of the Ummah towards following the guidance of the Prophet – Allah send peace and blessings upon him – and also his biography (Sirah), so that the Ummah can gain peace and salvation.
+		 * by reviving service to the Prophetic tradition and the noble science of hadith in terms of narration and content. Reorienting the compass of the umma to following the guidance and life of its Prophet ﷺ for its peace and salvation
 		 */
 		'3': string
 		/**
-		 * Explaining the obligatory knowledge every Muslim man and woman must know—for a slave of Allah to worship his Lord upon based guidance and be free of sins based on his ignorance of that.
+		 * by explaining the knowledge obligatory for every individual Muslim, man and woman, so he can worship his Lord with insight and escape the sinfulness that ignorance brings
 		 */
 		'4': string
 		/**
-		 * Teaching the correct beliefs of the righteous predecessors (Salaf). This is done through the Sunni method as demonstrated in the beliefs of the Ashʿari, Maturidi, and Athari approaches, along with the understanding of the lordly scholars and knowers of the Ummah.
+		 * by teaching the true creed held by of the righteous early generations through Sunni orthodoxy as exemplified by the Ashʿarī, Māturīdī, and Atharī methodologies and understandings of lordly scholars and experienced knowers
 		 */
 		'5': string
 		/**
-		 * Explaining the detailed rulings of the Divine law of Allah (Shariʿa) in accordance with the Four Imams – Allah be pleased upon them. Thus, a Muslim can live his religion correctly in accordance with the pure Sharia, and his actions are upon Fiqh and sound knowledge, allowing one to worship Allah Almighty based upon guidance and leave the prison of ignorance and the forbidden.
+		 * by elaborating the rulings of the Divine Law (sharīʿa) according to the schools of the four Imams – Allah be pleased upon them - so the believer can practice his religion accurately conforming to the pure Divine Law, his actions being founded on comprehension and firm knowledge and so worship Allah (Almighty) with insight and escape being a captive of ignorance and the unlawful in every moment
 		 */
 		'6': string
 		/**
-		 * Spreading the correct spirituality (Tasawwuf) which is the soul of the religion, also been named Ihsan. This includes both spiritual struggle and enlightened understanding. This is for a Muslim to leave all sins and follow the way of the Master of All Creation in worshipping His lord with presence and awareness that he himself is being witnessed. This leads to complete inheritance and following.
+		 * by propogating true spirituality (taṣawwuf), the spirit of the religion called the stage of excellence (ihsān) covering both halves of wayfaring and mysticism so the believer leaves all sins and adopts the character of the master of creation, Muhammad ﷺ, worshipping his Lord witnessing Him and vigilant that he himself is witnessed. This bequeaths a perfect inheritance and emulation
 		 */
 		'7': string
 		/**
-		 * Teaching the Arabic language, the language of the Quran and the Beloved Prophet (peace and blessings upon him), in order to correctly understand the words of Allah Almighty and the purified prophetic Sunnah, and the words of the scholars. Indeed, it has been said: “Whoever does not perfect the Arabic language, is not trusted in his knowledge.”
+		 * by teaching the Arabic language, the language of the Qur’an and the beloved Prophet ﷺ to understand Allah's scripture, the whole Prophetic tradition, and the words of the scholars, as is repeated, “Whoever fails to master Arabic cannot be reliable in his knowledge.”
 		 */
 		'8': string
 		/**
-		 * Perfecting the tool-sciences such as rhetoric (Maʿani), expression (Bayan), linguistic devices (Badiʿ), etymology (Sarf), grammar (Nahw), poetic meters, and logic. A student of knowledge needs all of them in order to completely absorb knowledge and then present it in the best way possible.
+		 * by mastering the instrumental arts of semantics (maʿānī), rhetoric (bayān), literary devices (badīʿ), morphology (ṣarf), syntax (naḥw), imposition (waḍʿ), poetic meter (ʿarūḍ), and logic (manṭiq) - a student of knowledge needs these all to gain the skill of assimilating  and presenting the sciences in most exemplary manner
 		 */
 		'9': string
 		/**
-		 * Training in Dawah, public speaking and poetry skills, all of which are essential in benefitting others, through an approach where one can express things in a clear, convincing, and moving way.
+		 * by training the skills of outreach (daʿwa), oration, and poetics, all of which are the crafts needed to bring benefit to people in any science clearly, persuasively, and powerfully.
 		 */
 		'10': string
 		/**
-		 * Our Goal
+		 * Our Purpose
 		 */
 		goal: string
 		/**
-		 * Reviving the religious sciences by:
+		 * is to revive religious knowledge through the following:
 		 */
 		title: string
 	}
 	wisdoms: {
 		/**
-		 * Supervisor's Wisdoms
+		 * Aphorisms of Shaykh ʿAbd al-Raḥmān
 		 */
 		title: string
 		list: {
@@ -230,52 +230,52 @@ type RootTranslation = {
 	}
 	fields: {
 		/**
-		 * Sciences of Shariah & Reality
+		 * A Breakdown of Sciences and Courses
 		 */
 		title: string
 		fard: {
 			/**
-			 * Obligatory Knowledge
+			 * Individually Obligatory Knowledge (farḍ ʿayn)
 			 */
 			title: string
 			/**
-			 * Beliefs
+			 * Creed (ʿaqīda)
 			 */
 			tawhid_title: string
 			/**
-			 * Divine Traits
+			 * Divinity
 			 */
 			tawhid_content1: string
 			/**
-			 * Prophetic Traits
+			 * Prophetology
 			 */
 			tawhid_content2: string
 			/**
-			 * Other Topics
+			 * Scriptural realities
 			 */
 			tawhid_content3: string
 			/**
-			 * Tajwid
+			 * Tajwīd
 			 */
 			tajwid_title: string
 			/**
-			 * Mastering Quranic recitation
+			 * Mastering Qur’anic recitation
 			 */
 			tajwid_content: string
 			/**
-			 * Law of Worship
+			 * Devotional Law
 			 */
 			ibadat_title: string
 			/**
-			 * Learning to worship -such as wudu, salah, fasting, zakat and hajj- correctly
+			 * Learning the practices of cleanliness, prayer, fasting, almsgiving and pilgrimage in the legally prescribed manner
 			 */
 			ibadat_content: string
 			/**
-			 * Law of Conduct
+			 * Social Law
 			 */
 			muamalat_title: string
 			/**
-			 * Business Law
+			 * Commercial Law
 			 */
 			muamalat_content1: string
 			/**
@@ -283,43 +283,43 @@ type RootTranslation = {
 			 */
 			muamalat_content2: string
 			/**
-			 * Tasawwuf
+			 * Spirituality (taṣawwuf)
 			 */
 			tasawwuf_title: string
 			/**
-			 * Repairing the heart and rectifying the self
+			 * Testoring the heart and refining the self
 			 */
 			tasawwuf_content: string
 		}
 		quran: {
 			/**
-			 * The Quran & Its Sciences
+			 * Qur’anic Sciences and Exegesis
 			 */
 			title: string
 			/**
-			 * Mastering Quranic recitation in practice and theory
+			 * Mastering Qur’anic recitation in practice and theory
 			 */
 			tajwid_content: string
 			/**
-			 * Tafsir
+			 * Exegesis (tafsīr)
 			 */
 			tafsir_title: string
 			/**
-			 * Learning the outer and deeper meanings of Allah Almighty's Book
+			 * The apparent and deeper meanings of Allah's scripture
 			 */
 			tafsir_content: string
 			/**
-			 * Quranic Sciences
+			 * Qur’anic Sciences
 			 */
 			ulum_title: string
 			/**
-			 * Fields related to the Noble Quran, such as reasons for revelation & abrogation
+			 * The other fields related to the Noble Quran: occasions of revelation, abrogation, etc.
 			 */
 			ulum_content: string
 		}
 		hadith: {
 			/**
-			 * Hadith & Its Sciences
+			 * Hadith Sciences
 			 */
 			title: string
 			/**
@@ -327,7 +327,7 @@ type RootTranslation = {
 			 */
 			ulum_title: string
 			/**
-			 * The paths, chains and sources of the Sunnah
+			 * The chains of hadith transmission and sources of the Prophetic tradition
 			 */
 			ulum_content: string
 			/**
@@ -335,85 +335,85 @@ type RootTranslation = {
 			 */
 			main_title: string
 			/**
-			 * Reading the 9 Books with Sanad & explanations
+			 * Teading the 9 canonical collections with their commentaries with a chain of transmission
 			 */
 			main_content: string
 			/**
-			 * Prophetic Biography
+			 * Prophetic Biography (sīra) and Characteristics (shamā’il)
 			 */
 			seerah_title: string
 			/**
-			 * Learning about the Prophet ﷺ and his life
+			 * Becoming acquainted with the Prophet ﷺ and his portrait, character, and life events
 			 */
 			seerah_content: string
 		}
 		aqidah: {
 			/**
-			 * Beliefs
+			 * Creed
 			 */
 			title: string
 			/**
-			 * Islamic Theology based on Sunni Methodology, such as Ash'ari and Maturidi
+			 * Studying Islamic creed according to Sunni orthodoxy through the Ashʿarī, Māturīdī, and Ṣūfī methdologies
 			 */
 			explanation: string
 		}
 		fiqh: {
 			/**
-			 * Fiqh & Its Foundations
+			 * Law (fiqh) and Legal Theory (uṣūl al-fiqh)
 			 */
 			title: string
 			/**
-			 * Rulings
+			 * Legal Rulings (furūʿ)
 			 */
 			furu_title: string
 			/**
-			 * Study of the detailed rulings covering all sections of Fiqh
+			 * Studying the rulings across all chapters of law
 			 */
 			furu_content: string
 			/**
-			 * Foundations
+			 * Legal Theory (uṣūl)
 			 */
 			usul_title: string
 			/**
-			 * Learning the methods and approaches of Usul scholars
+			 * knowing the sources, patterns of reasoning, and methods of extracting rulings
 			 */
 			usul_content: string
 			/**
-			 * Principles
+			 * Legal Canons (qawāʿid fiqhiyya)
 			 */
 			qawaid_title: string
 			/**
-			 * Study of the principles in Fiqh and similar rulings across sections
+			 * Studying legal canons and similar cases across all chapters of law
 			 */
 			qawaid_content: string
 			/**
-			 * Evidences
+			 * Legal Evidence
 			 */
 			adillah_title: string
 			/**
-			 * Learning the evidence from the Quran & Sunnah relied on by the Mujtahid scholars
+			 * understanding the evidence in the Quran and Prophetic tradition (sunna) cited by jurists
 			 */
 			adillah_content: string
 		}
 		tasawwuf: {
 			/**
-			 * Tasawwuf
+			 * Spirituality (taṣawwuf)
 			 */
 			title: string
 			/**
-			 * Tazkiyah
+			 * Purification (tazkiya)
 			 */
 			suluk_title: string
 			/**
-			 * Replacing ugly traits with the beautiful & learning the Muhammadan Way to strive to Allah ﷻ
+			 * Purging the soul of vices, inculcating its virtues, and elaborating the Muhammadan way of journeying to Allah ﷻ
 			 */
 			suluk_content: string
 			/**
-			 * 'Irfan
+			 * Mysticism (ʿirfān)
 			 */
 			irfan_title: string
 			/**
-			 * Explaining the realities of Tawhid & the levels of manifestation & witnessing
+			 * Detailing the realities of tawḥīd and the stations of Divine manifestation & witnessing them
 			 */
 			irfan_content: string
 		}
@@ -423,96 +423,96 @@ type RootTranslation = {
 			 */
 			title: string
 			/**
-			 * Grammar (Nahw)
+			 * Syntax (naḥw)
 			 */
 			nahw_title: string
 			/**
-			 * Mastering the studies of grammar practically and theoretically
+			 * Theoretical and practical mastery of the principles of grammar
 			 */
 			nahw_content: string
 			/**
-			 * Morphology (Sarf)
+			 * Morphology (ṣarf)
 			 */
 			sarf_title: string
 			/**
-			 * Knowing the foundation of a word and its etymology
+			 * Knowing the patterns and derivation of words
 			 */
 			sarf_content: string
 			/**
-			 * Rhetoric (Balaghah)
+			 * Rhetoric (balāgha)
 			 */
 			balaghah_title: string
 			/**
-			 * Mastering the studies of rhetoric practically and theoretically
+			 * Perfecting the rhetorical arts of semantics (maʿānī), style (bayān), and literary devices (badīʿ)
 			 */
 			balaghah_content: string
 			/**
-			 * Arabic for Non-native Speakers
+			 * Arabic for Non-Native Speakers
 			 */
 			natiq_title: string
 			/**
-			 * Raising a student to mastery of Arabic, in reading, writing & speaking
+			 * Fostering the language skills of reading, writing, & speaking
 			 */
 			natiq_content: string
 		}
 		baramij: {
 			/**
-			 * Assorted Programs
+			 * Additional Programs
 			 */
 			title: string
 			/**
-			 * Da'wah & Outreach
+			 * Outreach (daʿwa) and Oration
 			 */
 			dawah_title: string
 			/**
-			 * Mastering speaking & outreach to benefit people in the ideal way
+			 * Mastering the skills of outreach and public speaking to teach people in most exemplary manner
 			 */
 			dawah_content: string
 			/**
-			 * Educational courses for Women
+			 * Ladies' Education
 			 */
 			nisa_title: string
 			/**
-			 * Teaching what the Muslim Lady needs in her life
+			 * Courses teaching what a Muslim lady needs to know in her life
 			 */
 			nisa_content: string
 			/**
-			 * Educational courses for Children
+			 * Primary Education for Children
 			 */
 			atfal_title: string
 			/**
-			 * Teaching children and caring for their upbringing
+			 * How to teach, raise, and guide young children
 			 */
 			atfal_content: string
 			/**
-			 * Preparatory courses for Married Life
+			 * Marriage Courses
 			 */
 			zawjiyyah_title: string
 			/**
-			 * Clearing up concepts of marriage & family law & wisdom in interaction
+			 * Prepatory courses clarifying misconceptions about marriage and family law & explaining how to interact with a spouse with wisdom
 			 */
 			zawjiyyah_content: string
 			/**
-			 * Raising Children
+			 * Parenting Courses
 			 */
 			tarbiyah_title: string
 			/**
-			 * Explaining the ideal way of raising children properly
+			 * Explaining the model manner of raising children properly
 			 */
 			tarbiyah_content: string
 			/**
-			 * Voice & Maqamat
+			 * Harmony (maqāmāt)
 			 */
 			aswat_title: string
 			/**
-			 * Teaching the vocal Maqamat and religious inshad
+			 * Teaching maqām scales and religious odes
 			 */
 			aswat_content: string
 		}
 	}
 	tags: {
 		/**
-		 * Obligatory Knowledge
+		 * Individually Obligatory Knowledge (farḍ ʿayn)
 		 */
 		fard: string
 		/**
@@ -520,7 +520,7 @@ type RootTranslation = {
 		 */
 		fard_explanation: string
 		/**
-		 * Beliefs
+		 * Creed 
 		 */
 		aqidah: string
 		/**
@@ -528,7 +528,7 @@ type RootTranslation = {
 		 */
 		aqidah_explanation: string
 		/**
-		 * Seerah & Shamail
+		 * Prophetic Biography (sīra) and Characteristics (shamā’il)
 		 */
 		sirah: string
 		/**
@@ -536,12 +536,12 @@ type RootTranslation = {
 		 */
 		sirah_explanation: string
 		/**
-		 * Assorted Programs
+		 * Additional Programs
 		 */
 		program: string
 		program_explanation: string
 		/**
-		 * Arabic for Non-natives
+		 * Arabic for Non-Native Speakers
 		 */
 		natiq: string
 		/**
@@ -557,7 +557,7 @@ type RootTranslation = {
 		 */
 		misc_explanation: string
 		/**
-		 * Quran Recitation & Tajwid
+		 * Qur’anic Recitation & Tajwīd
 		 */
 		tajwid: string
 		/**
@@ -573,19 +573,19 @@ type RootTranslation = {
 		 */
 		tajwid_explanation: string
 		/**
-		 * Arabic & Its Sciences
+		 * Arabic Language Arts
 		 */
 		arabi: string
 		/**
-		 * Nahw
+		 * Syntax
 		 */
 		arabi_nahw: string
 		/**
-		 * Sarf
+		 * Morphology
 		 */
 		arabi_sarf: string
 		/**
-		 * Balaghah
+		 * Rhetoric
 		 */
 		arabi_balaghah: string
 		/**
@@ -593,23 +593,23 @@ type RootTranslation = {
 		 */
 		arabi_explanation: string
 		/**
-		 * Fiqh & Its Foundations
+		 * Law (fiqh) and Legal Theory (uṣūl al-fiqh)
 		 */
 		fiqh: string
 		/**
-		 * Rulings
+		 * Legal Rulings (furūʿ)
 		 */
 		fiqh_rulings: string
 		/**
-		 * Foundations
+		 * Legal Theory (uṣūl)
 		 */
 		fiqh_foundations: string
 		/**
-		 * Principles
+		 * Legal Canons (qawāʿid fiqhiyya)
 		 */
 		fiqh_principles: string
 		/**
-		 * Evidences
+		 * Legal Evidence
 		 */
 		fiqh_evidences: string
 		/**
@@ -617,7 +617,7 @@ type RootTranslation = {
 		 */
 		fiqh_explanation: string
 		/**
-		 * Spirituality
+		 * Spirituality (taṣawwuf)
 		 */
 		tasawwuf: string
 		/**
@@ -633,19 +633,19 @@ type RootTranslation = {
 		 */
 		tasawwuf_explanation: string
 		/**
-		 * The Quran & Its Sciences
+		 * Qur’anic Sciences and Exegesis
 		 */
 		tafsir: string
 		/**
-		 * Ishari Tafsir
+		 * Inspired Exegesis
 		 */
 		tafsir_ishari: string
 		/**
-		 * External Tafsir
+		 * Formal Exegesis (tafsīr)
 		 */
 		tafsir_zahir: string
 		/**
-		 * Quran Sciences
+		 * Qur’anic Sciences
 		 */
 		ulum_quran: string
 		/**
@@ -653,7 +653,7 @@ type RootTranslation = {
 		 */
 		tafsir_explanation: string
 		/**
-		 * Hadith & Its Sciences
+		 * Hadith Sciences
 		 */
 		hadith: string
 		/**
@@ -661,7 +661,7 @@ type RootTranslation = {
 		 */
 		hadith_texts: string
 		/**
-		 * Hadith Sciences
+		 * Other Hadith Sciences
 		 */
 		hadith_sciences: string
 		/**
@@ -674,7 +674,7 @@ type RootTranslation = {
 		other: string
 		other_explanation: string
 		/**
-		 * Dawah & Outreach
+		 * Outreach and Oration
 		 */
 		'public': string
 	}
@@ -2084,11 +2084,11 @@ export type TranslationFunctions = {
 		 */
 		complete_curriculum: () => LocalizedString
 		/**
-		 * Goal
+		 * Purpose
 		 */
 		mission_title: () => LocalizedString
 		/**
-		 * Producing lordly scholars and righteous leaders, in order to revive the Religious Sciences
+		 * To produce lordly scholars and righteous leaders, in order to revive the Religious Sciences
 		 */
 		mission: () => LocalizedString
 		/**
@@ -2096,7 +2096,7 @@ export type TranslationFunctions = {
 		 */
 		online_title: () => LocalizedString
 		/**
-		 * Featuring written articles and audio recordings
+		 * Features written articles and audio and video recordings
 		 */
 		online: () => LocalizedString
 		/**
@@ -2104,13 +2104,13 @@ export type TranslationFunctions = {
 		 */
 		contact_title: () => LocalizedString
 		/**
-		 * Learn how to study through this website and benefit from it
+		 * Learn how to apply and benefit
 		 */
 		contact: () => LocalizedString
 	}
 	shaykh: {
 		/**
-		 * Supervisor
+		 * Director
 		 */
 		heading: () => LocalizedString
 		/**
@@ -2142,7 +2142,7 @@ export type TranslationFunctions = {
 		 */
 		long_bio_studies_1: () => LocalizedString
 		/**
-		 * Shaykh ʿAbd al-Raḥmān attended the lessons of Shaykh Muḥammad Jumuʿa for ten years and studied many books with him in various sciences in Maʿhad al-Fatḥ as well as outside of it. Among the books Shaykh ʿAbd al-Raḥmān read in Ḥanafī fiqh are: Marāqī al-Falāḥ, al-Ikhtiyār li-Taʿlīl al-Mukhtār, two-thirds of Ḥāshiyat Ibn ʿĀbidīn, some of Sharḥ al-Jaṣṣāṣ ʿalá Mukhtaṣar al-Ṭahāwī, Badā’iʿ al-Ṣanā’iʿ, Sharḥ al-Taṣrīḥ ʿalá al-Tawḍīḥ, and Tafsīr al-Nasafī. Shaykh ʿAbd al-Raḥmān also read al-Aṣl: Mabsūṭ al-Imām Muḥammad and al-Lubāb: Sharḥ al-Kitāb by himself and reviewed more difficult passages with Shaykh Muḥammad Jumuʿa. 
+		 * Shaykh ʿAbd al-Raḥmān attended the lessons of Shaykh Muḥammad Jumuʿa for ten years and studied many books with him in various sciences in Maʿhad al-Fatḥ as well as outside of it. Among the books Shaykh ʿAbd al-Raḥmān read in Ḥanafī fiqh are: Marāqī al-Falāḥ, al-Ikhtiyār li-Taʿlīl al-Mukhtār, two-thirds of Ḥāshiyat Ibn ʿĀbidīn, some of Sharḥ al-Jaṣṣāṣ ʿalá Mukhtaṣar al-Ṭaḥāwī, Badā’iʿ al-Ṣanā’iʿ, Sharḥ al-Taṣrīḥ ʿalá al-Tawḍīḥ, and Tafsīr al-Nasafī. Shaykh ʿAbd al-Raḥmān also read al-Aṣl: Mabsūṭ al-Imām Muḥammad and al-Lubāb: Sharḥ al-Kitāb by himself and reviewed more difficult passages with Shaykh Muḥammad Jumuʿa. 
 		 */
 		long_bio_studies_2: () => LocalizedString
 		/**
@@ -2168,57 +2168,57 @@ export type TranslationFunctions = {
 	}
 	goals: {
 		/**
-		 * Spreading the inner and outer sciences, as Imam al-Ghazali and other Lordly Scholars accomplished – Allah be pleased with them all.
+		 * by disseminating knowledge of the formal sciences and the inner sciences of the heart in the way of as Imam al-Ghazāli and other lordly scholars  – Allah be pleased with them all.
 		 */
 		'1': () => LocalizedString
 		/**
-		 * Perfecting the reading of the Noble Quran in recitation and tajwid, with a linked chain of ascription and ijaza certification in the Ten Readings, the way the noble Companions received the Quran from the Prophet (peace and blessings upon him), along with reviving the role of the Quran in Muslims’ souls.
+		 * by perfecting recitation of the noble Qur’an with tajwīd in its ten rescensions (in a chain of transmission and with certification) - the way the noble Companions received the Quran from the Prophet ﷺ - along with reviving the role of the Quran in the souls of Muslims
 		 */
 		'2': () => LocalizedString
 		/**
-		 * Reviving the service of the Prophetic Sunnah and the noble Science of Hadith in both narration and understanding. Furthermore, resetting the compass of the Ummah towards following the guidance of the Prophet – Allah send peace and blessings upon him – and also his biography (Sirah), so that the Ummah can gain peace and salvation.
+		 * by reviving service to the Prophetic tradition and the noble science of hadith in terms of narration and content. Reorienting the compass of the umma to following the guidance and life of its Prophet ﷺ for its peace and salvation
 		 */
 		'3': () => LocalizedString
 		/**
-		 * Explaining the obligatory knowledge every Muslim man and woman must know—for a slave of Allah to worship his Lord upon based guidance and be free of sins based on his ignorance of that.
+		 * by explaining the knowledge obligatory for every individual Muslim, man and woman, so he can worship his Lord with insight and escape the sinfulness that ignorance brings
 		 */
 		'4': () => LocalizedString
 		/**
-		 * Teaching the correct beliefs of the righteous predecessors (Salaf). This is done through the Sunni method as demonstrated in the beliefs of the Ashʿari, Maturidi, and Athari approaches, along with the understanding of the lordly scholars and knowers of the Ummah.
+		 * by teaching the true creed held by of the righteous early generations through Sunni orthodoxy as exemplified by the Ashʿarī, Māturīdī, and Atharī methodologies and understandings of lordly scholars and experienced knowers
 		 */
 		'5': () => LocalizedString
 		/**
-		 * Explaining the detailed rulings of the Divine law of Allah (Shariʿa) in accordance with the Four Imams – Allah be pleased upon them. Thus, a Muslim can live his religion correctly in accordance with the pure Sharia, and his actions are upon Fiqh and sound knowledge, allowing one to worship Allah Almighty based upon guidance and leave the prison of ignorance and the forbidden.
+		 * by elaborating the rulings of the Divine Law (sharīʿa) according to the schools of the four Imams – Allah be pleased upon them - so the believer can practice his religion accurately conforming to the pure Divine Law, his actions being founded on comprehension and firm knowledge and so worship Allah (Almighty) with insight and escape being a captive of ignorance and the unlawful in every moment
 		 */
 		'6': () => LocalizedString
 		/**
-		 * Spreading the correct spirituality (Tasawwuf) which is the soul of the religion, also been named Ihsan. This includes both spiritual struggle and enlightened understanding. This is for a Muslim to leave all sins and follow the way of the Master of All Creation in worshipping His lord with presence and awareness that he himself is being witnessed. This leads to complete inheritance and following.
+		 * by propogating true spirituality (taṣawwuf), the spirit of the religion called the stage of excellence (ihsān) covering both halves of wayfaring and mysticism so the believer leaves all sins and adopts the character of the master of creation, Muhammad ﷺ, worshipping his Lord witnessing Him and vigilant that he himself is witnessed. This bequeaths a perfect inheritance and emulation
 		 */
 		'7': () => LocalizedString
 		/**
-		 * Teaching the Arabic language, the language of the Quran and the Beloved Prophet (peace and blessings upon him), in order to correctly understand the words of Allah Almighty and the purified prophetic Sunnah, and the words of the scholars. Indeed, it has been said: “Whoever does not perfect the Arabic language, is not trusted in his knowledge.”
+		 * by teaching the Arabic language, the language of the Qur’an and the beloved Prophet ﷺ to understand Allah's scripture, the whole Prophetic tradition, and the words of the scholars, as is repeated, “Whoever fails to master Arabic cannot be reliable in his knowledge.”
 		 */
 		'8': () => LocalizedString
 		/**
-		 * Perfecting the tool-sciences such as rhetoric (Maʿani), expression (Bayan), linguistic devices (Badiʿ), etymology (Sarf), grammar (Nahw), poetic meters, and logic. A student of knowledge needs all of them in order to completely absorb knowledge and then present it in the best way possible.
+		 * by mastering the instrumental arts of semantics (maʿānī), rhetoric (bayān), literary devices (badīʿ), morphology (ṣarf), syntax (naḥw), imposition (waḍʿ), poetic meter (ʿarūḍ), and logic (manṭiq) - a student of knowledge needs these all to gain the skill of assimilating  and presenting the sciences in most exemplary manner
 		 */
 		'9': () => LocalizedString
 		/**
-		 * Training in Dawah, public speaking and poetry skills, all of which are essential in benefitting others, through an approach where one can express things in a clear, convincing, and moving way.
+		 * by training the skills of outreach (daʿwa), oration, and poetics, all of which are the crafts needed to bring benefit to people in any science clearly, persuasively, and powerfully.
 		 */
 		'10': () => LocalizedString
 		/**
-		 * Our Goal
+		 * Our Purpose
 		 */
 		goal: () => LocalizedString
 		/**
-		 * Reviving the religious sciences by:
+		 * is to revive religious knowledge through the following:
 		 */
 		title: () => LocalizedString
 	}
 	wisdoms: {
 		/**
-		 * Supervisor's Wisdoms
+		 * Aphorisms of Shaykh ʿAbd al-Raḥmān
 		 */
 		title: () => LocalizedString
 		list: {
@@ -2248,52 +2248,52 @@ export type TranslationFunctions = {
 	}
 	fields: {
 		/**
-		 * Sciences of Shariah & Reality
+		 * A Breakdown of Sciences and Courses
 		 */
 		title: () => LocalizedString
 		fard: {
 			/**
-			 * Obligatory Knowledge
+			 * Individually Obligatory Knowledge (farḍ ʿayn)
 			 */
 			title: () => LocalizedString
 			/**
-			 * Beliefs
+			 * Creed (ʿaqīda)
 			 */
 			tawhid_title: () => LocalizedString
 			/**
-			 * Divine Traits
+			 * Divinity
 			 */
 			tawhid_content1: () => LocalizedString
 			/**
-			 * Prophetic Traits
+			 * Prophetology
 			 */
 			tawhid_content2: () => LocalizedString
 			/**
-			 * Other Topics
+			 * Scriptural realities
 			 */
 			tawhid_content3: () => LocalizedString
 			/**
-			 * Tajwid
+			 * Tajwīd
 			 */
 			tajwid_title: () => LocalizedString
 			/**
-			 * Mastering Quranic recitation
+			 * Mastering Qur’anic recitation
 			 */
 			tajwid_content: () => LocalizedString
 			/**
-			 * Law of Worship
+			 * Devotional Law
 			 */
 			ibadat_title: () => LocalizedString
 			/**
-			 * Learning to worship -such as wudu, salah, fasting, zakat and hajj- correctly
+			 * Learning the practices of cleanliness, prayer, fasting, almsgiving and pilgrimage in the legally prescribed manner
 			 */
 			ibadat_content: () => LocalizedString
 			/**
-			 * Law of Conduct
+			 * Social Law
 			 */
 			muamalat_title: () => LocalizedString
 			/**
-			 * Business Law
+			 * Commercial Law
 			 */
 			muamalat_content1: () => LocalizedString
 			/**
@@ -2301,43 +2301,43 @@ export type TranslationFunctions = {
 			 */
 			muamalat_content2: () => LocalizedString
 			/**
-			 * Tasawwuf
+			 * Spirituality (taṣawwuf)
 			 */
 			tasawwuf_title: () => LocalizedString
 			/**
-			 * Repairing the heart and rectifying the self
+			 * Testoring the heart and refining the self
 			 */
 			tasawwuf_content: () => LocalizedString
 		}
 		quran: {
 			/**
-			 * The Quran & Its Sciences
+			 * Qur’anic Sciences and Exegesis
 			 */
 			title: () => LocalizedString
 			/**
-			 * Mastering Quranic recitation in practice and theory
+			 * Mastering Qur’anic recitation in practice and theory
 			 */
 			tajwid_content: () => LocalizedString
 			/**
-			 * Tafsir
+			 * Exegesis (tafsīr)
 			 */
 			tafsir_title: () => LocalizedString
 			/**
-			 * Learning the outer and deeper meanings of Allah Almighty's Book
+			 * The apparent and deeper meanings of Allah's scripture
 			 */
 			tafsir_content: () => LocalizedString
 			/**
-			 * Quranic Sciences
+			 * Qur’anic Sciences
 			 */
 			ulum_title: () => LocalizedString
 			/**
-			 * Fields related to the Noble Quran, such as reasons for revelation & abrogation
+			 * The other fields related to the Noble Quran: occasions of revelation, abrogation, etc.
 			 */
 			ulum_content: () => LocalizedString
 		}
 		hadith: {
 			/**
-			 * Hadith & Its Sciences
+			 * Hadith Sciences
 			 */
 			title: () => LocalizedString
 			/**
@@ -2345,7 +2345,7 @@ export type TranslationFunctions = {
 			 */
 			ulum_title: () => LocalizedString
 			/**
-			 * The paths, chains and sources of the Sunnah
+			 * The chains of hadith transmission and sources of the Prophetic tradition
 			 */
 			ulum_content: () => LocalizedString
 			/**
@@ -2353,85 +2353,85 @@ export type TranslationFunctions = {
 			 */
 			main_title: () => LocalizedString
 			/**
-			 * Reading the 9 Books with Sanad & explanations
+			 * Teading the 9 canonical collections with their commentaries with a chain of transmission
 			 */
 			main_content: () => LocalizedString
 			/**
-			 * Prophetic Biography
+			 * Prophetic Biography (sīra) and Characteristics (shamā’il)
 			 */
 			seerah_title: () => LocalizedString
 			/**
-			 * Learning about the Prophet ﷺ and his life
+			 * Becoming acquainted with the Prophet ﷺ and his portrait, character, and life events
 			 */
 			seerah_content: () => LocalizedString
 		}
 		aqidah: {
 			/**
-			 * Beliefs
+			 * Creed
 			 */
 			title: () => LocalizedString
 			/**
-			 * Islamic Theology based on Sunni Methodology, such as Ash'ari and Maturidi
+			 * Studying Islamic creed according to Sunni orthodoxy through the Ashʿarī, Māturīdī, and Ṣūfī methdologies
 			 */
 			explanation: () => LocalizedString
 		}
 		fiqh: {
 			/**
-			 * Fiqh & Its Foundations
+			 * Law (fiqh) and Legal Theory (uṣūl al-fiqh)
 			 */
 			title: () => LocalizedString
 			/**
-			 * Rulings
+			 * Legal Rulings (furūʿ)
 			 */
 			furu_title: () => LocalizedString
 			/**
-			 * Study of the detailed rulings covering all sections of Fiqh
+			 * Studying the rulings across all chapters of law
 			 */
 			furu_content: () => LocalizedString
 			/**
-			 * Foundations
+			 * Legal Theory (uṣūl)
 			 */
 			usul_title: () => LocalizedString
 			/**
-			 * Learning the methods and approaches of Usul scholars
+			 * knowing the sources, patterns of reasoning, and methods of extracting rulings
 			 */
 			usul_content: () => LocalizedString
 			/**
-			 * Principles
+			 * Legal Canons (qawāʿid fiqhiyya)
 			 */
 			qawaid_title: () => LocalizedString
 			/**
-			 * Study of the principles in Fiqh and similar rulings across sections
+			 * Studying legal canons and similar cases across all chapters of law
 			 */
 			qawaid_content: () => LocalizedString
 			/**
-			 * Evidences
+			 * Legal Evidence
 			 */
 			adillah_title: () => LocalizedString
 			/**
-			 * Learning the evidence from the Quran & Sunnah relied on by the Mujtahid scholars
+			 * understanding the evidence in the Quran and Prophetic tradition (sunna) cited by jurists
 			 */
 			adillah_content: () => LocalizedString
 		}
 		tasawwuf: {
 			/**
-			 * Tasawwuf
+			 * Spirituality (taṣawwuf)
 			 */
 			title: () => LocalizedString
 			/**
-			 * Tazkiyah
+			 * Purification (tazkiya)
 			 */
 			suluk_title: () => LocalizedString
 			/**
-			 * Replacing ugly traits with the beautiful & learning the Muhammadan Way to strive to Allah ﷻ
+			 * Purging the soul of vices, inculcating its virtues, and elaborating the Muhammadan way of journeying to Allah ﷻ
 			 */
 			suluk_content: () => LocalizedString
 			/**
-			 * 'Irfan
+			 * Mysticism (ʿirfān)
 			 */
 			irfan_title: () => LocalizedString
 			/**
-			 * Explaining the realities of Tawhid & the levels of manifestation & witnessing
+			 * Detailing the realities of tawḥīd and the stations of Divine manifestation & witnessing them
 			 */
 			irfan_content: () => LocalizedString
 		}
@@ -2441,96 +2441,96 @@ export type TranslationFunctions = {
 			 */
 			title: () => LocalizedString
 			/**
-			 * Grammar (Nahw)
+			 * Syntax (naḥw)
 			 */
 			nahw_title: () => LocalizedString
 			/**
-			 * Mastering the studies of grammar practically and theoretically
+			 * Theoretical and practical mastery of the principles of grammar
 			 */
 			nahw_content: () => LocalizedString
 			/**
-			 * Morphology (Sarf)
+			 * Morphology (ṣarf)
 			 */
 			sarf_title: () => LocalizedString
 			/**
-			 * Knowing the foundation of a word and its etymology
+			 * Knowing the patterns and derivation of words
 			 */
 			sarf_content: () => LocalizedString
 			/**
-			 * Rhetoric (Balaghah)
+			 * Rhetoric (balāgha)
 			 */
 			balaghah_title: () => LocalizedString
 			/**
-			 * Mastering the studies of rhetoric practically and theoretically
+			 * Perfecting the rhetorical arts of semantics (maʿānī), style (bayān), and literary devices (badīʿ)
 			 */
 			balaghah_content: () => LocalizedString
 			/**
-			 * Arabic for Non-native Speakers
+			 * Arabic for Non-Native Speakers
 			 */
 			natiq_title: () => LocalizedString
 			/**
-			 * Raising a student to mastery of Arabic, in reading, writing & speaking
+			 * Fostering the language skills of reading, writing, & speaking
 			 */
 			natiq_content: () => LocalizedString
 		}
 		baramij: {
 			/**
-			 * Assorted Programs
+			 * Additional Programs
 			 */
 			title: () => LocalizedString
 			/**
-			 * Da'wah & Outreach
+			 * Outreach (daʿwa) and Oration
 			 */
 			dawah_title: () => LocalizedString
 			/**
-			 * Mastering speaking & outreach to benefit people in the ideal way
+			 * Mastering the skills of outreach and public speaking to teach people in most exemplary manner
 			 */
 			dawah_content: () => LocalizedString
 			/**
-			 * Educational courses for Women
+			 * Ladies' Education
 			 */
 			nisa_title: () => LocalizedString
 			/**
-			 * Teaching what the Muslim Lady needs in her life
+			 * Courses teaching what a Muslim lady needs to know in her life
 			 */
 			nisa_content: () => LocalizedString
 			/**
-			 * Educational courses for Children
+			 * Primary Education for Children
 			 */
 			atfal_title: () => LocalizedString
 			/**
-			 * Teaching children and caring for their upbringing
+			 * How to teach, raise, and guide young children
 			 */
 			atfal_content: () => LocalizedString
 			/**
-			 * Preparatory courses for Married Life
+			 * Marriage Courses
 			 */
 			zawjiyyah_title: () => LocalizedString
 			/**
-			 * Clearing up concepts of marriage & family law & wisdom in interaction
+			 * Prepatory courses clarifying misconceptions about marriage and family law & explaining how to interact with a spouse with wisdom
 			 */
 			zawjiyyah_content: () => LocalizedString
 			/**
-			 * Raising Children
+			 * Parenting Courses
 			 */
 			tarbiyah_title: () => LocalizedString
 			/**
-			 * Explaining the ideal way of raising children properly
+			 * Explaining the model manner of raising children properly
 			 */
 			tarbiyah_content: () => LocalizedString
 			/**
-			 * Voice & Maqamat
+			 * Harmony (maqāmāt)
 			 */
 			aswat_title: () => LocalizedString
 			/**
-			 * Teaching the vocal Maqamat and religious inshad
+			 * Teaching maqām scales and religious odes
 			 */
 			aswat_content: () => LocalizedString
 		}
 	}
 	tags: {
 		/**
-		 * Obligatory Knowledge
+		 * Individually Obligatory Knowledge (farḍ ʿayn)
 		 */
 		fard: () => LocalizedString
 		/**
@@ -2538,7 +2538,7 @@ export type TranslationFunctions = {
 		 */
 		fard_explanation: () => LocalizedString
 		/**
-		 * Beliefs
+		 * Creed 
 		 */
 		aqidah: () => LocalizedString
 		/**
@@ -2546,7 +2546,7 @@ export type TranslationFunctions = {
 		 */
 		aqidah_explanation: () => LocalizedString
 		/**
-		 * Seerah & Shamail
+		 * Prophetic Biography (sīra) and Characteristics (shamā’il)
 		 */
 		sirah: () => LocalizedString
 		/**
@@ -2554,12 +2554,12 @@ export type TranslationFunctions = {
 		 */
 		sirah_explanation: () => LocalizedString
 		/**
-		 * Assorted Programs
+		 * Additional Programs
 		 */
 		program: () => LocalizedString
 		program_explanation: () => LocalizedString
 		/**
-		 * Arabic for Non-natives
+		 * Arabic for Non-Native Speakers
 		 */
 		natiq: () => LocalizedString
 		/**
@@ -2575,7 +2575,7 @@ export type TranslationFunctions = {
 		 */
 		misc_explanation: () => LocalizedString
 		/**
-		 * Quran Recitation & Tajwid
+		 * Qur’anic Recitation & Tajwīd
 		 */
 		tajwid: () => LocalizedString
 		/**
@@ -2591,19 +2591,19 @@ export type TranslationFunctions = {
 		 */
 		tajwid_explanation: () => LocalizedString
 		/**
-		 * Arabic & Its Sciences
+		 * Arabic Language Arts
 		 */
 		arabi: () => LocalizedString
 		/**
-		 * Nahw
+		 * Syntax
 		 */
 		arabi_nahw: () => LocalizedString
 		/**
-		 * Sarf
+		 * Morphology
 		 */
 		arabi_sarf: () => LocalizedString
 		/**
-		 * Balaghah
+		 * Rhetoric
 		 */
 		arabi_balaghah: () => LocalizedString
 		/**
@@ -2611,23 +2611,23 @@ export type TranslationFunctions = {
 		 */
 		arabi_explanation: () => LocalizedString
 		/**
-		 * Fiqh & Its Foundations
+		 * Law (fiqh) and Legal Theory (uṣūl al-fiqh)
 		 */
 		fiqh: () => LocalizedString
 		/**
-		 * Rulings
+		 * Legal Rulings (furūʿ)
 		 */
 		fiqh_rulings: () => LocalizedString
 		/**
-		 * Foundations
+		 * Legal Theory (uṣūl)
 		 */
 		fiqh_foundations: () => LocalizedString
 		/**
-		 * Principles
+		 * Legal Canons (qawāʿid fiqhiyya)
 		 */
 		fiqh_principles: () => LocalizedString
 		/**
-		 * Evidences
+		 * Legal Evidence
 		 */
 		fiqh_evidences: () => LocalizedString
 		/**
@@ -2635,7 +2635,7 @@ export type TranslationFunctions = {
 		 */
 		fiqh_explanation: () => LocalizedString
 		/**
-		 * Spirituality
+		 * Spirituality (taṣawwuf)
 		 */
 		tasawwuf: () => LocalizedString
 		/**
@@ -2651,19 +2651,19 @@ export type TranslationFunctions = {
 		 */
 		tasawwuf_explanation: () => LocalizedString
 		/**
-		 * The Quran & Its Sciences
+		 * Qur’anic Sciences and Exegesis
 		 */
 		tafsir: () => LocalizedString
 		/**
-		 * Ishari Tafsir
+		 * Inspired Exegesis
 		 */
 		tafsir_ishari: () => LocalizedString
 		/**
-		 * External Tafsir
+		 * Formal Exegesis (tafsīr)
 		 */
 		tafsir_zahir: () => LocalizedString
 		/**
-		 * Quran Sciences
+		 * Qur’anic Sciences
 		 */
 		ulum_quran: () => LocalizedString
 		/**
@@ -2671,7 +2671,7 @@ export type TranslationFunctions = {
 		 */
 		tafsir_explanation: () => LocalizedString
 		/**
-		 * Hadith & Its Sciences
+		 * Hadith Sciences
 		 */
 		hadith: () => LocalizedString
 		/**
@@ -2679,7 +2679,7 @@ export type TranslationFunctions = {
 		 */
 		hadith_texts: () => LocalizedString
 		/**
-		 * Hadith Sciences
+		 * Other Hadith Sciences
 		 */
 		hadith_sciences: () => LocalizedString
 		/**
@@ -2692,7 +2692,7 @@ export type TranslationFunctions = {
 		other: () => LocalizedString
 		other_explanation: () => LocalizedString
 		/**
-		 * Dawah & Outreach
+		 * Outreach and Oration
 		 */
 		'public': () => LocalizedString
 	}
