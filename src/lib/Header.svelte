@@ -191,7 +191,7 @@
 
 	@media only screen and (max-width: 1100px) {
 		img#logo {
-			max-width: 22vw;
+			max-width: 45vw;
 			margin: 5px;
 		}
 		header {
