@@ -3,6 +3,15 @@
 	import LocaleSwitcher from './LocaleSwitcher.svelte'
 	import { onMount, afterUpdate } from 'svelte'
 	import { page } from '$app/stores'
+	import { documentDirectionUpdated } from '$lib/stores'
+
+	onMount(() => {
+		document.dir = $locale === 'ar' ? 'rtl' : 'ltr'
+		documentDirectionUpdated.set(true)
+	})
+	afterUpdate(() => {
+		document.dir = $locale === 'ar' ? 'rtl' : 'ltr'
+	})
 
 	console.log($page.url.pathname)
 
@@ -21,43 +30,70 @@
 </script>
 
 <header>
-	<div style="flex: 1">
-		<LocaleSwitcher />
-		{#if $page.url.pathname != '/en' && $page.url.pathname != '/ar'}
-			<a href="/">{$LL.back_main_page()}</a>
-		{/if}
-	</div>
-	<div />
-	<div id="heading">
-		<a href="/{$locale}">
-			<section class="img-bg" />
-			<img alt="Logo of Arabic calligraphy" id="logo" src="/logo-new.webp" />
-		</a>
-		<div id="title-container">
-			{#if $LL.center() !== ''}
-				<span>{$LL.center()}</span>
+	{#if $documentDirectionUpdated}
+		<div style="flex: 1">
+			<LocaleSwitcher />
+			{#if $page.url.pathname != '/en' && $page.url.pathname != '/ar'}
+				<a href="/">{$LL.back_main_page()}</a>
 			{/if}
+		</div>
+		<div />
+		<div id="heading">
 			<a href="/{$locale}">
-				<h1 id="h1-title-text">{$LL.title()}</h1>
+				<section class="img-bg" />
+				<img alt="Logo of Arabic calligraphy" id="logo" src="/logo-new.webp" />
 			</a>
+			<div id="title-container">
+				{#if $LL.center() !== ''}
+					<span>{$LL.center()}</span>
+				{/if}
+				<a href="/{$locale}">
+					<h1 id="h1-title-text">{$LL.title()}</h1>
+				</a>
 
-			<h2>{$LL.slogan()}</h2>
+				<h2>{$LL.slogan()}</h2>
+			</div>
 		</div>
-	</div>
 
-	<div id="lang-switcher">
-		<div id="nav-links">
-			<a href="/{$locale}/goals">
-				{$LL.welcome.mission_title()}
-			</a>
-			<a href="/{$locale}/library">
-				{$LL.welcome.online_title()}
-			</a>
-			<a href="/{$locale}/contact">
-				{$LL.welcome.contact_title()}
-			</a>
+		<div id="lang-switcher">
+			<div id="nav-links">
+				<a href="/{$locale}/goals">
+					{$LL.welcome.mission_title()}
+				</a>
+				<a href="/{$locale}/library">
+					{$LL.welcome.online_title()}
+				</a>
+				<a href="/{$locale}/contact">
+					{$LL.welcome.contact_title()}
+				</a>
+			</div>
 		</div>
-	</div>
+	{:else}
+		<div style="flex: 1">
+			
+		</div>
+		<div />
+		<div id="heading">
+			<a href="/{$locale}">
+				<section class="img-bg" />
+				<img alt="Logo of Arabic calligraphy" id="logo" src="/logo-new.webp" />
+			</a>
+			<div id="title-container">
+				{#if $LL.center() !== ''}
+					<span>{$LL.center()}</span>
+				{/if}
+				<a href="/{$locale}">
+					<h1 id="h1-title-text">{$LL.title()}</h1>
+				</a>
+
+				<h2>{$LL.slogan()}</h2>
+			</div>
+		</div>
+
+		<div style="flex: 1" id="lang-switcher">
+			
+		</div>
+	{/if}
 </header>
 
 <style>
@@ -119,7 +155,6 @@
 		box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 		padding: 10px 15px;
 		max-width: 270px;
-		
 	}
 	div#nav-links > a {
 		font-weight: bold;

@@ -4,28 +4,26 @@
 
 <script lang="ts">
 	import Header from '$lib/Header.svelte'
+	import { documentDirectionUpdated } from '$lib/stores'
+	// delaying display till the document direction is set,
+	// so there is no ugly flip of content for eng users.
+
 	import { setLocale, locale } from '$i18n/i18n-svelte'
 	import type { LayoutData } from './$types'
-
 	export let data: LayoutData
 
-	// delaying display till the document direction is set, 
-	// so there is no ugly flip of content for eng users. 
-
 	setLocale(data.locale)
-	onMount(() => {
-		document.dir = $locale === 'ar' ? 'rtl' : 'ltr'
-	})
-	afterUpdate(() => {
-		document.dir = $locale === 'ar' ? 'rtl' : 'ltr'
-	})
 </script>
 
 <Header />
 
-<main>
-	<slot />
-</main>
+{#if $documentDirectionUpdated}
+	<main>
+		<slot />
+	</main>
+{:else}
+	Loading...
+{/if}
 
 <style lang="scss" global>
 	@import '../styles/global.scss';
