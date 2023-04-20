@@ -70,15 +70,20 @@
 		max-width: 110px;
 	}
 	@media only screen and (max-width: 1100px) {
+		select {
+			padding: 5px 10px;
+		}
 		div#select-container {
 			padding: 0.12em 0.25em;
 			width: 90%;
 			font-size: 16px;
+			
+			background-color: transparent;
+			box-shadow: none;
 		}
 	}
 	@media only screen and (max-width: 400px) {
 		select {
-
 		}
 		div#select-container {
 			padding: 0.12em 0.25em;
