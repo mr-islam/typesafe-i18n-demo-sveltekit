@@ -9,6 +9,9 @@
 
 	export let data: LayoutData
 
+	// delaying display till the document direction is set, 
+	// so there is no ugly flip of content for eng users. 
+
 	setLocale(data.locale)
 	onMount(() => {
 		document.dir = $locale === 'ar' ? 'rtl' : 'ltr'
