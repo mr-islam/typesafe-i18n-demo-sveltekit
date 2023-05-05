@@ -3779,6 +3779,13 @@
 		line-height: 145%;
 	}
 	/* and mobile size gets the default, which is 14px in the library styles (file: Node/index.svelte) */
+	:global(div#mobile > div > div > div > .Node) {
+		font-size: 13px !important; /* this should be a param in svelvet..... */
+		font-family: "Cabin", "Scheherazade New", "adwa-assalaf", -apple-system,
+		BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
+		"Open Sans", "Helvetica Neue", sans-serif;
+		line-height: 130%;
+	}
 	:global(div#tiny > div > div > div > .Node) {
 		font-size: 13px !important; /* this should be a param in svelvet..... */
 		font-family: "Cabin", "Scheherazade New", "adwa-assalaf", -apple-system,
